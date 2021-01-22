@@ -16,6 +16,9 @@ public class Student extends User {
 	// Scholarship is provided or not
 	boolean hasScholarship;
 	
+	// Student is Approved;
+	boolean isApproved;
+	
 	// Parameterized Constructor
 	public Student(String userId, String emailId, String name, long mobile, Role role, Gender gender, String studentId,
 			String branch, boolean hasScholarship) {
@@ -23,6 +26,7 @@ public class Student extends User {
 		this.branch = branch;
 		this.hasScholarship = hasScholarship;
 		this.coursesRegistered = new ArrayList<String>();
+		this.isApproved = false;
 		
 	}
 
