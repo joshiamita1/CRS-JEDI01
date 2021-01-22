@@ -16,14 +16,16 @@ public class Student extends User {
 	// Scholarship is provided or not
 	boolean hasScholarship;
 	
+	// Student is Approved;
+	boolean isApproved;
+	
 	// Parameterized Constructor
-	public Student(String userId, String emailId, String name, long mobile, Role role, Gender gender, String studentId,
-			String branch, boolean hasScholarship) {
-		super(userId, emailId, name, mobile, role, gender);
+	public Student(String userId, String emailId, String password, String name, long mobile, Role role, Gender gender,
+			String branch, boolean hasScholarship, boolean isApproved) {
+		super(userId, emailId, password, name, mobile, role, gender);
 		this.branch = branch;
 		this.hasScholarship = hasScholarship;
-		this.coursesRegistered = new ArrayList<String>();
-		
+		this.isApproved = isApproved;
 	}
 
 	/**
@@ -32,7 +34,7 @@ public class Student extends User {
 	public String getBranch() {
 		return branch;
 	}
-
+	
 	/**
 	 * @param branch the branch to set
 	 */
