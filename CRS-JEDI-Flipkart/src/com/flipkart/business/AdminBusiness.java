@@ -31,12 +31,18 @@ public class AdminBusiness {
 	
 	public void approvestudents()
 	{
-		Student studentone  = new Student("1","abhishek@gmail.com","Abhishek",9876511,Role.STUDENT,Gender.MALE,"1","EEE", false);
-		credentialobj.approveStudent(studentone);
+		Student studentone  = new Student("1","abhishek@gmail.com","Abhishek",9876511,Role.STUDENT,Gender.MALE,"1","EEE");
+		credentialobj.approveStudent();
 	}
-	public void registersprofessor()
-	{   
-		new Professor("908", "raghav@gmail.com", "raghav", 87659034, Role.PROFESSOR,Gender.MALE,"EEE");
+	public void assignProfessor(Professor professor, int courseId) {
+		try {
+			adminDao.assignProfessor(professor, courseId);
+		}catch(ProfessorNotFoundException ce) {
+			logger.error(ce.getUsername() + "not found");
+		}catch(Exception e) {
+			logger.error(e);
+		}
+		}
 		
 	}
 	public void registersadmin()

@@ -30,11 +30,11 @@ public class AdminClient {
 				
 				break;
 			case 2:
-				adminclient.registerprofessor();
+				adminclient.registersprofessor();
 				
 				break;
 			case 3:
-              adminclient.registerdmin();
+              adminclient.registersadmin();
               break;
 			
 			default: logger.info("PLEASE ENTER A VALID CHOICE");
@@ -43,7 +43,7 @@ public class AdminClient {
 		}
 		while(choice!=9);
 		sc.close();	
-		}
-		
 	}
+		
 }
+

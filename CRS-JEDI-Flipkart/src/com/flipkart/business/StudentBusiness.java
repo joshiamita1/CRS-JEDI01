@@ -49,10 +49,16 @@ public class StudentBusiness{
 	 */
 	public void addCourses(String courseId, Student student) {
 		
+		private static Logger logger = Logger.getLogger(AdminOperation.class);
+		AdminDao adminDao = new AdminDaoImpl();
 		try {
 			studentDao.addCourse(courseId, student.getStudentId());
+		}catch(CourseNotFoundException ce) {
+			logger.error(ce.getCourseName() + "not found");
 		}catch(Exception e) {
 			logger.error(e.getMessage());
+		}finally {
+			logger.info("course add function");
 		}
 		logger.info("addcourses function, RegisteredCoursesBusiness class");
 		//logger.info("addcourses function, StudentBusiness class");
@@ -67,8 +73,12 @@ public class StudentBusiness{
 		//added Course not found exception
 		try {
 			studentDao.dropCourse(courseId, student.getStudentId());
+		}catch(CourseNotFoundException ce) {
+			logger.error(ce.getCourseName() + "not found");
 		}catch(Exception e) {
 			logger.error(e.getMessage());
+		}finally {
+			logger.info("course delete function");
 		}
 		
 		logger.info("dropcourses function, RegisteredCoursesBusiness class");

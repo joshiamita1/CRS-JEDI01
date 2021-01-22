@@ -17,6 +17,10 @@ public class StudentClient {
 	Scanner sc = new Scanner(System.in);
 
 	// Displays the Student Menu with choices for student
+	/**
+	 * Display menu to student
+	 * @param student
+	 */
 	public void displayMenu(Student student) {
 		int choice;
 		do {
@@ -79,7 +83,9 @@ public class StudentClient {
 			
 		}
 		
-		
+		/**
+		 * Dropping course option
+		 */
 		void dropCourse() {
 			Course course1 = new Course();
 			logger.info("Enter course id:");
