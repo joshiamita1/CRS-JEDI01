@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * 
  */
@@ -17,4 +18,18 @@ public interface AdminDao {
 	public void assignProfessor(Professor professor, int courseId);
 	public String addNewCourseInCatalog(Course course);
 	public void deleteUser(int userId);
+=======
+package com.flipkart.dao;
+
+import java.util.List;
+
+import com.flipkart.bean.User;
+
+public interface AdminDao {
+	// Add Admin
+	public void addAdmin(User admin);
+	
+	// Delete Admin
+	public void deleteAdmin(String adminId);
+>>>>>>> d2dbf3be979b8aa8ce20ec1aad6621f589964c61
 }

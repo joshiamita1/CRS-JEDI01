@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * 
  */
@@ -82,3 +83,26 @@ public class AdminDaoImpl implements AdminDao {
 		}
 
 	}
+=======
+package com.flipkart.dao;
+
+import java.util.List;
+
+import com.flipkart.bean.User;
+
+public class AdminDaoImpl implements AdminDao{
+
+	@Override
+	public void addAdmin(User admin) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteAdmin(String adminId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
+>>>>>>> d2dbf3be979b8aa8ce20ec1aad6621f589964c61

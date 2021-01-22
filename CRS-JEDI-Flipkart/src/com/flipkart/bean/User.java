@@ -22,8 +22,20 @@ public class User {
 	// Gender of the user
 	Gender gender;
 	
+	// Address of the user
+	String address;
+	
+	// City of the user
+	String city;
+	
+	// Country of the user
+	String country;
+	
+	// State of the user
+	String state;
+	
 	// Parameterized Constructor
-	public User(String userId, String emailId, String name, long mobile, Role role, Gender gender) {
+	public User(String userId, String emailId, String password, String name, long mobile, Role role, Gender gender) {
 		this.userId = userId;
 		this.emailId = emailId;
 		this.name = name;
@@ -115,6 +127,6 @@ public class User {
 	public void setGender(Gender gender) {
 		this.gender = gender;
 	}
-	
+
 	
 }
