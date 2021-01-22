@@ -8,18 +8,18 @@ public class AuthorCredentialSystemBusiness
 	
 	public boolean approveStudent() {
 		
-		logger.info("Approve student function, AuthorCredentialSystemBusiness class");
+		System.out.println("Approve student function, AuthorCredentialSystemBusiness class");
 		return true;
 		
 	}
 	public boolean registerAdmin() {
 		
-		logger.info("Register Admin function, AuthorCredentialSystemBusiness class");
+		System.out.println("Register Admin function, AuthorCredentialSystemBusiness class");
 		return true;
 	}
 	public boolean registerProfessor() {
 		
-		logger.info("Register professor function, AuthorCredentialSystemBusiness class");
+		System.out.println("Register professor function, AuthorCredentialSystemBusiness class");
 		return true;
 	}
 

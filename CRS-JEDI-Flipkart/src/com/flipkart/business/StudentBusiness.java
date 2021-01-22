@@ -2,33 +2,76 @@ package com.flipkart.business;
 
 import org.apache.log4j.Logger;
 
+import com.flipkart.bean.Course;
+import com.flipkart.bean.Student;
+import com.flipkart.dao.StudentDao;
+import com.flipkart.dao.StudentDaoImpl;
+import com.flipkart.exception.CourseNotFoundException;
+
 public class StudentBusiness{
 	
 	public static Logger logger = Logger.getLogger(StudentBusiness.class);
+	StudentDao studentDao = new StudentDaoImpl();
 	
-	public void payfee() {
+	/**
+	 * Option to pay fee
+	 * @param student
+	 */
+	public void payFee(Student student) {
 		
 		logger.info("payfee function, StudentBusiness class");
 		
 	}
-	public void selectcourses() {
+	/**
+	 * Select courses from the remaining courses
+	 * @param student
+	 */
+	public void selectCourses(Student student) {
+		
 		
 		logger.info("selectcourses function, StudentBusiness class");
 		
 	}
-	public void viewreportcard() {
+	/**
+	 * To View report card
+	 * @param student
+	 */
+	public void viewReportCard(Student student) {
 		
+		studentDao.viewGrades(student.getStudentId()).forEach((k,v) -> logger.info(k + "\t" + v));
 		logger.info("viewreportcard function, StudentBusiness class");
 		
 	}
-	public void addcourses() {
+	/**
+	 * Function to add courses in student preexisting list of courses
+	 * @param courseId
+	 * @param student
+	 */
+	public void addCourses(String courseId, Student student) {
 		
-		logger.info("addcourses function, StudentBusiness class");
+		try {
+			studentDao.addCourse(courseId, student.getStudentId());
+		}catch(Exception e) {
+			logger.error(e.getMessage());
+		}
+		logger.info("addcourses function, RegisteredCoursesBusiness class");
+		//logger.info("addcourses function, StudentBusiness class");
 		
 	}
-	public void dropcourses() {
+	/**
+	 * Option to drop course from existing list of registered courses
+	 * @param courseId
+	 * @param student
+	 */
+	public void dropcourses(String courseId, Student student) {
+		//added Course not found exception
+		try {
+			studentDao.dropCourse(courseId, student.getStudentId());
+		}catch(Exception e) {
+			logger.error(e.getMessage());
+		}
 		
-		logger.info("dropcourses function, StudentBusiness class");
+		logger.info("dropcourses function, RegisteredCoursesBusiness class");
 		
 	}
 	

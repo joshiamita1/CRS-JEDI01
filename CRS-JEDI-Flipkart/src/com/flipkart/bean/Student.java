@@ -28,6 +28,9 @@ public class Student extends User {
 	public void setBranch(String branch) {
 		this.branch = branch;
 	}
+	public String getName() {
+		return name;
+	}
 	/*public ArrayList<Course> getCoursesRegistered() {
 		return coursesRegistered;
 	}

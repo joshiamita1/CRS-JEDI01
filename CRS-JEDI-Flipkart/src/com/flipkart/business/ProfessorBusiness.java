@@ -23,12 +23,24 @@ public class ProfessorBusiness {
 	
 	public static Logger logger = Logger.getLogger(ProfessorBusiness.class);
 	
+	/**
+	 * Function to grade a student
+	 * @param courseCode
+	 * @param student
+	 * @param grade
+	 */
 	public void gradeStudent(String courseCode, Student student, Grade grade) {
 		Course course = courseCatalogObject.getCourse(courseCode);
 		Map<Student, Grade> mp= course.getStudentsGrades();
 		mp.put(student, grade);
 		courseCatalogObject.modifyCourse(courseCode, course);
 	}
+	
+	/**
+	 * Allows to view all the registered students of a course
+	 * @param courseCode
+	 * @return
+	 */
 	public TreeSet<Student> viewRegisteredStudents(String courseCode) {
 		Course course = courseCatalogObject.getCourse(courseCode);
 		Map<Student, Grade> mp = course.getStudentsGrades();
