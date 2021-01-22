@@ -12,18 +12,21 @@ public class Professor extends User {
 	
 	// List of course codes professor is teaching
 	private List<String> coursesList;
-	public Professor(String userId, String emailId, String name, long mobile, Role role, Gender gender,
+	
+	// Parameterized Constructor
+	public Professor(String userId, String emailId, String password, String name, long mobile, Role role, Gender gender,
 			String department) {
-		super(userId, emailId, name, mobile, role, gender);
+		super(userId, emailId, password, name, mobile, role, gender);
 		this.department = department;
-		this.coursesList = new ArrayList<String>();
 	}
+	
 	/**
 	 * @return the department
 	 */
 	public String getDepartment() {
 		return department;
 	}
+
 	/**
 	 * @param department the department to set
 	 */

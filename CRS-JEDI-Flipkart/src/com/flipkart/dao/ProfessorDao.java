@@ -1,11 +1,20 @@
 package com.flipkart.dao;
 
 import com.flipkart.bean.Professor;
-import com.flipkart.bean.Course;
+
+import java.util.List;
+
 public interface ProfessorDao {
+	
+	// Add Professor
 	public void addProfessor(Professor professor);
-	public void addCourse(String professorId, Course course);
-	public Professor getProfessorDetails(String uName);
+	
+	// Delete Professor
 	public void deleteProfessor(String professorId);
-	public boolean checkCredentials(String uName,String password);
+	
+	// Get All Professors
+	public List<String> getProfessors();
+	
+	// Get Professor's info
+	public Professor getProfessor(String professorId);
 }
