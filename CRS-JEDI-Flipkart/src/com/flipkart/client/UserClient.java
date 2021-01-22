@@ -89,13 +89,13 @@ public class UserClient {
 				switch(r) {
 				case ADMIN :
 					logger.info("Successfully Logged in as Admin");
-					adminClient.displayMenu(userId);
+					adminClient.displayMenu();
 					break;
 				case PROFESSOR:
-					professorClient.displayMenu(userId);
+					professorClient.displayMenu();
 					break;
 				case STUDENT:
-					studentClient.displayMenu(userId);
+					studentClient.displayMenu();
 					break;
 				}
 		}
