@@ -10,9 +10,6 @@ public class User {
 	// Email Id of the user
 	String emailId;
 	
-	// Password of the user
-	String password;
-	
 	// Name of the user
 	String name;
 	
@@ -25,12 +22,22 @@ public class User {
 	// Gender of the user
 	Gender gender;
 	
+	// Address of the user
+	String address;
+	
+	// City of the user
+	String city;
+	
+	// Country of the user
+	String country;
+	
+	// State of the user
+	String state;
 	
 	// Parameterized Constructor
 	public User(String userId, String emailId, String password, String name, long mobile, Role role, Gender gender) {
 		this.userId = userId;
 		this.emailId = emailId;
-		this.password = password;
 		this.name = name;
 		this.mobile = mobile;
 		this.role = role;
@@ -121,19 +128,5 @@ public class User {
 		this.gender = gender;
 	}
 
-	/**
-	 * @return the password
-	 */
-	public String getPassword() {
-		return password;
-	}
-
-	/**
-	 * @param password the password to set
-	 */
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	
 	
 }
