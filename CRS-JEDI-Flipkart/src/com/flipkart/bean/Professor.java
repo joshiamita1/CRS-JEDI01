@@ -10,9 +10,6 @@ public class Professor extends User {
 	// Department of the professor
 	private String department;
 	
-	// List of course codes professor is teaching
-	private List<String> coursesList;
-	
 	// Parameterized Constructor
 	public Professor(String userId, String emailId, String password, String name, long mobile, Role role, Gender gender,
 			String department) {
@@ -33,18 +30,5 @@ public class Professor extends User {
 	public void setDepartment(String department) {
 		this.department = department;
 	}
-	/**
-	 * @return the coursesList
-	 */
-	public List<String> getCoursesList() {
-		return coursesList;
-	}
-	/**
-	 * @param coursesList the coursesList to set
-	 */
-	public void setCoursesList(List<String> coursesList) {
-		this.coursesList = coursesList;
-	}
-	
 		
 }

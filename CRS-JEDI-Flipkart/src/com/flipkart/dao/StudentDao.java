@@ -6,9 +6,27 @@ import com.flipkart.bean.*;
 import com.flipkart.constant.Grade;
 
 public interface StudentDao {
+	// Add Student
 	public void addStudent(Student student);
-	public void registerCourse(int studentId, Course course);
-	public void dropCourse(int studentId, int courseId);
-	public ArrayList<Course> viewRegisteredCourses(int studentId);
-	public Map<Course, Grade> viewGrades(int studentId);
+	
+	// Modify Student
+	public void modifyStudent(String studentId, Student student);
+	
+	// Get Student
+	public Student getStudent(String studentId);
+	
+	// Add Grade
+	public void addGrade(String studentId, String courseCode, Grade grade);
+	
+	// Register A Course
+	public void registerCourse(String studentId, String courseId);
+	
+	// Drop Course
+	public void dropCourse(String studentId, String courseId);
+	
+	// View Registered Courses
+	public ArrayList<Course> viewRegisteredCourses(String studentId);
+	
+	// View Grades
+	public Map<String, Grade> viewGrades(String studentId);
 }

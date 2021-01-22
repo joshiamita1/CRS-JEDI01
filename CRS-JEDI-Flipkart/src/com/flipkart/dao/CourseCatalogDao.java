@@ -1,8 +1,10 @@
 package com.flipkart.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import com.flipkart.bean.*;
+import com.flipkart.constant.Grade;
 
 
 public interface CourseCatalogDao {
@@ -19,9 +21,9 @@ public interface CourseCatalogDao {
 	// Get all courses
 	public List<String> getCourses();
 	
+	// View Grades
+	public Map<String, Grade> viewGrades(String courseCode);
+	
 	// Get Course Info
 	public Course getCourse(String courseCode);
-	
-	// Add 
-	public void addRegisteredStudent(String courseCode, Student student);
 }
