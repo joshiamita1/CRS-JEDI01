@@ -8,11 +8,11 @@ import com.flipkart.constant.Role;
 
 public class Professor extends User {
 	// Department of the professor
-	private String department;
+	private Department department;
 	
 	// Parameterized Constructor
 	public Professor(String userId, String emailId, String password, String name, long mobile, Role role, Gender gender,
-			String department) {
+			Department department) {
 		super(userId, emailId, password, name, mobile, role, gender);
 		this.department = department;
 	}
@@ -20,14 +20,14 @@ public class Professor extends User {
 	/**
 	 * @return the department
 	 */
-	public String getDepartment() {
+	public Department getDepartment() {
 		return department;
 	}
 
 	/**
 	 * @param department the department to set
 	 */
-	public void setDepartment(String department) {
+	public void setDepartment(Department department) {
 		this.department = department;
 	}
 		
