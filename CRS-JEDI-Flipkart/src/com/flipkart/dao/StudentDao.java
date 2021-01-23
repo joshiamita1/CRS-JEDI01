@@ -6,27 +6,65 @@ import com.flipkart.bean.*;
 import com.flipkart.constant.Grade;
 
 public interface StudentDao {
-	// Add Student
+	
+	/**
+	 * Add Student
+	 * @param student
+	 * @returnType void
+	 */
 	public void addStudent(Student student);
 	
-	// Modify Student
+	/**
+	 * Modify a given student details
+	 * @param studentId
+	 * @param student
+	 * @returnType void
+	 */
 	public void modifyStudent(int studentId, Student student);
 	
-	// Get Student
+	/**
+	 * Get Student from his id
+	 * @param studentId
+	 * @returnType Student
+	 */
 	public Student getStudent(int studentId);
 	
-	// Add Grade
+	/**
+	 * Add Grade for a given student in a course
+	 * @param studentId
+	 * @param courseCode
+	 * @param grade
+	 * @returnType void
+	 */
 	public void addGrade(int studentId, String courseCode, Grade grade);
 	
-	// Register A Course
+	/**
+	 * Register a student to a Course
+	 * @param studentId
+	 * @param courseId
+	 * @returnType void
+	 */
 	public void registerCourse(int studentId, String courseId);
 	
-	// Drop Course
+	/**
+	 * Drop a course for a student 
+	 * @param studentId
+	 * @param courseId
+	 * @returnType void
+	 */
 	public void dropCourse(int studentId, String courseId);
 	
-	// View Registered Courses
+	/**
+	 * View Registered Courses of a student
+	 * @param studentId
+	 * @returnType ArrayList<Integer>
+	 */
 	public ArrayList<Integer> viewRegisteredCourses(int studentId);
 	
-	// View Grades
+	/**
+	 * View all grades of a student
+	 * @param studentId
+	 * @returnType Map<String,Grade>
+	 */
 	public Map<String, Grade> viewGrades(int studentId);
 }
