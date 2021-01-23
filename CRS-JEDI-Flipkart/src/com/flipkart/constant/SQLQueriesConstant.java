@@ -16,7 +16,7 @@ public class SQLQueriesConstant{
 	public static String DELETE_USER_QUERY = "delete from authorcredential where userId = ? ";
 	public static String GET_USER_DETAIL_ID = "select username, password, role from authorcredential where id = ?";
 	public static String ADD_NEW_USER_QUERY = "insert into authorcredential(username, password, role, id) values(?,?,?,?)";
-
+	public static String MODIFY_USER_QUERY ="update authorcredential  set username = ?,password = ?,role = ?  where userId=?";
 	
 	//NotificationSystem
 	public static String NOTIFICATION_QUERY="insert into notificationsystem (UserID , Message, TimeNotified) values (?, ?,?)";
