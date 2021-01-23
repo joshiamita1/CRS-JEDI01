@@ -6,15 +6,32 @@ import java.util.List;
 
 public interface ProfessorDao {
 	
-	// Add Professor
+	/**
+	 * Add a professor to the list of existing professors
+	 * @param professor
+	 * @returnType void
+	 */
 	public void addProfessor(Professor professor);
 	
-	// Delete Professor
+	/**
+	 * Delete a professor
+	 * @param professorId
+	 * @returnType void
+	 */
 	public void deleteProfessor(String professorId);
 	
-	// Get All Professors
+	/**
+	 * Get list of all professors
+	 * @return
+	 * @returnType List<String>
+	 */
 	public List<String> getProfessors();
 	
-	// Get Professor's info
+	/**
+	 * get details of a particular professor from the id
+	 * @param professorId
+	 * @return
+	 * @returnType Professor
+	 */
 	public Professor getProfessor(String professorId);
 }
