@@ -33,7 +33,6 @@ public interface CourseCatalogDao {
 	
 	/**
 	 * Get a list of all courses
-	 * @return
 	 * @returnType List<String>
 	 */
 	public List<String> getCourses();
@@ -41,7 +40,6 @@ public interface CourseCatalogDao {
 	/**
 	 * 
 	 * @param courseCode
-	 * @return
 	 * @returnType Map<String,Grade>
 	 */
 	public Map<String, Grade> viewGrades(String courseCode);
@@ -49,7 +47,6 @@ public interface CourseCatalogDao {
 	/**
 	 * Get information about a course
 	 * @param courseCode
-	 * @return
 	 * @returnType Course
 	 */
 	public Course getCourse(String courseCode);
