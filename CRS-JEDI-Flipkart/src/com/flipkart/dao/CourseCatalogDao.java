@@ -9,21 +9,48 @@ import com.flipkart.constant.Grade;
 
 public interface CourseCatalogDao {
 	
-	// Add course
+	/**
+	 * Add a course to existing course list
+	 * @param course
+	 * @returnTpye void
+	 */
 	public void addCourse(Course course);
 	
-	// Delete course
+	/**
+	 * Delete a course
+	 * @param courseCode
+	 * @returnType void
+	 */
 	public void deleteCourse(String courseCode);
 	
-	// Modify course
+	/**
+	 * Modify a course
+	 * @param courseCode
+	 * @param course
+	 * @returnType void
+	 */
 	public void modifyCourse(String courseCode, Course course);
 	
-	// Get all courses
+	/**
+	 * Get a list of all courses
+	 * @return
+	 * @returnType List<String>
+	 */
 	public List<String> getCourses();
 	
-	// View Grades
+	/**
+	 * 
+	 * @param courseCode
+	 * @return
+	 * @returnType Map<String,Grade>
+	 */
 	public Map<String, Grade> viewGrades(String courseCode);
 	
-	// Get Course Info
+	/**
+	 * Get information about a course
+	 * @param courseCode
+	 * @return
+	 * @returnType Course
+	 */
 	public Course getCourse(String courseCode);
 }
