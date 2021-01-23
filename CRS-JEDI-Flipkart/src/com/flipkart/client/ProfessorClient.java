@@ -17,7 +17,7 @@ public class ProfessorClient {
 	Scanner sc = new Scanner(System.in);
 	ProfessorBusiness profbusiness = new ProfessorBusiness(); 
 
-public void displayMenu(Professor professor) {
+public void displayMenu() {
 		
 	int choice=-1;
 	do {
@@ -30,14 +30,8 @@ public void displayMenu(Professor professor) {
 		switch(choice) {
 		
 		case 1:
-			Set<Student> studentlist=profbusiness.viewRegisteredStudents("101");
-			for(Student st:studentlist) {
-				logger.info(st.getName()+" "+ st.getStudentId());
-			}
 			break;
 		case 2:
-			Student student1 = new Student("1","abhishek@gmail.com","Abhishek",9876511,Role.STUDENT,Gender.MALE,"1","EEE");
-			profbusiness.gradeStudent("101",student1,Grade.A);
 			break;
 		case 9:break;
 		default: logger.info("eneter a valid choice");
