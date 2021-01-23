@@ -1,5 +1,5 @@
 .classpath
 .project
 /bin/
-.settings/
-/CRS-JEDI-Flipkart/bin/
+/.settings
+CRS-JEDI-Flipkart/bin/
