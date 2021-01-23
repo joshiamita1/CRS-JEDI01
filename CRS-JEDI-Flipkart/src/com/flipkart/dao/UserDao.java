@@ -26,7 +26,7 @@ public interface UserDao {
 	 * @param userId
 	 * @returnType void
 	 */
-	public void modifyUser(String userId);
+	public void modifyUser(String userId, User user);
 	
 	/**
 	 * Get a list of ids of all users in the database
