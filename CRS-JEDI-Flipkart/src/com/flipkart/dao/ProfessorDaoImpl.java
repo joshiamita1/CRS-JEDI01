@@ -54,18 +54,21 @@ public class ProfessorDaoImpl implements ProfessorDao {
 		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.GET_PROF_DETAIL);
 			ResultSet resultSet = statement.executeQuery();
-			
-			String userId = resultSet.getString("userId");
-			String emailId = resultSet.getString("emailId");
-			String password = resultSet.getString("password");
-			String name = resultSet.getString("name");
-			long mobile = resultSet.getLong("mobile");
-			Role role = (Role) resultSet.getObject("role");
-			Gender gender = (Gender)resultSet.getObject("gender");
-			String dept = resultSet.getString("dept");
-			
-			Professor professor = new Professor( userId, emailId, password, name, mobile, role, gender, dept);
-			return professor;
+			if(resultSet.next()){
+				
+				String userId = resultSet.getString("userId");
+				String emailId = resultSet.getString("emailId");
+				String password = resultSet.getString("password");
+				String name = resultSet.getString("name");
+				long mobile = resultSet.getLong("mobile");
+				Role role = Role.valueOf(resultSet.getObject("role"));
+				Gender gender = Gender.valueOf(resultSet.getObject("gender"));
+				Department dept = Department.valueOf(resultSet.getString("dept"));
+
+				Professor professor = new Professor( userId, emailId, password, name, mobile, role, gender, dept);
+				return professor;
+			}
+			return null;
 		}catch(Exception e) {
 			logger.error(e.getMessage());
 		}
@@ -78,12 +81,25 @@ public class ProfessorDaoImpl implements ProfessorDao {
 		// TODO Auto-generated method stub
 		PreparedStatement stmt = null;
 		try {
-			stmt = connection.prepareStatement(SQLQueriesConstant.ADD_NEW_USER_QUERY);
-			stmt.setString(1,professor.getName());
-			stmt.setString(2,professor.getPassword());
-			stmt.setObject(3, "PROFESSOR");
-			stmt.setString(4,professor.getUserId());
+			stmt = connection.prepareStatement(SQLQueriesConstant.ADD_NEW_PROF_QUERY);
+
+			stmt.setString(1,professor.getUserId());
+			stmt.setObject(2,String.valueOf(professor.getDepartment()));
+			stmt.setObject(3,String.valueOf(professor.getGender()));
+			stmt.setString(4,professor.getCity());
+			stmt.setString(5,professor.getAddress());
+			stmt.setString(6,professor.getCountry());
+			stmt.setString(7,professor.getState());
+			stmt.setLong(8,professor.getMobile());
+			stmt.setString(9,professor.getEmailId());
+			
 			int rows = stmt.executeUpdate();
+			if(rows > 0) {
+				logger.info("Added Professor sucessfully");
+			}
+			else {
+				logger.info("Error during insertion");
+			}
 			logger.info(rows + " professor added");
 		}catch(SQLException se) {
 			logger.error(se.getMessage());
