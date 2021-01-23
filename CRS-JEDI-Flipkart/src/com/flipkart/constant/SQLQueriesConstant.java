@@ -19,6 +19,8 @@ public class SQLQueriesConstant{
 	public static String DELETE_USER_QUERY = "delete from authorcredential where userId = ? ";
 	public static String GET_USER_DETAIL_ID = "select username, password, role from authorcredential where id = ?";
 	
+	//NotificationSystem
+	public static String NOTIFICATION_QUERY="insert into notificationsystem (UserID , Message, TimeNotified) values (?, ?,?)";
 	// View Courses
 	public static String VIEW_CATALOG_QUERY = "select courseId, courseName, fees, courseDescription from Course";
 	public static String VIEW_COURSE_QUERY = "select * from Course where courseId = ?";
@@ -32,12 +34,16 @@ public class SQLQueriesConstant{
 	public static String DROP_COURSE_STUDENT_QUERY = "delete from RegisteredCourse where  studentId = ? and courseId = ? ";
 	public static String GET_REGISTERED_COURSES_QUERY = "select rc.studentId, rc.courseId,cc.CourseName from RegisteredCourse as rc inner join coursecatalog as cc on rc.courseID =cc.CourseCode where rc.studentId = ?";
 	public static String VIEW_GRADES_QUERY = "select * from RegisteredCourse where studentId = ?";
+	public static String COUNT_COURSE= "select count(CourseId) as coursecount from RegisteredCourse where studentId = ?";
+	public static String UPDATE_FEE="update Student set AmountPayable = ? where studentId=?";
+	public static String MAKE_PAYMENT_QUERY = "insert into Payment(studentId, AmountPaid,DateofPayment) values(?, ?, ?)";
+	public static String GET_FEE_QUERY="select amountPayable from student where StudentId= ?";
 	/*
 	public static String COUNT_REGISTERED_COURSES_QUERY = "select count(*) from RegisteredCourses where studentId = ?";
 	public static String CHECK_IF_REGISTERED_TO_COURSE_QUERY = "select count(*) from RegisteredCourses where studentId = ? and courseId = ?";
 	public static String GET_STUDENT_NAME_QUERY = "select * from Student where studentId = ?";
 	public static String VIEW_GRADES_QUERY = "select c.courseId, c.courseName, rc.grade from Course c join RegisteredCourses rc on rc.courseId = c.courseId where rc.studentId = ?";
-	public static String CALCULATE_TOTAL_FEE = "select sum(c.fees) from RegisteredCourses rc join Course c on c.courseId = rc.courseId where rc.studentId = ?"; 
+	 
 	public static String MAKE_PAYMENT_QUERY = "insert into Payment(studentId, feesPaid, paymentMethodId, paymentDate) values(?, ?, ?, ?)";
 	public static String UPDATE_AFTER_PAYMENT = "update Student set isRegistered = 1 where studentId = ?";
 	*/
