@@ -5,9 +5,15 @@ import java.util.List;
 import com.flipkart.bean.User;
 
 public interface AdminDao {
-	// Add Admin
+	/**
+	 * Adds an admin
+	 * @param admin
+	 */
 	public void addAdmin(User admin);
 	
-	// Delete Admin
+	/**
+	 * Deletes an admin
+	 * @param adminId
+	 */
 	public void deleteAdmin(String adminId);
 }
