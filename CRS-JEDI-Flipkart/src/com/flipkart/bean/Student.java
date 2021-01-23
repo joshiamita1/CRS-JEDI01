@@ -20,8 +20,8 @@ public class Student extends User {
 	double amountPayable;
 	
 	// Parameterized Constructor
-	public Student(String userId, String emailId, String password, String name, long mobile, Role role, Gender gender,
-			String branch, boolean hasScholarship, boolean isApproved) {
+		public Student(String userId, String emailId, String password, String name, long mobile, Role role, Gender gender,
+				String branch, boolean hasScholarship, boolean isApproved) {
 		super(userId, emailId, password, name, mobile, role, gender);
 		this.branch = branch;
 		this.hasScholarship = hasScholarship;

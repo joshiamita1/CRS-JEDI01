@@ -10,23 +10,23 @@ public interface StudentDao {
 	public void addStudent(Student student);
 	
 	// Modify Student
-	public void modifyStudent(String studentId, Student student);
+	public void modifyStudent(int studentId, Student student);
 	
 	// Get Student
-	public Student getStudent(String studentId);
+	public Student getStudent(int studentId);
 	
 	// Add Grade
-	public void addGrade(String studentId, String courseCode, Grade grade);
+	public void addGrade(int studentId, String courseCode, Grade grade);
 	
 	// Register A Course
-	public void registerCourse(String studentId, String courseId);
+	public void registerCourse(int studentId, String courseId);
 	
 	// Drop Course
-	public void dropCourse(String studentId, String courseId);
+	public void dropCourse(int studentId, String courseId);
 	
 	// View Registered Courses
-	public ArrayList<Course> viewRegisteredCourses(String studentId);
+	public ArrayList<Integer> viewRegisteredCourses(int studentId);
 	
 	// View Grades
-	public Map<String, Grade> viewGrades(String studentId);
+	public Map<String, Grade> viewGrades(int studentId);
 }
