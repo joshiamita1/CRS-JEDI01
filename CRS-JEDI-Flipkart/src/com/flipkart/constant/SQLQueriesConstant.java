@@ -22,8 +22,19 @@ public class SQLQueriesConstant{
 	public static String NOTIFICATION_QUERY="insert into notificationsystem (UserID , Message, TimeNotified) values (?, ?,?)";
 	
 	// View Courses
-	public static String VIEW_CATALOG_QUERY = "select courseId, courseName, fees, courseDescription from Course";
-	public static String VIEW_COURSE_QUERY = "select * from Course where courseId = ?";
+	public static String VIEW_COURSE_QUERY = "select * from Course";
+	public static String VIEW_COURSEID_QUERY = "select courseId from Course";
+	public static String VIEW_COURSE_PROF_COUNT_QUERY = "select count(*) as pcCount from Course where courseId=? AND ProfessorId=?";
+	public static String VIEW_PROFESSOR_DETAIL_QUERY = "select * from Course where ProfessorId=?";
+	public static String VIEW_COURSEINCATALOG_QUERY = "select courseId from Course where CatalogId=?";
+	public static String ADD_NEW_COURSE_QUERY = "insert into Course(CatalogID, courseId, CatalogDetail, ProfessorId, courseName) values (?, ?, ?, ?, ?)";
+	public static String VIEW_COURSEGRADES_QUERY = "select * from RegisteredCourses where CourseId=?";
+	public static String DELETE_COURSE_QUERY = "delete from Course where CourseId = ? ";
+	public static String UPDATE_COURSE_QUERY = "update Course SET ProfessorId=?, courseName=? WHERE courseId = ?";
+	public static String UPDATE_COURSEPROF_QUERY = "update Course SET ProfessorId=? WHERE courseId = ?";
+	public static String COUNT_REGISTERED_STUDENTS_QUERY = "select count(*) as StudentCount from RegisteredCourses where (CourseId = ?)";
+	public static String CHECK_REGISTERED_COURSE_QUERY = "select count(*) as CourseCount from RegisteredCourses where (StudentId = ? AND CourseId = ?)";
+	public static String COUNT_REGISTERED_COURSE_QUERY = "select count(*) as CourseCount from RegisteredCourses where (StudentId = ?)";
 	
 	// Student Queries
 	public static String MODIFY_STUDENT_QUERY ="update Student  set Name = ?,Email = ?,Mobile = ?,Gender = ?, branch = ?, hasScholarship = ?, isApproved = ?,city = ?, address = ?,state = ?  where studentId=?";
