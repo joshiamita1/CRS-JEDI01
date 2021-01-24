@@ -12,14 +12,29 @@ import com.flipkart.constant.*;
 import com.flipkart.constant.*;
 import com.flipkart.util.DBUtil;
 
+/**
+ * @author surya
+ *
+ */
+/**
+ * @author surya
+ *
+ */
+/**
+ * @author surya
+ *
+ */
 public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 
 	public static Logger logger = Logger.getLogger(CourseCatalogDaoImpl.class);
 	Connection connection = DBUtil.getConnection();
 
+	/**
+	 * Add a new course into the Course Catalog table in the database
+	 */
 	@Override
 	public void addCourse(Course course) {
-		// TODO Auto-generated method stub
+		
 		PreparedStatement stmt = null;
 		try {
 			stmt = connection.prepareStatement(SQLQueriesConstant.ADD_NEW_COURSE_QUERY);
@@ -42,10 +57,14 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			}
 		}
 	}
-
+	
+	
+	/**
+	 * Delete a course from the Course Catalog table in the database
+	 */
 	@Override
 	public void deleteCourse(String courseCode) {
-		// TODO Auto-generated method stub
+		
 		PreparedStatement stmt = null;
 		try {
 			stmt = connection.prepareStatement(SQLQueriesConstant.DELETE_COURSE_QUERY);
@@ -65,6 +84,9 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 		}
 	}
 
+	/**
+	 * Modify a course in the Course Catalog table in the database
+	 */
 	@Override
 	public void modifyCourse(String courseCode, Course course) {
 		// TODO Auto-generated method stub
@@ -89,6 +111,9 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 		}
 	}
 
+	/**
+	 * Returns the list of existing courses in the Course Catalog table in the database
+	 */
 	@Override
 	public ArrayList<String> getCourses() {
 		// TODO Auto-generated method stub
@@ -116,6 +141,9 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 		return null;
 	}
 
+	/**
+	 *	Return a course which has the course code as the parameter specified
+	 */
 	@Override
 	public Course getCourse(String courseCode) {
 		// TODO Auto-generated method stub
@@ -152,6 +180,9 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 		return null;
 	}
 
+	/**
+	 * Return the student grades of the course which has course id as specified by the parameter
+	 */
 	@Override
 	public Map<String, Grade> viewGrades(String courseCode) {
 		// TODO Auto-generated method stub
@@ -163,9 +194,9 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			statement.setString(1, courseCode);
 			resultSet = statement.executeQuery();
 			while(resultSet.next()) {
-				String courseId = resultSet.getString("CourseId");
+				String studentId = resultSet.getString("StudentId");
 				Grade grade = Grade.valueOf(resultSet.getString("Grade"));
-				courseGrades.put(courseId, grade);
+				courseGrades.put(studentId, grade);
 			}
 			return courseGrades;
 		}catch(Exception e) {
