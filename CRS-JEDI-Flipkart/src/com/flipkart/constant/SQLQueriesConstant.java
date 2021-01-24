@@ -18,7 +18,7 @@ public class SQLQueriesConstant{
 	public static String GET_USER_DETAIL_ROLE = "select id from authorcredential where role = ?";
 	public static String DELETE_USER_QUERY = "delete from authorcredential where userId = ? ";
 	public static String GET_USER_DETAIL_ID = "select username, password, role from authorcredential where id = ?";
-	
+
 	//Courses queries
 	//public static String VIEW_CATALOG_QUERY = "select courseId, courseName, fees, courseDescription from Course";
 	public static String VIEW_COURSE_QUERY = "select * from Course";
@@ -63,11 +63,10 @@ public class SQLQueriesConstant{
 	public static String UPDATE_COURSE_PROFESSOR_QUERY = "update Course SET professor=? WHERE courseId = ?";
 	//public static String ADD_NEW_COURSE_QUERY = "insert into Course(courseId, courseName, fees, courseDescription, catalogId) values (?,?, ?, ?, ?)";
 	//public static String DELETE_COURSE_QUERY = "delete from Course where courseId = ?";
+
 	public static String REGISTER_USER_QUERY = "insert into user(UserId, username, password, roleId) values (?,?,?,?)";
 	public static String ASSIGN_PROFESSOR_QUERY = "insert into ProfessorCourse(courseId, professorId) values (?, ?)";
 	
 	public static String DELETE_ADMIN_QUERY = "delete from admin where adminId = ? ";
-	
-	// Grade Queries
 	
 }

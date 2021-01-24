@@ -16,10 +16,11 @@ public interface UserDao {
 	// Modify User
 	public void modifyUser(String userId);
 	
-	// Get all users
+
+	// Get all usersId
 	public List<String> getUsers();
-	
-	// Get all users with particular role
+
+	// Get all users with particular role, return userId
 	public List<String> getUsers(Role role);
 	
 	// Get User

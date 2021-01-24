@@ -33,6 +33,7 @@ public class ProfessorDaoImpl implements ProfessorDao {
 				newListProf.add(profId);
 			}
 			return newListProf;
+
 		}catch(Exception e) {
 			logger.error(e.getMessage());
 		}finally {
