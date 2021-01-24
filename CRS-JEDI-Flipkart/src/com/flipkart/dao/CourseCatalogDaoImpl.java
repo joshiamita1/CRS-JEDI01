@@ -41,13 +41,7 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			logger.error(se.getMessage());
 		}catch(Exception e) {
 			logger.error(e.getMessage());
-		}finally {
-			try {
-				stmt.close();
-			}catch(Exception se) {
-				se.printStackTrace();
-			}
-		}
+		} 
 	}
 	
 	
@@ -67,12 +61,6 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			logger.error(se.getMessage());
 		}catch(Exception e) {
 			logger.error(e.getMessage());
-		}finally {
-			try {
-				stmt.close();
-			}catch(Exception se) {
-				se.printStackTrace();
-			}
 		}
 	}
 
@@ -94,12 +82,6 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			logger.error(se.getMessage());
 		}catch(Exception e) {
 			logger.error(e.getMessage());
-		}finally {
-			try {
-				stmt.close();
-			}catch(Exception se) {
-				se.printStackTrace();
-			}
 		}
 	}
 
@@ -117,18 +99,12 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			resultSet = statement.executeQuery();
 			while(resultSet.next()) {
 				int courseId = resultSet.getInt("CourseId");
+				
 				newListCourses.add(courseId);
 			}
 			return newListCourses;
 		}catch(Exception e) {
 			logger.error(e.getMessage());
-		}finally {
-			try {
-				resultSet.close();
-				statement.close();
-			}catch(Exception se) {
-				se.printStackTrace();
-			}
 		}
 		return null;
 	}
@@ -145,6 +121,7 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.VIEW_COURSE_QUERY);
 			statement.setInt(1,courseCode);
+			logger.info("get data for "+ courseCode);
 			resultSet = statement.executeQuery();
 			int courseId=0,professorId = 0, catalogId = 0;
 			String  courseName = null;
@@ -155,16 +132,11 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 				catalogId = resultSet.getInt("CatalogId");	
 			}
 			course = new Course (courseCode, courseName, catalogId, professorId);
+			logger.info("here"+ courseName);
 			return course;
 		}catch(Exception e) {
 			logger.error(e.getMessage());
-		}finally {
-			try {
-				resultSet.close();
-				statement.close();
-			}catch(Exception se) {
-				se.printStackTrace();
-			}
+		
 		}
 		return null;
 	}
@@ -190,14 +162,8 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			return courseGrades;
 		}catch(Exception e) {
 			logger.error(e.getMessage());
-		}finally {
-			try {
-				resultSet.close();
-				statement.close();
-			}catch(Exception se) {
-				se.printStackTrace();
-			}
 		}
+		
 		return null;
 	}
 
@@ -219,12 +185,6 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			logger.error(se.getMessage());
 		}catch(Exception e) {
 			logger.error(e.getMessage());
-		}finally {
-			try {
-				statement.close();
-			}catch(Exception se) {
-				se.printStackTrace();
-			}
 		}
 	}
 
@@ -249,13 +209,6 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			return newListCourses;
 		}catch(Exception e) {
 			logger.error(e.getMessage());
-		}finally {
-			try {
-				resultSet.close();
-				statement.close();
-			}catch(Exception se) {
-				se.printStackTrace();
-			}
 		}
 		return null;
 	}
@@ -279,13 +232,6 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			return rows;
 		}catch(Exception e) {
 			logger.error(e.getMessage());
-		}finally {
-			try {
-				resultSet.close();
-				statement.close();
-			}catch(Exception se) {
-				se.printStackTrace();
-			}
 		}
 		return 0;
 	}
@@ -310,14 +256,7 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			return (count>0);
 		}catch(Exception e) {
 			logger.error(e.getMessage());
-		}finally {
-			try {
-				resultSet.close();
-				statement.close();
-			}catch(Exception se) {
-				se.printStackTrace();
-			}
-		}		
+		}
 		return false;
 	}
 
@@ -342,13 +281,6 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			return newCourseList;
 		}catch(Exception e) {
 			logger.error(e.getMessage());
-		}finally {
-			try {
-				resultSet.close();
-				statement.close();
-			}catch(Exception se) {
-				se.printStackTrace();
-			}
 		}
 		return null;
 	}
@@ -374,14 +306,7 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			return (count>0);
 		}catch(Exception e) {
 			logger.error(e.getMessage());
-		}finally {
-			try {
-				resultSet.close();
-				statement.close();
-			}catch(Exception se) {
-				se.printStackTrace();
-			}
-		}		
+		} 
 		return false;
 	}
 
@@ -405,14 +330,7 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			return (count);
 		}catch(Exception e) {
 			logger.error(e.getMessage());
-		}finally {
-			try {
-				resultSet.close();
-				statement.close();
-			}catch(Exception se) {
-				se.printStackTrace();
-			}
-		}		
+		}	
 		return 0;
 	}		
 }

@@ -10,6 +10,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 import com.flipkart.bean.Professor;
+import com.flipkart.bean.Student;
 import com.flipkart.bean.User;
 import com.flipkart.constant.Gender;
 import com.flipkart.constant.Role;
@@ -141,7 +142,7 @@ public class UserDaoImpl implements UserDao {
 			ResultSet resultSet = statement.executeQuery();
 			if(resultSet.next()){
 				
-				String name = resultSet.getString("name");
+				String name = resultSet.getString("username");
 				Role role = Role.valueOf(resultSet.getString("role")); 
 				
 				User user = new User();
@@ -163,8 +164,8 @@ public class UserDaoImpl implements UserDao {
 	@Override
 	public String getPassword(int userId) {
 		// TODO Auto-generated method stub
-PreparedStatement statement = null;
-		
+		PreparedStatement statement = null;
+		logger.info(userId);
 		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.GET_USER_DETAIL_ID);
 			statement.setInt(1,userId);
@@ -172,6 +173,7 @@ PreparedStatement statement = null;
 			if(resultSet.next()){
 				
 				String password = resultSet.getString("password");
+				logger.info(password);
 				return password;
 			}
 			else{
@@ -185,5 +187,24 @@ PreparedStatement statement = null;
 	
 	}
 
-
+	
+	public int lastEntry() {
+		PreparedStatement statement = null;
+		int userId=0;
+		try {
+			statement =connection.prepareStatement(SQLQueriesConstant.GET_LAST_ENTRY);
+			ResultSet resultSet = statement.executeQuery();
+			if(resultSet.next()){
+				userId=resultSet.getInt("ID");
+				
+				
+			}
+			return userId;
+		}
+		catch(Exception e) {
+			logger.error(e.getMessage());
+			return -1;
+		}
+		
+	}
 }

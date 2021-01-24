@@ -11,33 +11,33 @@ package com.flipkart.constant;
 public class SQLQueriesConstant{
 	
 	//General Queries
-	public static String GET_LAST_ENTRY = " SELECT ID from authorcredential order by ID desc limit 1  ";
+	public static String GET_LAST_ENTRY = " SELECT ID from authorcredentialdb order by ID desc limit 1  ";
 	
 	//Login query for a user
-	public static String GET_USER_DETAIL = "select id from authorcredential ";
-	public static String GET_USER_DETAIL_ROLE = "select id from authorcredential where role = ?";
-	public static String DELETE_USER_QUERY = "delete from authorcredential where userId = ? ";
-	public static String GET_USER_DETAIL_ID = "select username, password, role from authorcredential where id = ?";
-	public static String ADD_NEW_USER_QUERY = "insert into authorcredential(username, password, role) values(?,?,?)";
-	public static String MODIFY_USER_QUERY ="update authorcredential  set username = ?,role = ?  where userId=?";
+	public static String GET_USER_DETAIL = "select id from authorcredentialdb ";
+	public static String GET_USER_DETAIL_ROLE = "select id from authorcredentialdb where role = ?";
+	public static String DELETE_USER_QUERY = "delete from authorcredentialdb where userId = ? ";
+	public static String GET_USER_DETAIL_ID = "select username, password, role from authorcredentialdb where id = ?";
+	public static String ADD_NEW_USER_QUERY = "insert into authorcredentialdb (username, password, role) values(?,?,?)";
+	public static String MODIFY_USER_QUERY ="update authorcredentialdb set username = ?,role = ?  where userId=?";
 	
 	//NotificationSystem
 	public static String NOTIFICATION_QUERY="insert into notificationsystem (UserID , Message, TimeNotified) values (?, ?,?)";
 	
 	// View Courses
-	public static String VIEW_COURSE_QUERY = "select * from Course";
-	public static String VIEW_COURSEID_QUERY = "select courseId from Course";
-	public static String VIEW_COURSE_PROF_COUNT_QUERY = "select count(*) as pcCount from Course where courseId=? AND ProfessorId=?";
-	public static String VIEW_PROFESSOR_DETAIL_QUERY = "select * from Course where ProfessorId=?";
-	public static String VIEW_COURSEINCATALOG_QUERY = "select courseId from Course where CatalogId=?";
-	public static String ADD_NEW_COURSE_QUERY = "insert into Course(CatalogID, courseId, CatalogDetail, ProfessorId, courseName) values (?, ?, ?, ?, ?)";
-	public static String VIEW_COURSEGRADES_QUERY = "select * from RegisteredCourses where CourseId=?";
-	public static String DELETE_COURSE_QUERY = "delete from Course where CourseId = ? ";
-	public static String UPDATE_COURSE_QUERY = "update Course SET ProfessorId=?, courseName=? WHERE courseId = ?";
-	public static String UPDATE_COURSEPROF_QUERY = "update Course SET ProfessorId=? WHERE courseId = ?";
-	public static String COUNT_REGISTERED_STUDENTS_QUERY = "select count(*) as StudentCount from RegisteredCourses where (CourseId = ?)";
-	public static String CHECK_REGISTERED_COURSE_QUERY = "select count(*) as CourseCount from RegisteredCourses where (StudentId = ? AND CourseId = ?)";
-	public static String COUNT_REGISTERED_COURSE_QUERY = "select count(*) as CourseCount from RegisteredCourses where (StudentId = ?)";
+	public static String VIEW_COURSE_QUERY = "select * from Coursecatalog where courseId =?";
+	public static String VIEW_COURSEID_QUERY = "select courseId from coursecatalog";
+	public static String VIEW_COURSE_PROF_COUNT_QUERY = "select count(*) as pcCount from Coursecatalog where courseId=? AND ProfessorId=?";
+	public static String VIEW_PROFESSOR_DETAIL_QUERY = "select * from Coursecatalog where ProfessorId=?";
+	public static String VIEW_COURSEINCATALOG_QUERY = "select courseId from Coursecatalog where CatalogId=?";
+	public static String ADD_NEW_COURSE_QUERY = "insert into Coursecatalog (CatalogID, courseId, CatalogDetail, ProfessorId, courseName) values (?, ?, ?, ?, ?)";
+	public static String VIEW_COURSEGRADES_QUERY = "select * from RegisteredCourse where CourseId=?";
+	public static String DELETE_COURSE_QUERY = "delete from Coursecatalog where CourseId = ? ";
+	public static String UPDATE_COURSE_QUERY = "update Coursecatalog SET ProfessorId=?, courseName=? WHERE courseId = ?";
+	public static String UPDATE_COURSEPROF_QUERY = "update Coursecatalog SET ProfessorId=? WHERE courseId = ?";
+	public static String COUNT_REGISTERED_STUDENTS_QUERY = "select count(*) as StudentCount from RegisteredCourse where (CourseId = ?)";
+	public static String CHECK_REGISTERED_COURSE_QUERY = "select count(*) as CourseCount from RegisteredCourse where (StudentId = ? AND CourseId = ?)";
+	public static String COUNT_REGISTERED_COURSE_QUERY = "select count(*) as CourseCount from RegisteredCourse where (StudentId = ?)";
 	
 	// Student Queries
 	public static String MODIFY_STUDENT_QUERY ="update Student  set Name = ?,EmailId	 = ?,Mobile = ?,Gender = ?, branch = ?, hasScholarship = ?, isApproved = ?,city = ?, address = ?,state = ?  where studentId=?";
@@ -46,7 +46,7 @@ public class SQLQueriesConstant{
 	public static String ADD_REGISTERED_COURSE_STUDENT_QUERY = "insert into RegisteredCourse (studentId, courseId) values(?,?)";
 	public static String ADD_GRADE_QUERY = "update RegisteredCourse set grade=? where studentid = ? and courseID =? limit 1";
 	public static String DROP_COURSE_STUDENT_QUERY = "delete from RegisteredCourse where  studentId = ? and courseId = ? ";
-	public static String GET_REGISTERED_COURSES_QUERY = "select rc.studentId, rc.courseId,cc.CourseName from RegisteredCourse as rc inner join coursecatalog as cc on rc.courseID =cc.CourseCode where rc.studentId = ?";
+	public static String GET_REGISTERED_COURSES_QUERY = "select rc.studentId, rc.courseId,cc.CourseName from RegisteredCourse as rc inner join coursecatalog as cc on rc.courseID =cc.CourseId where rc.studentId = ?";
 	public static String VIEW_GRADES_QUERY = "select * from RegisteredCourse where studentId = ?";
 	public static String COUNT_COURSE= "select count(CourseId) as coursecount from RegisteredCourse where studentId = ?";
 	public static String UPDATE_FEE="update Student set AmountPayable = ? where studentId=?";

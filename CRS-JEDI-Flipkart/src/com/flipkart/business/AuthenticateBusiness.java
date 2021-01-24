@@ -44,6 +44,7 @@ public class AuthenticateBusiness {
 	}
 	
 	public boolean registerStudent(Student student, String password) {
+		
 		studentDaoObject.addStudent(student, password);
 		logger.info("Added user into Student Table\n");
 		//notificationSystemDaoObject.notifyUser(student.getUserId(), "Successfully Registerd!");

@@ -18,6 +18,7 @@ public class StudentClient {
 	StudentBusiness studentBusinessObject = new StudentBusiness();
 	// Displays the Student Menu with choices for student
 	public void displayMenu(int studentId) {
+		printChoices();
 		int choice;
 		do {
 			choice = sc.nextInt();

@@ -122,6 +122,7 @@ public class StudentDaoImpl implements StudentDao{
 			ResultSet resultSet = statement.executeQuery();
 			if(resultSet.next()){
 				userId=resultSet.getInt("ID");
+				logger.info("extracted "+ userId);
 			}
 		
 		}
@@ -137,6 +138,7 @@ public class StudentDaoImpl implements StudentDao{
 			statement.setString(2,student.getName());
 			statement.setString(3,student.getEmailId());
 			statement.setLong(4,student.getMobile());
+			logger.info(student.getGender().toString());
 			statement.setString(5,student.getGender().toString());
 			statement.setString(6,student.getBranch().toString());
 			statement.setBoolean(7,student.isHasScholarship());

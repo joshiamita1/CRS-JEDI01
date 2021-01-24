@@ -7,6 +7,7 @@ import com.flipkart.constant.Gender;
 import com.flipkart.bean.Student;
 import com.flipkart.business.*;
 import com.flipkart.constant.Role;
+import com.flipkart.dao.UserDaoImpl;
 
 import java.util.*;
 public class UserClient {
@@ -78,6 +79,7 @@ public class UserClient {
 	}
 	
 	public void login(int userId, String password) {
+		
 		if(authenticateBusinessObject.validLogin(userId, password)) {
 			Role role = authenticateBusinessObject.getRole(userId, password);
 			logger.info("Welcome User ID : " + userId);
@@ -129,7 +131,11 @@ public class UserClient {
 		logger.info("Enter Country");
 		student.setCountry(sc.nextLine());
 		student.setAmountPayable(0);
+		
 		if(authenticateBusinessObject.registerStudent(student, password)) {
+			UserDaoImpl temp =new UserDaoImpl();
+			int userid=temp.lastEntry();
+			student.setUserId(userid);
 			logger.info("Successfully Registered! Your user id is " + student.getUserId() + ".\nLogging You In");
 			login(student.getUserId(), password);
 		} else {
