@@ -2,6 +2,7 @@ package com.flipkart.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -22,11 +23,22 @@ public class AdminDaoImpl implements AdminDao{
 		
 		PreparedStatement stmt = null;
 		try {
+			
+			UserDaoImpl userdao =new UserDaoImpl();
+			userdao.addUser(admin, password);
+			
+			stmt =connection.prepareStatement(SQLQueriesConstant.GET_LAST_ENTRY);
+			ResultSet resultSet = stmt.executeQuery();
+			int userId=0;
+			if(resultSet.next()){
+				userId=resultSet.getInt("ID");
+			}
+			
 			stmt = connection.prepareStatement(SQLQueriesConstant.ADD_NEW_USER_QUERY);
 			stmt.setString(1,admin.getName());
 			stmt.setString(2,password);
 			stmt.setObject(3, "ADMIN");
-			stmt.setInt(4,admin.getUserId());
+			stmt.setInt(4,userId);
 			int rows = stmt.executeUpdate();
 			logger.info(rows + " admin added");
 		}catch(SQLException se) {
@@ -46,6 +58,9 @@ public class AdminDaoImpl implements AdminDao{
 			stmt.setInt(1,userId);
 			int rows = stmt.executeUpdate();
 			logger.info(rows + " deleted");
+			
+			UserDaoImpl userdao =new UserDaoImpl();
+			userdao.deleteUser(userId);
 		}catch(SQLException se) {
 			logger.error(se.getMessage());
 		}catch(Exception e) {

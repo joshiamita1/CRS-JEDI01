@@ -5,15 +5,18 @@ import java.util.Map;
 import com.flipkart.bean.*;
 import com.flipkart.constant.Grade;
 
+/**
+ * @author Aditya Nahata
+ *
+ */
 public interface StudentDao {
-<<<<<<< HEAD
-	
+
 	/**
 	 * Add Student
 	 * @param student
 	 * @returnType void
 	 */
-	public void addStudent(Student student);
+	public void addStudent(Student student, String password);
 	
 	/**
 	 * Modify a given student details
@@ -37,7 +40,7 @@ public interface StudentDao {
 	 * @param grade
 	 * @returnType void
 	 */
-	public void addGrade(int studentId, String courseCode, Grade grade);
+	public void addGrade(int studentId, int courseCode, Grade grade);
 	
 	/**
 	 * Register a student to a Course
@@ -45,7 +48,7 @@ public interface StudentDao {
 	 * @param courseId
 	 * @returnType void
 	 */
-	public void registerCourse(int studentId, String courseId);
+	public void registerCourse(int studentId, int courseId);
 	
 	/**
 	 * Drop a course for a student 
@@ -53,7 +56,7 @@ public interface StudentDao {
 	 * @param courseId
 	 * @returnType void
 	 */
-	public void dropCourse(int studentId, String courseId);
+	public void dropCourse(int studentId, int courseId);
 	
 	/**
 	 * View Registered Courses of a student
@@ -67,7 +70,7 @@ public interface StudentDao {
 	 * @param studentId
 	 * @returnType Map<String,Grade>
 	 */
-	public Map<String, Grade> viewGrades(int studentId);
+	public Map<Integer, Grade> viewGrades(int studentId);
 	
 	/**
 	 * check if student has scholarship from database
@@ -83,28 +86,8 @@ public interface StudentDao {
 	 * @param studentId
 	 */
 	public void ApproveStudent(boolean approvalstatus, int studentId);
-=======
 	
 	
 	public void deleteStudent(int studentId);
-	
-	
-	// Get Student
-	public Student getStudent(int studentId);
-	// Drop Course
-	void dropCourse(int studentId, int courseId);
-	// View Registered Courses
-	public ArrayList<Integer> viewRegisteredCourses(int studentId);
-	
-	// View Grades
-	public Map<Integer, Grade> viewGrades(int studentId);
-	void approveStudent(int studentId);
 
-	void addStudent(Student student, String password);
-
-	void addGrade(int studentId, int courseId, Grade grade);
-	void registerCourse(int studentId, int courseId);
-	public boolean hasScholarship(int studentId);
-
->>>>>>> lovish
 }

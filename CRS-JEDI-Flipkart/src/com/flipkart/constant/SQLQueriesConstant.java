@@ -10,13 +10,16 @@ package com.flipkart.constant;
 
 public class SQLQueriesConstant{
 	
+	//General Queries
+	public static String GET_LAST_ENTRY = " SELECT ID from authorcredential order by ID desc limit 1  ";
+	
 	//Login query for a user
 	public static String GET_USER_DETAIL = "select id from authorcredential ";
 	public static String GET_USER_DETAIL_ROLE = "select id from authorcredential where role = ?";
 	public static String DELETE_USER_QUERY = "delete from authorcredential where userId = ? ";
 	public static String GET_USER_DETAIL_ID = "select username, password, role from authorcredential where id = ?";
-	public static String ADD_NEW_USER_QUERY = "insert into authorcredential(username, password, role, id) values(?,?,?,?)";
-	public static String MODIFY_USER_QUERY ="update authorcredential  set username = ?,password = ?,role = ?  where userId=?";
+	public static String ADD_NEW_USER_QUERY = "insert into authorcredential(username, password, role) values(?,?,?)";
+	public static String MODIFY_USER_QUERY ="update authorcredential  set username = ?,role = ?  where userId=?";
 	
 	//NotificationSystem
 	public static String NOTIFICATION_QUERY="insert into notificationsystem (UserID , Message, TimeNotified) values (?, ?,?)";
@@ -26,9 +29,9 @@ public class SQLQueriesConstant{
 	public static String VIEW_COURSE_QUERY = "select * from Course where courseId = ?";
 	
 	// Student Queries
-	public static String MODIFY_STUDENT_QUERY ="update Student  set Name = ?,Email = ?,Mobile = ?,Gender = ?, branch = ?, hasScholarship = ?, isApproved = ?,city = ?, address = ?,state = ?  where studentId=?";
+	public static String MODIFY_STUDENT_QUERY ="update Student  set Name = ?,EmailId	 = ?,Mobile = ?,Gender = ?, branch = ?, hasScholarship = ?, isApproved = ?,city = ?, address = ?,state = ?  where studentId=?";
 	public static String GET_STUDENT_DETAILS_QUERY = "select * from student where StudentID=?";
-	public static String ADD_STUDENT_QUERY = "insert into Student (Name,Email,Mobile,Gender, branch, hasScholarship, isApproved,city, address,state) values (?,?,?,?,?,?,?,?,?,?)";
+	public static String ADD_STUDENT_QUERY = "insert into Student (StudentID,Name,EmailId,Mobile,Gender, branch, hasScholarship, isApproved,city, address,state) values (?,?,?,?,?,?,?,?,?,?,?)";
 	public static String ADD_REGISTERED_COURSE_STUDENT_QUERY = "insert into RegisteredCourse (studentId, courseId) values(?,?)";
 	public static String ADD_GRADE_QUERY = "update RegisteredCourse set grade=? where studentid = ? and courseID =? limit 1";
 	public static String DROP_COURSE_STUDENT_QUERY = "delete from RegisteredCourse where  studentId = ? and courseId = ? ";
@@ -40,10 +43,11 @@ public class SQLQueriesConstant{
 	public static String GET_FEE_QUERY="select amountPayable from student where StudentId= ?";
 	public static String GET_HAS_SCHOLARSHIP =" select HasScholarship from student where StudentID= ?";
 	public static String APPROVE_STUDENT_QUERY="update Student set isApproved =? where studentID= ?";
+	public static String DELETE_STUDENT_QUERY = "delete from student where studentId = ? ";
 	// Professor Queries
-	public static String VIEW_PROFESSORID_QUERY = "select id from Professor";
+	public static String VIEW_PROFESSORID_QUERY = "select ProfessorId from Professor";
 	public static String DELETE_PROF_QUERY = "delete from professor where professorId = ? ";
-	public static String GET_PROF_DETAIL = "select p.professorId, p.dept, p.gender, p.email, a.userName, a.password, p.mobile, a.role, p.gender from professor p join authorcredential a on p.professorId = a.id ";
+	public static String GET_PROF_DETAIL = "select p.professorId, p.dept, p.gender, p.email, p.Name, p.mobile, p.gender from professor where p.professorId =? ";
 	public static String ADD_NEW_PROF_QUERY = "insert into professor(professorId, dept, gender, city, address, country, state, mobile, email) values(?,?,?,?,?,?,?,?,?) ";
 	
 	// Admin Queries

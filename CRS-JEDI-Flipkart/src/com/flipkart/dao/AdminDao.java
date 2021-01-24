@@ -10,7 +10,7 @@ public interface AdminDao {
 	 * Adds an admin
 	 * @param admin
 	 */
-	public void addAdmin(User admin);
+	public void addAdmin(User admin,String password);
 	
 	/**
 	 * Deletes an admin

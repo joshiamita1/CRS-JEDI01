@@ -170,9 +170,6 @@ public class FeePaymentDaoImpl implements FeePaymentDao  {
 		}
 	
 	}
-	public void payFees(int studentId, double fees, int choice) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 }
