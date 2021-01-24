@@ -15,7 +15,7 @@ public interface ProfessorDao {
 	 * @param professor
 	 * @returnType void
 	 */
-	public void addProfessor(User user, String password, Department department);
+	public void addProfessor(Professor user, String password, Department department);
 	
 	/**
 	 * Delete a professor
@@ -29,7 +29,7 @@ public interface ProfessorDao {
 	 * @return
 	 * @returnType List<String>
 	 */
-	public List<String> getProfessors();
+	public List<Integer> getProfessors();
 	
 	/**
 	 * get details of a particular professor from the id

@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 
 import com.flipkart.bean.Course;
 import com.flipkart.bean.Professor;
+import com.flipkart.constant.Department;
 import com.flipkart.constant.Gender;
 import com.flipkart.constant.Role;
 import com.flipkart.constant.SQLQueriesConstant;
@@ -31,10 +32,10 @@ public class StudentDaoImpl implements StudentDao{
 
 
 	@Override
-	public void deleteStudent(int studentId) {
+	public void modifyStudent(int studentId, Student student) {
 		// TODO Auto-generated method stub
 
-		//logger.info("Inside modeify Student Dao Function" );
+		//logger.info("Inside modify Student Dao Function" );
 		PreparedStatement statement = null;
 		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.MODIFY_STUDENT_QUERY );
@@ -42,15 +43,13 @@ public class StudentDaoImpl implements StudentDao{
 			statement.setString(2,student.getEmailId());
 			statement.setLong(3,student.getMobile());
 			statement.setString(4,String.valueOf(student.getGender()));
-			statement.setString(5,student.getBranch());
+			statement.setString(5,String.valueOf(student.getBranch()));
 			statement.setBoolean(6,student.isHasScholarship());
 			statement.setBoolean(7,student.isApproved());
 			statement.setString(8,student.getCity());
 			statement.setString(9,student.getAddress());
 			statement.setString(10,student.getState());
 			statement.setInt(11, studentId);
-			
-			
 			
 			
 			int rows = statement.executeUpdate();
@@ -83,13 +82,22 @@ public class StudentDaoImpl implements StudentDao{
 			{
 			int userId = resultSet.getInt("StudentID");
 			String name = resultSet.getString("Name");
-			String emailId = resultSet.getString("Email");
+			String emailId = resultSet.getString("EmailId");
 			long mobile = resultSet.getLong("mobile");
 			Gender gender = Gender.valueOf(resultSet.getString("Gender"));
-			String branch = resultSet.getString("branch");
+			Department branch = Department.valueOf(resultSet.getString("branch"));
 			boolean hasScholarship= resultSet.getBoolean("HasScholarship");
 			boolean isApproved= resultSet.getBoolean("IsApproved");
-			Student student = new Student(Integer.toString(userId), emailId, "abcd", name, mobile,Role.STUDENT, gender,branch, hasScholarship, isApproved);
+			Student student = new Student();
+			student.setUserId(userId);
+			student.setName(name);
+			student.setEmailId(emailId);
+			student.setMobile(mobile);
+			student.setGender(gender);
+			student.setBranch(branch);
+			student.setHasScholarship(hasScholarship);
+			student.setApproved(isApproved);
+					
 			logger.info(" Student Details Retrieved sucessfully");
 			return student;
 			}
@@ -106,20 +114,37 @@ public class StudentDaoImpl implements StudentDao{
 	@Override
 	public void addStudent(Student student, String password) {
 		PreparedStatement statement = null;
+		UserDaoImpl userdao =new UserDaoImpl();
+		userdao.addUser(student, password);
+		int userId=0;
+		try {
+			statement =connection.prepareStatement(SQLQueriesConstant.GET_LAST_ENTRY);
+			ResultSet resultSet = statement.executeQuery();
+			
+			if(resultSet.next()){
+				userId=resultSet.getInt("ID");
+			}
+		
+		}
+		catch(Exception e) {
+			logger.error(e.getMessage());
+			
+		}
+		
 		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.ADD_STUDENT_QUERY );
 			//StudentId, Name,Email,Mobile,Gender, branch, hasScholarship, isApproved,city, address,state)
-			//statement.setInt(1,Integer.valueOf(student.getUserId()));
-			statement.setString(1,student.getName());
-			statement.setString(2,student.getEmailId());
-			statement.setLong(3,student.getMobile());
-			statement.setString(4,String.valueOf(student.getGender()));
-			statement.setString(5,student.getBranch());
-			statement.setBoolean(6,student.isHasScholarship());
-			statement.setBoolean(7,student.isApproved());
-			statement.setString(8,student.getCity());
-			statement.setString(9,student.getAddress());
-			statement.setString(10,student.getState());
+			statement.setInt(1,userId);
+			statement.setString(2,student.getName());
+			statement.setString(3,student.getEmailId());
+			statement.setLong(4,student.getMobile());
+			statement.setString(5,String.valueOf(student.getGender()));
+			statement.setString(6,String.valueOf(student.getBranch()));
+			statement.setBoolean(7,student.isHasScholarship());
+			statement.setBoolean(8,student.isApproved());
+			statement.setString(9,student.getCity());
+			statement.setString(10,student.getAddress());
+			statement.setString(11,student.getState());
 			
 			
 			
@@ -151,7 +176,7 @@ public class StudentDaoImpl implements StudentDao{
 			statement.setString(1,String.valueOf(grade));
 			statement.setInt(2,studentId);
 
-			statement.setInt(3,Integer.valueOf(courseCode));
+			statement.setInt(3,courseId);
 			
 
 			int rows = statement.executeUpdate();
@@ -179,7 +204,7 @@ public class StudentDaoImpl implements StudentDao{
 			statement = connection.prepareStatement(SQLQueriesConstant.ADD_REGISTERED_COURSE_STUDENT_QUERY );
 			
 			statement.setInt(1,studentId);
-			statement.setInt(2,Integer.valueOf(courseId));
+			statement.setInt(2,courseId);
 					
 			
 			int rows = statement.executeUpdate();
@@ -204,10 +229,8 @@ public class StudentDaoImpl implements StudentDao{
 		PreparedStatement statement = null;
 		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.DROP_COURSE_STUDENT_QUERY );
-			//StudentId, Name,Email,Mobile,Gender, branch, hasScholarship, isApproved,city, address,state)
-			//statement.setInt(1,Integer.valueOf(student.getUserId()));
 			statement.setInt(1,studentId);
-			statement.setInt(2,Integer.valueOf(courseId));
+			statement.setInt(2,courseId);
 					
 			
 			int rows = statement.executeUpdate();
@@ -252,6 +275,7 @@ public class StudentDaoImpl implements StudentDao{
 	}
 //
 	@Override
+	
 	public Map<Integer, Grade> viewGrades(int studentId) {
 		// TODO Auto-generated method stub
 		PreparedStatement statement = null;
@@ -259,13 +283,13 @@ public class StudentDaoImpl implements StudentDao{
 			statement = connection.prepareStatement(SQLQueriesConstant.VIEW_GRADES_QUERY );
 			statement.setInt(1,studentId);
 			
-			Map<String, Grade> grades = new HashMap<String, Grade>();
+			Map<Integer, Grade> grades = new HashMap<Integer, Grade>();
 			ResultSet resultSet = statement.executeQuery();
 			
 			while(resultSet.next())
 			{
 				
-				grades.put(String.valueOf(resultSet.getInt("CourseId")),Grade.valueOf(resultSet.getString("Grade")));
+				grades.put(resultSet.getInt("CourseId"),Grade.valueOf(resultSet.getString("Grade")));
 			}
 			
 			return grades;
@@ -333,6 +357,30 @@ public class StudentDaoImpl implements StudentDao{
 		}
 
 	}
+
+	@Override
+	public void deleteStudent(int studentId) {
+		// TODO Auto-generated method stub
+
+		PreparedStatement stmt = null;
+		try {
+			stmt = connection.prepareStatement(SQLQueriesConstant.DELETE_STUDENT_QUERY);
+			stmt.setInt(1,studentId);
+			int rows = stmt.executeUpdate();
+			logger.info(rows + " deleted");
+			
+			UserDaoImpl userdao =new UserDaoImpl();
+			userdao.deleteUser(studentId);
+		}catch(SQLException se) {
+			logger.error(se.getMessage());
+		}catch(Exception e) {
+			logger.error(e.getMessage());
+		}
+		
+		
+	}
+
+	
 	
 	
 }

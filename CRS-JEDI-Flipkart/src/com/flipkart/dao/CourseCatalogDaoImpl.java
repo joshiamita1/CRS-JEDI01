@@ -32,7 +32,7 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			stmt = connection.prepareStatement(SQLQueriesConstant.ADD_NEW_COURSE_QUERY);
 			stmt.setInt(1,course.getCourseCode());
 			stmt.setString(2,course.getCourseName());
-			stmt.setObject(3,course.getCourseDescription());
+			stmt.setObject(3,null);
 			stmt.setInt(4,course.getProfessorId());
 			stmt.setString(5,course.getCourseName());
 			int rows = stmt.executeUpdate();
@@ -85,7 +85,7 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 		PreparedStatement stmt = null;
 		try {
 			stmt = connection.prepareStatement(SQLQueriesConstant.UPDATE_COURSE_QUERY);
-			stmt.setString(1,course.getProfessorId());
+			stmt.setInt(1,course.getProfessorId());
 			stmt.setString(2,course.getCourseName());
 			stmt.setInt(3,courseCode);
 			int rows = stmt.executeUpdate();
@@ -144,20 +144,17 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 		ResultSet resultSet = null;
 		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.VIEW_COURSE_QUERY);
-			statement.setString(1,Integer.toString(courseCode));
+			statement.setInt(1,courseCode);
 			resultSet = statement.executeQuery();
-			String courseId=null, courseName = null, professorId = null, catalogId = null;
+			int courseId=0,professorId = 0, catalogId = 0;
+			String  courseName = null;
 			while(resultSet.next()) {
-				courseId = resultSet.getString("CourseId");
+				courseId = resultSet.getInt("CourseId");
 				courseName = resultSet.getString("courseName");
-				professorId = resultSet.getString("ProfessorId");
-				catalogId = resultSet.getString("CatalogId");	
+				professorId = resultSet.getInt("ProfessorId");
+				catalogId = resultSet.getInt("CatalogId");	
 			}
-			course = new Course();
-			course.setCatalogId(catalogId);
-			course.setCourseCode(courseCode);
-			course.setCourseName(courseName);
-			course.setProfessorId(professorId);
+			course = new Course (courseCode, courseName, catalogId, professorId);
 			return course;
 		}catch(Exception e) {
 			logger.error(e.getMessage());
