@@ -1,5 +1,7 @@
 package com.flipkart.business;
 
+import java.util.ArrayList;
+
 import org.apache.log4j.Logger;
 
 import com.flipkart.bean.Course;
@@ -24,45 +26,50 @@ public class AdminBusiness{
 	UserDaoImpl userDaoObject = new UserDaoImpl();
 	AdminDaoImpl adminDaoObject = new AdminDaoImpl();
 	private static Logger logger = Logger.getLogger(AdminBusiness.class);
-	public void approveStudent(String studentId) {
-		Student s = studentDaoObject.getStudent(studentId);
-		s.setApproved(true);
-		studentDaoObject.modifyStudent(studentId, s);
-	}
-
-	// Registering User
-	public void registerUser(User user) { 
-		userDaoObject.addUser(user);
-
-	}
 	
-	public void registerAdmin(User admin) {
-		registerUser(admin);
-		adminDaoObject.addAdmin(admin);
-	}
-
-	// Registering Professor
-	public void registerProfessor(Professor professor){
-
-		registerUser(professor);
-		professorDaoObject.addProfessor(professor);
-	}
 	
-	// Adding courses in the semester
-	public void addNewCourse(Course course) {
-		courseCatalogDaoObject.addCourse(course);
+	public void approveStudent(int studentId) {
+		if(studentDaoObject.getStudent(studentId)==null) {
+			logger.info("Invalid Student ID");
+		} else {
+			studentDaoObject.approveStudent(studentId);
+			logger.info("Student Approved");
+		}
 
 	}
-
-	// Deleting courses in the semester
-	public void deleteCourse(String courseCode) {
-
-		courseCatalogDaoObject.deleteCourse(courseCode);
-	}
-
 	// Getting all the users
 	public void getUsers(Role role){
-		userDaoObject.getUsers(role);
+		ArrayList<Integer> users= userDaoObject.getUsers(role);
+		logger.info("Users of the role :" + role + "are :");
+		for(Integer user : users) {
+			User u = userDaoObject.getUser(user);
+			logger.info("Name : " + u.getName());
+			logger.info("Email : " + u.getEmailId());
+			logger.info("User Id : " + u.getUserId());
+		}
 	}
+	
+	public void deleteUser(int userId) {
+		Role role = userDaoObject.getUser(userId).getRole();
+		userDaoObject.deleteUser(userId);
+		switch(role) {
+		case ADMIN:
+			adminDaoObject.deleteAdmin(userId);
+		case STUDENT:
+			studentDaoObject.deleteStudent(userId);
+		case PROFESSOR:
+			professorDaoObject.deleteProfessor(userId);
+		}
+	}
+	public void assignProfessor(int courseId, int professorId) {
+		if(courseCatalogDaoObject.getCourse(courseId)==null) {
+			logger.info("Invalid Course");
+		} else if(professorDaoObject.getProfessor(professorId)==null) {
+			logger.info("Invalid Professor");
+		} else {
+			courseCatalogDaoObject.assignProfessor(courseId, professorId);
+			logger.info("Assigned Successfully");
+		}
 
+	}
 }

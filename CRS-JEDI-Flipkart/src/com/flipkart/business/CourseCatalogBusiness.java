@@ -13,20 +13,39 @@ public class CourseCatalogBusiness{
 	CourseCatalogDaoImpl courseCatalogDaoObject = new CourseCatalogDaoImpl();
 	
 	public void viewAllCourses() {   
-		// CourseCode and CourseName of all the Courses in the semester  
-		ArrayList<String> courseList = courseCatalogDaoObject.getCourses();
+		ArrayList<Integer> coursesList = courseCatalogDaoObject.getCourses();
 		logger.info("Course Id\tCourse Name");
-		for(String courseCode : courseList) {
-			Course course = getCourse(courseCode);
+		for(Integer courseCode : coursesList) {
+			Course course = courseCatalogDaoObject.getCourse(courseCode);
 			logger.info(course.getCourseCode() +  "\t\t " + course.getCourseName());
 		}
 
 	}
-	// Getting all the CourseInformation of a particular course 
-	public Course getCourse(String courseCode) {
-		Course course = courseCatalogDaoObject.getCourse(courseCode);
-		logger.info(" Course Code" +  course.getCourseCode() +  "Course Name"+  "\t\t " + course.getCourseName());
-		return course;
+	
+	// View Courses in particular Catalog
+	public void viewCoursesInCatalog(int catalogId) {
+		ArrayList<Integer> coursesList = courseCatalogDaoObject.getCoursesInCatalog(catalogId);
+		logger.info("Course Id\tCourse Name");
+		for(Integer courseCode : coursesList) {
+			Course course = courseCatalogDaoObject.getCourse(courseCode);
+			logger.info(course.getCourseCode() +  "\t\t " + course.getCourseName());
+		}
+	}
+	
+	public void addCourse(Course c) {
+		courseCatalogDaoObject.addCourse(c);
+		logger.info("Added Course in the table.");
+	}
+	
+	public void dropCourse(int catalogId) {
+		courseCatalogDaoObject.deleteCourse(catalogId);
+		logger.info("Delete course from the table.");
+	}
+
+	public int numberOfRegisterdStudents(int courseId) {
+		int n = courseCatalogDaoObject.numberOfRegisteredStudents(courseId);
+		logger.info("Number of the students registered in course : " + courseId + " are " + n + ".");
+		return n;
 	}
 
 }
