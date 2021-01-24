@@ -182,3 +182,471 @@
 09:57:21,916  INFO UserClient,main:27 - Enter 1 to login
 09:57:21,916  INFO UserClient,main:28 - Enter 2  to register as a new student student
 09:57:21,916  INFO UserClient,main:29 - Enter any other number to exit CRS
+19:45:55,770  INFO UserClient,main:36 - Welcome to the Course Registration System
+19:45:55,771  INFO UserClient,main:48 - ======User Menu=====
+19:45:55,772  INFO UserClient,main:49 - Enter 1 to Login
+19:45:55,772  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+19:45:55,772  INFO UserClient,main:51 - Enter any other number to exit CRS
+19:46:00,902 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,904 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,905 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,908 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,909 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,909 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,910 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,911 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,912 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,912 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,913 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,913 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,914 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,915 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,915 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,916 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,917 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,919 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,919 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,920 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,921 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,921 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,922 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,922 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,922 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,923 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,923 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,924 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,924 ERROR DBUtil,main:41 - com.mysql.jdbc.Driver
+19:46:00,924  INFO UserClient,main:106 - Enter Name
+19:48:49,157  INFO UserClient,main:36 - Welcome to the Course Registration System
+19:48:49,159  INFO UserClient,main:48 - ======User Menu=====
+19:48:49,159  INFO UserClient,main:49 - Enter 1 to Login
+19:48:49,159  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+19:48:49,160  INFO UserClient,main:51 - Enter any other number to exit CRS
+19:48:52,475 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:52,537 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:52,564 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:52,594 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:52,630 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:52,661 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:52,688 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:52,719 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:52,762 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:52,788 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:52,810 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:52,832 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:52,854 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:52,879 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:52,906 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:52,929 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:52,951 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:52,978 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:52,998 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:53,018 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:53,040 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:53,063 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:53,088 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:53,111 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:53,131 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:53,151 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:53,173 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:53,187 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:53,204 ERROR DBUtil,main:43 - Unknown database 'test'
+19:48:53,205  INFO UserClient,main:106 - Enter Name
+19:49:36,606  INFO UserClient,main:36 - Welcome to the Course Registration System
+19:49:36,611  INFO UserClient,main:48 - ======User Menu=====
+19:49:36,611  INFO UserClient,main:49 - Enter 1 to Login
+19:49:36,611  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+19:49:36,612  INFO UserClient,main:51 - Enter any other number to exit CRS
+19:49:39,473 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,503 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,527 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,549 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,572 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,600 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,634 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,669 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,697 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,717 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,740 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,768 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,788 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,810 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,832 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,854 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,877 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,898 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,915 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,932 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,952 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,976 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:39,993 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:40,009 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:40,023 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:40,038 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:40,066 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:40,086 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:40,100 ERROR DBUtil,main:43 - Unknown database 'test'
+19:49:40,102  INFO UserClient,main:106 - Enter Name
+19:51:36,902  INFO UserClient,main:36 - Welcome to the Course Registration System
+19:51:36,904  INFO UserClient,main:48 - ======User Menu=====
+19:51:36,904  INFO UserClient,main:49 - Enter 1 to Login
+19:51:36,905  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+19:51:36,905  INFO UserClient,main:51 - Enter any other number to exit CRS
+19:51:39,386  INFO UserClient,main:106 - Enter Name
+19:51:44,758  INFO UserClient,main:108 - Enter Password
+19:51:48,664  INFO UserClient,main:110 - Enter Email
+19:51:53,116  INFO UserClient,main:112 - Enter Mobile No.
+19:51:56,745  INFO UserClient,main:114 - Enter Branch (Civil, Chem, CS, EE, Mech, ECE):
+19:53:00,767  INFO UserClient,main:36 - Welcome to the Course Registration System
+19:53:00,769  INFO UserClient,main:48 - ======User Menu=====
+19:53:00,769  INFO UserClient,main:49 - Enter 1 to Login
+19:53:00,770  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+19:53:00,770  INFO UserClient,main:51 - Enter any other number to exit CRS
+19:53:03,059  INFO UserClient,main:106 - Enter Name
+19:53:05,107  INFO UserClient,main:108 - Enter Password
+19:53:07,272  INFO UserClient,main:110 - Enter Email
+19:53:11,401  INFO UserClient,main:112 - Enter Mobile No.
+19:53:13,867  INFO UserClient,main:115 - Enter Branch (Civil, Chem, CS, EE, Mech, ECE):
+19:53:17,237  INFO UserClient,main:117 - Select Gender: 'M' for male and 'F' for female
+19:53:56,681  INFO UserClient,main:36 - Welcome to the Course Registration System
+19:53:56,683  INFO UserClient,main:48 - ======User Menu=====
+19:53:56,683  INFO UserClient,main:49 - Enter 1 to Login
+19:53:56,683  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+19:53:56,684  INFO UserClient,main:51 - Enter any other number to exit CRS
+19:53:58,933  INFO UserClient,main:106 - Enter Name
+19:54:00,891  INFO UserClient,main:108 - Enter Password
+19:54:03,145  INFO UserClient,main:110 - Enter Email
+19:54:05,118  INFO UserClient,main:112 - Enter Mobile No.
+19:54:06,977  INFO UserClient,main:115 - Enter Branch (Civil, Chem, CS, EE, Mech, ECE):
+19:54:26,624  INFO UserClient,main:36 - Welcome to the Course Registration System
+19:54:26,626  INFO UserClient,main:48 - ======User Menu=====
+19:54:26,627  INFO UserClient,main:49 - Enter 1 to Login
+19:54:26,627  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+19:54:26,627  INFO UserClient,main:51 - Enter any other number to exit CRS
+19:54:29,006  INFO UserClient,main:106 - Enter Name
+19:54:31,058  INFO UserClient,main:108 - Enter Password
+19:54:32,964  INFO UserClient,main:110 - Enter Email
+19:54:34,264  INFO UserClient,main:112 - Enter Mobile No.
+19:54:36,026  INFO UserClient,main:115 - Enter Branch (Civil, Chem, CS, EEE, Mech, ECE):
+19:54:37,864  INFO UserClient,main:117 - Select Gender: 'M' for male and 'F' for female
+19:54:39,752  INFO UserClient,main:119 - If you have scholarship enter 1, else enter 0
+19:54:41,266  INFO UserClient,main:123 - Enter Address
+19:54:43,717  INFO UserClient,main:125 - Enter City
+19:54:44,413  INFO UserClient,main:127 - Enter State
+19:54:45,096  INFO UserClient,main:129 - Enter Country
+19:54:46,114 ERROR UserDaoImpl,main:37 - Table 'temp.authorcredential' doesn't exist
+19:54:46,115 ERROR UserDaoImpl,main:37 - Table 'temp.authorcredential' doesn't exist
+19:54:46,118 ERROR StudentDaoImpl,main:130 - Table 'temp.authorcredential' doesn't exist
+19:54:46,223 ERROR StudentDaoImpl,main:161 - Unknown column 'EmailId' in 'field list'
+19:54:46,514 ERROR FeePaymentDaoImpl,main:39 - Cannot add or update a child row: a foreign key constraint fails (`temp`.`notificationsystem`, CONSTRAINT `UserIDFK` FOREIGN KEY (`UserID`) REFERENCES `authorcredentialdb` (`ID`) ON UPDATE CASCADE)
+19:54:46,515  INFO UserClient,main:133 - Successfully Registered! Your user id is 101.
+Logging You In
+19:54:46,517 ERROR UserDaoImpl,main:182 - Table 'temp.authorcredential' doesn't exist
+19:54:46,517  INFO UserClient,main:48 - ======User Menu=====
+19:54:46,517  INFO UserClient,main:49 - Enter 1 to Login
+19:54:46,518  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+19:54:46,518  INFO UserClient,main:51 - Enter any other number to exit CRS
+19:56:38,374  INFO UserClient,main:36 - Welcome to the Course Registration System
+19:56:38,376  INFO UserClient,main:48 - ======User Menu=====
+19:56:38,376  INFO UserClient,main:49 - Enter 1 to Login
+19:56:38,376  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+19:56:38,377  INFO UserClient,main:51 - Enter any other number to exit CRS
+19:56:41,643  INFO UserClient,main:106 - Enter Name
+19:56:43,217  INFO UserClient,main:108 - Enter Password
+19:56:44,246  INFO UserClient,main:110 - Enter Email
+19:56:44,909  INFO UserClient,main:112 - Enter Mobile No.
+19:56:50,751  INFO UserClient,main:36 - Welcome to the Course Registration System
+19:56:50,752  INFO UserClient,main:48 - ======User Menu=====
+19:56:50,753  INFO UserClient,main:49 - Enter 1 to Login
+19:56:50,753  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+19:56:50,753  INFO UserClient,main:51 - Enter any other number to exit CRS
+19:56:51,064  INFO UserClient,main:36 - Welcome to the Course Registration System
+19:56:51,067  INFO UserClient,main:48 - ======User Menu=====
+19:56:51,067  INFO UserClient,main:49 - Enter 1 to Login
+19:56:51,067  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+19:56:51,068  INFO UserClient,main:51 - Enter any other number to exit CRS
+19:56:53,226  INFO UserClient,main:106 - Enter Name
+19:56:54,549  INFO UserClient,main:108 - Enter Password
+19:56:55,358  INFO UserClient,main:110 - Enter Email
+19:56:56,318  INFO UserClient,main:112 - Enter Mobile No.
+19:56:57,097  INFO UserClient,main:115 - Enter Branch (Civil, Chem, CS, EEE, Mech, ECE):
+19:56:58,982  INFO UserClient,main:117 - Select Gender: 'M' for male and 'F' for female
+19:57:00,483  INFO UserClient,main:119 - If you have scholarship enter 1, else enter 0
+19:57:01,991  INFO UserClient,main:123 - Enter Address
+19:57:03,705  INFO UserClient,main:125 - Enter City
+19:57:04,932  INFO UserClient,main:127 - Enter State
+19:57:05,867  INFO UserClient,main:129 - Enter Country
+19:57:07,226 ERROR UserDaoImpl,main:37 - Data truncated for column 'Role' at row 1
+19:57:07,228 ERROR UserDaoImpl,main:37 - Data truncated for column 'Role' at row 1
+19:57:07,243 ERROR StudentDaoImpl,main:161 - Data truncated for column 'Gender' at row 1
+19:57:07,328 ERROR FeePaymentDaoImpl,main:39 - Cannot add or update a child row: a foreign key constraint fails (`temp`.`notificationsystem`, CONSTRAINT `UserIDFK` FOREIGN KEY (`UserID`) REFERENCES `authorcredential` (`ID`) ON UPDATE CASCADE)
+19:57:07,328  INFO UserClient,main:133 - Successfully Registered! Your user id is 101.
+Logging You In
+19:57:07,330  INFO UserDaoImpl,main:178 - User does not exist
+19:57:07,330  INFO UserClient,main:48 - ======User Menu=====
+19:57:07,330  INFO UserClient,main:49 - Enter 1 to Login
+19:57:07,331  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+19:57:07,331  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:01:21,340  INFO UserClient,main:36 - Welcome to the Course Registration System
+20:01:21,342  INFO UserClient,main:48 - ======User Menu=====
+20:01:21,342  INFO UserClient,main:49 - Enter 1 to Login
+20:01:21,343  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:01:21,343  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:01:24,207  INFO UserClient,main:106 - Enter Name
+20:01:25,245  INFO UserClient,main:108 - Enter Password
+20:01:25,989  INFO UserClient,main:110 - Enter Email
+20:01:26,726  INFO UserClient,main:112 - Enter Mobile No.
+20:01:27,524  INFO UserClient,main:115 - Enter Branch (Civil, Chem, CS, EEE, Mech, ECE):
+20:01:30,162  INFO UserClient,main:117 - Select Gender: 'M' for male and 'F' for female
+20:01:31,581  INFO UserClient,main:119 - If you have scholarship enter 1, else enter 0
+20:01:32,972  INFO UserClient,main:123 - Enter Address
+20:01:34,631  INFO UserClient,main:125 - Enter City
+20:01:35,316  INFO UserClient,main:127 - Enter State
+20:01:36,172  INFO UserClient,main:129 - Enter Country
+20:01:37,440 ERROR UserDaoImpl,main:37 - Data truncated for column 'Role' at row 1
+20:01:37,442 ERROR UserDaoImpl,main:37 - Data truncated for column 'Role' at row 1
+20:01:37,455 ERROR StudentDaoImpl,main:161 - Data truncated for column 'Gender' at row 1
+20:01:37,514 ERROR FeePaymentDaoImpl,main:39 - Cannot add or update a child row: a foreign key constraint fails (`temp`.`notificationsystem`, CONSTRAINT `UserIDFK` FOREIGN KEY (`UserID`) REFERENCES `authorcredential` (`ID`) ON UPDATE CASCADE)
+20:01:37,514  INFO UserClient,main:133 - Successfully Registered! Your user id is 101.
+Logging You In
+20:01:37,516  INFO UserDaoImpl,main:178 - User does not exist
+20:01:37,516  INFO UserClient,main:48 - ======User Menu=====
+20:01:37,516  INFO UserClient,main:49 - Enter 1 to Login
+20:01:37,516  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:01:37,517  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:02:24,199  INFO UserClient,main:36 - Welcome to the Course Registration System
+20:02:24,201  INFO UserClient,main:48 - ======User Menu=====
+20:02:24,201  INFO UserClient,main:49 - Enter 1 to Login
+20:02:24,202  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:02:24,202  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:02:27,565  INFO UserClient,main:106 - Enter Name
+20:02:30,468  INFO UserClient,main:108 - Enter Password
+20:02:31,041  INFO UserClient,main:110 - Enter Email
+20:02:31,649  INFO UserClient,main:112 - Enter Mobile No.
+20:02:32,142  INFO UserClient,main:115 - Enter Branch (Civil, Chem, CS, EEE, Mech, ECE):
+20:02:33,627  INFO UserClient,main:117 - Select Gender: 'M' for male and 'F' for female
+20:02:37,381  INFO UserClient,main:119 - If you have scholarship enter 1, else enter 0
+20:02:37,841  INFO UserClient,main:123 - Enter Address
+20:02:38,505  INFO UserClient,main:125 - Enter City
+20:02:38,994  INFO UserClient,main:127 - Enter State
+20:02:39,821  INFO UserClient,main:129 - Enter Country
+20:02:40,456 ERROR UserDaoImpl,main:37 - Data truncated for column 'Role' at row 1
+20:02:40,457 ERROR UserDaoImpl,main:37 - Data truncated for column 'Role' at row 1
+20:02:40,472 ERROR StudentDaoImpl,main:161 - Data truncated for column 'Gender' at row 1
+20:02:40,517 ERROR FeePaymentDaoImpl,main:39 - Cannot add or update a child row: a foreign key constraint fails (`temp`.`notificationsystem`, CONSTRAINT `UserIDFK` FOREIGN KEY (`UserID`) REFERENCES `authorcredential` (`ID`) ON UPDATE CASCADE)
+20:02:40,517  INFO UserClient,main:133 - Successfully Registered! Your user id is 101.
+Logging You In
+20:02:40,518  INFO UserDaoImpl,main:178 - User does not exist
+20:02:40,518  INFO UserClient,main:48 - ======User Menu=====
+20:02:40,519  INFO UserClient,main:49 - Enter 1 to Login
+20:02:40,519  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:02:40,519  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:06:28,056  INFO UserClient,main:36 - Welcome to the Course Registration System
+20:06:28,057  INFO UserClient,main:48 - ======User Menu=====
+20:06:28,057  INFO UserClient,main:49 - Enter 1 to Login
+20:06:28,058  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:06:28,058  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:06:30,582  INFO UserClient,main:106 - Enter Name
+20:06:30,654  INFO UserClient,main:108 - Enter Password
+20:06:31,251  INFO UserClient,main:110 - Enter Email
+20:06:31,821  INFO UserClient,main:112 - Enter Mobile No.
+20:06:32,380  INFO UserClient,main:115 - Enter Branch (Civil, Chem, CS, EEE, Mech, ECE):
+20:06:34,237  INFO UserClient,main:117 - Select Gender: 'M' for male and 'F' for female
+20:06:35,126  INFO UserClient,main:119 - If you have scholarship enter 1, else enter 0
+20:06:36,464  INFO UserClient,main:123 - Enter Address
+20:06:37,966  INFO UserClient,main:125 - Enter City
+20:06:38,427  INFO UserClient,main:127 - Enter State
+20:06:38,724  INFO UserClient,main:129 - Enter Country
+20:06:39,571 ERROR UserDaoImpl,main:37 - Data truncated for column 'Role' at row 1
+20:06:39,573 ERROR UserDaoImpl,main:37 - Data truncated for column 'Role' at row 1
+20:06:39,595 ERROR StudentDaoImpl,main:161 - Data truncated for column 'Gender' at row 1
+20:06:39,638 ERROR FeePaymentDaoImpl,main:39 - Cannot add or update a child row: a foreign key constraint fails (`temp`.`notificationsystem`, CONSTRAINT `UserIDFK` FOREIGN KEY (`UserID`) REFERENCES `authorcredential` (`ID`) ON UPDATE CASCADE)
+20:06:39,638  INFO UserClient,main:133 - Successfully Registered! Your user id is 101.
+Logging You In
+20:06:39,639  INFO UserDaoImpl,main:178 - User does not exist
+20:06:39,639  INFO UserClient,main:48 - ======User Menu=====
+20:06:39,639  INFO UserClient,main:49 - Enter 1 to Login
+20:06:39,640  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:06:39,640  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:07:57,355  INFO UserClient,main:36 - Welcome to the Course Registration System
+20:07:57,357  INFO UserClient,main:48 - ======User Menu=====
+20:07:57,357  INFO UserClient,main:49 - Enter 1 to Login
+20:07:57,357  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:07:57,358  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:07:59,649  INFO UserClient,main:106 - Enter Name
+20:08:00,906  INFO UserClient,main:108 - Enter Password
+20:08:01,427  INFO UserClient,main:110 - Enter Email
+20:08:02,362  INFO UserClient,main:112 - Enter Mobile No.
+20:08:03,230  INFO UserClient,main:115 - Enter Branch (Civil, Chem, CS, EEE, Mech, ECE):
+20:08:04,676  INFO UserClient,main:117 - Select Gender: 'M' for male and 'F' for female
+20:08:06,051  INFO UserClient,main:119 - If you have scholarship enter 1, else enter 0
+20:08:06,944  INFO UserClient,main:123 - Enter Address
+20:08:07,869  INFO UserClient,main:125 - Enter City
+20:08:08,346  INFO UserClient,main:127 - Enter State
+20:08:08,852  INFO UserClient,main:129 - Enter Country
+20:08:10,007  INFO UserDaoImpl,main:35 - 1 user added
+20:08:10,157  INFO UserDaoImpl,main:35 - 1 user added
+20:08:10,208 ERROR StudentDaoImpl,main:161 - Data truncated for column 'Gender' at row 1
+20:08:10,408 ERROR FeePaymentDaoImpl,main:39 - Cannot add or update a child row: a foreign key constraint fails (`temp`.`notificationsystem`, CONSTRAINT `UserIDFK` FOREIGN KEY (`UserID`) REFERENCES `authorcredential` (`ID`) ON UPDATE CASCADE)
+20:08:10,409  INFO UserClient,main:133 - Successfully Registered! Your user id is 101.
+Logging You In
+20:08:10,413  INFO UserDaoImpl,main:178 - User does not exist
+20:08:10,414  INFO UserClient,main:48 - ======User Menu=====
+20:08:10,415  INFO UserClient,main:49 - Enter 1 to Login
+20:08:10,415  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:08:10,416  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:10:14,655  INFO UserClient,main:36 - Welcome to the Course Registration System
+20:10:14,656  INFO UserClient,main:48 - ======User Menu=====
+20:10:14,656  INFO UserClient,main:49 - Enter 1 to Login
+20:10:14,657  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:10:14,657  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:10:16,597  INFO UserClient,main:106 - Enter Name
+20:10:17,361  INFO UserClient,main:108 - Enter Password
+20:10:18,261  INFO UserClient,main:110 - Enter Email
+20:10:19,134  INFO UserClient,main:112 - Enter Mobile No.
+20:10:20,013  INFO UserClient,main:115 - Enter Branch (Civil, Chem, CS, EEE, Mech, ECE):
+20:10:21,797  INFO UserClient,main:117 - Select Gender: 'M' for male and 'F' for female
+20:10:23,182  INFO UserClient,main:119 - If you have scholarship enter 1, else enter 0
+20:10:24,451  INFO UserClient,main:123 - Enter Address
+20:10:25,464  INFO UserClient,main:125 - Enter City
+20:10:25,935  INFO UserClient,main:127 - Enter State
+20:10:26,411  INFO UserClient,main:129 - Enter Country
+20:10:27,101  INFO UserDaoImpl,main:35 - 1 user added
+20:10:27,246  INFO UserDaoImpl,main:35 - 1 user added
+20:10:27,442  INFO StudentDaoImpl,main:154 - Added Student sucessfully
+20:10:27,554 ERROR FeePaymentDaoImpl,main:39 - Cannot add or update a child row: a foreign key constraint fails (`temp`.`notificationsystem`, CONSTRAINT `UserIDFK` FOREIGN KEY (`UserID`) REFERENCES `authorcredential` (`ID`) ON UPDATE CASCADE)
+20:10:27,555  INFO UserClient,main:133 - Successfully Registered! Your user id is 101.
+Logging You In
+20:10:27,559  INFO UserDaoImpl,main:178 - User does not exist
+20:10:27,560  INFO UserClient,main:48 - ======User Menu=====
+20:10:27,560  INFO UserClient,main:49 - Enter 1 to Login
+20:10:27,560  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:10:27,560  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:24:11,324  INFO UserClient,main:36 - Welcome to the Course Registration System
+20:24:11,327  INFO UserClient,main:48 - ======User Menu=====
+20:24:11,327  INFO UserClient,main:49 - Enter 1 to Login
+20:24:11,327  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:24:11,328  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:24:13,846  INFO UserClient,main:106 - Enter Name
+20:24:15,818  INFO UserClient,main:108 - Enter Password
+20:24:17,779  INFO UserClient,main:110 - Enter Email
+20:24:19,191  INFO UserClient,main:112 - Enter Mobile No.
+20:24:20,815  INFO UserClient,main:115 - Enter Branch (Civil, Chem, CS, EEE, Mech, ECE):
+20:24:22,714  INFO UserClient,main:117 - Select Gender: 'M' for male and 'F' for female
+20:24:24,137  INFO UserClient,main:119 - If you have scholarship enter 1, else enter 0
+20:24:25,393  INFO UserClient,main:123 - Enter Address
+20:24:27,277  INFO UserClient,main:125 - Enter City
+20:24:27,992  INFO UserClient,main:127 - Enter State
+20:24:28,728  INFO UserClient,main:129 - Enter Country
+20:24:30,301  INFO UserDaoImpl,main:35 - 1 user added
+20:24:30,418  INFO UserDaoImpl,main:35 - 1 user added
+20:24:30,624  INFO StudentDaoImpl,main:154 - Added Student sucessfully
+20:24:30,886 ERROR FeePaymentDaoImpl,main:39 - Cannot add or update a child row: a foreign key constraint fails (`temp`.`notificationsystem`, CONSTRAINT `UserIDFK` FOREIGN KEY (`UserID`) REFERENCES `authorcredential` (`ID`) ON UPDATE CASCADE)
+20:24:30,886  INFO UserClient,main:133 - Successfully Registered! Your user id is 101.
+Logging You In
+20:24:30,888  INFO UserDaoImpl,main:178 - User does not exist
+20:24:30,888  INFO UserClient,main:48 - ======User Menu=====
+20:24:30,888  INFO UserClient,main:49 - Enter 1 to Login
+20:24:30,888  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:24:30,888  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:26:57,017  INFO UserClient,main:36 - Welcome to the Course Registration System
+20:26:57,019  INFO UserClient,main:48 - ======User Menu=====
+20:26:57,019  INFO UserClient,main:49 - Enter 1 to Login
+20:26:57,019  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:26:57,019  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:26:59,551  INFO UserClient,main:106 - Enter Name
+20:27:00,918  INFO UserClient,main:108 - Enter Password
+20:27:02,171  INFO UserClient,main:110 - Enter Email
+20:27:03,038  INFO UserClient,main:112 - Enter Mobile No.
+20:27:03,618  INFO UserClient,main:115 - Enter Branch (Civil, Chem, CS, EEE, Mech, ECE):
+20:27:05,735  INFO UserClient,main:117 - Select Gender: 'M' for male and 'F' for female
+20:27:07,779  INFO UserClient,main:119 - If you have scholarship enter 1, else enter 0
+20:27:09,061  INFO UserClient,main:123 - Enter Address
+20:27:10,440  INFO UserClient,main:125 - Enter City
+20:27:11,077  INFO UserClient,main:127 - Enter State
+20:27:11,876  INFO UserClient,main:129 - Enter Country
+20:27:12,996  INFO UserDaoImpl,main:35 - 1 user added
+20:27:13,214  INFO StudentDaoImpl,main:154 - Added Student sucessfully
+20:27:13,285 ERROR FeePaymentDaoImpl,main:39 - Cannot add or update a child row: a foreign key constraint fails (`temp`.`notificationsystem`, CONSTRAINT `UserIDFK` FOREIGN KEY (`UserID`) REFERENCES `authorcredential` (`ID`) ON UPDATE CASCADE)
+20:27:13,286  INFO UserClient,main:133 - Successfully Registered! Your user id is 101.
+Logging You In
+20:27:13,288  INFO UserDaoImpl,main:178 - User does not exist
+20:27:13,288  INFO UserClient,main:48 - ======User Menu=====
+20:27:13,288  INFO UserClient,main:49 - Enter 1 to Login
+20:27:13,289  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:27:13,289  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:29:48,426  INFO UserClient,main:36 - Welcome to the Course Registration System
+20:29:48,427  INFO UserClient,main:48 - ======User Menu=====
+20:29:48,427  INFO UserClient,main:49 - Enter 1 to Login
+20:29:48,427  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:29:48,427  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:29:51,495  INFO UserClient,main:106 - Enter Name
+20:29:53,250  INFO UserClient,main:108 - Enter Password
+20:29:54,665  INFO UserClient,main:110 - Enter Email
+20:29:55,986  INFO UserClient,main:112 - Enter Mobile No.
+20:29:56,830  INFO UserClient,main:115 - Enter Branch (Civil, Chem, CS, EEE, Mech, ECE):
+20:29:58,460  INFO UserClient,main:117 - Select Gender: 'M' for male and 'F' for female
+20:29:59,805  INFO UserClient,main:119 - If you have scholarship enter 1, else enter 0
+20:30:00,989  INFO UserClient,main:123 - Enter Address
+20:30:02,414  INFO UserClient,main:125 - Enter City
+20:30:02,938  INFO UserClient,main:127 - Enter State
+20:30:03,588  INFO UserClient,main:129 - Enter Country
+20:30:04,959 ERROR StudentDaoImpl,main:161 - Duplicate entry '3' for key 'student.PRIMARY'
+20:30:05,093 ERROR FeePaymentDaoImpl,main:39 - Cannot add or update a child row: a foreign key constraint fails (`temp`.`notificationsystem`, CONSTRAINT `UserIDFK` FOREIGN KEY (`UserID`) REFERENCES `authorcredential` (`ID`) ON UPDATE CASCADE)
+20:30:05,093  INFO UserClient,main:133 - Successfully Registered! Your user id is 101.
+Logging You In
+20:30:05,097  INFO UserDaoImpl,main:178 - User does not exist
+20:30:05,097  INFO UserClient,main:48 - ======User Menu=====
+20:30:05,098  INFO UserClient,main:49 - Enter 1 to Login
+20:30:05,098  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:30:05,098  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:32:08,887  INFO UserClient,main:36 - Welcome to the Course Registration System
+20:32:08,890  INFO UserClient,main:48 - ======User Menu=====
+20:32:08,890  INFO UserClient,main:49 - Enter 1 to Login
+20:32:08,891  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:32:08,891  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:32:11,581  INFO UserClient,main:106 - Enter Name
+20:32:13,443  INFO UserClient,main:108 - Enter Password
+20:32:14,443  INFO UserClient,main:110 - Enter Email
+20:32:15,417  INFO UserClient,main:112 - Enter Mobile No.
+20:32:19,497  INFO UserClient,main:36 - Welcome to the Course Registration System
+20:32:19,499  INFO UserClient,main:48 - ======User Menu=====
+20:32:19,499  INFO UserClient,main:49 - Enter 1 to Login
+20:32:19,499  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:32:19,500  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:32:22,204  INFO UserClient,main:106 - Enter Name
+20:32:23,504  INFO UserClient,main:108 - Enter Password
+20:32:24,710  INFO UserClient,main:110 - Enter Email
+20:32:25,285  INFO UserClient,main:112 - Enter Mobile No.
+20:32:25,844  INFO UserClient,main:115 - Enter Branch (Civil, Chem, CS, EEE, Mech, ECE):
+20:32:28,770  INFO UserClient,main:36 - Welcome to the Course Registration System
+20:32:28,772  INFO UserClient,main:48 - ======User Menu=====
+20:32:28,772  INFO UserClient,main:49 - Enter 1 to Login
+20:32:28,772  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:32:28,772  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:32:32,087  INFO UserClient,main:106 - Enter Name
+20:32:33,352  INFO UserClient,main:108 - Enter Password
+20:32:34,030  INFO UserClient,main:110 - Enter Email
+20:32:34,579  INFO UserClient,main:112 - Enter Mobile No.
+20:32:35,104  INFO UserClient,main:115 - Enter Branch (Civil, Chem, CS, EEE, Mech, ECE):
+20:32:36,334  INFO UserClient,main:117 - Select Gender: 'M' for male and 'F' for female
+20:32:37,472  INFO UserClient,main:119 - If you have scholarship enter 1, else enter 0
+20:32:38,149  INFO UserClient,main:123 - Enter Address
+20:32:40,251  INFO UserClient,main:125 - Enter City
+20:32:41,347  INFO UserClient,main:127 - Enter State
+20:32:42,363  INFO UserClient,main:129 - Enter Country
+20:32:43,582  INFO UserDaoImpl,main:35 - 1 user added
+20:32:43,679  INFO StudentDaoImpl,main:149 - Added Student sucessfully
+20:32:43,718 ERROR FeePaymentDaoImpl,main:39 - Cannot add or update a child row: a foreign key constraint fails (`temp`.`notificationsystem`, CONSTRAINT `UserIDFK` FOREIGN KEY (`UserID`) REFERENCES `authorcredential` (`ID`) ON UPDATE CASCADE)
+20:32:43,719  INFO UserClient,main:133 - Successfully Registered! Your user id is 101.
+Logging You In
+20:32:43,720  INFO UserDaoImpl,main:178 - User does not exist
+20:32:43,720  INFO UserClient,main:48 - ======User Menu=====
+20:32:43,720  INFO UserClient,main:49 - Enter 1 to Login
+20:32:43,720  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:32:43,721  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:34:14,318  INFO UserClient,main:36 - Welcome to the Course Registration System
+20:34:14,320  INFO UserClient,main:48 - ======User Menu=====
+20:34:14,320  INFO UserClient,main:49 - Enter 1 to Login
+20:34:14,320  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:34:14,321  INFO UserClient,main:51 - Enter any other number to exit CRS

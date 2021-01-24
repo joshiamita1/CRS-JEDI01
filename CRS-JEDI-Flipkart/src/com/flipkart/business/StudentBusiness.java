@@ -43,7 +43,7 @@ public class StudentBusiness{
 			addFees /= 10;
 			addFees *=7;
 		}
-		feePaymentDaoObject.updatefees(studentId, feePaymentDaoObject.calculateFees(studentId) + addFees);
+		feePaymentDaoObject.updateFees(studentId, feePaymentDaoObject.calculateFees(studentId) + addFees);
 		
 	}
 	public void dropCourse(int studentId, int courseId) {
@@ -73,8 +73,10 @@ public class StudentBusiness{
 		return feePaymentDaoObject.calculateFees(studentId);
 	}
 	public void makePayment(int studentId, double fees, int choice) {
-		feePaymentDaoObject.payFees(studentId, fees, choice);
-		feePaymentDaoObject.updatefees(studentId, 0);
+		
+		//TodO
+		//feePaymentDaoObject.payFees(studentId, fees, choice);
+		feePaymentDaoObject.updateFees(studentId, 0);
 		notificationSystemDaoObject.notifyUser(studentId, "Fees of " + fees + " Paid Successfully!");
 		
 	}

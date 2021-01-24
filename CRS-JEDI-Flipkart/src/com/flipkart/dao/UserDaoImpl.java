@@ -29,9 +29,8 @@ public class UserDaoImpl implements UserDao {
 		try {
 			stmt = connection.prepareStatement(SQLQueriesConstant.ADD_NEW_USER_QUERY);
 			stmt.setString(1,user.getName());
-			stmt.setString(2,user.getPassword());
-			stmt.setObject(3,user.getRole());
-			stmt.setString(4,user.getUserId());
+			stmt.setString(2,password);
+			stmt.setString(3,user.getRole().toString());
 			int rows = stmt.executeUpdate();
 			logger.info(rows + " user added");
 		}catch(SQLException se) {
@@ -47,7 +46,7 @@ public class UserDaoImpl implements UserDao {
 		PreparedStatement stmt = null;
 		try {
 			stmt = connection.prepareStatement(SQLQueriesConstant.DELETE_USER_QUERY);
-			stmt.setString(1,userId);
+			stmt.setInt(1,userId);
 			int rows = stmt.executeUpdate();
 			logger.info(rows + " deleted");
 		}catch(SQLException se) {
@@ -60,16 +59,41 @@ public class UserDaoImpl implements UserDao {
 
 
 	@Override
-	public List<String> getUsers() {
+	public void modifyUser(int userId, User user) {
+		PreparedStatement statement = null;
+		try {
+			statement = connection.prepareStatement(SQLQueriesConstant.MODIFY_USER_QUERY );
+			
+			statement.setString(1,user.getName());
+			statement.setString(2,String.valueOf(user.getRole()));
+			statement.setInt(3, userId);
+			
+			logger.info("statement is "+statement);
+			int rows = statement.executeUpdate();
+			if(rows > 0) {
+				logger.info("Added user sucessfully");
+			}
+			else {
+				logger.info("Error during insertion");
+			}
+		}catch(Exception e) {
+			logger.error(e.getMessage());
+		}
+		
+	}
+
+
+	@Override
+	public List<Integer> getUsers() {
 		
 		PreparedStatement statement = null;
-		List<String> userList = new ArrayList<String>();
+		List<Integer> userList = new ArrayList<Integer>();
 		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.GET_USER_DETAIL);
 			ResultSet resultSet = statement.executeQuery();
 			
 			while(resultSet.next()) {
-			String userId = resultSet.getString("userId");
+			int userId = resultSet.getInt("userId");
 			userList.add(userId);
 			}
 			return userList;
@@ -81,24 +105,19 @@ public class UserDaoImpl implements UserDao {
 		
 	}
 
-	@Override
-	public String getPassword(int inputId) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+	
 	@Override
 	public ArrayList<Integer> getUsers(Role role) {
 		
 		PreparedStatement statement = null;
-		List<String> userList = new ArrayList<String>();
+		ArrayList<Integer> userList = new ArrayList<Integer>();
 		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.GET_USER_DETAIL_ROLE);
 			statement.setObject(1,role);
 			ResultSet resultSet = statement.executeQuery();
 			
 			while(resultSet.next()) {
-			String userId = resultSet.getString("userId");
+			int userId = resultSet.getInt("userId");
 			userList.add(userId);
 			}
 			return userList;
@@ -118,20 +137,53 @@ public class UserDaoImpl implements UserDao {
 		
 		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.GET_USER_DETAIL_ID);
-			statement.setString(1,userId);
+			statement.setInt(1,userId);
 			ResultSet resultSet = statement.executeQuery();
-			
-			String password = resultSet.getString("password");
-			String name = resultSet.getString("name");
-			Role role = (Role) resultSet.getObject("role"); 
-			Gender gender = (Gender) resultSet.getObject("gender");
-			User user = new User(userId, null, password, name, 0, role, gender);
-			//String userId, String emailId, String password, String name, long mobile, Role role, Gender gender
+			if(resultSet.next()){
+				
+				String name = resultSet.getString("name");
+				Role role = Role.valueOf(resultSet.getString("role")); 
+				
+				User user = new User();
+				user.setName(name);
+				user.setRole(role);
+				return user;
+			}
+			else{
+				logger.info("User does not exist");
+			}
 			return null;
 		}catch(Exception e) {
 			logger.error(e.getMessage());
 		}
 		return null;
 	}
+	
+	
+	@Override
+	public String getPassword(int userId) {
+		// TODO Auto-generated method stub
+PreparedStatement statement = null;
+		
+		try {
+			statement = connection.prepareStatement(SQLQueriesConstant.GET_USER_DETAIL_ID);
+			statement.setInt(1,userId);
+			ResultSet resultSet = statement.executeQuery();
+			if(resultSet.next()){
+				
+				String password = resultSet.getString("password");
+				return password;
+			}
+			else{
+				logger.info("User does not exist");
+			}
+			return null;
+		}catch(Exception e) {
+			logger.error(e.getMessage());
+		}
+		return null;
+	
+	}
+
 
 }

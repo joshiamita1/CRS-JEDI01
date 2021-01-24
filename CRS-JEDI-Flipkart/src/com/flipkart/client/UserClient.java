@@ -111,7 +111,8 @@ public class UserClient {
 		student.setEmailId(sc.nextLine());
 		logger.info("Enter Mobile No.");
 		student.setMobile(sc.nextLong());
-		logger.info("Enter Branch (Civil, Chem, CS, EE, Mech, ECE):");
+		sc.nextLine();
+		logger.info("Enter Branch (Civil, Chem, CS, EEE, Mech, ECE):");
 		student.setBranch(Department.valueOf(sc.nextLine()));
 		logger.info("Select Gender: 'M' for male and 'F' for female");
 		student.setGender(Gender.valueOf(sc.nextLine()));

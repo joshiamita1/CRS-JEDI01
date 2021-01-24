@@ -2,6 +2,7 @@ package com.flipkart.business;
 
 import org.apache.log4j.Logger;
 
+import com.flipkart.bean.Professor;
 import com.flipkart.bean.Student;
 import com.flipkart.bean.User;
 import com.flipkart.constant.Department;
@@ -43,22 +44,19 @@ public class AuthenticateBusiness {
 	}
 	
 	public boolean registerStudent(Student student, String password) {
-		addUser(student, password);
 		studentDaoObject.addStudent(student, password);
 		logger.info("Added user into Student Table\n");
-		notificationSystemDaoObject.notifyUser(student.getUserId(), "Successfully Registerd!");
+		//notificationSystemDaoObject.notifyUser(student.getUserId(), "Successfully Registerd!");
 		return true;
 	}
 
 	public boolean registerAdmin(User admin, String password) {
-		addUser(admin, password);
 		adminDaoObject.addAdmin(admin, password);
 		logger.info("Added user into Admin Table\n");
 		return true;
 	}
 
 	public boolean registerProfessor(User user, String password, Department department) {
-		addUser(user, password);
 		professorDaoObject.addProfessor(user, password, department);
 		logger.info("Added user into Professor Table\n");
 		return true;
