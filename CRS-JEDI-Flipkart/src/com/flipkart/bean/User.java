@@ -34,6 +34,9 @@ public class User {
 	// State of the user
 	String state;
 	
+	//Password of user
+	String password;
+	
 	// Parameterized Constructor
 	public User(String userId, String emailId, String password, String name, long mobile, Role role, Gender gender) {
 		this.userId = userId;
@@ -42,6 +45,7 @@ public class User {
 		this.mobile = mobile;
 		this.role = role;
 		this.gender = gender;
+		this.password = password;
 	}
 
 	/**
@@ -51,6 +55,13 @@ public class User {
 		return userId;
 	}
 
+	/**
+	 * @return the userId
+	 */
+	public String getPassword() {
+		return password;
+	}
+	
 	/**
 	 * @param userId the userId to set
 	 */
