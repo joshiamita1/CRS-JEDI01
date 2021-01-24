@@ -7,22 +7,12 @@ import com.flipkart.constant.Department;
 import java.util.List;
 
 public interface ProfessorDao {
-	
-	// Add Professor
-	public void addProfessor(Professor professor);
-	
-	// Delete Professor
-	public void deleteProfessor(String professorId);
-	
-	// Get All Professors
-	public List<String> getProfessors();
-	
-	// Get Professor's info
-	public Professor getProfessor(String professorId);
 
+	// Get Professor's info
+	public Professor getProfessor(int professorId);
+	
 	void deleteProfessor(int userId);
 
+	// Add Professor
 	void addProfessor(User user, String password, Department department);
-
-	Professor getProfessor(int professorId);
 }

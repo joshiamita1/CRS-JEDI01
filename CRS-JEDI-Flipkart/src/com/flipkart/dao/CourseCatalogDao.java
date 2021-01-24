@@ -9,26 +9,39 @@ import com.flipkart.constant.Grade;
 
 
 public interface CourseCatalogDao {
+	// Get Course by Id
+	public Course getCourse(int courseId);
 	
-	// Add course
-	public void addCourse(Course course);
+	// Assign Professor To the Course
+	public void assignProfessor(int courseId, int professorId);
 	
-	// Delete course
-	public void deleteCourse(String courseCode);
-	
-	// Modify course
-	public void modifyCourse(String courseCode, Course course);
-	
-	// Get all courses
+	// Get Id of all the courses
 	public ArrayList<Integer> getCourses();
 	
-	// View Grades
-	public Map<String, Grade> viewGrades(String courseCode);
+	// Get all courses in the given catalog
+	public ArrayList<Integer> getCoursesInCatalog(int catalogId);
 	
-	// Get Course Info
-	public Course getCourse(String courseCode);
-
-	Course getCourse(int courseId);
-
-	Map<Integer, Grade> viewGrades(int courseId);
+	// Add Course 
+	public void addCourse(Course c);
+	
+	// Delete Course
+	public void deleteCourse(int courseId);
+	
+	// Number of Registered Students
+	public int numberOfRegisteredStudents(int courseId);
+	
+	// Check if professor teaches particular course
+	public boolean validCourseForProfessor(int professorId, int courseId);
+	
+	// Get courses Id for the given professor
+	public ArrayList<Integer> getCoursesForProfessor(int professorId);
+	
+	// View Grades for students enrolled
+	public Map<Integer, Grade> viewGrades(int courseId);
+	
+	// Check if course is valid for student
+	public boolean validCourseForStudent(int studentId, int courseId);
+	
+	public int numberOfRegisteredCourses(int studentId);
+	
 }

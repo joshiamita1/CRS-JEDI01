@@ -18,7 +18,7 @@ public class Student extends User {
 	boolean isApproved;
 	
 	// Amount Payable
-	int amountPayable;
+	double amountPayable;
 
 	/**
 	 * @return the branch
@@ -65,14 +65,14 @@ public class Student extends User {
 	/**
 	 * @return the amountPayable
 	 */
-	public int getAmountPayable() {
+	public double getAmountPayable() {
 		return amountPayable;
 	}
 
 	/**
 	 * @param amountPayable the amountPayable to set
 	 */
-	public void setAmountPayable(int amountPayable) {
+	public void setAmountPayable(double amountPayable) {
 		this.amountPayable = amountPayable;
 	}
 	

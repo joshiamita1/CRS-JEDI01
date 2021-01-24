@@ -1,6 +1,7 @@
   
 package com.flipkart.business;
 
+import java.util.ArrayList;
 import java.util.Map;
 import org.apache.log4j.Logger;
 import com.flipkart.bean.Course;
@@ -15,27 +16,35 @@ import com.flipkart.dao.StudentDaoImpl;
 public class ProfessorBusiness {
 	
 	ProfessorDaoImpl professorDaoObject = new ProfessorDaoImpl();
-	CourseCatalogDaoImpl courseCatalogObject = new CourseCatalogDaoImpl();
+	CourseCatalogDaoImpl courseCatalogDaoObject = new CourseCatalogDaoImpl();
 	StudentDaoImpl studentDaoObject = new StudentDaoImpl();
 	public static Logger logger = Logger.getLogger(ProfessorBusiness.class);
 	
 	// Grading student 
 	public void gradeStudent(int courseId, int studentId, Grade grade) {
 		studentDaoObject.addGrade(studentId, courseId, grade);
+		logger.info("Added Grade " + grade);
+		logger.info("Student :" + studentId);
+		logger.info("Course Id : " + courseId);
 	}
 	
 	public boolean validCourseForProfessor(int professorId, int courseId) {
-		return false;
-		
+		return courseCatalogDaoObject.validCourseForProfessor(professorId, courseId);
 	}
 	public void viewAssignedCourses(int professorId) {
+		ArrayList<Integer> coursesList = courseCatalogDaoObject.getCoursesForProfessor(professorId);
+		logger.info("Course Id\tCourse Name");
+		for(Integer courseCode : coursesList) {
+			Course course = courseCatalogDaoObject.getCourse(courseCode);
+			logger.info(course.getCourseCode() +  "\t " + course.getCourseName());
+		}
 		
 	}
 	public void viewRegisteredStudents(int courseId) {
      //  View all the RegisteredStudent in course
-		Course course = courseCatalogObject.getCourse(courseId);
-		Map<Integer, Grade> mp = courseCatalogObject.viewGrades(courseId);
-		logger.info("Registered Students under " + professorDaoObject.getProfessor(courseCatalogObject.getCourse(courseId).getProfessorId()).getName() + " for course " +  courseCatalogObject.getCourse(courseId).getCourseName() + " are :");
+		Course course = courseCatalogDaoObject.getCourse(courseId);
+		Map<Integer, Grade> mp = courseCatalogDaoObject.viewGrades(courseId);
+		logger.info("Registered Students under " + professorDaoObject.getProfessor(courseCatalogDaoObject.getCourse(courseId).getProfessorId()).getName() + " for course " +  courseCatalogDaoObject.getCourse(courseId).getCourseName() + " are :");
 		for(Integer s : mp.keySet()) {
 			logger.info("Student ID : " + studentDaoObject.getStudent(s).getUserId() +"\n"+"Student Name" + studentDaoObject.getStudent(s).getName() + "\n");
 		}

@@ -10,12 +10,12 @@ import org.apache.log4j.Logger;
 import com.flipkart.constant.SQLQueriesConstant;
 import com.flipkart.util.DBUtil;
 
-public class NotificationSystemImpl implements NotificationSystem{
+public class NotificationSystemDaoImpl implements NotificationSystemDao{
 
-	public static Logger logger = Logger.getLogger(FeePaymentImpl.class);
+	public static Logger logger = Logger.getLogger(FeePaymentDaoImpl.class);
 	Connection connection = DBUtil.getConnection();
 	public static void main(String[] args) {
-	new NotificationSystemImpl().notifyUser(102, "Fee Payment Successful");
+	new NotificationSystemDaoImpl().notifyUser(102, "Fee Payment Successful");
 	}
 	@Override
 	public void notifyUser(int userID, String Message) {

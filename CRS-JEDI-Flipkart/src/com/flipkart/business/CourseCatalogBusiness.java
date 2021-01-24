@@ -13,10 +13,9 @@ public class CourseCatalogBusiness{
 	CourseCatalogDaoImpl courseCatalogDaoObject = new CourseCatalogDaoImpl();
 	
 	public void viewAllCourses() {   
-		// CourseCode and CourseName of all the Courses in the semester  
-		ArrayList<Integer> courseList = courseCatalogDaoObject.getCourses();
+		ArrayList<Integer> coursesList = courseCatalogDaoObject.getCourses();
 		logger.info("Course Id\tCourse Name");
-		for(Integer courseCode : courseList) {
+		for(Integer courseCode : coursesList) {
 			Course course = courseCatalogDaoObject.getCourse(courseCode);
 			logger.info(course.getCourseCode() +  "\t\t " + course.getCourseName());
 		}
@@ -25,19 +24,28 @@ public class CourseCatalogBusiness{
 	
 	// View Courses in particular Catalog
 	public void viewCoursesInCatalog(int catalogId) {
-		
+		ArrayList<Integer> coursesList = courseCatalogDaoObject.getCoursesInCatalog(catalogId);
+		logger.info("Course Id\tCourse Name");
+		for(Integer courseCode : coursesList) {
+			Course course = courseCatalogDaoObject.getCourse(courseCode);
+			logger.info(course.getCourseCode() +  "\t\t " + course.getCourseName());
+		}
 	}
 	
 	public void addCourse(Course c) {
-		
+		courseCatalogDaoObject.addCourse(c);
+		logger.info("Added Course in the table.");
 	}
 	
 	public void dropCourse(int catalogId) {
+		courseCatalogDaoObject.deleteCourse(catalogId);
+		logger.info("Delete course from the table.");
 	}
 
 	public int numberOfRegisterdStudents(int courseId) {
-		// TODO Auto-generated method stub
-		return 0;
+		int n = courseCatalogDaoObject.numberOfRegisteredStudents(courseId);
+		logger.info("Number of the students registered in course : " + courseId + " are " + n + ".");
+		return n;
 	}
 
 }

@@ -6,12 +6,10 @@ import com.flipkart.bean.User;
 
 public interface AdminDao {
 	// Add Admin
-	public void addAdmin(User admin);
+	void addAdmin(User admin, String password);
 	
 	// Delete Admin
-	public void deleteAdmin(String adminId);
-
 	void deleteAdmin(int userId);
 
-	void addAdmin(User admin, String password);
+
 }

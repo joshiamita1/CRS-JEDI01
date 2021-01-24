@@ -7,21 +7,33 @@ import com.flipkart.constant.Role;
 public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 
 	@Override
-	public void addCourse(Course course) {
+	public Course getCourse(int courseId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void assignProfessor(int courseId, int professorId) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void deleteCourse(String courseCode) {
+	public void addCourse(Course c) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void modifyCourse(String courseCode, Course course) {
+	public void deleteCourse(int courseId) {
 		// TODO Auto-generated method stub
 		
+	}
+
+	@Override
+	public int numberOfRegisteredStudents(int courseId) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 	@Override
@@ -31,7 +43,19 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 	}
 
 	@Override
-	public Course getCourse(int courseId) {
+	public ArrayList<Integer> getCoursesInCatalog(int catalogId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean validCourseForProfessor(int professorId, int courseId) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public ArrayList<Integer> getCoursesForProfessor(int professorId) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -41,9 +65,8 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
-	
 		
+			
 }
 
   

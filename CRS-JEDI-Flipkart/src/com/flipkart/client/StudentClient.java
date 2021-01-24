@@ -93,7 +93,7 @@ public class StudentClient {
 	}
 	
 	public void payFees(int studentId) {
-		int fees = studentBusinessObject.getFees(studentId);
+		double fees = studentBusinessObject.getFees(studentId);
 		if(fees==0) {
 			logger.info("No dues pending!");
 		}

@@ -42,7 +42,6 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	@Override
-	@Override
 	public void deleteUser(int userId) {
 		// TODO Auto-generated method stub
 		PreparedStatement stmt = null;
@@ -59,11 +58,6 @@ public class UserDaoImpl implements UserDao {
 		
 	}
 
-	@Override
-	public void modifyUser(String userId) {
-		// TODO Auto-generated method stub
-		
-	}
 
 	@Override
 	public List<String> getUsers() {
@@ -94,7 +88,7 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	@Override
-	public List<String> getUsers(Role role) {
+	public ArrayList<Integer> getUsers(Role role) {
 		
 		PreparedStatement statement = null;
 		List<String> userList = new ArrayList<String>();
@@ -116,7 +110,6 @@ public class UserDaoImpl implements UserDao {
 		
 	}
 
-	@Override
 	@Override
 	public User getUser(int userId) {
 		// TODO Auto-generated method stub

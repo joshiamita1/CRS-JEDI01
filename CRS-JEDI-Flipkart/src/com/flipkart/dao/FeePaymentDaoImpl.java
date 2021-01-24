@@ -17,12 +17,12 @@ import com.flipkart.util.DBUtil;
  * @author Aditya Nahata
  *
  */
-public class FeePaymentImpl implements FeePayment  {
+public class FeePaymentDaoImpl implements FeePaymentDao  {
 	
-	public static Logger logger = Logger.getLogger(FeePaymentImpl.class);
+	public static Logger logger = Logger.getLogger(FeePaymentDaoImpl.class);
 	Connection connection = DBUtil.getConnection();
 	public static void main(String[]args) {
-		FeePaymentImpl temp =new FeePaymentImpl();
+		FeePaymentDaoImpl temp =new FeePaymentDaoImpl();
 		//temp.calculatefees(102);
 		temp.updatefees(102, 50000);		
 		//temp.getFeesToPay(102);
@@ -58,40 +58,15 @@ public class FeePaymentImpl implements FeePayment  {
 		
 	}
 
-	@Override
-	public int countcourses(int studentId) {
-		PreparedStatement statement = null;
-		int count = 0;
-		try {logger.info(SQLQueriesConstant.COUNT_COURSE);
-			statement = connection.prepareStatement(SQLQueriesConstant.COUNT_COURSE);
-			statement.setInt(1,studentId);
-			logger.info("statement is "+statement);
-			ResultSet resultSet = statement.executeQuery();
-			logger.info("userid is "+resultSet);
-			if(resultSet.next())
-			{
-				logger.info(resultSet.getInt("coursecount"));
-				count=(resultSet.getInt("coursecount"));
-				logger.info(count);
-			}
-			return count;
-		}catch(Exception e) {
-			logger.error(e.getMessage());
-			e.printStackTrace();
-			return count;
-		}
-		// TODO Auto-generated method stub
-		
-	}
 
 	@Override
-	public void updatefees(int studentId, double fees) {
+	public void updatefees(int studentId, double d) {
 		// TODO Auto-generated method stub
 		PreparedStatement statement = null;
 		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.MAKE_PAYMENT_QUERY );
 			statement.setInt(1,studentId);
-			statement.setDouble(2,fees);
+			statement.setDouble(2,d);
 			Calendar cal = Calendar.getInstance(); 
 			Timestamp timestamp = new Timestamp(cal.getTimeInMillis());
 			statement.setTimestamp(3, timestamp);		
@@ -113,7 +88,7 @@ public class FeePaymentImpl implements FeePayment  {
 		try {logger.info("hello" +SQLQueriesConstant.UPDATE_FEE);
 			statement = connection.prepareStatement(SQLQueriesConstant.UPDATE_FEE );
 			
-			statement.setDouble(1,feePending-fees);
+			statement.setDouble(1,feePending-d);
 			statement.setInt(2,studentId);
 			
 			logger.info("statement is "+statement);
@@ -157,6 +132,10 @@ public class FeePaymentImpl implements FeePayment  {
 			return fee;
 		}
 	
+	}
+	public void payFees(int studentId, double fees, int choice) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

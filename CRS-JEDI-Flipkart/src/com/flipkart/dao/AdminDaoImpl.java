@@ -24,9 +24,9 @@ public class AdminDaoImpl implements AdminDao{
 		try {
 			stmt = connection.prepareStatement(SQLQueriesConstant.ADD_NEW_USER_QUERY);
 			stmt.setString(1,admin.getName());
-			stmt.setString(2,admin.getPassword());
+			stmt.setString(2,password);
 			stmt.setObject(3, "ADMIN");
-			stmt.setString(4,admin.getUserId());
+			stmt.setInt(4,admin.getUserId());
 			int rows = stmt.executeUpdate();
 			logger.info(rows + " admin added");
 		}catch(SQLException se) {
@@ -43,7 +43,7 @@ public class AdminDaoImpl implements AdminDao{
 		PreparedStatement stmt = null;
 		try {
 			stmt = connection.prepareStatement(SQLQueriesConstant.DELETE_ADMIN_QUERY);
-			stmt.setString(1,userId);
+			stmt.setInt(1,userId);
 			int rows = stmt.executeUpdate();
 			logger.info(rows + " deleted");
 		}catch(SQLException se) {
@@ -53,5 +53,6 @@ public class AdminDaoImpl implements AdminDao{
 		}
 		
 	}
+
 
 }

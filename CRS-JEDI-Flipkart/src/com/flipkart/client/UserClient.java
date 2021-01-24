@@ -4,19 +4,9 @@ import org.apache.log4j.Logger;
 
 import com.flipkart.constant.Department;
 import com.flipkart.constant.Gender;
-import com.flipkart.constant.GlobalConstants;
-
-import com.flipkart.bean.Professor;
 import com.flipkart.bean.Student;
-import com.flipkart.bean.User;
 import com.flipkart.business.*;
-import com.flipkart.constant.GlobalConstants;
 import com.flipkart.constant.Role;
-import com.flipkart.dao.ProfessorDao;
-import com.flipkart.dao.ProfessorDaoImpl;
-import com.flipkart.dao.StudentDaoImpl;
-import com.flipkart.dao.UserDaoImpl;
-import com.flipkart.util.UserIdGenerator;
 
 import java.util.*;
 public class UserClient {
@@ -39,6 +29,7 @@ public class UserClient {
 	
 	// Authenticate Business Object
 	AuthenticateBusiness authenticateBusinessObject = new AuthenticateBusiness();
+	
 	
 	// Enter Point of the Application
 	public static void main(String[]args) {

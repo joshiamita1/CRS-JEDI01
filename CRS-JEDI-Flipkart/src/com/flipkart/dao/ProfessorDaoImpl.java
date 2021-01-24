@@ -19,36 +19,7 @@ import com.flipkart.util.DBUtil;
 public class ProfessorDaoImpl implements ProfessorDao {
 	public static Logger logger = Logger.getLogger(ProfessorDaoImpl.class);
 	Connection connection = DBUtil.getConnection();
-
-	@Override
-	public List<String> getProfessors() {
-		
-		PreparedStatement statement = null;
-		List<String> newListProf = new ArrayList<String>();
-		ResultSet resultSet = null;
-		try {
-			statement = connection.prepareStatement(SQLQueriesConstant.VIEW_PROFESSORID_QUERY);
-			
-			resultSet = statement.executeQuery();
-			while(resultSet.next()) {
-				
-				String profId = resultSet.getString("ID");
-				newListProf.add(profId);
-			}
-		}catch(Exception e) {
-			logger.error(e.getMessage());
-		}finally {
-			try {
-				resultSet.close();
-				statement.close();
-			}catch(Exception se) {
-				se.printStackTrace();
-			}
-		}
-		return null;
-		// TODO Auto-generated method stub
-	}
-
+	
 	@Override
 	public Professor getProfessor(int professorId) {
 		
@@ -95,7 +66,6 @@ public class ProfessorDaoImpl implements ProfessorDao {
 		
 		
 	}
-
 	@Override
 	public void deleteProfessor(int userId) {
 		// TODO Auto-generated method stub
@@ -113,5 +83,6 @@ public class ProfessorDaoImpl implements ProfessorDao {
 		}
 		
 	}
-
+	
+	
 }

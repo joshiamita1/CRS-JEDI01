@@ -42,16 +42,18 @@ public class AdminClient {
 				assignCourseToProfessor();
 				break;
 			case 5:
-				// ToDo
 				registerUser();
 				break;
 			case 6:
 				deleteUser();
 				break;
 			case 7:
+				addNewCourse();
 				break;
 			case 8:
 				dropCourse();
+			case 9:
+				approveStudent();
 			case 0:
 				break;
 			default:

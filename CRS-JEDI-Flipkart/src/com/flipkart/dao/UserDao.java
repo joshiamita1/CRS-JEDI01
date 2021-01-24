@@ -1,5 +1,6 @@
 package com.flipkart.dao;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.flipkart.bean.User;
@@ -7,23 +8,9 @@ import com.flipkart.constant.Role;
 
 public interface UserDao {
 	
-	// Add User
-	public void addUser(User user);
-	
-	// Delete User
-	public void deleteUser(String userId);
-	
-	// Modify User
-	public void modifyUser(String userId);
-	
-	// Get all users
-	public void getUsers();
-	
+
 	// Get all users with particular role
-	public List<String> getUsers(Role role);
-	
-	// Get User
-	public User getUser(String userId);
+	public ArrayList<Integer> getUsers(Role role);
 	
 	public String getPassword(int userId);
 

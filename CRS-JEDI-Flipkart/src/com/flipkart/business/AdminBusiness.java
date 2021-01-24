@@ -1,5 +1,7 @@
 package com.flipkart.business;
 
+import java.util.ArrayList;
+
 import org.apache.log4j.Logger;
 
 import com.flipkart.bean.Course;
@@ -31,12 +33,20 @@ public class AdminBusiness{
 			logger.info("Invalid Student ID");
 		} else {
 			studentDaoObject.approveStudent(studentId);
+			logger.info("Student Approved");
 		}
 
 	}
 	// Getting all the users
 	public void getUsers(Role role){
-		userDaoObject.getUsers(role);
+		ArrayList<Integer> users= userDaoObject.getUsers(role);
+		logger.info("Users of the role :" + role + "are :");
+		for(Integer user : users) {
+			User u = userDaoObject.getUser(user);
+			logger.info("Name : " + u.getName());
+			logger.info("Email : " + u.getEmailId());
+			logger.info("User Id : " + u.getUserId());
+		}
 	}
 	
 	public void deleteUser(int userId) {
@@ -57,6 +67,7 @@ public class AdminBusiness{
 		} else if(professorDaoObject.getProfessor(professorId)==null) {
 			logger.info("Invalid Professor");
 		} else {
+			courseCatalogDaoObject.assignProfessor(courseId, professorId);
 			logger.info("Assigned Successfully");
 		}
 
