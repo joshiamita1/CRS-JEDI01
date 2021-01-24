@@ -20,15 +20,22 @@ public class ProfessorBusiness {
 	public static Logger logger = Logger.getLogger(ProfessorBusiness.class);
 	
 	// Grading student 
-	public void gradeStudent(String courseCode, String studentId, Grade grade) {
-		studentDaoObject.addGrade(studentId, courseCode, grade);
+	public void gradeStudent(int courseId, int studentId, Grade grade) {
+		studentDaoObject.addGrade(studentId, courseId, grade);
 	}
-  
-	public void viewRegisteredStudents(String courseCode) {
+	
+	public boolean validCourseForProfessor(int professorId, int courseId) {
+		return false;
+		
+	}
+	public void viewAssignedCourses(int professorId) {
+		
+	}
+	public void viewRegisteredStudents(int courseId) {
      //  View all the RegisteredStudent in course
-		Course course = courseCatalogObject.getCourse(courseCode);
-		Map<String, Grade> mp = courseCatalogObject.viewGrades(courseCode);
-		logger.info("Registered Students under " + professorDaoObject.getProfessor(courseCatalogObject.getCourse(courseCode).getProfessorId()).getName() + " for course " +  courseCatalogObject.getCourse(courseCode).getCourseName() + " are :");
+		Course course = courseCatalogObject.getCourse(courseId);
+		Map<String, Grade> mp = courseCatalogObject.viewGrades(courseId);
+		logger.info("Registered Students under " + professorDaoObject.getProfessor(courseCatalogObject.getCourse(courseId).getProfessorId()).getName() + " for course " +  courseCatalogObject.getCourse(courseId).getCourseName() + " are :");
 		for(String s : mp.keySet()) {
 			logger.info("Student ID : " + studentDaoObject.getStudent(s).getUserId() +"\n"+"Student Name" + studentDaoObject.getStudent(s).getName() + "\n");
 		}

@@ -10,4 +10,6 @@ public interface AdminDao {
 	
 	// Delete Admin
 	public void deleteAdmin(String adminId);
+
+	void deleteAdmin(int userId);
 }

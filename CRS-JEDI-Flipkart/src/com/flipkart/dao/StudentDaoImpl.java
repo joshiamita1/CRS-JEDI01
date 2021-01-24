@@ -48,6 +48,13 @@ public class StudentDaoImpl implements StudentDao{
 
 
 	@Override
+	public void deleteStudent(int studentId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
 	public void modifyStudent(int studentId, Student student) {
 		// TODO Auto-generated method stub
 		PreparedStatement statement = null;

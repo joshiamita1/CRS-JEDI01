@@ -2,12 +2,14 @@ package com.flipkart.client;
 
 import org.apache.log4j.Logger;
 
+import com.flipkart.constant.Department;
 import com.flipkart.constant.Gender;
 import com.flipkart.constant.GlobalConstants;
 
 import com.flipkart.bean.Professor;
 import com.flipkart.bean.Student;
 import com.flipkart.bean.User;
+import com.flipkart.business.*;
 import com.flipkart.constant.GlobalConstants;
 import com.flipkart.constant.Role;
 import com.flipkart.dao.ProfessorDao;
@@ -24,12 +26,6 @@ public class UserClient {
 	
 	// Scanner Class
 	static Scanner sc = new Scanner(System.in);
-	
-	// User Database Interaction Object
-	UserDaoImpl userDaoObject = new UserDaoImpl();
-	
-	// Student Database Interaction Object
-	StudentDaoImpl studentDaoObject = new StudentDaoImpl();
 		
 	// Professor Client Menu Object
 	ProfessorClient professorClient = new ProfessorClient();
@@ -39,6 +35,10 @@ public class UserClient {
 	
 	// Admin Client Menu Object
 	AdminClient adminClient = new AdminClient();
+	
+	
+	// Authenticate Business Object
+	AuthenticateBusiness authenticateBusinessObject = new AuthenticateBusiness();
 	
 	// Enter Point of the Application
 	public static void main(String[]args) {
@@ -62,10 +62,11 @@ public class UserClient {
 			
 			switch(choice) {
 				case 1:
-					new UserClient().login();
+					new UserClient().getInputLogin();
 					break;
 				case 2:
-					new UserClient().registerStudent();
+					// Todp
+					new UserClient().getInputRegister();
 					break;
 				default:
 					showMenu = false;
@@ -77,69 +78,72 @@ public class UserClient {
 	}
 	
 
-	public void login() {
+	public void getInputLogin() {
 		logger.info("Enter User Id");
-		String userId = sc.nextLine();
+		int userId = Integer.parseInt(sc.nextLine());
 		logger.info("Enter User Password");
 		String password = sc.nextLine();
-		if (valid(userId, password)){
-				User u = userDaoObject.getUser(userId);
-				Role r = u.getRole();
-				logger.info("Welcome " + u.getName());
-				switch(r) {
-				case ADMIN :
-					logger.info("Successfully Logged in as Admin");
-					adminClient.displayMenu(userId);
-					break;
-				case PROFESSOR:
-					professorClient.displayMenu(userId);
-					break;
-				case STUDENT:
-					studentClient.displayMenu(userId);
-					break;
-				}
+		login(userId, password);
+	}
+	
+	public void login(int userId, String password) {
+		if(authenticateBusinessObject.validLogin(userId, password)) {
+			Role role = authenticateBusinessObject.getRole(userId, password);
+			logger.info("Welcome User ID : " + userId);
+			switch(role) {
+			case ADMIN :
+				logger.info("Successfully Logged in as Admin");
+				adminClient.displayMenu(userId);
+				break;
+			case PROFESSOR:
+				logger.info("Successfully Logged in as Professor");
+				professorClient.displayMenu(userId);
+				break;
+			case STUDENT:
+				logger.info("Successfully Logged in as Student");
+				studentClient.displayMenu(userId);
+				break;
+			}
 		}
 	}
 
-	void registerStudent() {
-		String userId, name, password, branch, email;
-		long mobile;
-		Gender gender;
-		boolean hasScholarship = false;
-		userId = UserIdGenerator.generateId(null);
+	void getInputRegister() {
+		Student student = new Student();
+		String password;
+		student.setRole(Role.STUDENT);
+		student.setUserId(101);
 		logger.info("Enter Name");
-		name = sc.nextLine();
+		student.setName(sc.nextLine());
 		logger.info("Enter Password");
 		password = sc.nextLine();
 		logger.info("Enter Email");
-		email = sc.nextLine();
+		student.setEmailId(sc.nextLine());
 		logger.info("Enter Mobile No.");
-		mobile = sc.nextLong();
-		logger.info("Enter Branch");
-		branch = sc.nextLine();
+		student.setMobile(sc.nextLong());
+		logger.info("Enter Branch (Civil, Chem, CS, EE, Mech, ECE):");
+		student.setBranch(Department.valueOf(sc.nextLine()));
 		logger.info("Select Gender: 'M' for male and 'F' for female");
-		gender = Gender.valueOf(sc.nextLine());
+		student.setGender(Gender.valueOf(sc.nextLine()));
 		logger.info("If you have scholarship enter 1, else enter 0");
 		int scholarShip = Integer.parseInt(sc.nextLine());
-		if(scholarShip == 1) hasScholarship = true;
-		
-		Student s = new Student(userId, email, password, name, mobile, Role.STUDENT, gender, branch, hasScholarship, false);
-		userDaoObject.addUser(s);
-		studentDaoObject.addStudent(s);
-		logger.info("Successfully Registered! Your user id is " + userId + ".");
-		logger.info("Login Again!");
-	}
-	
-	boolean valid(String userId, String password) {
-		try {
-			User u = userDaoObject.getUser(userId);
-			if(u.getPassword().equals(password)) {
-				return true;
-			}
-		} catch (Exception e) {
-			return false;
+		if(scholarShip == 1) student.setHasScholarship(true);
+		else student.setHasScholarship(true);
+		logger.info("Enter Address");
+		student.setAddress(sc.nextLine());
+		logger.info("Enter City");
+		student.setCity(sc.nextLine());
+		logger.info("Enter State");
+		student.setState(sc.nextLine());
+		logger.info("Enter Country");
+		student.setCountry(sc.nextLine());
+		student.setAmountPayable(0);
+		if(authenticateBusinessObject.registerStudent(student, password)) {
+			logger.info("Successfully Registered! Your user id is " + student.getUserId() + ".\nLogging You In");
+			login(student.getUserId(), password);
+		} else {
+			logger.info("Please Register Again!\nRegistration Failed\n");
 		}
-		return false;
+
 	}
 
 

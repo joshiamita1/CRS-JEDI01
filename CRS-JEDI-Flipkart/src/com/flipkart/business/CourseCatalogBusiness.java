@@ -22,11 +22,29 @@ public class CourseCatalogBusiness{
 		}
 
 	}
+	
+	// View Courses in particular Catalog
+	public void viewCoursesInCatalog(int catalogId) {
+		
+	}
+	
+	public void addCourse(Course c) {
+		
+	}
+	
+	public void dropCourse(int catalogId) {
+	}
+	
 	// Getting all the CourseInformation of a particular course 
 	public Course getCourse(String courseCode) {
 		Course course = courseCatalogDaoObject.getCourse(courseCode);
 		logger.info(" Course Code" +  course.getCourseCode() +  "Course Name"+  "\t\t " + course.getCourseName());
 		return course;
+	}
+
+	public int numberOfRegisterdStudents(int courseId) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

@@ -12,6 +12,7 @@ public interface StudentDao {
 	// Modify Student
 	public void modifyStudent(int studentId, Student student);
 	
+	public void deleteStudent(int studentId);
 	// Get Student
 	public Student getStudent(int studentId);
 	

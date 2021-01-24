@@ -6,28 +6,37 @@ import java.util.TreeMap;
 
 public class Course {
 	// Course code
-	String courseCode;
+	int courseCode;
 	
 	// Course name
 	String courseName;
 	
-	// Professor of the course
-	String professorId;
 	
 	// Catalog Id of the course
-	String catalogId;
+	int catalogId;
+	
+	// Professor of the course
+	int professorId;
+
+	public Course(int courseCode, String courseName, int catalogId, int professorId) {
+		super();
+		this.courseCode = courseCode;
+		this.courseName = courseName;
+		this.catalogId = catalogId;
+		this.professorId = professorId;
+	}
 
 	/**
 	 * @return the courseCode
 	 */
-	public String getCourseCode() {
+	public int getCourseCode() {
 		return courseCode;
 	}
 
 	/**
 	 * @param courseCode the courseCode to set
 	 */
-	public void setCourseCode(String courseCode) {
+	public void setCourseCode(int courseCode) {
 		this.courseCode = courseCode;
 	}
 
@@ -46,31 +55,31 @@ public class Course {
 	}
 
 	/**
-	 * @return the professorId
-	 */
-	public String getProfessorId() {
-		return professorId;
-	}
-
-	/**
-	 * @param professorId the professorId to set
-	 */
-	public void setProfessorId(String professorId) {
-		this.professorId = professorId;
-	}
-
-	/**
 	 * @return the catalogId
 	 */
-	public String getCatalogId() {
+	public int getCatalogId() {
 		return catalogId;
 	}
 
 	/**
 	 * @param catalogId the catalogId to set
 	 */
-	public void setCatalogId(String catalogId) {
+	public void setCatalogId(int catalogId) {
 		this.catalogId = catalogId;
+	}
+
+	/**
+	 * @return the professorId
+	 */
+	public int getProfessorId() {
+		return professorId;
+	}
+
+	/**
+	 * @param professorId the professorId to set
+	 */
+	public void setProfessorId(int professorId) {
+		this.professorId = professorId;
 	}
 	
 	

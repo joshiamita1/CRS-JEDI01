@@ -37,13 +37,14 @@ public class AdminDaoImpl implements AdminDao{
 	}
 
 	@Override
-	public void deleteAdmin(String adminId) {
+	@Override
+	public void deleteAdmin(int userId) {
 		// TODO Auto-generated method stub
 		
 		PreparedStatement stmt = null;
 		try {
 			stmt = connection.prepareStatement(SQLQueriesConstant.DELETE_ADMIN_QUERY);
-			stmt.setString(1,adminId);
+			stmt.setString(1,userId);
 			int rows = stmt.executeUpdate();
 			logger.info(rows + " deleted");
 		}catch(SQLException se) {

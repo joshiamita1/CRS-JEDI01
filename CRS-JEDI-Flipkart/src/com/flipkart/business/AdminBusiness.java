@@ -24,6 +24,8 @@ public class AdminBusiness{
 	UserDaoImpl userDaoObject = new UserDaoImpl();
 	AdminDaoImpl adminDaoObject = new AdminDaoImpl();
 	private static Logger logger = Logger.getLogger(AdminBusiness.class);
+	
+	
 	public void approveStudent(String studentId) {
 		Student s = studentDaoObject.getStudent(studentId);
 		s.setApproved(true);
@@ -64,5 +66,20 @@ public class AdminBusiness{
 	public void getUsers(Role role){
 		userDaoObject.getUsers(role);
 	}
-
+	
+	public void deleteUser(int userId) {
+		Role role = userDaoObject.getUser(userId).getRole();
+		userDaoObject.deleteUser(userId);
+		switch(role) {
+		case ADMIN:
+			adminDaoObject.deleteAdmin(userId);
+		case STUDENT:
+			studentDaoObject.deleteStudent(userId);
+		case PROFESSOR:
+			professorDaoObject.deleteProfessor(userId);
+		}
+	}
+	public void assignProfessor(int courseId, int professorId) {
+		
+	}
 }

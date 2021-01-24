@@ -42,7 +42,8 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	@Override
-	public void deleteUser(String userId) {
+	@Override
+	public void deleteUser(int userId) {
 		// TODO Auto-generated method stub
 		PreparedStatement stmt = null;
 		try {
@@ -87,6 +88,12 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	@Override
+	public String getPassword(int inputId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
 	public List<String> getUsers(Role role) {
 		
 		PreparedStatement statement = null;
@@ -110,7 +117,8 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	@Override
-	public User getUser(String userId) {
+	@Override
+	public User getUser(int userId) {
 		// TODO Auto-generated method stub
 		
 		PreparedStatement statement = null;

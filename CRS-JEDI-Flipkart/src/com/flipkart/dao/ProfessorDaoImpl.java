@@ -95,13 +95,13 @@ public class ProfessorDaoImpl implements ProfessorDao {
 	}
 
 	@Override
-	public void deleteProfessor(String professorId) {
+	public void deleteProfessor(int userId) {
 		// TODO Auto-generated method stub
 		
 		PreparedStatement stmt = null;
 		try {
 			stmt = connection.prepareStatement(SQLQueriesConstant.DELETE_PROF_QUERY);
-			stmt.setString(1,professorId);
+			stmt.setString(1,userId);
 			int rows = stmt.executeUpdate();
 			logger.info(rows + " deleted");
 		}catch(SQLException se) {

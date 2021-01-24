@@ -17,4 +17,6 @@ public interface ProfessorDao {
 	
 	// Get Professor's info
 	public Professor getProfessor(String professorId);
+
+	void deleteProfessor(int userId);
 }
