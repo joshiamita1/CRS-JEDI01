@@ -29,10 +29,10 @@ public class StudentDaoImpl implements StudentDao{
 	public static Logger logger = Logger.getLogger(StudentDaoImpl.class);
 	Connection connection = DBUtil.getConnection();
 	
-	public static void main(String[]args) {
+	/*public static void main(String[]args) {
 		StudentDaoImpl temp= new StudentDaoImpl();
 		Student student = new Student("0", "parth@gmail.com", "abcd", "parth", 8306773046l,Role.STUDENT, Gender.MALE,"ECE", false,true);
-		temp.viewGrades(102);
+		temp.ApproveStudent(true,102);
 		//temp.viewRegisteredCourses(102);
 		//temp.registerCourse(101, "501");
 		
@@ -43,18 +43,18 @@ public class StudentDaoImpl implements StudentDao{
 		//temp.addStudent(student);
 		//Student student = temp.getStudent(102);
 		//logger.info(student.getBranch());
+		logger.info(temp.hasScholarship(102));
 		
 	}
-
+*/
 
 	@Override
 	public void modifyStudent(int studentId, Student student) {
 		// TODO Auto-generated method stub
+		//logger.info("Inside modeify Student Dao Function" );
 		PreparedStatement statement = null;
-		try {logger.info("hello" +SQLQueriesConstant.MODIFY_STUDENT_QUERY );
+		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.MODIFY_STUDENT_QUERY );
-			//StudentId, Name,Email,Mobile,Gender, branch, hasScholarship, isApproved,city, address,state)
-			//statement.setInt(1,Integer.valueOf(student.getUserId()));
 			statement.setString(1,student.getName());
 			statement.setString(2,student.getEmailId());
 			statement.setLong(3,student.getMobile());
@@ -69,13 +69,13 @@ public class StudentDaoImpl implements StudentDao{
 			
 			
 			
-			logger.info("statement is "+statement);
+			
 			int rows = statement.executeUpdate();
 			if(rows > 0) {
-				logger.info("Added Student sucessfully");
+				logger.info("Modified Student sucessfully");
 			}
 			else {
-				logger.info("Error during insertion");
+				logger.info("Error during Modification");
 			}
 			
 		}catch(Exception e) {
@@ -88,16 +88,15 @@ public class StudentDaoImpl implements StudentDao{
 		@Override
 	public Student getStudent(int studentId) {
 		PreparedStatement statement = null;
-		try {logger.info(SQLQueriesConstant.GET_STUDENT_DETAILS_QUERY );
+		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.GET_STUDENT_DETAILS_QUERY );
 			statement.setInt(1,studentId);
-			logger.info("statement is "+statement);
+			
 			ResultSet resultSet = statement.executeQuery();
-			logger.info("userid is "+resultSet);
+		
 			if(resultSet.next())
 			{
-				int userId = resultSet.getInt("StudentID");
-			System.out.println("userid is "+userId);
+			int userId = resultSet.getInt("StudentID");
 			String name = resultSet.getString("Name");
 			String emailId = resultSet.getString("Email");
 			long mobile = resultSet.getLong("mobile");
@@ -106,6 +105,7 @@ public class StudentDaoImpl implements StudentDao{
 			boolean hasScholarship= resultSet.getBoolean("HasScholarship");
 			boolean isApproved= resultSet.getBoolean("IsApproved");
 			Student student = new Student(Integer.toString(userId), emailId, "abcd", name, mobile,Role.STUDENT, gender,branch, hasScholarship, isApproved);
+			logger.info(" Student Details Retrieved sucessfully");
 			return student;
 			}
 			return null;
@@ -121,7 +121,7 @@ public class StudentDaoImpl implements StudentDao{
 	@Override
 	public void addStudent(Student student) {
 		PreparedStatement statement = null;
-		try {logger.info("hello" +SQLQueriesConstant.ADD_STUDENT_QUERY );
+		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.ADD_STUDENT_QUERY );
 			//StudentId, Name,Email,Mobile,Gender, branch, hasScholarship, isApproved,city, address,state)
 			//statement.setInt(1,Integer.valueOf(student.getUserId()));
@@ -138,7 +138,7 @@ public class StudentDaoImpl implements StudentDao{
 			
 			
 			
-			logger.info("statement is "+statement);
+			
 			int rows = statement.executeUpdate();
 			if(rows > 0) {
 				logger.info("Added Student sucessfully");
@@ -159,16 +159,16 @@ public class StudentDaoImpl implements StudentDao{
 	public void addGrade(int studentId, String courseCode, Grade grade) {
 		// TODO Auto-generated method stub
 		PreparedStatement statement = null;
-		try {logger.info("hello" +SQLQueriesConstant.ADD_GRADE_QUERY );
+		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.ADD_GRADE_QUERY );
 			
 			statement.setString(1,String.valueOf(grade));
 			statement.setInt(2,studentId);
 			statement.setInt(3,Integer.valueOf(courseCode));
-			logger.info("statement is "+statement);
+			
 			int rows = statement.executeUpdate();
 			if(rows > 0) {
-				logger.info("Added to Registered Course sucessfully");
+				logger.info("Added to Grade for Student sucessfully");
 			}
 			else {
 				logger.info("Error during insertion");
@@ -189,12 +189,11 @@ public class StudentDaoImpl implements StudentDao{
 		PreparedStatement statement = null;
 		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.ADD_REGISTERED_COURSE_STUDENT_QUERY );
-			//StudentId, Name,Email,Mobile,Gender, branch, hasScholarship, isApproved,city, address,state)
-			//statement.setInt(1,Integer.valueOf(student.getUserId()));
+			
 			statement.setInt(1,studentId);
 			statement.setInt(2,Integer.valueOf(courseId));
 					
-			logger.info("statement is "+statement);
+			
 			int rows = statement.executeUpdate();
 			if(rows > 0) {
 				logger.info("Added to Registered Course sucessfully");
@@ -215,14 +214,14 @@ public class StudentDaoImpl implements StudentDao{
 	public void dropCourse(int studentId, String courseId) {
 		// TODO Auto-generated method stub
 		PreparedStatement statement = null;
-		try {logger.info("hello" +SQLQueriesConstant.DROP_COURSE_STUDENT_QUERY );
+		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.DROP_COURSE_STUDENT_QUERY );
 			//StudentId, Name,Email,Mobile,Gender, branch, hasScholarship, isApproved,city, address,state)
 			//statement.setInt(1,Integer.valueOf(student.getUserId()));
 			statement.setInt(1,studentId);
 			statement.setInt(2,Integer.valueOf(courseId));
 					
-			logger.info("statement is "+statement);
+			
 			int rows = statement.executeUpdate();
 			if(rows > 0) {
 				logger.info("Dropped Course sucessfully");
@@ -241,16 +240,16 @@ public class StudentDaoImpl implements StudentDao{
 	@Override
 	public ArrayList<Integer> viewRegisteredCourses(int studentId) {
 		PreparedStatement statement = null;
-		try {logger.info(SQLQueriesConstant.GET_REGISTERED_COURSES_QUERY );
+		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.GET_REGISTERED_COURSES_QUERY );
 			statement.setInt(1,studentId);
-			logger.info("statement is "+statement);
+		
 			ArrayList<Integer> courselist = new ArrayList<Integer>();
 			ResultSet resultSet = statement.executeQuery();
-			logger.info("userid is "+resultSet);
+			
 			while(resultSet.next())
 			{
-				logger.info(resultSet.getString("CourseName"));
+				//logger.info(resultSet.getString("CourseName"));
 				courselist.add(resultSet.getInt("CourseId"));
 			}
 			return courselist;
@@ -268,24 +267,78 @@ public class StudentDaoImpl implements StudentDao{
 	public Map<String, Grade> viewGrades(int studentId) {
 		// TODO Auto-generated method stub
 		PreparedStatement statement = null;
-		try {logger.info(SQLQueriesConstant.VIEW_GRADES_QUERY );
+		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.VIEW_GRADES_QUERY );
 			statement.setInt(1,studentId);
-			logger.info("statement is "+statement);
+			
 			Map<String, Grade> grades = new HashMap<String, Grade>();
 			ResultSet resultSet = statement.executeQuery();
-			logger.info("userid is "+resultSet);
+			
 			while(resultSet.next())
 			{
-				logger.info(resultSet.getInt("CourseId")+resultSet.getString("Grade"));
+				
 				grades.put(String.valueOf(resultSet.getInt("CourseId")),Grade.valueOf(resultSet.getString("Grade")));
 			}
-			logger.info(grades.get("501"));
+			
 			return grades;
 		}catch(Exception e) {
 			logger.error(e.getMessage());
 			e.printStackTrace();
 			return null;
+		}
+	}
+
+
+	@Override
+	public boolean hasScholarship(int studentId) {
+		// TODO Auto-generated method stub
+		PreparedStatement statement = null;
+		try {
+			statement = connection.prepareStatement(SQLQueriesConstant.GET_HAS_SCHOLARSHIP );
+			statement.setInt(1,studentId);
+			
+			ResultSet resultSet = statement.executeQuery();
+			
+			if(resultSet.next())
+			{
+				
+			boolean hasScholar= resultSet.getBoolean("HasScholarship");
+			return hasScholar;
+			}
+			return false;
+		}catch(Exception e) {
+			logger.error(e.getMessage());
+			e.printStackTrace();
+			return false;
+			
+		}
+		
+	}
+
+
+	@Override
+	public void ApproveStudent(boolean approvalstatus, int studentId) {
+		// TODO Auto-generated method stub
+		PreparedStatement statement = null;
+		try {
+			statement = connection.prepareStatement(SQLQueriesConstant.APPROVE_STUDENT_QUERY );
+			
+			statement.setBoolean(1,approvalstatus);
+			statement.setInt(2,studentId);
+			
+			
+			int rows = statement.executeUpdate();
+			if(rows > 0) {
+				logger.info("updated approval status sucessfully");
+			}
+			else {
+				logger.info("Error during insertion");
+			}
+			
+		}catch(Exception e) {
+			logger.error(e.getMessage());
+			e.printStackTrace();
+			
 		}
 	}
 	

@@ -21,12 +21,14 @@ public class FeePaymentImpl implements FeePayment  {
 	
 	public static Logger logger = Logger.getLogger(FeePaymentImpl.class);
 	Connection connection = DBUtil.getConnection();
-	public static void main(String[]args) {
+	
+	/*public static void main(String[]args) {
 		FeePaymentImpl temp =new FeePaymentImpl();
 		//temp.calculatefees(102);
 		temp.updatefees(102, 50000);		
 		//temp.getFeesToPay(102);
-	}
+	}*/
+	
 	@Override
 	public double calculatefees(int studentId) {
 		// TODO Auto-generated method stub
@@ -34,16 +36,22 @@ public class FeePaymentImpl implements FeePayment  {
 		int count =this.countcourses(studentId);
 		double fees= count* GlobalConstants.feesOfSingleCourse;
 		
-		try {logger.info("hello" +SQLQueriesConstant.UPDATE_FEE);
+		StudentDaoImpl studentdao= new StudentDaoImpl();
+		boolean hasScholarship=studentdao.hasScholarship(studentId);
+		
+		if(hasScholarship)
+			fees=fees*0.5;
+		
+		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.UPDATE_FEE );
 			
 			statement.setDouble(1,fees);
 			statement.setInt(2,studentId);
 			
-			logger.info("statement is "+statement);
+			
 			int rows = statement.executeUpdate();
 			if(rows > 0) {
-				logger.info("FeesUpdated sucessfully");
+				logger.info("Fees Calculated sucessfully");
 			}
 			else {
 				logger.info("Error during insertion");
@@ -62,17 +70,17 @@ public class FeePaymentImpl implements FeePayment  {
 	public int countcourses(int studentId) {
 		PreparedStatement statement = null;
 		int count = 0;
-		try {logger.info(SQLQueriesConstant.COUNT_COURSE);
+		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.COUNT_COURSE);
 			statement.setInt(1,studentId);
-			logger.info("statement is "+statement);
+			
 			ResultSet resultSet = statement.executeQuery();
-			logger.info("userid is "+resultSet);
+		
 			if(resultSet.next())
 			{
-				logger.info(resultSet.getInt("coursecount"));
+				
 				count=(resultSet.getInt("coursecount"));
-				logger.info(count);
+				
 			}
 			return count;
 		}catch(Exception e) {
@@ -95,10 +103,10 @@ public class FeePaymentImpl implements FeePayment  {
 			Calendar cal = Calendar.getInstance(); 
 			Timestamp timestamp = new Timestamp(cal.getTimeInMillis());
 			statement.setTimestamp(3, timestamp);		
-			logger.info("statement is "+statement);
+			
 			int rows = statement.executeUpdate();
 			if(rows > 0) {
-				logger.info("Fee payment sucessfully");
+				logger.info("Fee payment successfull");
 			}
 			else {
 				logger.info("Error during insertion");
@@ -110,19 +118,20 @@ public class FeePaymentImpl implements FeePayment  {
 		}
 		
 		double feePending= this.getFeesToPay(studentId);
-		try {logger.info("hello" +SQLQueriesConstant.UPDATE_FEE);
+		try {
+			
 			statement = connection.prepareStatement(SQLQueriesConstant.UPDATE_FEE );
 			
 			statement.setDouble(1,feePending-fees);
 			statement.setInt(2,studentId);
 			
-			logger.info("statement is "+statement);
+			
 			int rows = statement.executeUpdate();
 			if(rows > 0) {
-				logger.info("FeesUpdated sucessfully");
+				logger.info(" Post Payment FeesUpdated sucessfully");
 			}
 			else {
-				logger.info("Error during insertion");
+				logger.info("Error during update");
 			}
 						
 		}catch(Exception e) {
@@ -138,17 +147,17 @@ public class FeePaymentImpl implements FeePayment  {
 		// TODO Auto-generated method stub
 		PreparedStatement statement = null;
 		double fee =0;
-		try {logger.info(SQLQueriesConstant.GET_FEE_QUERY);
+		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.GET_FEE_QUERY);
 			statement.setInt(1,studentId);
-			logger.info("statement is "+statement);
+			
 			ResultSet resultSet = statement.executeQuery();
-			logger.info("userid is "+resultSet);
+			
 			if(resultSet.next())
 			{
-				logger.info(resultSet.getDouble("amountPayable"));
+				
 				fee=(resultSet.getInt("amountPayable"));
-				logger.info(fee);
+				
 			}
 			return fee;
 		}catch(Exception e) {

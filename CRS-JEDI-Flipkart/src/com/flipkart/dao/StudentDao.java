@@ -67,4 +67,19 @@ public interface StudentDao {
 	 * @returnType Map<String,Grade>
 	 */
 	public Map<String, Grade> viewGrades(int studentId);
+	
+	/**
+	 * check if student has scholarship from database
+	 * @param studentId
+	 * @return boolena
+	 */
+	public boolean hasScholarship(int studentId);
+	
+	
+	/**
+	 * Set approved student to true
+	 * @param approvalstatus
+	 * @param studentId
+	 */
+	public void ApproveStudent(boolean approvalstatus, int studentId);
 }

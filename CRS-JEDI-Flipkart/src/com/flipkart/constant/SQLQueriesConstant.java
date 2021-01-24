@@ -38,7 +38,8 @@ public class SQLQueriesConstant{
 	public static String UPDATE_FEE="update Student set AmountPayable = ? where studentId=?";
 	public static String MAKE_PAYMENT_QUERY = "insert into Payment(studentId, AmountPaid,DateofPayment) values(?, ?, ?)";
 	public static String GET_FEE_QUERY="select amountPayable from student where StudentId= ?";
-	
+	public static String GET_HAS_SCHOLARSHIP =" select HasScholarship from student where StudentID= ?";
+	public static String APPROVE_STUDENT_QUERY="update Student set isApproved =? where studentID= ?";
 	// Professor Queries
 	public static String VIEW_PROFESSORID_QUERY = "select id from Professor";
 	public static String DELETE_PROF_QUERY = "delete from professor where professorId = ? ";

@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 
 import com.flipkart.bean.Course;
 import com.flipkart.bean.Professor;
+import com.flipkart.constant.Department;
 import com.flipkart.constant.Gender;
 import com.flipkart.constant.Role;
 import com.flipkart.constant.SQLQueriesConstant;
@@ -61,8 +62,8 @@ public class ProfessorDaoImpl implements ProfessorDao {
 				String password = resultSet.getString("password");
 				String name = resultSet.getString("name");
 				long mobile = resultSet.getLong("mobile");
-				Role role = Role.valueOf(resultSet.getObject("role"));
-				Gender gender = Gender.valueOf(resultSet.getObject("gender"));
+				Role role = Role.valueOf(resultSet.getString("role"));
+				Gender gender = Gender.valueOf(resultSet.getString("gender"));
 				Department dept = Department.valueOf(resultSet.getString("dept"));
 
 				Professor professor = new Professor( userId, emailId, password, name, mobile, role, gender, dept);

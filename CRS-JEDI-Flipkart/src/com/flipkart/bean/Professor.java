@@ -3,6 +3,7 @@ package com.flipkart.bean;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.flipkart.constant.Department;
 import com.flipkart.constant.Gender;
 import com.flipkart.constant.Role;
 

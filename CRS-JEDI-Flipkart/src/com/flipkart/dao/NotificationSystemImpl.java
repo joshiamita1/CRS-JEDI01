@@ -14,9 +14,10 @@ public class NotificationSystemImpl implements NotificationSystem{
 
 	public static Logger logger = Logger.getLogger(FeePaymentImpl.class);
 	Connection connection = DBUtil.getConnection();
-	public static void main(String[] args) {
+	
+	/*public static void main(String[] args) {
 	new NotificationSystemImpl().notifyUser(102, "Fee Payment Successful");
-	}
+	}*/
 	@Override
 	public void notifyUser(int userID, String Message) {
 		// TODO Auto-generated method stub
@@ -28,13 +29,13 @@ public class NotificationSystemImpl implements NotificationSystem{
 			Calendar cal = Calendar.getInstance(); 
 			Timestamp timestamp = new Timestamp(cal.getTimeInMillis());
 			statement.setTimestamp(3, timestamp);		
-			logger.info("statement is "+statement);
+			
 			int rows = statement.executeUpdate();
 			if(rows > 0) {
 				logger.info("Notification sent sucessfully");
 			}
 			else {
-				logger.info("Error during insertion");
+				logger.info("Error during sending Notification");
 			}
 			
 		}catch(Exception e) {
