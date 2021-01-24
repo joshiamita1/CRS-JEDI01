@@ -10,14 +10,20 @@ import org.apache.log4j.Logger;
 import com.flipkart.constant.SQLQueriesConstant;
 import com.flipkart.util.DBUtil;
 
-public class NotificationSystemImpl implements NotificationSystem{
+public class NotificationSystemDaoImpl implements NotificationSystemDao{
 
-	public static Logger logger = Logger.getLogger(FeePaymentImpl.class);
+	public static Logger logger = Logger.getLogger(FeePaymentDaoImpl.class);
 	Connection connection = DBUtil.getConnection();
+<<<<<<< HEAD:CRS-JEDI-Flipkart/src/com/flipkart/dao/NotificationSystemImpl.java
 	
 	/*public static void main(String[] args) {
 	new NotificationSystemImpl().notifyUser(102, "Fee Payment Successful");
 	}*/
+=======
+	public static void main(String[] args) {
+	new NotificationSystemDaoImpl().notifyUser(102, "Fee Payment Successful");
+	}
+>>>>>>> lovish:CRS-JEDI-Flipkart/src/com/flipkart/dao/NotificationSystemDaoImpl.java
 	@Override
 	public void notifyUser(int userID, String Message) {
 		// TODO Auto-generated method stub

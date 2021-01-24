@@ -28,29 +28,12 @@ public class StudentDaoImpl implements StudentDao{
 	
 	public static Logger logger = Logger.getLogger(StudentDaoImpl.class);
 	Connection connection = DBUtil.getConnection();
-	
-	/*public static void main(String[]args) {
-		StudentDaoImpl temp= new StudentDaoImpl();
-		Student student = new Student("0", "parth@gmail.com", "abcd", "parth", 8306773046l,Role.STUDENT, Gender.MALE,"ECE", false,true);
-		temp.ApproveStudent(true,102);
-		//temp.viewRegisteredCourses(102);
-		//temp.registerCourse(101, "501");
-		
-		//temp.dropCourse(101, "501");
-		//temp.modifyStudent(101, student);
-		//temp.addGrade(101, "501", Grade.B);
-		
-		//temp.addStudent(student);
-		//Student student = temp.getStudent(102);
-		//logger.info(student.getBranch());
-		logger.info(temp.hasScholarship(102));
-		
-	}
-*/
+
 
 	@Override
-	public void modifyStudent(int studentId, Student student) {
+	public void deleteStudent(int studentId) {
 		// TODO Auto-generated method stub
+
 		//logger.info("Inside modeify Student Dao Function" );
 		PreparedStatement statement = null;
 		try {
@@ -82,10 +65,12 @@ public class StudentDaoImpl implements StudentDao{
 			logger.error(e.getMessage());
 			
 		}
+
 		
 	}
-	
-		@Override
+
+//	
+	@Override
 	public Student getStudent(int studentId) {
 		PreparedStatement statement = null;
 		try {
@@ -117,9 +102,9 @@ public class StudentDaoImpl implements StudentDao{
 		// TODO Auto-generated method stub
 		
 	}
-
+		
 	@Override
-	public void addStudent(Student student) {
+	public void addStudent(Student student, String password) {
 		PreparedStatement statement = null;
 		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.ADD_STUDENT_QUERY );
@@ -154,9 +139,10 @@ public class StudentDaoImpl implements StudentDao{
 		// TODO Auto-generated method stub
 		
 	}
-
+	
+	
 	@Override
-	public void addGrade(int studentId, String courseCode, Grade grade) {
+	public void addGrade(int studentId, int courseId, Grade grade) {
 		// TODO Auto-generated method stub
 		PreparedStatement statement = null;
 		try {
@@ -164,8 +150,10 @@ public class StudentDaoImpl implements StudentDao{
 			
 			statement.setString(1,String.valueOf(grade));
 			statement.setInt(2,studentId);
+
 			statement.setInt(3,Integer.valueOf(courseCode));
 			
+
 			int rows = statement.executeUpdate();
 			if(rows > 0) {
 				logger.info("Added to Grade for Student sucessfully");
@@ -184,7 +172,7 @@ public class StudentDaoImpl implements StudentDao{
 
 	
 	@Override
-	public void registerCourse(int studentId, String courseId) {
+	public void registerCourse(int studentId, int courseId) {
 		// TODO Auto-generated method stub
 		PreparedStatement statement = null;
 		try {
@@ -211,7 +199,7 @@ public class StudentDaoImpl implements StudentDao{
 	}
 
 	@Override
-	public void dropCourse(int studentId, String courseId) {
+	public void dropCourse(int studentId, int courseId) {
 		// TODO Auto-generated method stub
 		PreparedStatement statement = null;
 		try {
@@ -262,9 +250,9 @@ public class StudentDaoImpl implements StudentDao{
 		// TODO Auto-generated method stub
 	
 	}
-
+//
 	@Override
-	public Map<String, Grade> viewGrades(int studentId) {
+	public Map<Integer, Grade> viewGrades(int studentId) {
 		// TODO Auto-generated method stub
 		PreparedStatement statement = null;
 		try {
@@ -287,6 +275,7 @@ public class StudentDaoImpl implements StudentDao{
 			return null;
 		}
 	}
+
 
 
 	@Override
@@ -312,8 +301,10 @@ public class StudentDaoImpl implements StudentDao{
 			return false;
 			
 		}
+
 		
 	}
+
 
 
 	@Override
@@ -340,6 +331,7 @@ public class StudentDaoImpl implements StudentDao{
 			e.printStackTrace();
 			
 		}
+
 	}
 	
 	

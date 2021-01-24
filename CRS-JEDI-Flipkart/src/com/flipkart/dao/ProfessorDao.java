@@ -1,24 +1,28 @@
 package com.flipkart.dao;
 
 import com.flipkart.bean.Professor;
+import com.flipkart.bean.User;
+import com.flipkart.constant.Department;
 
 import java.util.List;
 
 public interface ProfessorDao {
+
 	
+
 	/**
 	 * Add a professor to the list of existing professors
 	 * @param professor
 	 * @returnType void
 	 */
-	public void addProfessor(Professor professor);
+	public void addProfessor(User user, String password, Department department);
 	
 	/**
 	 * Delete a professor
 	 * @param professorId
 	 * @returnType void
 	 */
-	public void deleteProfessor(String professorId);
+	public void deleteProfessor(int professorId);
 	
 	/**
 	 * Get list of all professors
@@ -33,5 +37,9 @@ public interface ProfessorDao {
 	 * @return
 	 * @returnType Professor
 	 */
-	public Professor getProfessor(String professorId);
+	public Professor getProfessor(int professorId);
+
+
+	
+
 }

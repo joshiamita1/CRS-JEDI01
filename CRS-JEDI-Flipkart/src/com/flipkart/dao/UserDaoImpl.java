@@ -22,7 +22,7 @@ public class UserDaoImpl implements UserDao {
 	Connection connection = DBUtil.getConnection();
 	
 	@Override
-	public void addUser(User user) {
+	public void addUser(User user, String password) {
 		// TODO Auto-generated method stub
 		
 		PreparedStatement stmt = null;
@@ -42,7 +42,7 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	@Override
-	public void deleteUser(String userId) {
+	public void deleteUser(int userId) {
 		// TODO Auto-generated method stub
 		PreparedStatement stmt = null;
 		try {
@@ -57,6 +57,7 @@ public class UserDaoImpl implements UserDao {
 		}
 		
 	}
+
 
 	@Override
 	public void modifyUser(String userId) {
@@ -84,6 +85,7 @@ public class UserDaoImpl implements UserDao {
 		
 	}
 
+
 	@Override
 	public List<String> getUsers() {
 		
@@ -107,7 +109,13 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	@Override
-	public List<String> getUsers(Role role) {
+	public String getPassword(int inputId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ArrayList<Integer> getUsers(Role role) {
 		
 		PreparedStatement statement = null;
 		List<String> userList = new ArrayList<String>();
@@ -130,7 +138,7 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	@Override
-	public User getUser(String userId) {
+	public User getUser(int userId) {
 		// TODO Auto-generated method stub
 		
 		PreparedStatement statement = null;

@@ -9,6 +9,10 @@ import org.apache.log4j.Logger;
 
 import com.flipkart.bean.Course;
 import com.flipkart.bean.Professor;
+<<<<<<< HEAD
+=======
+import com.flipkart.bean.User;
+>>>>>>> lovish
 import com.flipkart.constant.Department;
 import com.flipkart.constant.Gender;
 import com.flipkart.constant.Role;
@@ -18,38 +22,9 @@ import com.flipkart.util.DBUtil;
 public class ProfessorDaoImpl implements ProfessorDao {
 	public static Logger logger = Logger.getLogger(ProfessorDaoImpl.class);
 	Connection connection = DBUtil.getConnection();
-
+	
 	@Override
-	public List<String> getProfessors() {
-		
-		PreparedStatement statement = null;
-		List<String> newListProf = new ArrayList<String>();
-		ResultSet resultSet = null;
-		try {
-			statement = connection.prepareStatement(SQLQueriesConstant.VIEW_PROFESSORID_QUERY);
-			
-			resultSet = statement.executeQuery();
-			while(resultSet.next()) {
-				
-				String profId = resultSet.getString("ID");
-				newListProf.add(profId);
-			}
-		}catch(Exception e) {
-			logger.error(e.getMessage());
-		}finally {
-			try {
-				resultSet.close();
-				statement.close();
-			}catch(Exception se) {
-				se.printStackTrace();
-			}
-		}
-		return null;
-		// TODO Auto-generated method stub
-	}
-
-	@Override
-	public Professor getProfessor(String professorId) {
+	public Professor getProfessor(int professorId) {
 		
 		PreparedStatement statement = null;
 		try {
@@ -78,7 +53,7 @@ public class ProfessorDaoImpl implements ProfessorDao {
 	}
 
 	@Override
-	public void addProfessor(Professor professor) {
+	public void addProfessor(User user, String password, Department department) {
 		// TODO Auto-generated method stub
 		PreparedStatement stmt = null;
 		try {
@@ -110,15 +85,14 @@ public class ProfessorDaoImpl implements ProfessorDao {
 		
 		
 	}
-
 	@Override
-	public void deleteProfessor(String professorId) {
+	public void deleteProfessor(int userId) {
 		// TODO Auto-generated method stub
 		
 		PreparedStatement stmt = null;
 		try {
 			stmt = connection.prepareStatement(SQLQueriesConstant.DELETE_PROF_QUERY);
-			stmt.setString(1,professorId);
+			stmt.setString(1,userId);
 			int rows = stmt.executeUpdate();
 			logger.info(rows + " deleted");
 		}catch(SQLException se) {
@@ -128,5 +102,11 @@ public class ProfessorDaoImpl implements ProfessorDao {
 		}
 		
 	}
+<<<<<<< HEAD
 
 }
+=======
+	
+	
+}
+>>>>>>> lovish

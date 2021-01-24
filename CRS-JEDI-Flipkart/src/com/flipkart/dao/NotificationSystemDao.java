@@ -1,6 +1,7 @@
 package com.flipkart.dao;
 
-public interface NotificationSystem {
+public interface NotificationSystemDao {
+
 
 	/**
 	 * Notify user with a given message
@@ -8,5 +9,6 @@ public interface NotificationSystem {
 	 * @param Message
 	 * @returnType void
 	 */
+
 	public void notifyUser(int userID, String Message);
 }
