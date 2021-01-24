@@ -29,10 +29,10 @@ public class ProfessorDaoImpl implements ProfessorDao {
 			
 			resultSet = statement.executeQuery();
 			while(resultSet.next()) {
-				
 				String profId = resultSet.getString("ID");
 				newListProf.add(profId);
 			}
+			return newListProf;
 		}catch(Exception e) {
 			logger.error(e.getMessage());
 		}finally {

@@ -19,9 +19,14 @@ public class SQLQueriesConstant{
 	public static String DELETE_USER_QUERY = "delete from authorcredential where userId = ? ";
 	public static String GET_USER_DETAIL_ID = "select username, password, role from authorcredential where id = ?";
 	
-	// View Courses
-	public static String VIEW_CATALOG_QUERY = "select courseId, courseName, fees, courseDescription from Course";
-	public static String VIEW_COURSE_QUERY = "select * from Course where courseId = ?";
+	//Courses queries
+	//public static String VIEW_CATALOG_QUERY = "select courseId, courseName, fees, courseDescription from Course";
+	public static String VIEW_COURSE_QUERY = "select * from Course";
+	public static String VIEW_COURSEID_QUERY = "select courseId from Course";
+	public static String ADD_NEW_COURSE_QUERY = "insert into Course(CatalogID, CourseId, CatalogDetail, ProfessorId, courseName) values (?, ?, ?, ?, ?)";
+	public static String VIEW_COURSEGRADES_QUERY = "select * from RegisteredCourses where CourseId=?";
+	public static String DELETE_COURSE_QUERY = "delete from Course where CourseId = ? ";
+	public static String UPDATE_COURSE_QUERY = "update Course SET ProfessorId=?, courseName=? WHERE courseId = ?";
 	
 	// Student Queries
 	public static String GET_STUDENT_DETAILS_QUERY = "select studentId, studentName, branch, hasScholarship, gender from Student where studentName = ?";
@@ -56,11 +61,13 @@ public class SQLQueriesConstant{
 	public static String REGISTER_ADMIN_QUERY = "insert into Admin(adminId, adminName, gender) values(?,?,?)";
 	public static String VIEW_USERS_QUERY = "SELECT  u.userId, u.username, r.role from user u join Role r on r.roleId = u.roleId;";
 	public static String UPDATE_COURSE_PROFESSOR_QUERY = "update Course SET professor=? WHERE courseId = ?";
-	public static String ADD_NEW_COURSE_QUERY = "insert into Course(courseId, courseName, fees, courseDescription, catalogId) values (?,?, ?, ?, ?)";
-	public static String DELETE_COURSE_QUERY = "delete from Course where courseId = ?";
+	//public static String ADD_NEW_COURSE_QUERY = "insert into Course(courseId, courseName, fees, courseDescription, catalogId) values (?,?, ?, ?, ?)";
+	//public static String DELETE_COURSE_QUERY = "delete from Course where courseId = ?";
 	public static String REGISTER_USER_QUERY = "insert into user(UserId, username, password, roleId) values (?,?,?,?)";
 	public static String ASSIGN_PROFESSOR_QUERY = "insert into ProfessorCourse(courseId, professorId) values (?, ?)";
 	
 	public static String DELETE_ADMIN_QUERY = "delete from admin where adminId = ? ";
+	
+	// Grade Queries
 	
 }
