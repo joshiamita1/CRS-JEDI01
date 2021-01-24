@@ -25,7 +25,7 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			stmt = connection.prepareStatement(SQLQueriesConstant.ADD_NEW_COURSE_QUERY);
 			stmt.setString(1,course.getCourseCode());
 			stmt.setString(2,course.getCourseName());
-			//stmt.setObject(3, "PROFESSOR");
+			stmt.setObject(3,course.getCourseDescription());
 			stmt.setString(4,course.getProfessorId());
 			stmt.setString(5,course.getCourseName());
 			int rows = stmt.executeUpdate();

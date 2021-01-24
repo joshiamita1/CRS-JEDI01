@@ -17,6 +17,8 @@ public class Course {
 	// Catalog Id of the course
 	String catalogId;
 
+	//Course Description
+	String courseDescription;
 	/**
 	 * @return the courseCode
 	 */
@@ -73,5 +75,11 @@ public class Course {
 		this.catalogId = catalogId;
 	}
 	
+	/**
+	 * @return the courseDescription
+	 */
+	public String getCourseDescription() {
+		return courseDescription;
+	}
 	
 }
