@@ -97,7 +97,14 @@ public class AdminClient {
 		logger.info("6. Delete a user");
 		logger.info("7. Add a new course to catalog");
 		logger.info("8. Drop a course from catalog");
+		logger.info("9. Approve student");
 		logger.info("0. To logout");
+	}
+	
+	public void approveStudent() {
+		logger.info("Enter Student ID to approve");
+		int studentId = sc.nextInt();
+		adminBusinessObject.approveStudent(studentId);
 	}
 	
 	public void registerUser() {

@@ -16,9 +16,6 @@ public interface StudentDao {
 	// Get Student
 	public Student getStudent(int studentId);
 	
-	// Add Grade
-	public void addGrade(int studentId, String courseCode, Grade grade);
-	
 	// Register A Course
 	public void registerCourse(int studentId, String courseId);
 	
@@ -30,4 +27,10 @@ public interface StudentDao {
 	
 	// View Grades
 	public Map<String, Grade> viewGrades(int studentId);
+
+	void approveStudent(int studentId);
+
+	void addStudent(Student student, String password);
+
+	void addGrade(int studentId, int courseId, Grade grade);
 }

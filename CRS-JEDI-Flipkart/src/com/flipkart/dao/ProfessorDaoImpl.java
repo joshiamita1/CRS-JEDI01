@@ -9,6 +9,8 @@ import org.apache.log4j.Logger;
 
 import com.flipkart.bean.Course;
 import com.flipkart.bean.Professor;
+import com.flipkart.bean.User;
+import com.flipkart.constant.Department;
 import com.flipkart.constant.Gender;
 import com.flipkart.constant.Role;
 import com.flipkart.constant.SQLQueriesConstant;
@@ -48,7 +50,7 @@ public class ProfessorDaoImpl implements ProfessorDao {
 	}
 
 	@Override
-	public Professor getProfessor(String professorId) {
+	public Professor getProfessor(int professorId) {
 		
 		PreparedStatement statement = null;
 		try {
@@ -74,7 +76,7 @@ public class ProfessorDaoImpl implements ProfessorDao {
 	}
 
 	@Override
-	public void addProfessor(Professor professor) {
+	public void addProfessor(User user, String password, Department department) {
 		// TODO Auto-generated method stub
 		PreparedStatement stmt = null;
 		try {

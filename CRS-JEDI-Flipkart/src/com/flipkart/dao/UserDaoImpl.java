@@ -22,7 +22,7 @@ public class UserDaoImpl implements UserDao {
 	Connection connection = DBUtil.getConnection();
 	
 	@Override
-	public void addUser(User user) {
+	public void addUser(User user, String password) {
 		// TODO Auto-generated method stub
 		
 		PreparedStatement stmt = null;

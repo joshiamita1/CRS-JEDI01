@@ -126,7 +126,8 @@ public class StudentDaoImpl implements StudentDao{
 	}
 
 	@Override
-	public void addStudent(Student student) {
+	@Override
+	public void addStudent(Student student, String password) {
 		PreparedStatement statement = null;
 		try {logger.info("hello" +SQLQueriesConstant.ADD_STUDENT_QUERY );
 			statement = connection.prepareStatement(SQLQueriesConstant.ADD_STUDENT_QUERY );
@@ -294,6 +295,12 @@ public class StudentDaoImpl implements StudentDao{
 			e.printStackTrace();
 			return null;
 		}
+	}
+
+	@Override
+	public void approveStudent(int studentId) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	

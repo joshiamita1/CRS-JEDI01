@@ -30,4 +30,6 @@ public interface UserDao {
 	User getUser(int userId);
 
 	void deleteUser(int userId);
+
+	void addUser(User user, String password);
 }

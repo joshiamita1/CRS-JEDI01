@@ -1,6 +1,8 @@
 package com.flipkart.dao;
 
 import com.flipkart.bean.Professor;
+import com.flipkart.bean.User;
+import com.flipkart.constant.Department;
 
 import java.util.List;
 
@@ -19,4 +21,8 @@ public interface ProfessorDao {
 	public Professor getProfessor(String professorId);
 
 	void deleteProfessor(int userId);
+
+	void addProfessor(User user, String password, Department department);
+
+	Professor getProfessor(int professorId);
 }

@@ -25,19 +25,19 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 	}
 
 	@Override
-	public ArrayList<String> getCourses() {
+	public ArrayList<Integer> getCourses() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Course getCourse(String courseCode) {
+	public Course getCourse(int courseId) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Map<String, Grade> viewGrades(String courseCode) {
+	public Map<Integer, Grade> viewGrades(int courseId) {
 		// TODO Auto-generated method stub
 		return null;
 	}

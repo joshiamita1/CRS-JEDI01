@@ -17,7 +17,7 @@ public class AdminDaoImpl implements AdminDao{
 	Connection connection = DBUtil.getConnection();
 	
 	@Override
-	public void addAdmin(User admin) {
+	public void addAdmin(User admin, String password) {
 		// TODO Auto-generated method stub
 		
 		PreparedStatement stmt = null;
@@ -36,7 +36,6 @@ public class AdminDaoImpl implements AdminDao{
 		}
 	}
 
-	@Override
 	@Override
 	public void deleteAdmin(int userId) {
 		// TODO Auto-generated method stub

@@ -1,5 +1,6 @@
 package com.flipkart.dao;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -19,11 +20,15 @@ public interface CourseCatalogDao {
 	public void modifyCourse(String courseCode, Course course);
 	
 	// Get all courses
-	public List<String> getCourses();
+	public ArrayList<Integer> getCourses();
 	
 	// View Grades
 	public Map<String, Grade> viewGrades(String courseCode);
 	
 	// Get Course Info
 	public Course getCourse(String courseCode);
+
+	Course getCourse(int courseId);
+
+	Map<Integer, Grade> viewGrades(int courseId);
 }

@@ -12,4 +12,6 @@ public interface AdminDao {
 	public void deleteAdmin(String adminId);
 
 	void deleteAdmin(int userId);
+
+	void addAdmin(User admin, String password);
 }

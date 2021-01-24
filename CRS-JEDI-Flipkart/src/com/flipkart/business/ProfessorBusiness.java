@@ -34,9 +34,9 @@ public class ProfessorBusiness {
 	public void viewRegisteredStudents(int courseId) {
      //  View all the RegisteredStudent in course
 		Course course = courseCatalogObject.getCourse(courseId);
-		Map<String, Grade> mp = courseCatalogObject.viewGrades(courseId);
+		Map<Integer, Grade> mp = courseCatalogObject.viewGrades(courseId);
 		logger.info("Registered Students under " + professorDaoObject.getProfessor(courseCatalogObject.getCourse(courseId).getProfessorId()).getName() + " for course " +  courseCatalogObject.getCourse(courseId).getCourseName() + " are :");
-		for(String s : mp.keySet()) {
+		for(Integer s : mp.keySet()) {
 			logger.info("Student ID : " + studentDaoObject.getStudent(s).getUserId() +"\n"+"Student Name" + studentDaoObject.getStudent(s).getName() + "\n");
 		}
 	}  

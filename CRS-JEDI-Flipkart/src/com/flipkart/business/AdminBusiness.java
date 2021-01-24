@@ -26,42 +26,14 @@ public class AdminBusiness{
 	private static Logger logger = Logger.getLogger(AdminBusiness.class);
 	
 	
-	public void approveStudent(String studentId) {
-		Student s = studentDaoObject.getStudent(studentId);
-		s.setApproved(true);
-		studentDaoObject.modifyStudent(studentId, s);
-	}
-
-	// Registering User
-	public void registerUser(User user) { 
-		userDaoObject.addUser(user);
+	public void approveStudent(int studentId) {
+		if(studentDaoObject.getStudent(studentId)==null) {
+			logger.info("Invalid Student ID");
+		} else {
+			studentDaoObject.approveStudent(studentId);
+		}
 
 	}
-	
-	public void registerAdmin(User admin) {
-		registerUser(admin);
-		adminDaoObject.addAdmin(admin);
-	}
-
-	// Registering Professor
-	public void registerProfessor(Professor professor){
-
-		registerUser(professor);
-		professorDaoObject.addProfessor(professor);
-	}
-	
-	// Adding courses in the semester
-	public void addNewCourse(Course course) {
-		courseCatalogDaoObject.addCourse(course);
-
-	}
-
-	// Deleting courses in the semester
-	public void deleteCourse(String courseCode) {
-
-		courseCatalogDaoObject.deleteCourse(courseCode);
-	}
-
 	// Getting all the users
 	public void getUsers(Role role){
 		userDaoObject.getUsers(role);
@@ -80,6 +52,13 @@ public class AdminBusiness{
 		}
 	}
 	public void assignProfessor(int courseId, int professorId) {
-		
+		if(courseCatalogDaoObject.getCourse(courseId)==null) {
+			logger.info("Invalid Course");
+		} else if(professorDaoObject.getProfessor(professorId)==null) {
+			logger.info("Invalid Professor");
+		} else {
+			logger.info("Assigned Successfully");
+		}
+
 	}
 }
