@@ -50,6 +50,7 @@ public class ProfessorBusiness {
 		logger.info("Added Grade " + grade);
 		logger.info("Student :" + studentId);
 		logger.info("Course Id : " + courseId);
+		logger.info("======================STUDENT GRADED======================");
 	}
 	
 	// Checks if given professor teaches the given course
@@ -60,7 +61,7 @@ public class ProfessorBusiness {
 	// Prints all the courses taught by the given professor
 	public void viewAssignedCourses(int professorId) {
 		ArrayList<Integer> coursesList = courseCatalogDaoObject.getCoursesForProfessor(professorId);
-		logger.info("Course Id\tCourse Name");
+		logger.info("Course Id\t Course Name");
 		for(Integer courseCode : coursesList) {
 			Course course = courseCatalogDaoObject.getCourse(courseCode);
 			logger.info(course.getCourseCode() +  "\t " + course.getCourseName());
