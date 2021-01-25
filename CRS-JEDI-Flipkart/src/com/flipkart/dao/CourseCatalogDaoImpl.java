@@ -18,8 +18,20 @@ import com.flipkart.util.DBUtil;
  */
 public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 
-	public static Logger logger = Logger.getLogger(CourseCatalogDaoImpl.class);
+	private static CourseCatalogDaoImpl instance = null;
+	private static Logger logger = Logger.getLogger(CourseCatalogDaoImpl.class);
 	Connection connection = DBUtil.getConnection();
+	
+	private CourseCatalogDaoImpl() {
+		
+	}
+	
+	public static CourseCatalogDaoImpl getInstance() {
+		if(instance==null) {
+			instance = new CourseCatalogDaoImpl();
+		}
+		return instance;
+	}
 
 	/**
 	 * Add a new course into the Course Catalog table in the database
@@ -30,9 +42,9 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 		PreparedStatement stmt = null;
 		try {
 			stmt = connection.prepareStatement(SQLQueriesConstant.ADD_NEW_COURSE_QUERY);
-			stmt.setInt(1,course.getCourseCode());
-			stmt.setString(2,course.getCourseName());
-			stmt.setObject(3,null);
+			stmt.setInt(1, course.getCatalogId());
+			stmt.setInt(2,course.getCourseCode());
+			stmt.setObject(3,"ASDS");
 			stmt.setInt(4,course.getProfessorId());
 			stmt.setString(5,course.getCourseName());
 			int rows = stmt.executeUpdate();

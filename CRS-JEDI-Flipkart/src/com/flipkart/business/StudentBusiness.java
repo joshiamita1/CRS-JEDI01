@@ -9,18 +9,39 @@ import com.flipkart.bean.Course;
 import com.flipkart.bean.Student;
 import com.flipkart.constant.GlobalConstants;
 import com.flipkart.constant.Grade;
+import com.flipkart.dao.AdminDaoImpl;
 import com.flipkart.dao.CourseCatalogDaoImpl;
 import com.flipkart.dao.FeePaymentDaoImpl;
 import com.flipkart.dao.NotificationSystemDaoImpl;
+import com.flipkart.dao.ProfessorDaoImpl;
 import com.flipkart.dao.StudentDaoImpl;
+import com.flipkart.dao.UserDaoImpl;
 
 public class StudentBusiness{
 	
-	public static Logger logger = Logger.getLogger(StudentBusiness.class);
-	StudentDaoImpl studentDaoObject = new StudentDaoImpl();
-	CourseCatalogDaoImpl courseCatalogDaoObject = new CourseCatalogDaoImpl();
-	FeePaymentDaoImpl feePaymentDaoObject = new FeePaymentDaoImpl();
-	NotificationSystemDaoImpl notificationSystemDaoObject = new NotificationSystemDaoImpl();
+	private static StudentBusiness instance = null;
+	UserDaoImpl userDaoObject = UserDaoImpl.getInstance();
+	StudentDaoImpl studentDaoObject = StudentDaoImpl.getInstance();
+	AdminDaoImpl adminDaoObject = AdminDaoImpl.getInstance();
+	ProfessorDaoImpl professorDaoObject = ProfessorDaoImpl.getInstance();
+	CourseCatalogDaoImpl courseCatalogDaoObject = CourseCatalogDaoImpl.getInstance();
+	NotificationSystemDaoImpl notificationSystemDaoObject = NotificationSystemDaoImpl.getInstance();
+	FeePaymentDaoImpl feePaymentDaoObject = FeePaymentDaoImpl.getInstance();
+	private static Logger logger = Logger.getLogger(StudentBusiness.class);
+	
+	private StudentBusiness() {
+		
+	}
+	
+	public static StudentBusiness getInstance() {
+		if(instance==null) {
+			instance = new StudentBusiness();
+		}
+		return instance;
+	}
+	
+	
+	
 	public int viewRegisteredCourses(int studentId) {
 		ArrayList<Integer> courseList = studentDaoObject.viewRegisteredCourses(studentId);
 		if(courseList.size() == 0) {

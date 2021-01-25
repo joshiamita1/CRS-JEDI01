@@ -14,9 +14,9 @@ public class ProfessorClient {
 	
 	private static Logger logger = Logger.getLogger(ProfessorClient.class);
 	Scanner sc = new Scanner(System.in);
-	CourseCatalogBusiness courseCatalogBusinessObject = new CourseCatalogBusiness();
-	ProfessorBusiness professorBusinessObject = new ProfessorBusiness();
-	StudentBusiness studentBusinessObject = new StudentBusiness();
+	CourseCatalogBusiness courseCatalogBusinessObject = CourseCatalogBusiness.getInstance();
+	ProfessorBusiness professorBusinessObject = ProfessorBusiness.getInstance();
+	StudentBusiness studentBusinessObject = StudentBusiness.getInstance();
 	// Display menu for professor
 	public void displayMenu(int professorId) {
 		int choice;

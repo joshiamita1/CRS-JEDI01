@@ -20,9 +20,9 @@ public class AdminClient {
 
 	public static Logger logger = Logger.getLogger(AdminClient.class);
 	Scanner sc = new Scanner(System.in);
-	AdminBusiness adminBusinessObject = new AdminBusiness();
-	CourseCatalogBusiness courseCatalogBusinessObject = new CourseCatalogBusiness();
-	AuthenticateBusiness authenticateBusinessObject = new AuthenticateBusiness();
+	AdminBusiness adminBusinessObject = AdminBusiness.getInstance();
+	CourseCatalogBusiness courseCatalogBusinessObject = CourseCatalogBusiness.getInstance();
+	AuthenticateBusiness authenticateBusinessObject = AuthenticateBusiness.getInstance();
 	public void displayMenu(int userId) {
 		int choice;
 		do {
@@ -75,6 +75,7 @@ public class AdminClient {
 	// View Users of the specific Role
 	public void viewUsersOfSpecificRole() {
 		logger.info("Enter one of the following Role (\"ADMIN\", \"PROFESSOR\", \"STUDENT\"\n");
+		sc.nextLine();
 		String role = sc.nextLine();
 		adminBusinessObject.getUsers(Role.valueOf(role));
 	}
@@ -113,8 +114,8 @@ public class AdminClient {
 		User user = new User();
 		String password;
 		logger.info("Select Role of the User (PROFESSOR, ADMIN)");
+		sc.nextLine();
 		user.setRole(Role.valueOf(sc.nextLine()));
-		user.setUserId(201);
 		logger.info("Enter Name");
 		user.setName(sc.nextLine());
 		logger.info("Enter Password");
@@ -124,6 +125,7 @@ public class AdminClient {
 		logger.info("Enter Mobile No.");
 		user.setMobile(sc.nextLong());
 		logger.info("Select Gender: 'M' for male and 'F' for female");
+		sc.nextLine();
 		user.setGender(Gender.valueOf(sc.nextLine()));
 		logger.info("Enter Address");
 		user.setAddress(sc.nextLine());
@@ -136,16 +138,17 @@ public class AdminClient {
 		switch(user.getRole()) {
 		case ADMIN:
 			if(authenticateBusinessObject.registerAdmin(user, password)) {
-				logger.info("Registration Success\nUser id of Admin is "+user.getUserId());
+				logger.info("Registration Success");
 			} else {
 				logger.info("Please Register Again!\nRegistration Failed\n");
 			}
 			break;
 		case PROFESSOR:
 			logger.info("Enter Department");
+			//sc.nextLine();
 			Department department = Department.valueOf(sc.nextLine());
 			if(authenticateBusinessObject.registerProfessor(user, password, department)) {
-				logger.info("Registration Success\nUser id of Professor is "+user.getUserId());
+				logger.info("Registration Success.");
 			} else {
 				logger.info("Please Register Again!\nRegistration Failed\n");
 			}
@@ -166,6 +169,7 @@ public class AdminClient {
 		String courseName;
 		logger.info("Enter Course ID");
 		courseCode = sc.nextInt();
+		sc.nextLine();
 		logger.info("Enter Course Name");
 		courseName = sc.nextLine();
 		logger.info("Enter catalog ID");

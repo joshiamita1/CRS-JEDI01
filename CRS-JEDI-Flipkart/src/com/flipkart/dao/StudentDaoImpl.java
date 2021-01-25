@@ -27,8 +27,21 @@ import com.flipkart.constant.Grade;
  */
 public class StudentDaoImpl implements StudentDao{
 	
-	public static Logger logger = Logger.getLogger(StudentDaoImpl.class);
+	private static StudentDaoImpl instance = null;
+	private static Logger logger = Logger.getLogger(StudentDaoImpl.class);
 	Connection connection = DBUtil.getConnection();
+	
+	private StudentDaoImpl() {
+		
+	}
+	
+	public static StudentDaoImpl getInstance() {
+		if(instance==null) {
+			instance = new StudentDaoImpl();
+		}
+		return instance;
+	}
+	
 
 
 	@Override
@@ -114,7 +127,7 @@ public class StudentDaoImpl implements StudentDao{
 	@Override
 	public void addStudent(Student student, String password) {
 		PreparedStatement statement = null;
-		UserDaoImpl userdao =new UserDaoImpl();
+		UserDaoImpl userdao = UserDaoImpl.getInstance();
 		userdao.addUser(student, password);
 		int userId=0;
 		try {
@@ -365,7 +378,7 @@ public class StudentDaoImpl implements StudentDao{
 			int rows = stmt.executeUpdate();
 			logger.info(rows + " deleted");
 			
-			UserDaoImpl userdao =new UserDaoImpl();
+			UserDaoImpl userdao = UserDaoImpl.getInstance();
 			userdao.deleteUser(studentId);
 		}catch(SQLException se) {
 			logger.error(se.getMessage());

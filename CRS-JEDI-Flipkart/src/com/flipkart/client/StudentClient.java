@@ -14,8 +14,8 @@ public class StudentClient {
 	private static Logger logger = Logger.getLogger(StudentClient.class);
 	Scanner sc = new Scanner(System.in);
 
-	CourseCatalogBusiness courseCatalogBusinessObject = new CourseCatalogBusiness();
-	StudentBusiness studentBusinessObject = new StudentBusiness();
+	CourseCatalogBusiness courseCatalogBusinessObject = CourseCatalogBusiness.getInstance();
+	StudentBusiness studentBusinessObject = StudentBusiness.getInstance();
 	// Displays the Student Menu with choices for student
 	public void displayMenu(int studentId) {
 		printChoices();

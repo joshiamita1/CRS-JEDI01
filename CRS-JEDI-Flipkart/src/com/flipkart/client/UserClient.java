@@ -29,7 +29,7 @@ public class UserClient {
 	
 	
 	// Authenticate Business Object
-	AuthenticateBusiness authenticateBusinessObject = new AuthenticateBusiness();
+	AuthenticateBusiness authenticateBusinessObject = AuthenticateBusiness.getInstance();
 	
 	
 	// Enter Point of the Application
@@ -51,7 +51,6 @@ public class UserClient {
 			logger.info("Enter 2  to Register (if you are student)");
 			logger.info("Enter any other number to exit CRS");
 			choice = Integer.parseInt(sc.nextLine());
-			
 			switch(choice) {
 				case 1:
 					new UserClient().getInputLogin();
@@ -79,7 +78,6 @@ public class UserClient {
 	}
 	
 	public void login(int userId, String password) {
-		
 		if(authenticateBusinessObject.validLogin(userId, password)) {
 			Role role = authenticateBusinessObject.getRole(userId, password);
 			logger.info("Welcome User ID : " + userId);
@@ -97,6 +95,8 @@ public class UserClient {
 				studentClient.displayMenu(userId);
 				break;
 			}
+		} else {
+			logger.info("Invalid Credentials");
 		}
 	}
 
@@ -133,7 +133,7 @@ public class UserClient {
 		student.setAmountPayable(0);
 		
 		if(authenticateBusinessObject.registerStudent(student, password)) {
-			UserDaoImpl temp =new UserDaoImpl();
+			UserDaoImpl temp =  UserDaoImpl.getInstance();
 			int userid=temp.lastEntry();
 			student.setUserId(userid);
 			logger.info("Successfully Registered! Your user id is " + student.getUserId() + ".\nLogging You In");

@@ -16,10 +16,10 @@ public class SQLQueriesConstant{
 	//Login query for a user
 	public static String GET_USER_DETAIL = "select id from authorcredentialdb ";
 	public static String GET_USER_DETAIL_ROLE = "select id from authorcredentialdb where role = ?";
-	public static String DELETE_USER_QUERY = "delete from authorcredentialdb where userId = ? ";
+	public static String DELETE_USER_QUERY = "delete from authorcredentialdb where id = ? ";
 	public static String GET_USER_DETAIL_ID = "select username, password, role from authorcredentialdb where id = ?";
 	public static String ADD_NEW_USER_QUERY = "insert into authorcredentialdb (username, password, role) values(?,?,?)";
-	public static String MODIFY_USER_QUERY ="update authorcredentialdb set username = ?,role = ?  where userId=?";
+	public static String MODIFY_USER_QUERY ="update authorcredentialdb set username = ?,role = ?  where id=?";
 	
 	//NotificationSystem
 	public static String NOTIFICATION_QUERY="insert into notificationsystem (UserID , Message, TimeNotified) values (?, ?,?)";
@@ -59,7 +59,7 @@ public class SQLQueriesConstant{
 	public static String VIEW_PROFESSORID_QUERY = "select ProfessorId from Professor";
 	public static String DELETE_PROF_QUERY = "delete from professor where professorId = ? ";
 	public static String GET_PROF_DETAIL = "select p.professorId, p.dept, p.gender, p.email, p.Name, p.mobile, p.gender from professor where p.professorId =? ";
-	public static String ADD_NEW_PROF_QUERY = "insert into professor(professorId, dept, gender, city, address, country, state, mobile, email) values(?,?,?,?,?,?,?,?,?) ";
+	public static String ADD_NEW_PROF_QUERY = "insert into professor(professorId, department, gender, city, address, country, state, mobile, email, name) values(?,?,?,?,?,?,?,?,?,?) ";
 	
 	// Admin Queries
 	public static String DELETE_ADMIN_QUERY = "delete from admin where adminId = ? ";

@@ -650,3 +650,1742 @@ Logging You In
 20:34:14,320  INFO UserClient,main:49 - Enter 1 to Login
 20:34:14,320  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
 20:34:14,321  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:34:16,958  INFO UserClient,main:106 - Enter Name
+20:34:17,768  INFO UserClient,main:108 - Enter Password
+20:34:18,755  INFO UserClient,main:110 - Enter Email
+20:34:19,933  INFO UserClient,main:112 - Enter Mobile No.
+20:34:21,305  INFO UserClient,main:115 - Enter Branch (Civil, Chem, CS, EEE, Mech, ECE):
+20:34:22,480  INFO UserClient,main:117 - Select Gender: 'M' for male and 'F' for female
+20:34:23,659  INFO UserClient,main:119 - If you have scholarship enter 1, else enter 0
+20:34:25,049  INFO UserClient,main:123 - Enter Address
+20:34:26,466  INFO UserClient,main:125 - Enter City
+20:34:27,172  INFO UserClient,main:127 - Enter State
+20:34:28,119  INFO UserClient,main:129 - Enter Country
+20:34:29,479  INFO UserDaoImpl,main:35 - 1 user added
+20:34:29,599  INFO StudentDaoImpl,main:149 - Added Student sucessfully
+20:34:29,600  INFO UserClient,main:133 - Successfully Registered! Your user id is 101.
+Logging You In
+20:34:29,601  INFO UserDaoImpl,main:178 - User does not exist
+20:34:29,601  INFO UserClient,main:48 - ======User Menu=====
+20:34:29,602  INFO UserClient,main:49 - Enter 1 to Login
+20:34:29,602  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:34:29,602  INFO UserClient,main:51 - Enter any other number to exit CRS
+20:36:08,755  INFO UserClient,main:36 - Welcome to the Course Registration System
+20:36:08,757  INFO UserClient,main:48 - ======User Menu=====
+20:36:08,758  INFO UserClient,main:49 - Enter 1 to Login
+20:36:08,758  INFO UserClient,main:50 - Enter 2  to Register (if you are student)
+20:36:08,758  INFO UserClient,main:51 - Enter any other number to exit CRS
+04:24:08,010  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:24:08,012  INFO UserClient,main:49 - ======User Menu=====
+04:24:08,012  INFO UserClient,main:50 - Enter 1 to Login
+04:24:08,012  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:24:08,013  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:24:14,146  INFO UserClient,main:74 - Enter User Id
+04:24:16,165  INFO UserClient,main:76 - Enter User Password
+04:24:17,126  INFO AdminClient,main:93 - Enter your choice:
+04:24:17,127  INFO AdminClient,main:94 - 1. To view courses in catalog
+04:24:17,127  INFO AdminClient,main:95 - 2. View All Courses
+04:24:17,128  INFO AdminClient,main:96 - 3. To view users of Specific Role
+04:24:17,128  INFO AdminClient,main:97 - 4. Assign course to a professor
+04:24:17,128  INFO AdminClient,main:98 - 5. Register a new user
+04:24:17,128  INFO AdminClient,main:99 - 6. Delete a user
+04:24:17,129  INFO AdminClient,main:100 - 7. Add a new course to catalog
+04:24:17,129  INFO AdminClient,main:101 - 8. Drop a course from catalog
+04:24:17,129  INFO AdminClient,main:102 - 9. Approve student
+04:24:17,130  INFO AdminClient,main:103 - 0. To logout
+04:24:21,341  INFO AdminClient,main:115 - Select Role of the User (PROFESSOR, ADMIN)
+04:25:09,143  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:25:09,145  INFO UserClient,main:49 - ======User Menu=====
+04:25:09,145  INFO UserClient,main:50 - Enter 1 to Login
+04:25:09,145  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:25:09,145  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:25:11,095 ERROR UserClient,main:65 - =====Exiting=====
+04:25:11,096  INFO UserClient,main:42 - Exiting CRS
+04:25:15,251  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:25:15,253  INFO UserClient,main:49 - ======User Menu=====
+04:25:15,253  INFO UserClient,main:50 - Enter 1 to Login
+04:25:15,254  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:25:15,254  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:25:17,527  INFO UserClient,main:74 - Enter User Id
+04:25:19,038  INFO UserClient,main:76 - Enter User Password
+04:25:20,401  INFO AdminClient,main:93 - Enter your choice:
+04:25:20,401  INFO AdminClient,main:94 - 1. To view courses in catalog
+04:25:20,402  INFO AdminClient,main:95 - 2. View All Courses
+04:25:20,403  INFO AdminClient,main:96 - 3. To view users of Specific Role
+04:25:20,403  INFO AdminClient,main:97 - 4. Assign course to a professor
+04:25:20,404  INFO AdminClient,main:98 - 5. Register a new user
+04:25:20,404  INFO AdminClient,main:99 - 6. Delete a user
+04:25:20,404  INFO AdminClient,main:100 - 7. Add a new course to catalog
+04:25:20,405  INFO AdminClient,main:101 - 8. Drop a course from catalog
+04:25:20,405  INFO AdminClient,main:102 - 9. Approve student
+04:25:20,405  INFO AdminClient,main:103 - 0. To logout
+04:25:23,406  INFO AdminClient,main:115 - Select Role of the User (PROFESSOR, ADMIN)
+04:25:27,458  INFO AdminClient,main:119 - Enter Name
+04:25:31,321  INFO AdminClient,main:121 - Enter Password
+04:25:34,161  INFO AdminClient,main:123 - Enter Email
+04:25:36,372  INFO AdminClient,main:125 - Enter Mobile No.
+04:25:38,802  INFO AdminClient,main:127 - Select Gender: 'M' for male and 'F' for female
+04:25:58,715  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:25:58,718  INFO UserClient,main:49 - ======User Menu=====
+04:25:58,718  INFO UserClient,main:50 - Enter 1 to Login
+04:25:58,718  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:25:58,719  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:26:01,237  INFO UserClient,main:74 - Enter User Id
+04:26:04,427  INFO UserClient,main:76 - Enter User Password
+04:26:05,908  INFO AdminClient,main:93 - Enter your choice:
+04:26:05,909  INFO AdminClient,main:94 - 1. To view courses in catalog
+04:26:05,910  INFO AdminClient,main:95 - 2. View All Courses
+04:26:05,910  INFO AdminClient,main:96 - 3. To view users of Specific Role
+04:26:05,910  INFO AdminClient,main:97 - 4. Assign course to a professor
+04:26:05,911  INFO AdminClient,main:98 - 5. Register a new user
+04:26:05,911  INFO AdminClient,main:99 - 6. Delete a user
+04:26:05,911  INFO AdminClient,main:100 - 7. Add a new course to catalog
+04:26:05,912  INFO AdminClient,main:101 - 8. Drop a course from catalog
+04:26:05,912  INFO AdminClient,main:102 - 9. Approve student
+04:26:05,912  INFO AdminClient,main:103 - 0. To logout
+04:26:08,215  INFO AdminClient,main:115 - Select Role of the User (PROFESSOR, ADMIN)
+04:26:10,922  INFO AdminClient,main:119 - Enter Name
+04:26:13,975  INFO AdminClient,main:121 - Enter Password
+04:26:15,231  INFO AdminClient,main:123 - Enter Email
+04:26:17,934  INFO AdminClient,main:125 - Enter Mobile No.
+04:26:19,978  INFO AdminClient,main:127 - Select Gender: 'M' for male and 'F' for female
+04:26:21,518  INFO AdminClient,main:130 - Enter Address
+04:26:24,702  INFO AdminClient,main:132 - Enter City
+04:26:26,170  INFO AdminClient,main:134 - Enter State
+04:26:27,414  INFO AdminClient,main:136 - Enter Country
+04:26:28,719  INFO UserDaoImpl,main:36 - 1 user added
+04:26:28,863 ERROR AdminDaoImpl,main:46 - Parameter index out of range (4 > number of parameters, which is 3).
+04:26:28,863  INFO AdminClient,main:141 - Registration Success
+User id of Admin is 201
+04:26:28,864  INFO AdminClient,main:93 - Enter your choice:
+04:26:28,864  INFO AdminClient,main:94 - 1. To view courses in catalog
+04:26:28,864  INFO AdminClient,main:95 - 2. View All Courses
+04:26:28,864  INFO AdminClient,main:96 - 3. To view users of Specific Role
+04:26:28,864  INFO AdminClient,main:97 - 4. Assign course to a professor
+04:26:28,864  INFO AdminClient,main:98 - 5. Register a new user
+04:26:28,864  INFO AdminClient,main:99 - 6. Delete a user
+04:26:28,864  INFO AdminClient,main:100 - 7. Add a new course to catalog
+04:26:28,865  INFO AdminClient,main:101 - 8. Drop a course from catalog
+04:26:28,865  INFO AdminClient,main:102 - 9. Approve student
+04:26:28,865  INFO AdminClient,main:103 - 0. To logout
+04:31:36,706  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:31:36,709  INFO UserClient,main:49 - ======User Menu=====
+04:31:36,709  INFO UserClient,main:50 - Enter 1 to Login
+04:31:36,710  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:31:36,710  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:31:40,243  INFO UserClient,main:74 - Enter User Id
+04:31:42,050  INFO UserClient,main:76 - Enter User Password
+04:31:43,158  INFO AdminClient,main:93 - Enter your choice:
+04:31:43,159  INFO AdminClient,main:94 - 1. To view courses in catalog
+04:31:43,159  INFO AdminClient,main:95 - 2. View All Courses
+04:31:43,160  INFO AdminClient,main:96 - 3. To view users of Specific Role
+04:31:43,161  INFO AdminClient,main:97 - 4. Assign course to a professor
+04:31:43,161  INFO AdminClient,main:98 - 5. Register a new user
+04:31:43,161  INFO AdminClient,main:99 - 6. Delete a user
+04:31:43,161  INFO AdminClient,main:100 - 7. Add a new course to catalog
+04:31:43,161  INFO AdminClient,main:101 - 8. Drop a course from catalog
+04:31:43,161  INFO AdminClient,main:102 - 9. Approve student
+04:31:43,162  INFO AdminClient,main:103 - 0. To logout
+04:31:53,751  INFO AdminClient,main:115 - Select Role of the User (PROFESSOR, ADMIN)
+04:31:56,491  INFO AdminClient,main:119 - Enter Name
+04:31:58,085  INFO AdminClient,main:121 - Enter Password
+04:31:59,204  INFO AdminClient,main:123 - Enter Email
+04:32:00,978  INFO AdminClient,main:125 - Enter Mobile No.
+04:32:02,723  INFO AdminClient,main:127 - Select Gender: 'M' for male and 'F' for female
+04:32:03,901  INFO AdminClient,main:130 - Enter Address
+04:32:05,315  INFO AdminClient,main:132 - Enter City
+04:32:06,080  INFO AdminClient,main:134 - Enter State
+04:32:06,809  INFO AdminClient,main:136 - Enter Country
+04:32:07,792  INFO UserDaoImpl,main:36 - 1 user added
+04:32:08,013  INFO AdminDaoImpl,main:47 - 1 admin added
+04:32:08,014  INFO AdminClient,main:141 - Registration Success
+User id of Admin is 201
+04:32:08,014  INFO AdminClient,main:93 - Enter your choice:
+04:32:08,014  INFO AdminClient,main:94 - 1. To view courses in catalog
+04:32:08,015  INFO AdminClient,main:95 - 2. View All Courses
+04:32:08,015  INFO AdminClient,main:96 - 3. To view users of Specific Role
+04:32:08,016  INFO AdminClient,main:97 - 4. Assign course to a professor
+04:32:08,016  INFO AdminClient,main:98 - 5. Register a new user
+04:32:08,016  INFO AdminClient,main:99 - 6. Delete a user
+04:32:08,017  INFO AdminClient,main:100 - 7. Add a new course to catalog
+04:32:08,017  INFO AdminClient,main:101 - 8. Drop a course from catalog
+04:32:08,018  INFO AdminClient,main:102 - 9. Approve student
+04:32:08,018  INFO AdminClient,main:103 - 0. To logout
+04:34:32,227  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:34:32,228  INFO UserClient,main:49 - ======User Menu=====
+04:34:32,229  INFO UserClient,main:50 - Enter 1 to Login
+04:34:32,229  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:34:32,229  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:34:34,941  INFO UserClient,main:74 - Enter User Id
+04:34:40,100  INFO UserClient,main:76 - Enter User Password
+04:34:41,424  INFO AdminClient,main:93 - Enter your choice:
+04:34:41,425  INFO AdminClient,main:94 - 1. To view courses in catalog
+04:34:41,426  INFO AdminClient,main:95 - 2. View All Courses
+04:34:41,426  INFO AdminClient,main:96 - 3. To view users of Specific Role
+04:34:41,427  INFO AdminClient,main:97 - 4. Assign course to a professor
+04:34:41,427  INFO AdminClient,main:98 - 5. Register a new user
+04:34:41,427  INFO AdminClient,main:99 - 6. Delete a user
+04:34:41,427  INFO AdminClient,main:100 - 7. Add a new course to catalog
+04:34:41,428  INFO AdminClient,main:101 - 8. Drop a course from catalog
+04:34:41,428  INFO AdminClient,main:102 - 9. Approve student
+04:34:41,428  INFO AdminClient,main:103 - 0. To logout
+04:34:44,343  INFO AdminClient,main:115 - Select Role of the User (PROFESSOR, ADMIN)
+04:34:46,659  INFO AdminClient,main:119 - Enter Name
+04:34:49,225  INFO AdminClient,main:121 - Enter Password
+04:34:51,203  INFO AdminClient,main:123 - Enter Email
+04:34:54,359  INFO AdminClient,main:125 - Enter Mobile No.
+04:34:57,244  INFO AdminClient,main:127 - Select Gender: 'M' for male and 'F' for female
+04:34:58,929  INFO AdminClient,main:130 - Enter Address
+04:35:00,156  INFO AdminClient,main:132 - Enter City
+04:35:01,019  INFO AdminClient,main:134 - Enter State
+04:35:02,424  INFO AdminClient,main:136 - Enter Country
+04:35:03,271  INFO UserDaoImpl,main:36 - 1 user added
+04:35:03,371 ERROR AdminDaoImpl,main:49 - Data truncation: Out of range value for column 'Mobile' at row 1
+04:35:03,372  INFO AdminClient,main:141 - Registration Success
+User id of Admin is 201
+04:35:03,372  INFO AdminClient,main:93 - Enter your choice:
+04:35:03,372  INFO AdminClient,main:94 - 1. To view courses in catalog
+04:35:03,372  INFO AdminClient,main:95 - 2. View All Courses
+04:35:03,373  INFO AdminClient,main:96 - 3. To view users of Specific Role
+04:35:03,373  INFO AdminClient,main:97 - 4. Assign course to a professor
+04:35:03,373  INFO AdminClient,main:98 - 5. Register a new user
+04:35:03,373  INFO AdminClient,main:99 - 6. Delete a user
+04:35:03,373  INFO AdminClient,main:100 - 7. Add a new course to catalog
+04:35:03,373  INFO AdminClient,main:101 - 8. Drop a course from catalog
+04:35:03,373  INFO AdminClient,main:102 - 9. Approve student
+04:35:03,373  INFO AdminClient,main:103 - 0. To logout
+04:35:18,675  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:35:18,676  INFO UserClient,main:49 - ======User Menu=====
+04:35:18,677  INFO UserClient,main:50 - Enter 1 to Login
+04:35:18,677  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:35:18,677  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:35:21,282  INFO UserClient,main:74 - Enter User Id
+04:35:23,394  INFO UserClient,main:76 - Enter User Password
+04:35:23,970  INFO AdminClient,main:93 - Enter your choice:
+04:35:23,970  INFO AdminClient,main:94 - 1. To view courses in catalog
+04:35:23,971  INFO AdminClient,main:95 - 2. View All Courses
+04:35:23,971  INFO AdminClient,main:96 - 3. To view users of Specific Role
+04:35:23,971  INFO AdminClient,main:97 - 4. Assign course to a professor
+04:35:23,972  INFO AdminClient,main:98 - 5. Register a new user
+04:35:23,972  INFO AdminClient,main:99 - 6. Delete a user
+04:35:23,972  INFO AdminClient,main:100 - 7. Add a new course to catalog
+04:35:23,973  INFO AdminClient,main:101 - 8. Drop a course from catalog
+04:35:23,973  INFO AdminClient,main:102 - 9. Approve student
+04:35:23,973  INFO AdminClient,main:103 - 0. To logout
+04:35:26,409  INFO AdminClient,main:115 - Select Role of the User (PROFESSOR, ADMIN)
+04:35:28,581  INFO AdminClient,main:119 - Enter Name
+04:35:31,586  INFO AdminClient,main:121 - Enter Password
+04:35:32,897  INFO AdminClient,main:123 - Enter Email
+04:35:34,413  INFO AdminClient,main:125 - Enter Mobile No.
+04:35:36,215  INFO AdminClient,main:127 - Select Gender: 'M' for male and 'F' for female
+04:35:40,550  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:35:40,552  INFO UserClient,main:49 - ======User Menu=====
+04:35:40,552  INFO UserClient,main:50 - Enter 1 to Login
+04:35:40,552  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:35:40,552  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:35:42,633  INFO UserClient,main:74 - Enter User Id
+04:35:42,998  INFO UserClient,main:76 - Enter User Password
+04:35:43,808  INFO AdminClient,main:93 - Enter your choice:
+04:35:43,808  INFO AdminClient,main:94 - 1. To view courses in catalog
+04:35:43,808  INFO AdminClient,main:95 - 2. View All Courses
+04:35:43,809  INFO AdminClient,main:96 - 3. To view users of Specific Role
+04:35:43,809  INFO AdminClient,main:97 - 4. Assign course to a professor
+04:35:43,809  INFO AdminClient,main:98 - 5. Register a new user
+04:35:43,810  INFO AdminClient,main:99 - 6. Delete a user
+04:35:43,810  INFO AdminClient,main:100 - 7. Add a new course to catalog
+04:35:43,810  INFO AdminClient,main:101 - 8. Drop a course from catalog
+04:35:43,811  INFO AdminClient,main:102 - 9. Approve student
+04:35:43,811  INFO AdminClient,main:103 - 0. To logout
+04:35:46,168  INFO AdminClient,main:162 - Enter user ID
+04:35:47,546  INFO UserDaoImpl,main:154 - User does not exist
+04:35:54,002  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:35:54,004  INFO UserClient,main:49 - ======User Menu=====
+04:35:54,004  INFO UserClient,main:50 - Enter 1 to Login
+04:35:54,004  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:35:54,005  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:35:56,043  INFO UserClient,main:74 - Enter User Id
+04:35:56,792  INFO UserClient,main:76 - Enter User Password
+04:35:57,488  INFO AdminClient,main:93 - Enter your choice:
+04:35:57,488  INFO AdminClient,main:94 - 1. To view courses in catalog
+04:35:57,488  INFO AdminClient,main:95 - 2. View All Courses
+04:35:57,488  INFO AdminClient,main:96 - 3. To view users of Specific Role
+04:35:57,488  INFO AdminClient,main:97 - 4. Assign course to a professor
+04:35:57,488  INFO AdminClient,main:98 - 5. Register a new user
+04:35:57,488  INFO AdminClient,main:99 - 6. Delete a user
+04:35:57,488  INFO AdminClient,main:100 - 7. Add a new course to catalog
+04:35:57,488  INFO AdminClient,main:101 - 8. Drop a course from catalog
+04:35:57,489  INFO AdminClient,main:102 - 9. Approve student
+04:35:57,489  INFO AdminClient,main:103 - 0. To logout
+04:36:12,829  INFO AdminClient,main:115 - Select Role of the User (PROFESSOR, ADMIN)
+04:36:15,101  INFO AdminClient,main:119 - Enter Name
+04:36:18,582  INFO AdminClient,main:121 - Enter Password
+04:36:20,279  INFO AdminClient,main:123 - Enter Email
+04:36:22,336  INFO AdminClient,main:125 - Enter Mobile No.
+04:36:24,313  INFO AdminClient,main:127 - Select Gender: 'M' for male and 'F' for female
+04:36:26,350  INFO AdminClient,main:130 - Enter Address
+04:36:27,724  INFO AdminClient,main:132 - Enter City
+04:36:28,264  INFO AdminClient,main:134 - Enter State
+04:36:28,912  INFO AdminClient,main:136 - Enter Country
+04:36:29,710  INFO UserDaoImpl,main:36 - 1 user added
+04:36:29,820  INFO AdminDaoImpl,main:47 - 1 admin added
+04:36:29,821  INFO AdminClient,main:141 - Registration Success
+User id of Admin is 201
+04:36:29,821  INFO AdminClient,main:93 - Enter your choice:
+04:36:29,821  INFO AdminClient,main:94 - 1. To view courses in catalog
+04:36:29,822  INFO AdminClient,main:95 - 2. View All Courses
+04:36:29,822  INFO AdminClient,main:96 - 3. To view users of Specific Role
+04:36:29,822  INFO AdminClient,main:97 - 4. Assign course to a professor
+04:36:29,822  INFO AdminClient,main:98 - 5. Register a new user
+04:36:29,823  INFO AdminClient,main:99 - 6. Delete a user
+04:36:29,823  INFO AdminClient,main:100 - 7. Add a new course to catalog
+04:36:29,823  INFO AdminClient,main:101 - 8. Drop a course from catalog
+04:36:29,823  INFO AdminClient,main:102 - 9. Approve student
+04:36:29,824  INFO AdminClient,main:103 - 0. To logout
+04:36:55,027  INFO UserClient,main:49 - ======User Menu=====
+04:36:55,028  INFO UserClient,main:50 - Enter 1 to Login
+04:36:55,028  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:36:55,028  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:38:01,100  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:38:01,102  INFO UserClient,main:49 - ======User Menu=====
+04:38:01,102  INFO UserClient,main:50 - Enter 1 to Login
+04:38:01,102  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:38:01,102  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:38:05,891  INFO UserClient,main:74 - Enter User Id
+04:38:08,957  INFO UserClient,main:76 - Enter User Password
+04:38:12,483  INFO AdminClient,main:93 - Enter your choice:
+04:38:12,484  INFO AdminClient,main:94 - 1. To view courses in catalog
+04:38:12,485  INFO AdminClient,main:95 - 2. View All Courses
+04:38:12,485  INFO AdminClient,main:96 - 3. To view users of Specific Role
+04:38:12,485  INFO AdminClient,main:97 - 4. Assign course to a professor
+04:38:12,486  INFO AdminClient,main:98 - 5. Register a new user
+04:38:12,486  INFO AdminClient,main:99 - 6. Delete a user
+04:38:12,487  INFO AdminClient,main:100 - 7. Add a new course to catalog
+04:38:12,487  INFO AdminClient,main:101 - 8. Drop a course from catalog
+04:38:12,488  INFO AdminClient,main:102 - 9. Approve student
+04:38:12,488  INFO AdminClient,main:103 - 0. To logout
+04:38:16,520  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:38:16,523  INFO UserClient,main:49 - ======User Menu=====
+04:38:16,523  INFO UserClient,main:50 - Enter 1 to Login
+04:38:16,523  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:38:16,523  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:38:20,413  INFO UserClient,main:74 - Enter User Id
+04:38:21,672  INFO UserClient,main:76 - Enter User Password
+04:38:23,222  INFO AdminClient,main:93 - Enter your choice:
+04:38:23,223  INFO AdminClient,main:94 - 1. To view courses in catalog
+04:38:23,223  INFO AdminClient,main:95 - 2. View All Courses
+04:38:23,223  INFO AdminClient,main:96 - 3. To view users of Specific Role
+04:38:23,224  INFO AdminClient,main:97 - 4. Assign course to a professor
+04:38:23,224  INFO AdminClient,main:98 - 5. Register a new user
+04:38:23,224  INFO AdminClient,main:99 - 6. Delete a user
+04:38:23,224  INFO AdminClient,main:100 - 7. Add a new course to catalog
+04:38:23,224  INFO AdminClient,main:101 - 8. Drop a course from catalog
+04:38:23,224  INFO AdminClient,main:102 - 9. Approve student
+04:38:23,224  INFO AdminClient,main:103 - 0. To logout
+04:38:39,209  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:38:39,211  INFO UserClient,main:49 - ======User Menu=====
+04:38:39,211  INFO UserClient,main:50 - Enter 1 to Login
+04:38:39,211  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:38:39,211  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:38:43,243  INFO UserClient,main:74 - Enter User Id
+04:38:44,285  INFO UserClient,main:76 - Enter User Password
+04:38:45,520  INFO UserDaoImpl,main:168 - 666
+04:38:45,571  INFO UserDaoImpl,main:180 - User does not exist
+04:38:45,571  INFO UserClient,main:49 - ======User Menu=====
+04:38:45,572  INFO UserClient,main:50 - Enter 1 to Login
+04:38:45,572  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:38:45,572  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:38:51,907  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:38:51,910  INFO UserClient,main:49 - ======User Menu=====
+04:38:51,910  INFO UserClient,main:50 - Enter 1 to Login
+04:38:51,910  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:38:51,910  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:38:54,775  INFO UserClient,main:74 - Enter User Id
+04:38:56,473  INFO UserClient,main:76 - Enter User Password
+04:38:57,577  INFO UserDaoImpl,main:168 - 1
+04:38:57,615  INFO UserDaoImpl,main:176 - admin1
+04:38:57,616  INFO UserClient,main:49 - ======User Menu=====
+04:38:57,616  INFO UserClient,main:50 - Enter 1 to Login
+04:38:57,616  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:38:57,616  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:39:17,378  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:39:17,380  INFO UserClient,main:49 - ======User Menu=====
+04:39:17,380  INFO UserClient,main:50 - Enter 1 to Login
+04:39:17,380  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:39:17,381  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:39:19,671  INFO UserClient,main:74 - Enter User Id
+04:39:20,281  INFO UserClient,main:76 - Enter User Password
+04:39:21,823  INFO UserDaoImpl,main:168 - 1
+04:39:21,883  INFO UserDaoImpl,main:176 - admin1
+04:39:21,885  INFO UserClient,main:84 - Welcome User ID : 1
+04:39:21,886  INFO UserClient,main:87 - Successfully Logged in as Admin
+04:39:21,886  INFO AdminClient,main:93 - Enter your choice:
+04:39:21,886  INFO AdminClient,main:94 - 1. To view courses in catalog
+04:39:21,887  INFO AdminClient,main:95 - 2. View All Courses
+04:39:21,887  INFO AdminClient,main:96 - 3. To view users of Specific Role
+04:39:21,887  INFO AdminClient,main:97 - 4. Assign course to a professor
+04:39:21,887  INFO AdminClient,main:98 - 5. Register a new user
+04:39:21,887  INFO AdminClient,main:99 - 6. Delete a user
+04:39:21,887  INFO AdminClient,main:100 - 7. Add a new course to catalog
+04:39:21,888  INFO AdminClient,main:101 - 8. Drop a course from catalog
+04:39:21,888  INFO AdminClient,main:102 - 9. Approve student
+04:39:21,888  INFO AdminClient,main:103 - 0. To logout
+04:40:21,461  INFO AdminClient,main:70 - Enter Catalog ID
+04:40:40,513  INFO CourseCatalogDaoImpl,main:124 - get data for 2
+04:40:40,515  INFO CourseCatalogDaoImpl,main:135 - heredIGITAL DESIGN
+04:40:40,515  INFO AdminClient,main:93 - Enter your choice:
+04:40:40,515  INFO AdminClient,main:94 - 1. To view courses in catalog
+04:40:40,515  INFO AdminClient,main:95 - 2. View All Courses
+04:40:40,515  INFO AdminClient,main:96 - 3. To view users of Specific Role
+04:40:40,516  INFO AdminClient,main:97 - 4. Assign course to a professor
+04:40:40,516  INFO AdminClient,main:98 - 5. Register a new user
+04:40:40,516  INFO AdminClient,main:99 - 6. Delete a user
+04:40:40,516  INFO AdminClient,main:100 - 7. Add a new course to catalog
+04:40:40,516  INFO AdminClient,main:101 - 8. Drop a course from catalog
+04:40:40,516  INFO AdminClient,main:102 - 9. Approve student
+04:40:40,516  INFO AdminClient,main:103 - 0. To logout
+04:41:04,962  INFO CourseCatalogDaoImpl,main:124 - get data for 2
+04:41:04,964  INFO CourseCatalogDaoImpl,main:135 - heredIGITAL DESIGN
+04:41:04,964  INFO AdminClient,main:93 - Enter your choice:
+04:41:04,964  INFO AdminClient,main:94 - 1. To view courses in catalog
+04:41:04,965  INFO AdminClient,main:95 - 2. View All Courses
+04:41:04,965  INFO AdminClient,main:96 - 3. To view users of Specific Role
+04:41:04,965  INFO AdminClient,main:97 - 4. Assign course to a professor
+04:41:04,965  INFO AdminClient,main:98 - 5. Register a new user
+04:41:04,965  INFO AdminClient,main:99 - 6. Delete a user
+04:41:04,965  INFO AdminClient,main:100 - 7. Add a new course to catalog
+04:41:04,965  INFO AdminClient,main:101 - 8. Drop a course from catalog
+04:41:04,966  INFO AdminClient,main:102 - 9. Approve student
+04:41:04,966  INFO AdminClient,main:103 - 0. To logout
+04:41:46,633  INFO CourseCatalogDaoImpl,main:124 - get data for 2
+04:41:46,636  INFO CourseCatalogDaoImpl,main:135 - heredIGITAL DESIGN
+04:41:46,637  INFO CourseCatalogDaoImpl,main:124 - get data for 10
+04:41:46,638  INFO CourseCatalogDaoImpl,main:135 - hereJAVA
+04:41:46,639  INFO AdminClient,main:93 - Enter your choice:
+04:41:46,639  INFO AdminClient,main:94 - 1. To view courses in catalog
+04:41:46,639  INFO AdminClient,main:95 - 2. View All Courses
+04:41:46,639  INFO AdminClient,main:96 - 3. To view users of Specific Role
+04:41:46,639  INFO AdminClient,main:97 - 4. Assign course to a professor
+04:41:46,639  INFO AdminClient,main:98 - 5. Register a new user
+04:41:46,640  INFO AdminClient,main:99 - 6. Delete a user
+04:41:46,640  INFO AdminClient,main:100 - 7. Add a new course to catalog
+04:41:46,640  INFO AdminClient,main:101 - 8. Drop a course from catalog
+04:41:46,640  INFO AdminClient,main:102 - 9. Approve student
+04:41:46,640  INFO AdminClient,main:103 - 0. To logout
+04:41:55,524  INFO AdminClient,main:77 - Enter one of the following Role ("ADMIN", "PROFESSOR", "STUDENT"
+
+04:42:47,808  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:42:47,810  INFO UserClient,main:49 - ======User Menu=====
+04:42:47,810  INFO UserClient,main:50 - Enter 1 to Login
+04:42:47,810  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:42:47,810  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:42:49,883  INFO UserClient,main:74 - Enter User Id
+04:42:50,402  INFO UserClient,main:76 - Enter User Password
+04:42:51,268  INFO UserDaoImpl,main:168 - 123213
+04:42:51,323  INFO UserDaoImpl,main:180 - User does not exist
+04:42:51,324  INFO UserClient,main:100 - Invalid Credentials
+04:42:51,324  INFO UserClient,main:49 - ======User Menu=====
+04:42:51,324  INFO UserClient,main:50 - Enter 1 to Login
+04:42:51,324  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:42:51,324  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:42:58,909  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:42:58,911  INFO UserClient,main:49 - ======User Menu=====
+04:42:58,912  INFO UserClient,main:50 - Enter 1 to Login
+04:42:58,912  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:42:58,912  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:43:00,312  INFO UserClient,main:74 - Enter User Id
+04:43:00,889  INFO UserClient,main:76 - Enter User Password
+04:43:02,553  INFO UserDaoImpl,main:168 - 1
+04:43:02,608  INFO UserDaoImpl,main:176 - admin1
+04:43:02,611  INFO UserClient,main:84 - Welcome User ID : 1
+04:43:02,611  INFO UserClient,main:87 - Successfully Logged in as Admin
+04:43:02,612  INFO AdminClient,main:94 - Enter your choice:
+04:43:02,612  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:43:02,612  INFO AdminClient,main:96 - 2. View All Courses
+04:43:02,612  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:43:02,612  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:43:02,612  INFO AdminClient,main:99 - 5. Register a new user
+04:43:02,612  INFO AdminClient,main:100 - 6. Delete a user
+04:43:02,613  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:43:02,613  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:43:02,613  INFO AdminClient,main:103 - 9. Approve student
+04:43:02,613  INFO AdminClient,main:104 - 0. To logout
+04:43:08,373  INFO AdminClient,main:77 - Enter one of the following Role ("ADMIN", "PROFESSOR", "STUDENT"
+
+04:43:10,335  INFO AdminClient,main:94 - Enter your choice:
+04:43:10,335  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:43:10,336  INFO AdminClient,main:96 - 2. View All Courses
+04:43:10,336  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:43:10,337  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:43:10,337  INFO AdminClient,main:99 - 5. Register a new user
+04:43:10,338  INFO AdminClient,main:100 - 6. Delete a user
+04:43:10,338  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:43:10,339  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:43:10,339  INFO AdminClient,main:103 - 9. Approve student
+04:43:10,340  INFO AdminClient,main:104 - 0. To logout
+04:44:25,334  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:44:25,336  INFO UserClient,main:49 - ======User Menu=====
+04:44:25,337  INFO UserClient,main:50 - Enter 1 to Login
+04:44:25,337  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:44:25,337  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:44:27,231  INFO UserClient,main:74 - Enter User Id
+04:44:28,056  INFO UserClient,main:76 - Enter User Password
+04:44:31,569  INFO UserDaoImpl,main:168 - 1
+04:44:31,632  INFO UserDaoImpl,main:176 - admin1
+04:44:31,634  INFO UserClient,main:84 - Welcome User ID : 1
+04:44:31,635  INFO UserClient,main:87 - Successfully Logged in as Admin
+04:44:31,635  INFO AdminClient,main:94 - Enter your choice:
+04:44:31,635  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:44:31,635  INFO AdminClient,main:96 - 2. View All Courses
+04:44:31,635  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:44:31,635  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:44:31,635  INFO AdminClient,main:99 - 5. Register a new user
+04:44:31,635  INFO AdminClient,main:100 - 6. Delete a user
+04:44:31,636  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:44:31,636  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:44:31,636  INFO AdminClient,main:103 - 9. Approve student
+04:44:31,636  INFO AdminClient,main:104 - 0. To logout
+04:44:37,501  INFO AdminClient,main:77 - Enter one of the following Role ("ADMIN", "PROFESSOR", "STUDENT"
+
+04:44:38,657 ERROR UserDaoImpl,main:126 - Column 'userId' not found.
+04:45:04,208  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:45:04,211  INFO UserClient,main:49 - ======User Menu=====
+04:45:04,211  INFO UserClient,main:50 - Enter 1 to Login
+04:45:04,211  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:45:04,211  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:45:06,836  INFO UserClient,main:74 - Enter User Id
+04:45:07,774  INFO UserClient,main:76 - Enter User Password
+04:45:09,210  INFO UserDaoImpl,main:168 - 1
+04:45:09,251  INFO UserDaoImpl,main:176 - admin1
+04:45:09,253  INFO UserClient,main:84 - Welcome User ID : 1
+04:45:09,253  INFO UserClient,main:87 - Successfully Logged in as Admin
+04:45:09,253  INFO AdminClient,main:94 - Enter your choice:
+04:45:09,253  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:45:09,253  INFO AdminClient,main:96 - 2. View All Courses
+04:45:09,254  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:45:09,254  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:45:09,254  INFO AdminClient,main:99 - 5. Register a new user
+04:45:09,254  INFO AdminClient,main:100 - 6. Delete a user
+04:45:09,254  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:45:09,254  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:45:09,254  INFO AdminClient,main:103 - 9. Approve student
+04:45:09,254  INFO AdminClient,main:104 - 0. To logout
+04:45:12,650  INFO AdminClient,main:77 - Enter one of the following Role ("ADMIN", "PROFESSOR", "STUDENT"
+
+04:45:14,679  INFO AdminClient,main:94 - Enter your choice:
+04:45:14,679  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:45:14,679  INFO AdminClient,main:96 - 2. View All Courses
+04:45:14,680  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:45:14,681  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:45:14,681  INFO AdminClient,main:99 - 5. Register a new user
+04:45:14,682  INFO AdminClient,main:100 - 6. Delete a user
+04:45:14,682  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:45:14,683  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:45:14,683  INFO AdminClient,main:103 - 9. Approve student
+04:45:14,684  INFO AdminClient,main:104 - 0. To logout
+04:46:46,189  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:46:46,191  INFO UserClient,main:49 - ======User Menu=====
+04:46:46,192  INFO UserClient,main:50 - Enter 1 to Login
+04:46:46,192  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:46:46,192  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:46:48,087  INFO UserClient,main:74 - Enter User Id
+04:46:49,568  INFO UserClient,main:76 - Enter User Password
+04:46:50,517  INFO UserDaoImpl,main:168 - 1
+04:46:50,575  INFO UserDaoImpl,main:176 - admin1
+04:46:50,577  INFO UserClient,main:84 - Welcome User ID : 1
+04:46:50,577  INFO UserClient,main:87 - Successfully Logged in as Admin
+04:46:50,578  INFO AdminClient,main:94 - Enter your choice:
+04:46:50,578  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:46:50,578  INFO AdminClient,main:96 - 2. View All Courses
+04:46:50,578  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:46:50,578  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:46:50,578  INFO AdminClient,main:99 - 5. Register a new user
+04:46:50,578  INFO AdminClient,main:100 - 6. Delete a user
+04:46:50,579  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:46:50,579  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:46:50,579  INFO AdminClient,main:103 - 9. Approve student
+04:46:50,579  INFO AdminClient,main:104 - 0. To logout
+04:46:54,647  INFO AdminClient,main:77 - Enter one of the following Role ("ADMIN", "PROFESSOR", "STUDENT"
+
+04:46:56,542  INFO AdminClient,main:94 - Enter your choice:
+04:46:56,543  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:46:56,543  INFO AdminClient,main:96 - 2. View All Courses
+04:46:56,544  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:46:56,544  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:46:56,544  INFO AdminClient,main:99 - 5. Register a new user
+04:46:56,545  INFO AdminClient,main:100 - 6. Delete a user
+04:46:56,545  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:46:56,546  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:46:56,546  INFO AdminClient,main:103 - 9. Approve student
+04:46:56,546  INFO AdminClient,main:104 - 0. To logout
+04:47:23,659  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:47:23,661  INFO UserClient,main:49 - ======User Menu=====
+04:47:23,661  INFO UserClient,main:50 - Enter 1 to Login
+04:47:23,662  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:47:23,662  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:47:26,479  INFO UserClient,main:74 - Enter User Id
+04:47:27,238  INFO UserClient,main:76 - Enter User Password
+04:47:28,209  INFO UserDaoImpl,main:168 - 1
+04:47:28,257  INFO UserDaoImpl,main:176 - admin1
+04:47:28,259  INFO UserClient,main:84 - Welcome User ID : 1
+04:47:28,260  INFO UserClient,main:87 - Successfully Logged in as Admin
+04:47:28,260  INFO AdminClient,main:94 - Enter your choice:
+04:47:28,260  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:47:28,260  INFO AdminClient,main:96 - 2. View All Courses
+04:47:28,260  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:47:28,260  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:47:28,260  INFO AdminClient,main:99 - 5. Register a new user
+04:47:28,260  INFO AdminClient,main:100 - 6. Delete a user
+04:47:28,261  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:47:28,261  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:47:28,261  INFO AdminClient,main:103 - 9. Approve student
+04:47:28,261  INFO AdminClient,main:104 - 0. To logout
+04:47:30,599  INFO AdminClient,main:77 - Enter one of the following Role ("ADMIN", "PROFESSOR", "STUDENT"
+
+04:47:33,247  INFO UserDaoImpl,main:119 - com.mysql.cj.jdbc.result.ResultSetImpl@50ad3bc1
+04:47:33,250  INFO AdminClient,main:94 - Enter your choice:
+04:47:33,251  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:47:33,251  INFO AdminClient,main:96 - 2. View All Courses
+04:47:33,251  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:47:33,252  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:47:33,252  INFO AdminClient,main:99 - 5. Register a new user
+04:47:33,252  INFO AdminClient,main:100 - 6. Delete a user
+04:47:33,253  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:47:33,253  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:47:33,253  INFO AdminClient,main:103 - 9. Approve student
+04:47:33,253  INFO AdminClient,main:104 - 0. To logout
+04:53:02,643  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:53:02,645  INFO UserClient,main:49 - ======User Menu=====
+04:53:02,645  INFO UserClient,main:50 - Enter 1 to Login
+04:53:02,645  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:53:02,645  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:53:07,134  INFO UserClient,main:74 - Enter User Id
+04:53:09,227  INFO UserClient,main:76 - Enter User Password
+04:53:14,204  INFO UserDaoImpl,main:169 - 1
+04:53:14,258  INFO UserDaoImpl,main:177 - admin1
+04:53:14,261  INFO UserClient,main:84 - Welcome User ID : 1
+04:53:14,261  INFO UserClient,main:87 - Successfully Logged in as Admin
+04:53:14,261  INFO AdminClient,main:94 - Enter your choice:
+04:53:14,262  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:53:14,262  INFO AdminClient,main:96 - 2. View All Courses
+04:53:14,262  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:53:14,262  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:53:14,262  INFO AdminClient,main:99 - 5. Register a new user
+04:53:14,262  INFO AdminClient,main:100 - 6. Delete a user
+04:53:14,262  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:53:14,262  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:53:14,263  INFO AdminClient,main:103 - 9. Approve student
+04:53:14,263  INFO AdminClient,main:104 - 0. To logout
+04:53:19,026  INFO AdminClient,main:77 - Enter one of the following Role ("ADMIN", "PROFESSOR", "STUDENT"
+
+04:53:20,950  INFO UserDaoImpl,main:119 - com.mysql.cj.jdbc.result.ResultSetImpl@50ad3bc1
+04:53:20,951  INFO UserDaoImpl,main:122 - 1
+04:53:20,954  INFO AdminClient,main:94 - Enter your choice:
+04:53:20,954  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:53:20,954  INFO AdminClient,main:96 - 2. View All Courses
+04:53:20,955  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:53:20,955  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:53:20,955  INFO AdminClient,main:99 - 5. Register a new user
+04:53:20,955  INFO AdminClient,main:100 - 6. Delete a user
+04:53:20,956  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:53:20,956  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:53:20,956  INFO AdminClient,main:103 - 9. Approve student
+04:53:20,956  INFO AdminClient,main:104 - 0. To logout
+04:54:45,287  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:54:45,291  INFO UserClient,main:49 - ======User Menu=====
+04:54:45,291  INFO UserClient,main:50 - Enter 1 to Login
+04:54:45,292  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:54:45,292  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:54:45,298  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:54:45,300  INFO UserClient,main:49 - ======User Menu=====
+04:54:45,300  INFO UserClient,main:50 - Enter 1 to Login
+04:54:45,300  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:54:45,300  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:54:48,028  INFO UserClient,main:74 - Enter User Id
+04:54:48,562  INFO UserClient,main:76 - Enter User Password
+04:54:49,766  INFO UserDaoImpl,main:169 - 1
+04:54:49,813  INFO UserDaoImpl,main:177 - admin1
+04:54:49,816  INFO UserClient,main:84 - Welcome User ID : 1
+04:54:49,816  INFO UserClient,main:87 - Successfully Logged in as Admin
+04:54:49,817  INFO AdminClient,main:94 - Enter your choice:
+04:54:49,817  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:54:49,817  INFO AdminClient,main:96 - 2. View All Courses
+04:54:49,817  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:54:49,817  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:54:49,818  INFO AdminClient,main:99 - 5. Register a new user
+04:54:49,818  INFO AdminClient,main:100 - 6. Delete a user
+04:54:49,818  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:54:49,818  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:54:49,818  INFO AdminClient,main:103 - 9. Approve student
+04:54:49,819  INFO AdminClient,main:104 - 0. To logout
+04:54:52,377  INFO AdminClient,main:77 - Enter one of the following Role ("ADMIN", "PROFESSOR", "STUDENT"
+
+04:54:54,525  INFO UserDaoImpl,main:119 - com.mysql.cj.jdbc.result.ResultSetImpl@50ad3bc1
+04:54:54,526  INFO UserDaoImpl,main:122 - 1
+04:54:54,529  INFO AdminClient,main:94 - Enter your choice:
+04:54:54,529  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:54:54,530  INFO AdminClient,main:96 - 2. View All Courses
+04:54:54,530  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:54:54,530  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:54:54,530  INFO AdminClient,main:99 - 5. Register a new user
+04:54:54,531  INFO AdminClient,main:100 - 6. Delete a user
+04:54:54,531  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:54:54,531  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:54:54,532  INFO AdminClient,main:103 - 9. Approve student
+04:54:54,532  INFO AdminClient,main:104 - 0. To logout
+04:55:54,788  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:55:54,791  INFO UserClient,main:49 - ======User Menu=====
+04:55:54,792  INFO UserClient,main:50 - Enter 1 to Login
+04:55:54,792  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:55:54,792  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:55:56,667  INFO UserClient,main:74 - Enter User Id
+04:55:57,222  INFO UserClient,main:76 - Enter User Password
+04:55:58,243  INFO UserDaoImpl,main:168 - 1
+04:55:58,283  INFO UserDaoImpl,main:176 - admin1
+04:55:58,285  INFO UserClient,main:84 - Welcome User ID : 1
+04:55:58,285  INFO UserClient,main:87 - Successfully Logged in as Admin
+04:55:58,285  INFO AdminClient,main:94 - Enter your choice:
+04:55:58,285  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:55:58,285  INFO AdminClient,main:96 - 2. View All Courses
+04:55:58,285  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:55:58,285  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:55:58,285  INFO AdminClient,main:99 - 5. Register a new user
+04:55:58,285  INFO AdminClient,main:100 - 6. Delete a user
+04:55:58,286  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:55:58,286  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:55:58,286  INFO AdminClient,main:103 - 9. Approve student
+04:55:58,286  INFO AdminClient,main:104 - 0. To logout
+04:56:00,477  INFO AdminClient,main:85 - Enter Course Code
+04:56:04,005  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:56:04,008  INFO UserClient,main:49 - ======User Menu=====
+04:56:04,008  INFO UserClient,main:50 - Enter 1 to Login
+04:56:04,008  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:56:04,008  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:56:05,829  INFO UserClient,main:74 - Enter User Id
+04:56:06,850  INFO UserClient,main:76 - Enter User Password
+04:56:07,893  INFO UserDaoImpl,main:168 - 1
+04:56:07,950  INFO UserDaoImpl,main:176 - admin1
+04:56:07,952  INFO UserClient,main:84 - Welcome User ID : 1
+04:56:07,953  INFO UserClient,main:87 - Successfully Logged in as Admin
+04:56:07,953  INFO AdminClient,main:94 - Enter your choice:
+04:56:07,953  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:56:07,953  INFO AdminClient,main:96 - 2. View All Courses
+04:56:07,953  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:56:07,953  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:56:07,953  INFO AdminClient,main:99 - 5. Register a new user
+04:56:07,953  INFO AdminClient,main:100 - 6. Delete a user
+04:56:07,954  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:56:07,954  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:56:07,954  INFO AdminClient,main:103 - 9. Approve student
+04:56:07,954  INFO AdminClient,main:104 - 0. To logout
+04:56:14,007  INFO AdminClient,main:77 - Enter one of the following Role ("ADMIN", "PROFESSOR", "STUDENT"
+
+04:56:16,880  INFO UserDaoImpl,main:119 - com.mysql.cj.jdbc.result.ResultSetImpl@50ad3bc1
+04:56:16,881  INFO UserDaoImpl,main:122 - a
+04:56:16,881  INFO UserDaoImpl,main:125 - b
+04:56:16,884  INFO AdminClient,main:94 - Enter your choice:
+04:56:16,885  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:56:16,885  INFO AdminClient,main:96 - 2. View All Courses
+04:56:16,885  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:56:16,886  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:56:16,886  INFO AdminClient,main:99 - 5. Register a new user
+04:56:16,886  INFO AdminClient,main:100 - 6. Delete a user
+04:56:16,886  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:56:16,887  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:56:16,887  INFO AdminClient,main:103 - 9. Approve student
+04:56:16,887  INFO AdminClient,main:104 - 0. To logout
+04:56:24,900  INFO UserClient,main:49 - ======User Menu=====
+04:56:24,900  INFO UserClient,main:50 - Enter 1 to Login
+04:56:24,901  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:56:24,901  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:56:26,288  INFO UserClient,main:74 - Enter User Id
+04:56:26,847  INFO UserClient,main:76 - Enter User Password
+04:56:28,106  INFO UserDaoImpl,main:168 - 1
+04:56:28,109  INFO UserDaoImpl,main:176 - admin1
+04:56:28,110  INFO UserClient,main:84 - Welcome User ID : 1
+04:56:28,111  INFO UserClient,main:87 - Successfully Logged in as Admin
+04:56:28,111  INFO AdminClient,main:94 - Enter your choice:
+04:56:28,111  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:56:28,111  INFO AdminClient,main:96 - 2. View All Courses
+04:56:28,112  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:56:28,112  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:56:28,112  INFO AdminClient,main:99 - 5. Register a new user
+04:56:28,112  INFO AdminClient,main:100 - 6. Delete a user
+04:56:28,114  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:56:28,114  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:56:28,114  INFO AdminClient,main:103 - 9. Approve student
+04:56:28,114  INFO AdminClient,main:104 - 0. To logout
+04:57:04,884  INFO AdminClient,main:77 - Enter one of the following Role ("ADMIN", "PROFESSOR", "STUDENT"
+
+04:57:09,867  INFO UserDaoImpl,main:119 - com.mysql.cj.jdbc.result.ResultSetImpl@759d26fb
+04:57:09,867  INFO UserDaoImpl,main:122 - a
+04:57:09,867  INFO UserDaoImpl,main:125 - b
+04:57:09,869  INFO AdminClient,main:94 - Enter your choice:
+04:57:09,870  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:57:09,870  INFO AdminClient,main:96 - 2. View All Courses
+04:57:09,871  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:57:09,871  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:57:09,871  INFO AdminClient,main:99 - 5. Register a new user
+04:57:09,871  INFO AdminClient,main:100 - 6. Delete a user
+04:57:09,871  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:57:09,871  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:57:09,871  INFO AdminClient,main:103 - 9. Approve student
+04:57:09,872  INFO AdminClient,main:104 - 0. To logout
+04:57:49,508  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:57:49,510  INFO UserClient,main:49 - ======User Menu=====
+04:57:49,511  INFO UserClient,main:50 - Enter 1 to Login
+04:57:49,511  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:57:49,512  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:57:49,510  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:57:49,514  INFO UserClient,main:49 - ======User Menu=====
+04:57:49,515  INFO UserClient,main:50 - Enter 1 to Login
+04:57:49,515  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:57:49,516  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:57:51,962  INFO UserClient,main:74 - Enter User Id
+04:57:52,802  INFO UserClient,main:76 - Enter User Password
+04:57:53,810  INFO UserDaoImpl,main:168 - 1
+04:57:53,859  INFO UserDaoImpl,main:176 - admin1
+04:57:53,861  INFO UserClient,main:84 - Welcome User ID : 1
+04:57:53,861  INFO UserClient,main:87 - Successfully Logged in as Admin
+04:57:53,861  INFO AdminClient,main:94 - Enter your choice:
+04:57:53,861  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:57:53,862  INFO AdminClient,main:96 - 2. View All Courses
+04:57:53,862  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:57:53,862  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:57:53,862  INFO AdminClient,main:99 - 5. Register a new user
+04:57:53,862  INFO AdminClient,main:100 - 6. Delete a user
+04:57:53,862  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:57:53,862  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:57:53,863  INFO AdminClient,main:103 - 9. Approve student
+04:57:53,863  INFO AdminClient,main:104 - 0. To logout
+04:57:57,830  INFO AdminClient,main:77 - Enter one of the following Role ("ADMIN", "PROFESSOR", "STUDENT"
+
+04:58:05,607  INFO UserDaoImpl,main:119 - com.mysql.cj.jdbc.result.ResultSetImpl@50ad3bc1
+04:58:05,607  INFO UserDaoImpl,main:122 - a
+04:58:05,609  INFO UserDaoImpl,main:125 - b
+04:58:05,610  INFO AdminClient,main:94 - Enter your choice:
+04:58:05,611  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:58:05,611  INFO AdminClient,main:96 - 2. View All Courses
+04:58:05,611  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:58:05,611  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:58:05,611  INFO AdminClient,main:99 - 5. Register a new user
+04:58:05,613  INFO AdminClient,main:100 - 6. Delete a user
+04:58:05,613  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:58:05,613  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:58:05,613  INFO AdminClient,main:103 - 9. Approve student
+04:58:05,613  INFO AdminClient,main:104 - 0. To logout
+04:58:22,445  INFO UserClient,main:37 - Welcome to the Course Registration System
+04:58:22,446  INFO UserClient,main:49 - ======User Menu=====
+04:58:22,447  INFO UserClient,main:50 - Enter 1 to Login
+04:58:22,447  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+04:58:22,447  INFO UserClient,main:52 - Enter any other number to exit CRS
+04:58:26,117  INFO UserClient,main:74 - Enter User Id
+04:58:26,188  INFO UserClient,main:76 - Enter User Password
+04:58:28,486  INFO UserDaoImpl,main:168 - 1
+04:58:28,539  INFO UserDaoImpl,main:176 - admin1
+04:58:28,541  INFO UserClient,main:84 - Welcome User ID : 1
+04:58:28,541  INFO UserClient,main:87 - Successfully Logged in as Admin
+04:58:28,541  INFO AdminClient,main:94 - Enter your choice:
+04:58:28,542  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:58:28,542  INFO AdminClient,main:96 - 2. View All Courses
+04:58:28,542  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:58:28,542  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:58:28,542  INFO AdminClient,main:99 - 5. Register a new user
+04:58:28,542  INFO AdminClient,main:100 - 6. Delete a user
+04:58:28,542  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:58:28,543  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:58:28,543  INFO AdminClient,main:103 - 9. Approve student
+04:58:28,543  INFO AdminClient,main:104 - 0. To logout
+04:58:31,885  INFO AdminClient,main:77 - Enter one of the following Role ("ADMIN", "PROFESSOR", "STUDENT"
+
+04:58:34,332  INFO AdminClient,main:94 - Enter your choice:
+04:58:34,333  INFO AdminClient,main:95 - 1. To view courses in catalog
+04:58:34,333  INFO AdminClient,main:96 - 2. View All Courses
+04:58:34,333  INFO AdminClient,main:97 - 3. To view users of Specific Role
+04:58:34,334  INFO AdminClient,main:98 - 4. Assign course to a professor
+04:58:34,334  INFO AdminClient,main:99 - 5. Register a new user
+04:58:34,335  INFO AdminClient,main:100 - 6. Delete a user
+04:58:34,335  INFO AdminClient,main:101 - 7. Add a new course to catalog
+04:58:34,336  INFO AdminClient,main:102 - 8. Drop a course from catalog
+04:58:34,336  INFO AdminClient,main:103 - 9. Approve student
+04:58:34,336  INFO AdminClient,main:104 - 0. To logout
+05:00:25,531  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:00:25,533  INFO UserClient,main:49 - ======User Menu=====
+05:00:25,533  INFO UserClient,main:50 - Enter 1 to Login
+05:00:25,533  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:00:25,533  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:00:28,570  INFO UserClient,main:74 - Enter User Id
+05:00:29,985  INFO UserClient,main:76 - Enter User Password
+05:00:33,795  INFO UserDaoImpl,main:168 - 1
+05:00:33,859  INFO UserDaoImpl,main:176 - admin1
+05:00:33,861  INFO UserClient,main:84 - Welcome User ID : 1
+05:00:33,862  INFO UserClient,main:87 - Successfully Logged in as Admin
+05:00:33,862  INFO AdminClient,main:94 - Enter your choice:
+05:00:33,862  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:00:33,862  INFO AdminClient,main:96 - 2. View All Courses
+05:00:33,863  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:00:33,863  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:00:33,863  INFO AdminClient,main:99 - 5. Register a new user
+05:00:33,863  INFO AdminClient,main:100 - 6. Delete a user
+05:00:33,863  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:00:33,864  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:00:33,864  INFO AdminClient,main:103 - 9. Approve student
+05:00:33,864  INFO AdminClient,main:104 - 0. To logout
+05:00:38,583  INFO AdminClient,main:77 - Enter one of the following Role ("ADMIN", "PROFESSOR", "STUDENT"
+
+05:00:44,266  INFO UserDaoImpl,main:119 - com.mysql.cj.jdbc.result.ResultSetImpl@50ad3bc1
+05:00:44,267  INFO UserDaoImpl,main:122 - a
+05:00:44,267  INFO UserDaoImpl,main:125 - b
+05:00:44,269  INFO AdminClient,main:94 - Enter your choice:
+05:00:44,270  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:00:44,271  INFO AdminClient,main:96 - 2. View All Courses
+05:00:44,271  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:00:44,271  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:00:44,271  INFO AdminClient,main:99 - 5. Register a new user
+05:00:44,271  INFO AdminClient,main:100 - 6. Delete a user
+05:00:44,272  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:00:44,272  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:00:44,272  INFO AdminClient,main:103 - 9. Approve student
+05:00:44,272  INFO AdminClient,main:104 - 0. To logout
+05:01:06,195  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:01:06,197  INFO UserClient,main:49 - ======User Menu=====
+05:01:06,197  INFO UserClient,main:50 - Enter 1 to Login
+05:01:06,197  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:01:06,197  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:01:12,846  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:01:12,848  INFO UserClient,main:49 - ======User Menu=====
+05:01:12,848  INFO UserClient,main:50 - Enter 1 to Login
+05:01:12,849  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:01:12,849  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:01:16,075  INFO UserClient,main:74 - Enter User Id
+05:01:18,092  INFO UserClient,main:76 - Enter User Password
+05:01:19,126  INFO UserDaoImpl,main:168 - 1
+05:01:19,184  INFO UserDaoImpl,main:176 - admin1
+05:01:19,187  INFO UserClient,main:84 - Welcome User ID : 1
+05:01:19,187  INFO UserClient,main:87 - Successfully Logged in as Admin
+05:01:19,188  INFO AdminClient,main:94 - Enter your choice:
+05:01:19,188  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:01:19,188  INFO AdminClient,main:96 - 2. View All Courses
+05:01:19,188  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:01:19,189  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:01:19,189  INFO AdminClient,main:99 - 5. Register a new user
+05:01:19,189  INFO AdminClient,main:100 - 6. Delete a user
+05:01:19,189  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:01:19,189  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:01:19,190  INFO AdminClient,main:103 - 9. Approve student
+05:01:19,190  INFO AdminClient,main:104 - 0. To logout
+05:01:24,784  INFO AdminClient,main:116 - Select Role of the User (PROFESSOR, ADMIN)
+05:01:28,421  INFO AdminClient,main:120 - Enter Name
+05:01:33,599  INFO AdminClient,main:122 - Enter Password
+05:01:41,330  INFO AdminClient,main:124 - Enter Email
+05:01:44,042  INFO AdminClient,main:126 - Enter Mobile No.
+05:01:44,688  INFO AdminClient,main:128 - Select Gender: 'M' for male and 'F' for female
+05:01:46,047  INFO AdminClient,main:131 - Enter Address
+05:01:47,233  INFO AdminClient,main:133 - Enter City
+05:01:47,869  INFO AdminClient,main:135 - Enter State
+05:01:48,544  INFO AdminClient,main:137 - Enter Country
+05:01:49,283  INFO AdminClient,main:148 - Enter Department
+05:01:57,276  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:01:57,281  INFO UserClient,main:49 - ======User Menu=====
+05:01:57,281  INFO UserClient,main:50 - Enter 1 to Login
+05:01:57,281  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:01:57,282  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:02:03,286  INFO UserClient,main:109 - Enter Name
+05:02:06,274  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:02:06,275  INFO UserClient,main:49 - ======User Menu=====
+05:02:06,276  INFO UserClient,main:50 - Enter 1 to Login
+05:02:06,276  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:02:06,276  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:02:08,020  INFO UserClient,main:74 - Enter User Id
+05:02:10,693  INFO UserClient,main:76 - Enter User Password
+05:02:11,649  INFO UserDaoImpl,main:168 - 1
+05:02:11,687  INFO UserDaoImpl,main:176 - admin1
+05:02:11,689  INFO UserClient,main:84 - Welcome User ID : 1
+05:02:11,689  INFO UserClient,main:87 - Successfully Logged in as Admin
+05:02:11,690  INFO AdminClient,main:94 - Enter your choice:
+05:02:11,690  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:02:11,690  INFO AdminClient,main:96 - 2. View All Courses
+05:02:11,690  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:02:11,690  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:02:11,690  INFO AdminClient,main:99 - 5. Register a new user
+05:02:11,690  INFO AdminClient,main:100 - 6. Delete a user
+05:02:11,690  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:02:11,691  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:02:11,691  INFO AdminClient,main:103 - 9. Approve student
+05:02:11,691  INFO AdminClient,main:104 - 0. To logout
+05:02:14,161  INFO AdminClient,main:116 - Select Role of the User (PROFESSOR, ADMIN)
+05:02:17,086  INFO AdminClient,main:120 - Enter Name
+05:02:20,344  INFO AdminClient,main:122 - Enter Password
+05:02:23,173  INFO AdminClient,main:124 - Enter Email
+05:02:26,190  INFO AdminClient,main:126 - Enter Mobile No.
+05:02:27,212  INFO AdminClient,main:128 - Select Gender: 'M' for male and 'F' for female
+05:02:28,571  INFO AdminClient,main:131 - Enter Address
+05:02:29,703  INFO AdminClient,main:133 - Enter City
+05:02:30,990  INFO AdminClient,main:135 - Enter State
+05:02:32,093  INFO AdminClient,main:137 - Enter Country
+05:02:33,504  INFO AdminClient,main:148 - Enter Department
+05:03:04,578  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:03:04,580  INFO UserClient,main:49 - ======User Menu=====
+05:03:04,580  INFO UserClient,main:50 - Enter 1 to Login
+05:03:04,581  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:03:04,581  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:03:07,099  INFO UserClient,main:74 - Enter User Id
+05:03:08,315  INFO UserClient,main:76 - Enter User Password
+05:03:09,264  INFO UserDaoImpl,main:168 - 1
+05:03:09,349  INFO UserDaoImpl,main:176 - admin1
+05:03:09,352  INFO UserClient,main:84 - Welcome User ID : 1
+05:03:09,352  INFO UserClient,main:87 - Successfully Logged in as Admin
+05:03:09,352  INFO AdminClient,main:94 - Enter your choice:
+05:03:09,352  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:03:09,352  INFO AdminClient,main:96 - 2. View All Courses
+05:03:09,352  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:03:09,352  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:03:09,352  INFO AdminClient,main:99 - 5. Register a new user
+05:03:09,353  INFO AdminClient,main:100 - 6. Delete a user
+05:03:09,354  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:03:09,354  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:03:09,354  INFO AdminClient,main:103 - 9. Approve student
+05:03:09,354  INFO AdminClient,main:104 - 0. To logout
+05:03:10,898  INFO AdminClient,main:116 - Select Role of the User (PROFESSOR, ADMIN)
+05:03:14,086  INFO AdminClient,main:120 - Enter Name
+05:03:16,832  INFO AdminClient,main:122 - Enter Password
+05:03:18,277  INFO AdminClient,main:124 - Enter Email
+05:03:19,567  INFO AdminClient,main:126 - Enter Mobile No.
+05:03:20,106  INFO AdminClient,main:128 - Select Gender: 'M' for male and 'F' for female
+05:03:22,278  INFO AdminClient,main:131 - Enter Address
+05:03:24,024  INFO AdminClient,main:133 - Enter City
+05:03:24,629  INFO AdminClient,main:135 - Enter State
+05:03:25,293  INFO AdminClient,main:137 - Enter Country
+05:03:26,123  INFO AdminClient,main:148 - Enter Department
+05:03:28,426  INFO UserDaoImpl,main:36 - 1 user added
+05:03:28,500 ERROR ProfessorDaoImpl,main:101 - Unknown column 'dept' in 'field list'
+05:03:28,501  INFO AdminClient,main:152 - Registration Success
+User id of Professor is 201
+05:03:28,501  INFO AdminClient,main:94 - Enter your choice:
+05:03:28,502  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:03:28,503  INFO AdminClient,main:96 - 2. View All Courses
+05:03:28,503  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:03:28,503  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:03:28,503  INFO AdminClient,main:99 - 5. Register a new user
+05:03:28,503  INFO AdminClient,main:100 - 6. Delete a user
+05:03:28,504  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:03:28,504  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:03:28,504  INFO AdminClient,main:103 - 9. Approve student
+05:03:28,505  INFO AdminClient,main:104 - 0. To logout
+05:04:10,197  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:04:10,198  INFO UserClient,main:49 - ======User Menu=====
+05:04:10,198  INFO UserClient,main:50 - Enter 1 to Login
+05:04:10,199  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:04:10,199  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:04:12,369  INFO UserClient,main:74 - Enter User Id
+05:04:21,602  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:04:21,604  INFO UserClient,main:49 - ======User Menu=====
+05:04:21,604  INFO UserClient,main:50 - Enter 1 to Login
+05:04:21,605  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:04:21,605  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:04:24,284  INFO UserClient,main:74 - Enter User Id
+05:04:25,258  INFO UserClient,main:76 - Enter User Password
+05:04:26,561  INFO UserDaoImpl,main:168 - 1
+05:04:26,635  INFO UserDaoImpl,main:176 - admin1
+05:04:26,638  INFO UserClient,main:84 - Welcome User ID : 1
+05:04:26,638  INFO UserClient,main:87 - Successfully Logged in as Admin
+05:04:26,638  INFO AdminClient,main:94 - Enter your choice:
+05:04:26,639  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:04:26,639  INFO AdminClient,main:96 - 2. View All Courses
+05:04:26,639  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:04:26,639  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:04:26,639  INFO AdminClient,main:99 - 5. Register a new user
+05:04:26,640  INFO AdminClient,main:100 - 6. Delete a user
+05:04:26,640  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:04:26,640  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:04:26,640  INFO AdminClient,main:103 - 9. Approve student
+05:04:26,640  INFO AdminClient,main:104 - 0. To logout
+05:04:28,592  INFO AdminClient,main:116 - Select Role of the User (PROFESSOR, ADMIN)
+05:04:30,712  INFO AdminClient,main:120 - Enter Name
+05:04:35,987  INFO AdminClient,main:122 - Enter Password
+05:04:38,100  INFO AdminClient,main:124 - Enter Email
+05:04:40,060  INFO AdminClient,main:126 - Enter Mobile No.
+05:04:41,059  INFO AdminClient,main:128 - Select Gender: 'M' for male and 'F' for female
+05:04:43,699  INFO AdminClient,main:131 - Enter Address
+05:04:46,606  INFO AdminClient,main:133 - Enter City
+05:04:47,362  INFO AdminClient,main:135 - Enter State
+05:04:48,380  INFO AdminClient,main:137 - Enter Country
+05:04:49,962  INFO AdminClient,main:148 - Enter Department
+05:04:51,318  INFO UserDaoImpl,main:36 - 1 user added
+05:04:51,472  INFO ProfessorDaoImpl,main:94 - Added Professor sucessfully
+05:04:51,473  INFO ProfessorDaoImpl,main:99 - 1 professor added
+05:04:51,474  INFO AdminClient,main:152 - Registration Success
+User id of Professor is 201
+05:04:51,475  INFO AdminClient,main:94 - Enter your choice:
+05:04:51,475  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:04:51,476  INFO AdminClient,main:96 - 2. View All Courses
+05:04:51,476  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:04:51,477  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:04:51,477  INFO AdminClient,main:99 - 5. Register a new user
+05:04:51,478  INFO AdminClient,main:100 - 6. Delete a user
+05:04:51,478  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:04:51,479  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:04:51,479  INFO AdminClient,main:103 - 9. Approve student
+05:04:51,479  INFO AdminClient,main:104 - 0. To logout
+05:06:08,886  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:06:08,888  INFO UserClient,main:49 - ======User Menu=====
+05:06:08,888  INFO UserClient,main:50 - Enter 1 to Login
+05:06:08,888  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:06:08,888  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:06:11,893  INFO UserClient,main:74 - Enter User Id
+05:06:13,259  INFO UserClient,main:76 - Enter User Password
+05:06:14,795  INFO UserDaoImpl,main:168 - 1
+05:06:14,857  INFO UserDaoImpl,main:176 - admin1
+05:06:14,860  INFO UserClient,main:84 - Welcome User ID : 1
+05:06:14,860  INFO UserClient,main:87 - Successfully Logged in as Admin
+05:06:14,860  INFO AdminClient,main:94 - Enter your choice:
+05:06:14,860  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:06:14,861  INFO AdminClient,main:96 - 2. View All Courses
+05:06:14,861  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:06:14,861  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:06:14,861  INFO AdminClient,main:99 - 5. Register a new user
+05:06:14,861  INFO AdminClient,main:100 - 6. Delete a user
+05:06:14,861  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:06:14,861  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:06:14,862  INFO AdminClient,main:103 - 9. Approve student
+05:06:14,862  INFO AdminClient,main:104 - 0. To logout
+05:06:23,201  INFO AdminClient,main:116 - Select Role of the User (PROFESSOR, ADMIN)
+05:06:26,179  INFO AdminClient,main:120 - Enter Name
+05:06:27,395  INFO AdminClient,main:122 - Enter Password
+05:06:29,332  INFO AdminClient,main:124 - Enter Email
+05:06:32,883  INFO AdminClient,main:126 - Enter Mobile No.
+05:06:34,336  INFO AdminClient,main:128 - Select Gender: 'M' for male and 'F' for female
+05:06:36,165  INFO AdminClient,main:131 - Enter Address
+05:06:37,415  INFO AdminClient,main:133 - Enter City
+05:06:38,305  INFO AdminClient,main:135 - Enter State
+05:06:39,048  INFO AdminClient,main:137 - Enter Country
+05:06:39,830  INFO AdminClient,main:148 - Enter Department
+05:06:42,873  INFO UserDaoImpl,main:36 - 1 user added
+05:06:42,972  INFO ProfessorDaoImpl,main:94 - Added Professor sucessfully
+05:06:42,972  INFO ProfessorDaoImpl,main:99 - 1 professor added
+05:06:42,973  INFO AdminClient,main:152 - Registration Success
+User id of Professor is 201
+05:06:42,973  INFO AdminClient,main:94 - Enter your choice:
+05:06:42,974  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:06:42,975  INFO AdminClient,main:96 - 2. View All Courses
+05:06:42,975  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:06:42,976  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:06:42,977  INFO AdminClient,main:99 - 5. Register a new user
+05:06:42,977  INFO AdminClient,main:100 - 6. Delete a user
+05:06:42,978  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:06:42,978  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:06:42,979  INFO AdminClient,main:103 - 9. Approve student
+05:06:42,980  INFO AdminClient,main:104 - 0. To logout
+05:08:07,861  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:08:07,863  INFO UserClient,main:49 - ======User Menu=====
+05:08:07,863  INFO UserClient,main:50 - Enter 1 to Login
+05:08:07,863  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:08:07,863  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:08:11,118  INFO UserClient,main:109 - Enter Name
+05:08:13,381  INFO UserClient,main:111 - Enter Password
+05:08:14,869  INFO UserClient,main:113 - Enter Email
+05:08:17,548  INFO UserClient,main:115 - Enter Mobile No.
+05:08:18,529  INFO UserClient,main:118 - Enter Branch (Civil, Chem, CS, EEE, Mech, ECE):
+05:08:24,822  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:08:24,823  INFO UserClient,main:49 - ======User Menu=====
+05:08:24,824  INFO UserClient,main:50 - Enter 1 to Login
+05:08:24,824  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:08:24,824  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:08:26,072  INFO UserClient,main:74 - Enter User Id
+05:08:27,183  INFO UserClient,main:76 - Enter User Password
+05:08:28,231  INFO UserDaoImpl,main:168 - 1
+05:08:28,292  INFO UserDaoImpl,main:176 - admin1
+05:08:28,295  INFO UserClient,main:84 - Welcome User ID : 1
+05:08:28,296  INFO UserClient,main:87 - Successfully Logged in as Admin
+05:08:28,296  INFO AdminClient,main:94 - Enter your choice:
+05:08:28,296  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:08:28,296  INFO AdminClient,main:96 - 2. View All Courses
+05:08:28,296  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:08:28,297  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:08:28,297  INFO AdminClient,main:99 - 5. Register a new user
+05:08:28,297  INFO AdminClient,main:100 - 6. Delete a user
+05:08:28,297  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:08:28,297  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:08:28,297  INFO AdminClient,main:103 - 9. Approve student
+05:08:28,298  INFO AdminClient,main:104 - 0. To logout
+05:08:32,167  INFO AdminClient,main:116 - Select Role of the User (PROFESSOR, ADMIN)
+05:08:34,615  INFO AdminClient,main:119 - Enter Name
+05:08:37,441  INFO AdminClient,main:121 - Enter Password
+05:08:43,354  INFO AdminClient,main:123 - Enter Email
+05:08:45,053  INFO AdminClient,main:125 - Enter Mobile No.
+05:08:46,417  INFO AdminClient,main:127 - Select Gender: 'M' for male and 'F' for female
+05:08:47,633  INFO AdminClient,main:130 - Enter Address
+05:08:48,948  INFO AdminClient,main:132 - Enter City
+05:08:49,589  INFO AdminClient,main:134 - Enter State
+05:08:50,248  INFO AdminClient,main:136 - Enter Country
+05:08:51,762  INFO UserDaoImpl,main:36 - 1 user added
+05:08:51,999  INFO AdminDaoImpl,main:47 - 1 admin added
+05:08:52,000  INFO AdminClient,main:141 - Registration Success
+05:08:52,001  INFO AdminClient,main:94 - Enter your choice:
+05:08:52,001  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:08:52,001  INFO AdminClient,main:96 - 2. View All Courses
+05:08:52,002  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:08:52,002  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:08:52,003  INFO AdminClient,main:99 - 5. Register a new user
+05:08:52,003  INFO AdminClient,main:100 - 6. Delete a user
+05:08:52,003  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:08:52,004  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:08:52,005  INFO AdminClient,main:103 - 9. Approve student
+05:08:52,005  INFO AdminClient,main:104 - 0. To logout
+05:09:17,489  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:09:17,491  INFO UserClient,main:49 - ======User Menu=====
+05:09:17,491  INFO UserClient,main:50 - Enter 1 to Login
+05:09:17,491  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:09:17,491  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:09:24,256  INFO UserClient,main:74 - Enter User Id
+05:09:35,309  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:09:35,312  INFO UserClient,main:49 - ======User Menu=====
+05:09:35,312  INFO UserClient,main:50 - Enter 1 to Login
+05:09:35,312  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:09:35,312  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:09:47,274  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:09:47,277  INFO UserClient,main:49 - ======User Menu=====
+05:09:47,277  INFO UserClient,main:50 - Enter 1 to Login
+05:09:47,278  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:09:47,278  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:10:06,112  INFO UserClient,main:74 - Enter User Id
+05:10:53,534  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:10:53,537  INFO UserClient,main:49 - ======User Menu=====
+05:10:53,538  INFO UserClient,main:50 - Enter 1 to Login
+05:10:53,538  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:10:53,538  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:11:02,676  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:11:02,678  INFO UserClient,main:49 - ======User Menu=====
+05:11:02,679  INFO UserClient,main:50 - Enter 1 to Login
+05:11:02,679  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:11:02,679  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:11:05,835  INFO UserClient,main:73 - Enter User Id
+05:13:42,020  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:13:42,022  INFO UserClient,main:49 - ======User Menu=====
+05:13:42,023  INFO UserClient,main:50 - Enter 1 to Login
+05:13:42,023  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:13:42,023  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:13:45,463  INFO UserClient,main:73 - Enter User Id
+05:13:49,074  INFO UserClient,main:75 - Enter User Password
+05:13:50,421  INFO UserDaoImpl,main:168 - 10
+05:13:50,468  INFO UserDaoImpl,main:180 - User does not exist
+05:13:50,468  INFO UserClient,main:99 - Invalid Credentials
+05:13:50,469  INFO UserClient,main:49 - ======User Menu=====
+05:13:50,469  INFO UserClient,main:50 - Enter 1 to Login
+05:13:50,469  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:13:50,469  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:13:52,196  INFO UserClient,main:73 - Enter User Id
+05:13:53,699  INFO UserClient,main:75 - Enter User Password
+05:14:00,168  INFO UserDaoImpl,main:168 - 7
+05:14:00,171  INFO UserDaoImpl,main:176 - admin2
+05:14:00,171  INFO UserClient,main:99 - Invalid Credentials
+05:14:00,171  INFO UserClient,main:49 - ======User Menu=====
+05:14:00,172  INFO UserClient,main:50 - Enter 1 to Login
+05:14:00,172  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:14:00,172  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:14:09,603  INFO UserClient,main:73 - Enter User Id
+05:14:14,136  INFO UserClient,main:75 - Enter User Password
+05:14:17,002  INFO UserDaoImpl,main:168 - 7
+05:14:17,005  INFO UserDaoImpl,main:176 - admin2
+05:14:17,006  INFO UserClient,main:99 - Invalid Credentials
+05:14:17,006  INFO UserClient,main:49 - ======User Menu=====
+05:14:17,006  INFO UserClient,main:50 - Enter 1 to Login
+05:14:17,006  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:14:17,006  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:14:20,037 ERROR UserClient,main:64 - =====Exiting=====
+05:14:20,038  INFO UserClient,main:42 - Exiting CRS
+05:14:27,159  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:14:27,160  INFO UserClient,main:49 - ======User Menu=====
+05:14:27,160  INFO UserClient,main:50 - Enter 1 to Login
+05:14:27,161  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:14:27,161  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:14:30,058  INFO UserClient,main:73 - Enter User Id
+05:14:32,703  INFO UserClient,main:75 - Enter User Password
+05:14:34,280  INFO UserDaoImpl,main:168 - 7
+05:14:34,333  INFO UserDaoImpl,main:176 - admin2
+05:14:34,335  INFO UserClient,main:83 - Welcome User ID : 7
+05:14:34,335  INFO UserClient,main:86 - Successfully Logged in as Admin
+05:14:34,336  INFO AdminClient,main:94 - Enter your choice:
+05:14:34,336  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:14:34,336  INFO AdminClient,main:96 - 2. View All Courses
+05:14:34,336  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:14:34,336  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:14:34,336  INFO AdminClient,main:99 - 5. Register a new user
+05:14:34,336  INFO AdminClient,main:100 - 6. Delete a user
+05:14:34,337  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:14:34,337  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:14:34,337  INFO AdminClient,main:103 - 9. Approve student
+05:14:34,337  INFO AdminClient,main:104 - 0. To logout
+05:14:41,581  INFO AdminClient,main:162 - Enter user ID
+05:14:53,304 ERROR UserDaoImpl,main:54 - Unknown column 'userId' in 'where clause'
+05:14:53,433  INFO ProfessorDaoImpl,main:118 - 1 deleted
+05:14:53,437 ERROR UserDaoImpl,main:54 - Unknown column 'userId' in 'where clause'
+05:14:53,437  INFO AdminClient,main:94 - Enter your choice:
+05:14:53,438  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:14:53,439  INFO AdminClient,main:96 - 2. View All Courses
+05:14:53,439  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:14:53,440  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:14:53,441  INFO AdminClient,main:99 - 5. Register a new user
+05:14:53,442  INFO AdminClient,main:100 - 6. Delete a user
+05:14:53,442  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:14:53,443  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:14:53,443  INFO AdminClient,main:103 - 9. Approve student
+05:14:53,444  INFO AdminClient,main:104 - 0. To logout
+05:27:22,063  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:27:22,066  INFO UserClient,main:49 - ======User Menu=====
+05:27:22,067  INFO UserClient,main:50 - Enter 1 to Login
+05:27:22,067  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:27:22,067  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:27:24,697  INFO UserClient,main:73 - Enter User Id
+05:27:27,230  INFO UserClient,main:75 - Enter User Password
+05:27:28,644  INFO UserDaoImpl,main:168 - 7
+05:27:28,684  INFO UserDaoImpl,main:176 - admin2
+05:27:28,686  INFO UserClient,main:83 - Welcome User ID : 7
+05:27:28,686  INFO UserClient,main:86 - Successfully Logged in as Admin
+05:27:28,686  INFO AdminClient,main:94 - Enter your choice:
+05:27:28,686  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:27:28,687  INFO AdminClient,main:96 - 2. View All Courses
+05:27:28,687  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:27:28,687  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:27:28,687  INFO AdminClient,main:99 - 5. Register a new user
+05:27:28,687  INFO AdminClient,main:100 - 6. Delete a user
+05:27:28,687  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:27:28,687  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:27:28,687  INFO AdminClient,main:103 - 9. Approve student
+05:27:28,688  INFO AdminClient,main:104 - 0. To logout
+05:27:31,383  INFO AdminClient,main:162 - Enter user ID
+05:27:37,502  INFO UserDaoImpl,main:52 - 1 deleted
+05:27:37,504  INFO ProfessorDaoImpl,main:118 - 0 deleted
+05:27:37,506  INFO UserDaoImpl,main:52 - 0 deleted
+05:27:37,506  INFO AdminClient,main:94 - Enter your choice:
+05:27:37,507  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:27:37,507  INFO AdminClient,main:96 - 2. View All Courses
+05:27:37,507  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:27:37,508  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:27:37,508  INFO AdminClient,main:99 - 5. Register a new user
+05:27:37,509  INFO AdminClient,main:100 - 6. Delete a user
+05:27:37,509  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:27:37,509  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:27:37,510  INFO AdminClient,main:103 - 9. Approve student
+05:27:37,510  INFO AdminClient,main:104 - 0. To logout
+05:28:12,169  INFO AdminClient,main:162 - Enter user ID
+05:28:13,603  INFO UserDaoImpl,main:52 - 1 deleted
+05:28:13,605  INFO ProfessorDaoImpl,main:118 - 0 deleted
+05:28:13,606  INFO UserDaoImpl,main:52 - 0 deleted
+05:28:13,607  INFO AdminClient,main:94 - Enter your choice:
+05:28:13,607  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:28:13,607  INFO AdminClient,main:96 - 2. View All Courses
+05:28:13,607  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:28:13,608  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:28:13,608  INFO AdminClient,main:99 - 5. Register a new user
+05:28:13,608  INFO AdminClient,main:100 - 6. Delete a user
+05:28:13,608  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:28:13,609  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:28:13,609  INFO AdminClient,main:103 - 9. Approve student
+05:28:13,609  INFO AdminClient,main:104 - 0. To logout
+05:28:35,225  INFO AdminClient,main:162 - Enter user ID
+05:29:03,634  INFO UserDaoImpl,main:52 - 1 deleted
+05:29:03,638  INFO ProfessorDaoImpl,main:118 - 0 deleted
+05:29:03,641  INFO UserDaoImpl,main:52 - 0 deleted
+05:29:03,642  INFO AdminClient,main:94 - Enter your choice:
+05:29:03,642  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:29:03,643  INFO AdminClient,main:96 - 2. View All Courses
+05:29:03,643  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:29:03,643  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:29:03,644  INFO AdminClient,main:99 - 5. Register a new user
+05:29:03,644  INFO AdminClient,main:100 - 6. Delete a user
+05:29:03,644  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:29:03,645  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:29:03,645  INFO AdminClient,main:103 - 9. Approve student
+05:29:03,646  INFO AdminClient,main:104 - 0. To logout
+05:29:05,535  INFO AdminClient,main:162 - Enter user ID
+05:29:06,817  INFO UserDaoImpl,main:52 - 1 deleted
+05:29:06,820  INFO AdminDaoImpl,main:64 - 0 deleted
+05:29:06,823  INFO UserDaoImpl,main:52 - 0 deleted
+05:29:06,826  INFO StudentDaoImpl,main:366 - 0 deleted
+05:29:06,829  INFO UserDaoImpl,main:52 - 0 deleted
+05:29:06,832  INFO ProfessorDaoImpl,main:118 - 0 deleted
+05:29:06,834  INFO UserDaoImpl,main:52 - 0 deleted
+05:29:06,835  INFO AdminClient,main:94 - Enter your choice:
+05:29:06,835  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:29:06,835  INFO AdminClient,main:96 - 2. View All Courses
+05:29:06,836  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:29:06,836  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:29:06,836  INFO AdminClient,main:99 - 5. Register a new user
+05:29:06,836  INFO AdminClient,main:100 - 6. Delete a user
+05:29:06,837  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:29:06,837  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:29:06,837  INFO AdminClient,main:103 - 9. Approve student
+05:29:06,837  INFO AdminClient,main:104 - 0. To logout
+05:29:40,012  INFO AdminClient,main:170 - Enter Course ID
+05:29:45,701  INFO AdminClient,main:172 - Enter Course Name
+05:29:45,701  INFO AdminClient,main:174 - Enter catalog ID
+05:30:40,887  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:30:40,890  INFO UserClient,main:49 - ======User Menu=====
+05:30:40,890  INFO UserClient,main:50 - Enter 1 to Login
+05:30:40,890  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:30:40,891  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:30:55,694  INFO UserClient,main:73 - Enter User Id
+05:30:57,595  INFO UserClient,main:75 - Enter User Password
+05:30:58,977  INFO UserDaoImpl,main:168 - 1
+05:30:59,026  INFO UserDaoImpl,main:176 - admin1
+05:30:59,027  INFO UserClient,main:99 - Invalid Credentials
+05:30:59,027  INFO UserClient,main:49 - ======User Menu=====
+05:30:59,028  INFO UserClient,main:50 - Enter 1 to Login
+05:30:59,028  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:30:59,029  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:31:01,113  INFO UserClient,main:73 - Enter User Id
+05:31:01,964  INFO UserClient,main:75 - Enter User Password
+05:31:03,028  INFO UserDaoImpl,main:168 - 7
+05:31:03,030  INFO UserDaoImpl,main:180 - User does not exist
+05:31:03,031  INFO UserClient,main:99 - Invalid Credentials
+05:31:03,031  INFO UserClient,main:49 - ======User Menu=====
+05:31:03,031  INFO UserClient,main:50 - Enter 1 to Login
+05:31:03,031  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:31:03,032  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:31:04,515  INFO UserClient,main:73 - Enter User Id
+05:31:11,455  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:31:11,459  INFO UserClient,main:49 - ======User Menu=====
+05:31:11,460  INFO UserClient,main:50 - Enter 1 to Login
+05:31:11,460  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:31:11,460  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:31:13,479  INFO UserClient,main:73 - Enter User Id
+05:31:14,442  INFO UserClient,main:75 - Enter User Password
+05:31:15,829  INFO UserDaoImpl,main:168 - 1
+05:31:15,876  INFO UserDaoImpl,main:176 - admin1
+05:31:15,879  INFO UserClient,main:83 - Welcome User ID : 1
+05:31:15,879  INFO UserClient,main:86 - Successfully Logged in as Admin
+05:31:15,879  INFO AdminClient,main:94 - Enter your choice:
+05:31:15,880  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:31:15,880  INFO AdminClient,main:96 - 2. View All Courses
+05:31:15,880  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:31:15,880  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:31:15,881  INFO AdminClient,main:99 - 5. Register a new user
+05:31:15,881  INFO AdminClient,main:100 - 6. Delete a user
+05:31:15,881  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:31:15,881  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:31:15,881  INFO AdminClient,main:103 - 9. Approve student
+05:31:15,882  INFO AdminClient,main:104 - 0. To logout
+05:31:19,368  INFO AdminClient,main:170 - Enter Course ID
+05:31:24,829  INFO AdminClient,main:172 - Enter Course Name
+05:31:24,830  INFO AdminClient,main:174 - Enter catalog ID
+05:31:35,845  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:31:35,849  INFO UserClient,main:49 - ======User Menu=====
+05:31:35,850  INFO UserClient,main:50 - Enter 1 to Login
+05:31:35,850  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:31:35,851  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:31:37,496  INFO UserClient,main:73 - Enter User Id
+05:31:41,546  INFO UserClient,main:75 - Enter User Password
+05:31:42,511  INFO UserDaoImpl,main:168 - 1
+05:31:42,559  INFO UserDaoImpl,main:176 - admin1
+05:31:42,561  INFO UserClient,main:83 - Welcome User ID : 1
+05:31:42,561  INFO UserClient,main:86 - Successfully Logged in as Admin
+05:31:42,561  INFO AdminClient,main:94 - Enter your choice:
+05:31:42,561  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:31:42,561  INFO AdminClient,main:96 - 2. View All Courses
+05:31:42,561  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:31:42,561  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:31:42,562  INFO AdminClient,main:99 - 5. Register a new user
+05:31:42,562  INFO AdminClient,main:100 - 6. Delete a user
+05:31:42,562  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:31:42,562  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:31:42,562  INFO AdminClient,main:103 - 9. Approve student
+05:31:42,563  INFO AdminClient,main:104 - 0. To logout
+05:31:44,613  INFO AdminClient,main:170 - Enter Course ID
+05:31:47,490  INFO AdminClient,main:173 - Enter Course Name
+05:31:51,337  INFO AdminClient,main:175 - Enter catalog ID
+05:31:53,939  INFO AdminClient,main:177 - Enter professorId or -1 if not assigned
+05:31:56,073 ERROR CourseCatalogDaoImpl,main:41 - Incorrect integer value: 'CSSSS' for column 'CourseId' at row 1
+05:31:56,074  INFO AdminClient,main:94 - Enter your choice:
+05:31:56,074  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:31:56,074  INFO AdminClient,main:96 - 2. View All Courses
+05:31:56,075  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:31:56,075  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:31:56,075  INFO AdminClient,main:99 - 5. Register a new user
+05:31:56,075  INFO AdminClient,main:100 - 6. Delete a user
+05:31:56,076  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:31:56,076  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:31:56,076  INFO AdminClient,main:103 - 9. Approve student
+05:31:56,077  INFO AdminClient,main:104 - 0. To logout
+05:33:58,246  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:33:58,248  INFO UserClient,main:49 - ======User Menu=====
+05:33:58,249  INFO UserClient,main:50 - Enter 1 to Login
+05:33:58,249  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:33:58,249  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:34:33,736  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:34:33,738  INFO UserClient,main:49 - ======User Menu=====
+05:34:33,738  INFO UserClient,main:50 - Enter 1 to Login
+05:34:33,738  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:34:33,738  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:34:35,536  INFO UserClient,main:73 - Enter User Id
+05:34:36,515  INFO UserClient,main:75 - Enter User Password
+05:34:37,830  INFO UserDaoImpl,main:168 - 1
+05:34:37,882  INFO UserDaoImpl,main:176 - admin1
+05:34:37,884  INFO UserClient,main:83 - Welcome User ID : 1
+05:34:37,885  INFO UserClient,main:86 - Successfully Logged in as Admin
+05:34:37,885  INFO AdminClient,main:94 - Enter your choice:
+05:34:37,885  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:34:37,885  INFO AdminClient,main:96 - 2. View All Courses
+05:34:37,885  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:34:37,886  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:34:37,886  INFO AdminClient,main:99 - 5. Register a new user
+05:34:37,886  INFO AdminClient,main:100 - 6. Delete a user
+05:34:37,887  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:34:37,887  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:34:37,887  INFO AdminClient,main:103 - 9. Approve student
+05:34:37,887  INFO AdminClient,main:104 - 0. To logout
+05:34:39,988  INFO AdminClient,main:170 - Enter Course ID
+05:34:42,927  INFO AdminClient,main:173 - Enter Course Name
+05:34:45,785  INFO AdminClient,main:175 - Enter catalog ID
+05:34:51,212  INFO AdminClient,main:177 - Enter professorId or -1 if not assigned
+05:34:53,672 ERROR CourseCatalogDaoImpl,main:41 - Cannot add or update a child row: a foreign key constraint fails (`temp`.`coursecatalog`, CONSTRAINT `coursecatalog_ibfk_1` FOREIGN KEY (`ProfessorID`) REFERENCES `professor` (`ProfessorID`) ON DELETE SET NULL ON UPDATE CASCADE)
+05:34:53,673  INFO AdminClient,main:94 - Enter your choice:
+05:34:53,673  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:34:53,674  INFO AdminClient,main:96 - 2. View All Courses
+05:34:53,674  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:34:53,675  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:34:53,675  INFO AdminClient,main:99 - 5. Register a new user
+05:34:53,676  INFO AdminClient,main:100 - 6. Delete a user
+05:34:53,676  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:34:53,677  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:34:53,677  INFO AdminClient,main:103 - 9. Approve student
+05:34:53,677  INFO AdminClient,main:104 - 0. To logout
+05:35:06,577  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:35:06,579  INFO UserClient,main:49 - ======User Menu=====
+05:35:06,579  INFO UserClient,main:50 - Enter 1 to Login
+05:35:06,580  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:35:06,580  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:35:10,451  INFO UserClient,main:73 - Enter User Id
+05:35:11,675  INFO UserClient,main:75 - Enter User Password
+05:35:13,395  INFO UserDaoImpl,main:168 - 1
+05:35:13,506  INFO UserDaoImpl,main:176 - admin1
+05:35:13,511  INFO UserClient,main:83 - Welcome User ID : 1
+05:35:13,512  INFO UserClient,main:86 - Successfully Logged in as Admin
+05:35:13,512  INFO AdminClient,main:94 - Enter your choice:
+05:35:13,512  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:35:13,512  INFO AdminClient,main:96 - 2. View All Courses
+05:35:13,513  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:35:13,513  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:35:13,513  INFO AdminClient,main:99 - 5. Register a new user
+05:35:13,513  INFO AdminClient,main:100 - 6. Delete a user
+05:35:13,514  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:35:13,515  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:35:13,515  INFO AdminClient,main:103 - 9. Approve student
+05:35:13,515  INFO AdminClient,main:104 - 0. To logout
+05:35:23,826  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:35:23,829  INFO UserClient,main:49 - ======User Menu=====
+05:35:23,830  INFO UserClient,main:50 - Enter 1 to Login
+05:35:23,831  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:35:23,831  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:35:26,156  INFO UserClient,main:73 - Enter User Id
+05:35:26,473  INFO UserClient,main:75 - Enter User Password
+05:35:28,009  INFO UserDaoImpl,main:168 - 1
+05:35:28,054  INFO UserDaoImpl,main:176 - admin1
+05:35:28,056  INFO UserClient,main:83 - Welcome User ID : 1
+05:35:28,056  INFO UserClient,main:86 - Successfully Logged in as Admin
+05:35:28,056  INFO AdminClient,main:94 - Enter your choice:
+05:35:28,056  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:35:28,056  INFO AdminClient,main:96 - 2. View All Courses
+05:35:28,057  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:35:28,057  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:35:28,057  INFO AdminClient,main:99 - 5. Register a new user
+05:35:28,057  INFO AdminClient,main:100 - 6. Delete a user
+05:35:28,057  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:35:28,057  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:35:28,058  INFO AdminClient,main:103 - 9. Approve student
+05:35:28,058  INFO AdminClient,main:104 - 0. To logout
+05:35:31,342  INFO AdminClient,main:108 - Enter Student ID to approve
+05:36:21,568  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:36:21,570  INFO UserClient,main:49 - ======User Menu=====
+05:36:21,570  INFO UserClient,main:50 - Enter 1 to Login
+05:36:21,571  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:36:21,571  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:36:23,702  INFO UserClient,main:73 - Enter User Id
+05:36:28,843  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:36:28,845  INFO UserClient,main:49 - ======User Menu=====
+05:36:28,846  INFO UserClient,main:50 - Enter 1 to Login
+05:36:28,846  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:36:28,846  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:36:28,853  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:36:28,855  INFO UserClient,main:49 - ======User Menu=====
+05:36:28,855  INFO UserClient,main:50 - Enter 1 to Login
+05:36:28,855  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:36:28,856  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:36:29,908  INFO UserClient,main:73 - Enter User Id
+05:36:30,056  INFO UserClient,main:75 - Enter User Password
+05:36:31,087  INFO UserDaoImpl,main:168 - 1
+05:36:31,144  INFO UserDaoImpl,main:176 - admin1
+05:36:31,146  INFO UserClient,main:83 - Welcome User ID : 1
+05:36:31,146  INFO UserClient,main:86 - Successfully Logged in as Admin
+05:36:31,148  INFO AdminClient,main:94 - Enter your choice:
+05:36:31,148  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:36:31,148  INFO AdminClient,main:96 - 2. View All Courses
+05:36:31,148  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:36:31,148  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:36:31,148  INFO AdminClient,main:99 - 5. Register a new user
+05:36:31,148  INFO AdminClient,main:100 - 6. Delete a user
+05:36:31,148  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:36:31,148  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:36:31,149  INFO AdminClient,main:103 - 9. Approve student
+05:36:31,149  INFO AdminClient,main:104 - 0. To logout
+05:36:32,669  INFO AdminClient,main:108 - Enter Student ID to approve
+05:36:37,821  INFO StudentDaoImpl,main:101 -  Student Details Retrieved sucessfully
+05:36:38,038  INFO StudentDaoImpl,main:343 - updated approval status sucessfully
+05:36:38,038  INFO AdminClient,main:94 - Enter your choice:
+05:36:38,040  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:36:38,041  INFO AdminClient,main:96 - 2. View All Courses
+05:36:38,041  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:36:38,042  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:36:38,043  INFO AdminClient,main:99 - 5. Register a new user
+05:36:38,044  INFO AdminClient,main:100 - 6. Delete a user
+05:36:38,044  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:36:38,045  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:36:38,046  INFO AdminClient,main:103 - 9. Approve student
+05:36:38,048  INFO AdminClient,main:104 - 0. To logout
+05:41:04,607  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:41:04,609  INFO UserClient,main:49 - ======User Menu=====
+05:41:04,609  INFO UserClient,main:50 - Enter 1 to Login
+05:41:04,609  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:41:04,609  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:41:07,397  INFO UserClient,main:73 - Enter User Id
+05:41:08,617  INFO UserClient,main:75 - Enter User Password
+05:41:09,800  INFO UserDaoImpl,main:168 - 1
+05:41:10,289  INFO UserDaoImpl,main:176 - admin1
+05:41:10,293  INFO UserClient,main:83 - Welcome User ID : 1
+05:41:10,294  INFO UserClient,main:86 - Successfully Logged in as Admin
+05:41:10,295  INFO AdminClient,main:94 - Enter your choice:
+05:41:10,295  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:41:10,295  INFO AdminClient,main:96 - 2. View All Courses
+05:41:10,295  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:41:10,295  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:41:10,296  INFO AdminClient,main:99 - 5. Register a new user
+05:41:10,297  INFO AdminClient,main:100 - 6. Delete a user
+05:41:10,297  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:41:10,297  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:41:10,297  INFO AdminClient,main:103 - 9. Approve student
+05:41:10,297  INFO AdminClient,main:104 - 0. To logout
+05:41:13,746  INFO AdminClient,main:108 - Enter Student ID to approve
+05:41:15,297  INFO StudentDaoImpl,main:101 -  Student Details Retrieved sucessfully
+05:41:15,467  INFO StudentDaoImpl,main:343 - updated approval status sucessfully
+05:41:15,468  INFO AdminClient,main:94 - Enter your choice:
+05:41:15,468  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:41:15,469  INFO AdminClient,main:96 - 2. View All Courses
+05:41:15,469  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:41:15,470  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:41:15,470  INFO AdminClient,main:99 - 5. Register a new user
+05:41:15,471  INFO AdminClient,main:100 - 6. Delete a user
+05:41:15,471  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:41:15,472  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:41:15,472  INFO AdminClient,main:103 - 9. Approve student
+05:41:15,473  INFO AdminClient,main:104 - 0. To logout
+05:42:48,586  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:42:48,588  INFO UserClient,main:49 - ======User Menu=====
+05:42:48,588  INFO UserClient,main:50 - Enter 1 to Login
+05:42:48,588  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:42:48,589  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:42:52,507  INFO UserClient,main:73 - Enter User Id
+05:43:09,052  INFO UserClient,main:75 - Enter User Password
+05:43:09,993  INFO UserDaoImpl,main:168 - 1
+05:43:10,056  INFO UserDaoImpl,main:176 - admin1
+05:43:10,059  INFO UserClient,main:83 - Welcome User ID : 1
+05:43:10,059  INFO UserClient,main:86 - Successfully Logged in as Admin
+05:43:10,060  INFO AdminClient,main:94 - Enter your choice:
+05:43:10,060  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:43:10,060  INFO AdminClient,main:96 - 2. View All Courses
+05:43:10,060  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:43:10,061  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:43:10,061  INFO AdminClient,main:99 - 5. Register a new user
+05:43:10,061  INFO AdminClient,main:100 - 6. Delete a user
+05:43:10,061  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:43:10,061  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:43:10,062  INFO AdminClient,main:103 - 9. Approve student
+05:43:10,062  INFO AdminClient,main:104 - 0. To logout
+05:43:12,481  INFO AdminClient,main:116 - Select Role of the User (PROFESSOR, ADMIN)
+05:43:14,646  INFO AdminClient,main:119 - Enter Name
+05:43:17,972  INFO AdminClient,main:121 - Enter Password
+05:43:22,100  INFO AdminClient,main:123 - Enter Email
+05:43:23,424  INFO AdminClient,main:125 - Enter Mobile No.
+05:43:23,936  INFO AdminClient,main:127 - Select Gender: 'M' for male and 'F' for female
+05:43:25,616  INFO AdminClient,main:130 - Enter Address
+05:43:26,700  INFO AdminClient,main:132 - Enter City
+05:43:27,351  INFO AdminClient,main:134 - Enter State
+05:43:28,293  INFO AdminClient,main:136 - Enter Country
+05:43:29,439  INFO AdminClient,main:147 - Enter Department
+05:43:31,780  INFO UserDaoImpl,main:36 - 1 user added
+05:43:31,984  INFO ProfessorDaoImpl,main:94 - Added Professor sucessfully
+05:43:31,986  INFO ProfessorDaoImpl,main:99 - 1 professor added
+05:43:31,986  INFO AdminClient,main:151 - Registration Success.
+05:43:31,987  INFO AdminClient,main:94 - Enter your choice:
+05:43:31,987  INFO AdminClient,main:95 - 1. To view courses in catalog
+05:43:31,988  INFO AdminClient,main:96 - 2. View All Courses
+05:43:31,988  INFO AdminClient,main:97 - 3. To view users of Specific Role
+05:43:31,988  INFO AdminClient,main:98 - 4. Assign course to a professor
+05:43:31,989  INFO AdminClient,main:99 - 5. Register a new user
+05:43:31,989  INFO AdminClient,main:100 - 6. Delete a user
+05:43:31,989  INFO AdminClient,main:101 - 7. Add a new course to catalog
+05:43:31,990  INFO AdminClient,main:102 - 8. Drop a course from catalog
+05:43:31,990  INFO AdminClient,main:103 - 9. Approve student
+05:43:31,991  INFO AdminClient,main:104 - 0. To logout
+05:43:34,909  INFO UserClient,main:49 - ======User Menu=====
+05:43:34,910  INFO UserClient,main:50 - Enter 1 to Login
+05:43:34,910  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:43:34,910  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:43:35,957  INFO UserClient,main:73 - Enter User Id
+05:43:43,597  INFO UserClient,main:75 - Enter User Password
+05:43:46,610  INFO UserDaoImpl,main:168 - 8
+05:43:46,613  INFO UserDaoImpl,main:176 - riyapass
+05:43:46,615  INFO UserClient,main:83 - Welcome User ID : 8
+05:43:46,615  INFO UserClient,main:90 - Successfully Logged in as Professor
+05:43:46,615  INFO ProfessorClient,main:80 - Enter your choice:
+05:43:46,616  INFO ProfessorClient,main:81 - 1. To view available courses
+05:43:46,616  INFO ProfessorClient,main:82 - 2. To view courses assigned
+05:43:46,616  INFO ProfessorClient,main:83 - 3. To view students in a course
+05:43:46,616  INFO ProfessorClient,main:84 - 4. Grade a student
+05:43:46,616  INFO ProfessorClient,main:85 - 0. To logout
+05:43:54,511  INFO CourseCatalogDaoImpl,main:124 - get data for 2
+05:43:54,538  INFO CourseCatalogDaoImpl,main:135 - heredIGITAL DESIGN
+05:43:54,539  INFO CourseCatalogDaoImpl,main:124 - get data for 10
+05:43:54,542  INFO CourseCatalogDaoImpl,main:135 - hereJAVA
+05:43:54,543  INFO ProfessorClient,main:80 - Enter your choice:
+05:43:54,543  INFO ProfessorClient,main:81 - 1. To view available courses
+05:43:54,544  INFO ProfessorClient,main:82 - 2. To view courses assigned
+05:43:54,544  INFO ProfessorClient,main:83 - 3. To view students in a course
+05:43:54,544  INFO ProfessorClient,main:84 - 4. Grade a student
+05:43:54,544  INFO ProfessorClient,main:85 - 0. To logout
+05:44:00,954  INFO ProfessorClient,main:80 - Enter your choice:
+05:44:00,955  INFO ProfessorClient,main:81 - 1. To view available courses
+05:44:00,955  INFO ProfessorClient,main:82 - 2. To view courses assigned
+05:44:00,955  INFO ProfessorClient,main:83 - 3. To view students in a course
+05:44:00,955  INFO ProfessorClient,main:84 - 4. Grade a student
+05:44:00,955  INFO ProfessorClient,main:85 - 0. To logout
+05:44:45,122  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:44:45,124  INFO UserClient,main:49 - ======User Menu=====
+05:44:45,124  INFO UserClient,main:50 - Enter 1 to Login
+05:44:45,124  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:44:45,124  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:44:46,478  INFO UserClient,main:73 - Enter User Id
+05:44:48,243  INFO UserClient,main:75 - Enter User Password
+05:44:50,607  INFO UserDaoImpl,main:168 - 8
+05:44:50,663  INFO UserDaoImpl,main:176 - riyapass
+05:44:50,687  INFO UserClient,main:83 - Welcome User ID : 8
+05:44:50,687  INFO UserClient,main:90 - Successfully Logged in as Professor
+05:44:50,687  INFO ProfessorClient,main:80 - Enter your choice:
+05:44:50,687  INFO ProfessorClient,main:81 - 1. To view available courses
+05:44:50,687  INFO ProfessorClient,main:82 - 2. To view courses assigned
+05:44:50,687  INFO ProfessorClient,main:83 - 3. To view students in a course
+05:44:50,688  INFO ProfessorClient,main:84 - 4. Grade a student
+05:44:50,688  INFO ProfessorClient,main:85 - 0. To logout
+05:44:54,191  INFO CourseCatalogDaoImpl,main:124 - get data for 2
+05:44:54,195  INFO CourseCatalogDaoImpl,main:135 - heredIGITAL DESIGN
+05:44:54,196  INFO CourseCatalogDaoImpl,main:124 - get data for 10
+05:44:54,198  INFO CourseCatalogDaoImpl,main:135 - hereJAVA
+05:44:54,199  INFO ProfessorClient,main:80 - Enter your choice:
+05:44:54,199  INFO ProfessorClient,main:81 - 1. To view available courses
+05:44:54,199  INFO ProfessorClient,main:82 - 2. To view courses assigned
+05:44:54,199  INFO ProfessorClient,main:83 - 3. To view students in a course
+05:44:54,200  INFO ProfessorClient,main:84 - 4. Grade a student
+05:44:54,200  INFO ProfessorClient,main:85 - 0. To logout
+05:45:15,497  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:45:15,500  INFO UserClient,main:49 - ======User Menu=====
+05:45:15,500  INFO UserClient,main:50 - Enter 1 to Login
+05:45:15,500  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:45:15,501  INFO UserClient,main:52 - Enter any other number to exit CRS

@@ -19,8 +19,22 @@ import com.flipkart.constant.SQLQueriesConstant;
 import com.flipkart.util.DBUtil;
 
 public class ProfessorDaoImpl implements ProfessorDao {
-	public static Logger logger = Logger.getLogger(ProfessorDaoImpl.class);
+
+	
+	private static ProfessorDaoImpl instance = null;
+	private static Logger logger = Logger.getLogger(ProfessorDaoImpl.class);
 	Connection connection = DBUtil.getConnection();
+	
+	private ProfessorDaoImpl() {
+		
+	}
+	
+	public static ProfessorDaoImpl getInstance() {
+		if(instance==null) {
+			instance = new ProfessorDaoImpl();
+		}
+		return instance;
+	}
 	
 	@Override
 	public Professor getProfessor(int professorId) {
@@ -68,7 +82,7 @@ public class ProfessorDaoImpl implements ProfessorDao {
 		PreparedStatement stmt = null;
 		try {
 			
-			UserDaoImpl userdao =new UserDaoImpl();
+			UserDaoImpl userdao = UserDaoImpl.getInstance();
 			userdao.addUser(professor, password);
 			
 			stmt =connection.prepareStatement(SQLQueriesConstant.GET_LAST_ENTRY);
@@ -88,7 +102,7 @@ public class ProfessorDaoImpl implements ProfessorDao {
 			stmt.setString(7,professor.getState());
 			stmt.setLong(8,professor.getMobile());
 			stmt.setString(9,professor.getEmailId());
-			
+			stmt.setString(10, professor.getName());
 			int rows = stmt.executeUpdate();
 			if(rows > 0) {
 				logger.info("Added Professor sucessfully");
@@ -117,7 +131,7 @@ public class ProfessorDaoImpl implements ProfessorDao {
 			int rows = stmt.executeUpdate();
 			logger.info(rows + " deleted");
 			
-			UserDaoImpl userdao =new UserDaoImpl();
+			UserDaoImpl userdao = UserDaoImpl.getInstance();
 			userdao.deleteUser(userId);
 		}catch(SQLException se) {
 			logger.error(se.getMessage());
@@ -145,7 +159,7 @@ public class ProfessorDaoImpl implements ProfessorDao {
 			}
 		}catch(Exception e) {
 			logger.error(e.getMessage());
-		}// TODO Auto-generated method stub
+		}
 		
 		return null;
 		

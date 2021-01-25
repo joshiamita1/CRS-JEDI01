@@ -15,8 +15,20 @@ import com.flipkart.util.DBUtil;
 
 public class AdminDaoImpl implements AdminDao{
 
+	private static AdminDaoImpl instance = null;
 	private static Logger logger = Logger.getLogger(AdminDaoImpl.class);
 	Connection connection = DBUtil.getConnection();
+	
+	private AdminDaoImpl() {
+		
+	}
+	
+	public static AdminDaoImpl getInstance() {
+		if(instance==null) {
+			instance = new AdminDaoImpl();
+		}
+		return instance;
+	}
 	
 	@Override
 	public void addAdmin(User admin, String password) {
@@ -25,7 +37,7 @@ public class AdminDaoImpl implements AdminDao{
 		PreparedStatement stmt = null;
 		try {
 			
-			UserDaoImpl userdao =new UserDaoImpl();
+			UserDaoImpl userdao = UserDaoImpl.getInstance();
 			userdao.addUser(admin, password);
 			
 			stmt =connection.prepareStatement(SQLQueriesConstant.GET_LAST_ENTRY);
@@ -34,12 +46,15 @@ public class AdminDaoImpl implements AdminDao{
 			if(resultSet.next()){
 				userId=resultSet.getInt("ID");
 			}
-			
-			stmt = connection.prepareStatement(SQLQueriesConstant.ADD_NEW_USER_QUERY);
-			stmt.setString(1,admin.getName());
-			stmt.setString(2,password);
-			stmt.setObject(3, "ADMIN");
-			stmt.setInt(4,userId);
+			stmt = connection.prepareStatement(SQLQueriesConstant.ADD_NEW_ADMIN_QUERY);
+			stmt.setInt(1, userId);
+			stmt.setString(2, admin.getGender().toString());
+			stmt.setString(3, admin.getCity());
+			stmt.setString(4, admin.getAddress());
+			stmt.setString(5,  admin.getCountry());
+			stmt.setString(6, admin.getState());
+			stmt.setLong(7,  admin.getMobile());
+			stmt.setString(8, admin.getEmailId());
 			int rows = stmt.executeUpdate();
 			logger.info(rows + " admin added");
 		}catch(SQLException se) {
@@ -60,7 +75,7 @@ public class AdminDaoImpl implements AdminDao{
 			int rows = stmt.executeUpdate();
 			logger.info(rows + " deleted");
 			
-			UserDaoImpl userdao =new UserDaoImpl();
+			UserDaoImpl userdao = UserDaoImpl.getInstance();
 			userdao.deleteUser(userId);
 		}catch(SQLException se) {
 			logger.error(se.getMessage());

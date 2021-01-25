@@ -6,19 +6,38 @@ import java.util.Map;
 import org.apache.log4j.Logger;
 import com.flipkart.bean.Course;
 import com.flipkart.constant.Grade;
+import com.flipkart.dao.AdminDaoImpl;
 import com.flipkart.dao.CourseCatalogDaoImpl;
+import com.flipkart.dao.NotificationSystemDaoImpl;
 import com.flipkart.dao.ProfessorDaoImpl;
 import com.flipkart.dao.StudentDaoImpl;
+import com.flipkart.dao.UserDaoImpl;
 
 
 //ProfessorBusiness
 
 public class ProfessorBusiness {
 	
-	ProfessorDaoImpl professorDaoObject = new ProfessorDaoImpl();
-	CourseCatalogDaoImpl courseCatalogDaoObject = new CourseCatalogDaoImpl();
-	StudentDaoImpl studentDaoObject = new StudentDaoImpl();
-	public static Logger logger = Logger.getLogger(ProfessorBusiness.class);
+	private static ProfessorBusiness instance = null;
+	UserDaoImpl userDaoObject = UserDaoImpl.getInstance();
+	StudentDaoImpl studentDaoObject = StudentDaoImpl.getInstance();
+	AdminDaoImpl adminDaoObject = AdminDaoImpl.getInstance();
+	ProfessorDaoImpl professorDaoObject = ProfessorDaoImpl.getInstance();
+	CourseCatalogDaoImpl courseCatalogDaoObject = CourseCatalogDaoImpl.getInstance();
+	NotificationSystemDaoImpl notificationSystemDaoObject = NotificationSystemDaoImpl.getInstance();
+	private static Logger logger = Logger.getLogger(ProfessorBusiness.class);
+	
+	private ProfessorBusiness() {
+		
+	}
+	
+	public static ProfessorBusiness getInstance() {
+		if(instance==null) {
+			instance = new ProfessorBusiness();
+		}
+		return instance;
+	}
+	
 	
 	// Grading student 
 	public void gradeStudent(int courseId, int studentId, Grade grade) {

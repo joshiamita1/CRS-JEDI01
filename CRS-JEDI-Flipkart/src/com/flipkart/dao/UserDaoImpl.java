@@ -19,8 +19,20 @@ import com.flipkart.util.DBUtil;
 
 public class UserDaoImpl implements UserDao {
 
+	private static UserDaoImpl instance = null;
 	private static Logger logger = Logger.getLogger(UserDaoImpl.class);
 	Connection connection = DBUtil.getConnection();
+	
+	private UserDaoImpl() {
+		
+	}
+	
+	public static UserDaoImpl getInstance() {
+		if(instance==null) {
+			instance = new UserDaoImpl();
+		}
+		return instance;
+	}
 	
 	@Override
 	public void addUser(User user, String password) {
@@ -94,8 +106,8 @@ public class UserDaoImpl implements UserDao {
 			ResultSet resultSet = statement.executeQuery();
 			
 			while(resultSet.next()) {
-			int userId = resultSet.getInt("userId");
-			userList.add(userId);
+				int userId = resultSet.getInt("id");
+				userList.add(userId);
 			}
 			return userList;
 		}catch(Exception e) {
@@ -114,19 +126,19 @@ public class UserDaoImpl implements UserDao {
 		ArrayList<Integer> userList = new ArrayList<Integer>();
 		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.GET_USER_DETAIL_ROLE);
-			statement.setObject(1,role);
+			statement.setString(1, role.toString());
 			ResultSet resultSet = statement.executeQuery();
-			
+			logger.info(resultSet);
 			while(resultSet.next()) {
-			int userId = resultSet.getInt("userId");
-			userList.add(userId);
+				int userId = resultSet.getInt("id");
+				logger.info("a");
+				userList.add(userId);
 			}
-			return userList;
+			logger.info("b");
 		}catch(Exception e) {
 			logger.error(e.getMessage());
 		}
-		return null;
-		// TODO Auto-generated method stub
+		return userList;
 		
 	}
 

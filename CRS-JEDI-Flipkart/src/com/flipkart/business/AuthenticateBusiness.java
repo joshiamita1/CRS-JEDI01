@@ -15,12 +15,24 @@ import com.flipkart.dao.UserDaoImpl;
 
 public class AuthenticateBusiness {
 	
-	UserDaoImpl userDaoObject = new UserDaoImpl();
-	StudentDaoImpl studentDaoObject = new StudentDaoImpl();
-	AdminDaoImpl adminDaoObject = new AdminDaoImpl();
-	ProfessorDaoImpl professorDaoObject = new ProfessorDaoImpl();
-	NotificationSystemDaoImpl notificationSystemDaoObject = new NotificationSystemDaoImpl();
+	private static AuthenticateBusiness instance = null;
+	UserDaoImpl userDaoObject = UserDaoImpl.getInstance();
+	StudentDaoImpl studentDaoObject = StudentDaoImpl.getInstance();
+	AdminDaoImpl adminDaoObject = AdminDaoImpl.getInstance();
+	ProfessorDaoImpl professorDaoObject = ProfessorDaoImpl.getInstance();
+	NotificationSystemDaoImpl notificationSystemDaoObject = NotificationSystemDaoImpl.getInstance();
 	private static Logger logger = Logger.getLogger(AuthenticateBusiness.class);
+	
+	private AuthenticateBusiness() {
+		
+	}
+	
+	public static AuthenticateBusiness getInstance() {
+		if(instance==null) {
+			instance = new AuthenticateBusiness();
+		}
+		return instance;
+	}
 	public boolean validLogin(int inputId, String inputPassword) {
 		try {
 			String userPassword = userDaoObject.getPassword(inputId);

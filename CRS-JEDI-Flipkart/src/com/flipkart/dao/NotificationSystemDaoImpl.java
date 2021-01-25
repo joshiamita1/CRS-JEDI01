@@ -12,9 +12,20 @@ import com.flipkart.util.DBUtil;
 
 public class NotificationSystemDaoImpl implements NotificationSystemDao{
 
-	public static Logger logger = Logger.getLogger(FeePaymentDaoImpl.class);
+	private static NotificationSystemDaoImpl instance = null;
+	private static Logger logger = Logger.getLogger(NotificationSystemDaoImpl.class);
 	Connection connection = DBUtil.getConnection();
-
+	
+	private NotificationSystemDaoImpl() {
+		
+	}
+	
+	public static NotificationSystemDaoImpl getInstance() {
+		if(instance==null) {
+			instance = new NotificationSystemDaoImpl();
+		}
+		return instance;
+	}
 	@Override
 	public void notifyUser(int userID, String Message) {
 		// TODO Auto-generated method stub
@@ -26,20 +37,20 @@ public class NotificationSystemDaoImpl implements NotificationSystemDao{
 			Calendar cal = Calendar.getInstance(); 
 			Timestamp timestamp = new Timestamp(cal.getTimeInMillis());
 			statement.setTimestamp(3, timestamp);		
-			
+			logger.info("statement is "+statement);
 			int rows = statement.executeUpdate();
 			if(rows > 0) {
 				logger.info("Notification sent sucessfully");
 			}
 			else {
-				logger.info("Error during sending Notification");
+				logger.info("Error during insertion");
 			}
 			
 		}catch(Exception e) {
 			logger.error(e.getMessage());
 			
-		}
+	}
 	
 
-	}	
+}
 }

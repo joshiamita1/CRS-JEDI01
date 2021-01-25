@@ -19,15 +19,20 @@ import com.flipkart.util.DBUtil;
  */
 public class FeePaymentDaoImpl implements FeePaymentDao  {
 	
-	public static Logger logger = Logger.getLogger(FeePaymentDaoImpl.class);
+	private static FeePaymentDaoImpl instance = null;
+	private static Logger logger = Logger.getLogger(FeePaymentDaoImpl.class);
 	Connection connection = DBUtil.getConnection();
-
-/*	public static void main(String[]args) {
-		FeePaymentDaoImpl temp =new FeePaymentDaoImpl();
-		//temp.calculatefees(102);
-		temp.updatefees(102, 50000);		
-		//temp.getFeesToPay(102);
-	}*/
+	
+	private FeePaymentDaoImpl() {
+		
+	}
+	
+	public static FeePaymentDaoImpl getInstance() {
+		if(instance==null) {
+			instance = new FeePaymentDaoImpl();
+		}
+		return instance;
+	}
 	
 	@Override
 	public double calculateFees(int studentId) {
@@ -36,7 +41,7 @@ public class FeePaymentDaoImpl implements FeePaymentDao  {
 		int count =this.countCourses(studentId);
 		double fees= count* GlobalConstants.feesOfSingleCourse;
 		
-		StudentDaoImpl studentdao= new StudentDaoImpl();
+		StudentDaoImpl studentdao= StudentDaoImpl.getInstance();
 		boolean hasScholarship=studentdao.hasScholarship(studentId);
 		
 		if(hasScholarship)

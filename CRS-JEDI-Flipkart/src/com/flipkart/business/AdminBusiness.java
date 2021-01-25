@@ -12,6 +12,7 @@ import com.flipkart.constant.Role;
 import com.flipkart.dao.AdminDao;
 import com.flipkart.dao.AdminDaoImpl;
 import com.flipkart.dao.CourseCatalogDaoImpl;
+import com.flipkart.dao.NotificationSystemDaoImpl;
 import com.flipkart.dao.ProfessorDaoImpl;
 import com.flipkart.dao.StudentDaoImpl;
 import com.flipkart.dao.UserDaoImpl;
@@ -20,13 +21,25 @@ import com.flipkart.dao.UserDaoImpl;
 
 public class AdminBusiness{
 	
-	StudentDaoImpl studentDaoObject = new StudentDaoImpl();
-	ProfessorDaoImpl professorDaoObject = new ProfessorDaoImpl();
-	CourseCatalogDaoImpl courseCatalogDaoObject = new CourseCatalogDaoImpl();
-	UserDaoImpl userDaoObject = new UserDaoImpl();
-	AdminDaoImpl adminDaoObject = new AdminDaoImpl();
+	private static AdminBusiness instance = null;
+	UserDaoImpl userDaoObject = UserDaoImpl.getInstance();
+	StudentDaoImpl studentDaoObject = StudentDaoImpl.getInstance();
+	AdminDaoImpl adminDaoObject = AdminDaoImpl.getInstance();
+	ProfessorDaoImpl professorDaoObject = ProfessorDaoImpl.getInstance();
+	CourseCatalogDaoImpl courseCatalogDaoObject = CourseCatalogDaoImpl.getInstance();
+	NotificationSystemDaoImpl notificationSystemDaoObject = NotificationSystemDaoImpl.getInstance();
 	private static Logger logger = Logger.getLogger(AdminBusiness.class);
 	
+	private AdminBusiness() {
+		
+	}
+	
+	public static AdminBusiness getInstance() {
+		if(instance==null) {
+			instance = new AdminBusiness();
+		}
+		return instance;
+	}
 	
 	public void approveStudent(int studentId) {
 		if(studentDaoObject.getStudent(studentId)==null) {
@@ -37,9 +50,10 @@ public class AdminBusiness{
 		}
 
 	}
-	// Getting all the users
+	//Getting all the users
 	public void getUsers(Role role){
 		ArrayList<Integer> users= userDaoObject.getUsers(role);
+		logger.info(users.size());
 		logger.info("Users of the role :" + role + "are :");
 		for(Integer user : users) {
 			User u = userDaoObject.getUser(user);
