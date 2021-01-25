@@ -1,33 +1,47 @@
 package com.flipkart.bean;
 
-import com.flipkart.constant.*;
-import java.util.Map;
-import java.util.TreeMap;
 
+
+/**
+ * @author JEDI01
+ *
+ */
 public class Course {
 	// Course code
-	String courseCode;
+	int courseCode;
 	
 	// Course name
 	String courseName;
+		
+	// Catalog Id of the course
+	int catalogId;
 	
 	// Professor of the course
-	String professorId;
+	int professorId;
 	
-	// Catalog Id of the course
-	String catalogId;
+	// Detail of the course
+	String catalogDetail;
+
+	public Course(int courseCode, String courseName, int catalogId, int professorId, String catalogDetail) {
+		super();
+		this.courseCode = courseCode;
+		this.courseName = courseName;
+		this.catalogId = catalogId;
+		this.professorId = professorId;
+		this.catalogDetail = catalogDetail;
+	}
 
 	/**
 	 * @return the courseCode
 	 */
-	public String getCourseCode() {
+	public int getCourseCode() {
 		return courseCode;
 	}
 
 	/**
 	 * @param courseCode the courseCode to set
 	 */
-	public void setCourseCode(String courseCode) {
+	public void setCourseCode(int courseCode) {
 		this.courseCode = courseCode;
 	}
 
@@ -46,32 +60,48 @@ public class Course {
 	}
 
 	/**
-	 * @return the professorId
-	 */
-	public String getProfessorId() {
-		return professorId;
-	}
-
-	/**
-	 * @param professorId the professorId to set
-	 */
-	public void setProfessorId(String professorId) {
-		this.professorId = professorId;
-	}
-
-	/**
 	 * @return the catalogId
 	 */
-	public String getCatalogId() {
+	public int getCatalogId() {
 		return catalogId;
 	}
 
 	/**
 	 * @param catalogId the catalogId to set
 	 */
-	public void setCatalogId(String catalogId) {
+	public void setCatalogId(int catalogId) {
 		this.catalogId = catalogId;
 	}
+
+	/**
+	 * @return the professorId
+	 */
+	public int getProfessorId() {
+		return professorId;
+	}
+
+	/**
+	 * @param professorId the professorId to set
+	 */
+	public void setProfessorId(int professorId) {
+		this.professorId = professorId;
+	}
+
+	/**
+	 * @return the courseDetail
+	 */
+	public String getCatalogDetail() {
+		return catalogDetail;
+	}
+
+	/**
+	 * @param courseDetail the courseDetail to set
+	 */
+	public void setCatalogDetail(String catalogDetail) {
+		this.catalogDetail = catalogDetail;
+	}
+	
+	
 	
 	
 }

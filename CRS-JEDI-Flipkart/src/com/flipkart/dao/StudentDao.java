@@ -5,28 +5,90 @@ import java.util.Map;
 import com.flipkart.bean.*;
 import com.flipkart.constant.Grade;
 
+/**
+ * @author Aditya Nahata
+ *
+ */
 public interface StudentDao {
-	// Add Student
-	public void addStudent(Student student);
+
+	/**
+	 * Add Student
+	 * @param student
+	 * @returnType void
+	 */
+	public void addStudent(Student student, String password);
 	
-	// Modify Student
-	public void modifyStudent(String studentId, Student student);
+	/**
+	 * Modify a given student details
+	 * @param studentId
+	 * @param student
+	 * @returnType void
+	 */
+	public void modifyStudent(int studentId, Student student);
 	
-	// Get Student
-	public Student getStudent(String studentId);
+	/**
+	 * Get Student from his id
+	 * @param studentId
+	 * @returnType Student
+	 */
+	public Student getStudent(int studentId);
 	
-	// Add Grade
-	public void addGrade(String studentId, String courseCode, Grade grade);
+	/**
+	 * Add Grade for a given student in a course
+	 * @param studentId
+	 * @param courseCode
+	 * @param grade
+	 * @returnType void
+	 */
+	public void addGrade(int studentId, int courseCode, Grade grade);
 	
-	// Register A Course
-	public void registerCourse(String studentId, String courseId);
+	/**
+	 * Register a student to a Course
+	 * @param studentId
+	 * @param courseId
+	 * @returnType void
+	 */
+	public void registerCourse(int studentId, int courseId);
 	
-	// Drop Course
-	public void dropCourse(String studentId, String courseId);
+	/**
+	 * Drop a course for a student 
+	 * @param studentId
+	 * @param courseId
+	 * @returnType void
+	 */
+	public void dropCourse(int studentId, int courseId);
 	
-	// View Registered Courses
-	public ArrayList<Course> viewRegisteredCourses(String studentId);
+	/**
+	 * View Registered Courses of a student
+	 * @param studentId
+	 * @returnType ArrayList<Integer>
+	 */
+	public ArrayList<Integer> viewRegisteredCourses(int studentId);
 	
-	// View Grades
-	public Map<String, Grade> viewGrades(String studentId);
+	/**
+	 * View all grades of a student
+	 * @param studentId
+	 * @returnType Map<String,Grade>
+	 */
+	public Map<Integer, Grade> viewGrades(int studentId);
+	
+	/**
+	 * check if student has scholarship from database
+	 * @param studentId
+	 * @return boolena
+	 */
+	public boolean hasScholarship(int studentId);
+	
+	
+	/**
+	 * Set approved student to true
+	 * @param approvalstatus
+	 * @param studentId
+	 */
+	public void approveStudent(int studentId);
+	
+	
+	public void deleteStudent(int studentId);
+
+
 }

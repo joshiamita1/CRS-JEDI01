@@ -1,13 +1,19 @@
+  
 package com.flipkart.dao;
-
-import java.util.List;
 
 import com.flipkart.bean.User;
 
 public interface AdminDao {
-	// Add Admin
-	public void addAdmin(User admin);
+
+	/**
+	 * Adds an admin
+	 * @param admin
+	 */
+	public void addAdmin(User admin,String password);
 	
-	// Delete Admin
-	public void deleteAdmin(String adminId);
+	/**
+	 * Deletes an admin
+	 * @param adminId
+	 */
+	public void deleteAdmin(int userId);
 }
