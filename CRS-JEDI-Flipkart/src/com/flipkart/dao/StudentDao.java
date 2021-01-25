@@ -82,13 +82,22 @@ public interface StudentDao {
 	
 	/**
 	 * Set approved student to true
-	 * @param approvalstatus
+	 * @param studentId
 	 * @param studentId
 	 */
 	public void approveStudent(int studentId);
-	
-	
+
+
+	/**
+	 *
+	 * @param studentId
+	 */
 	public void deleteStudent(int studentId);
 
 
+	/**
+	 *
+	 * @return unapproved student array list
+	 */
+	public ArrayList<Integer> viewUnapprovedStudents();
 }

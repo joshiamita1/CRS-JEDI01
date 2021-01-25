@@ -55,6 +55,8 @@ public class SQLQueriesConstant{
 	public static String GET_HAS_SCHOLARSHIP =" select HasScholarship from student where StudentID= ?";
 	public static String APPROVE_STUDENT_QUERY="update Student set isApproved =? where studentID= ?";
 	public static String DELETE_STUDENT_QUERY = "delete from student where studentId = ? ";
+	public static String GET_UNAPPROVED_STUDENTS = "select studentId from student where isApproved=0";
+
 	// Professor Queries
 	public static String VIEW_PROFESSORID_QUERY = "select ProfessorId from Professor";
 	public static String DELETE_PROF_QUERY = "delete from professor where professorId = ? ";

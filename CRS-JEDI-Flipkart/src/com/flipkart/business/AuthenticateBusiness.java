@@ -42,10 +42,7 @@ public class AuthenticateBusiness {
 	 * Private Constructor
 	 */
 	private AuthenticateBusiness() {
-<<<<<<< HEAD
-		//logger.info("Constructor of Authenticate Business");
-=======
->>>>>>> aebd94a361044117887018068e195fbf3350c94b
+
 	}
 	
 	/**
