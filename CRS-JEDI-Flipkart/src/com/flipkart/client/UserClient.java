@@ -57,9 +57,10 @@ public class UserClient {
 					new UserClient().getInputLogin();
 					break;
 				case 2:
-					// Todp
 					new UserClient().getInputRegister();
 					break;
+				case 3:
+					new UserClient().testing();
 				default:
 					showMenu = false;
 					logger.error("=====Exiting=====");
@@ -67,6 +68,11 @@ public class UserClient {
 			}
 		}while(showMenu);
 		
+	}
+	
+	public void testing() {
+		logger.info("TESTING");
+		authenticateBusinessObject.testing();
 	}
 	
 	// Taking input for login

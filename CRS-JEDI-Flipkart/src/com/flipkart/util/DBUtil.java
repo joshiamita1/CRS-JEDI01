@@ -29,7 +29,7 @@ public class DBUtil {
                 prop.load(inputStream);
                 String driver = prop.getProperty("driver");
                 logger.info(driver);
-                String url = "jdbc:mysql://localhost:3306/temp";
+                String url = prop.getProperty("url");
                 logger.info(url);
                 String user = prop.getProperty("user");
                 logger.info(user);
