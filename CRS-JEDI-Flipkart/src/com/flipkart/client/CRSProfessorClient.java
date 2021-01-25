@@ -10,10 +10,10 @@ import com.flipkart.business.StudentBusiness;
 import com.flipkart.constant.Grade;
 
 
-public class ProfessorClient {
+public class CRSProfessorClient {
 	
 	// Logger
-	private static Logger logger = Logger.getLogger(ProfessorClient.class);
+	private static Logger logger = Logger.getLogger(CRSProfessorClient.class);
 	
 	// Scanner
 	Scanner sc = new Scanner(System.in);

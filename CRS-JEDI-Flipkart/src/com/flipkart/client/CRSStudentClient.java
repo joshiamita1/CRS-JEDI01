@@ -9,10 +9,10 @@ import com.flipkart.business.StudentBusiness;
 
 //This is student client class that gives different options to student
 
-public class StudentClient {
+public class CRSStudentClient {
 
 	// Logger
-	public static Logger logger = Logger.getLogger(StudentClient.class);
+	public static Logger logger = Logger.getLogger(CRSStudentClient.class);
 	
 	// Scanner
 	Scanner sc = new Scanner(System.in);
@@ -74,6 +74,7 @@ public class StudentClient {
 		if(studentBusinessObject.numberOfRegisteredCourses(studentId)==4) {
 			logger.info("You cannot add courses as you have already selected 4 courses");
 		} else{
+			logger.info("Enter course id");
 			int courseId = sc.nextInt();
 			// Check if student is already registered for the course
 			if(studentBusinessObject.checkValidCourseForStudent(studentId, courseId)) {

@@ -33,10 +33,8 @@ public class AdminDaoImpl implements AdminDao{
 	public void addAdmin(User admin, String password) {
 		PreparedStatement stmt = null;
 		try {
-			
 			UserDaoImpl userdao = UserDaoImpl.getInstance();
 			userdao.addUser(admin, password);
-			
 			stmt =connection.prepareStatement(SQLQueriesConstant.GET_LAST_ENTRY);
 			ResultSet resultSet = stmt.executeQuery();
 			int userId=0;
@@ -77,6 +75,5 @@ public class AdminDaoImpl implements AdminDao{
 		}catch(Exception e) {
 			logger.error(e.getMessage());
 		}
-		
 	}
 }
