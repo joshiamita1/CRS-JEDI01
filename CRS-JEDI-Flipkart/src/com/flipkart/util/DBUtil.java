@@ -10,14 +10,22 @@ import java.util.Properties;
  
 import org.apache.log4j.Logger;
  
+
+
  
- 
+/**
+ * @author JEDI01
+ *
+ */
 public class DBUtil {
  
 	public static Connection connection = null;
  
 	private static Logger logger = Logger.getLogger(DBUtil.class);
  
+	/**
+	 * @return Connection
+	 */
 	public static Connection getConnection() {
 		logger.info("inside connection");
         if (connection != null)
@@ -51,6 +59,9 @@ public class DBUtil {
  
     }
  
+	/**
+	 * Close the Connection
+	 */
 	public static void closeConnection() {
 		System.out.println("Closing Connection!!");
 		try {

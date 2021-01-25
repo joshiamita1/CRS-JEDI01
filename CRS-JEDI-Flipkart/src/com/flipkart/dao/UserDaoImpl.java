@@ -128,13 +128,10 @@ public class UserDaoImpl implements UserDao {
 			statement = connection.prepareStatement(SQLQueriesConstant.GET_USER_DETAIL_ROLE);
 			statement.setString(1, role.toString());
 			ResultSet resultSet = statement.executeQuery();
-			logger.info(resultSet);
 			while(resultSet.next()) {
 				int userId = resultSet.getInt("id");
-				logger.info("a");
 				userList.add(userId);
 			}
-			logger.info("b");
 		}catch(Exception e) {
 			logger.error(e.getMessage());
 		}
@@ -153,10 +150,8 @@ public class UserDaoImpl implements UserDao {
 			statement.setInt(1,userId);
 			ResultSet resultSet = statement.executeQuery();
 			if(resultSet.next()){
-				
 				String name = resultSet.getString("username");
 				Role role = Role.valueOf(resultSet.getString("role")); 
-				
 				User user = new User();
 				user.setName(name);
 				user.setRole(role);

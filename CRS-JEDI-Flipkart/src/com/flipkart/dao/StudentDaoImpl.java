@@ -212,8 +212,8 @@ public class StudentDaoImpl implements StudentDao{
 		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.ADD_REGISTERED_COURSE_STUDENT_QUERY );
 			
-			statement.setInt(1,studentId);
-			statement.setInt(2,courseId);
+			statement.setInt(1, studentId);
+			statement.setInt(2, courseId);
 					
 			
 			int rows = statement.executeUpdate();
