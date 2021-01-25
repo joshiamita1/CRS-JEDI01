@@ -2389,3 +2389,44 @@ User id of Professor is 201
 05:45:15,500  INFO UserClient,main:50 - Enter 1 to Login
 05:45:15,500  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
 05:45:15,501  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:45:17,722  INFO UserClient,main:73 - Enter User Id
+05:45:21,402  INFO UserClient,main:75 - Enter User Password
+05:45:24,441  INFO UserDaoImpl,main:168 - 8
+05:45:24,483  INFO UserDaoImpl,main:176 - riyapass
+05:45:24,486  INFO UserClient,main:83 - Welcome User ID : 8
+05:45:24,486  INFO UserClient,main:90 - Successfully Logged in as Professor
+05:45:24,486  INFO ProfessorClient,main:80 - Enter your choice:
+05:45:24,486  INFO ProfessorClient,main:81 - 1. To view available courses
+05:45:24,486  INFO ProfessorClient,main:82 - 2. To view courses assigned
+05:45:24,487  INFO ProfessorClient,main:83 - 3. To view students in a course
+05:45:24,487  INFO ProfessorClient,main:84 - 4. Grade a student
+05:45:24,487  INFO ProfessorClient,main:85 - 0. To logout
+05:45:26,726  INFO ProfessorClient,main:80 - Enter your choice:
+05:45:26,726  INFO ProfessorClient,main:81 - 1. To view available courses
+05:45:26,726  INFO ProfessorClient,main:82 - 2. To view courses assigned
+05:45:26,726  INFO ProfessorClient,main:83 - 3. To view students in a course
+05:45:26,727  INFO ProfessorClient,main:84 - 4. Grade a student
+05:45:26,727  INFO ProfessorClient,main:85 - 0. To logout
+05:45:42,798  INFO UserClient,main:37 - Welcome to the Course Registration System
+05:45:42,801  INFO UserClient,main:49 - ======User Menu=====
+05:45:42,801  INFO UserClient,main:50 - Enter 1 to Login
+05:45:42,802  INFO UserClient,main:51 - Enter 2  to Register (if you are student)
+05:45:42,802  INFO UserClient,main:52 - Enter any other number to exit CRS
+05:45:45,232  INFO UserClient,main:73 - Enter User Id
+05:45:47,148  INFO UserClient,main:75 - Enter User Password
+05:45:49,427  INFO UserDaoImpl,main:168 - 8
+05:45:49,492  INFO UserDaoImpl,main:176 - riyapass
+05:45:49,497  INFO UserClient,main:83 - Welcome User ID : 8
+05:45:49,498  INFO UserClient,main:90 - Successfully Logged in as Professor
+05:45:49,498  INFO ProfessorClient,main:80 - Enter your choice:
+05:45:49,498  INFO ProfessorClient,main:81 - 1. To view available courses
+05:45:49,498  INFO ProfessorClient,main:82 - 2. To view courses assigned
+05:45:49,498  INFO ProfessorClient,main:83 - 3. To view students in a course
+05:45:49,499  INFO ProfessorClient,main:84 - 4. Grade a student
+05:45:49,499  INFO ProfessorClient,main:85 - 0. To logout
+05:45:50,887  INFO ProfessorClient,main:80 - Enter your choice:
+05:45:50,887  INFO ProfessorClient,main:81 - 1. To view available courses
+05:45:50,887  INFO ProfessorClient,main:82 - 2. To view courses assigned
+05:45:50,888  INFO ProfessorClient,main:83 - 3. To view students in a course
+05:45:50,888  INFO ProfessorClient,main:84 - 4. Grade a student
+05:45:50,888  INFO ProfessorClient,main:85 - 0. To logout

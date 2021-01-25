@@ -1,8 +1,6 @@
 package com.flipkart.bean;
 
-import com.flipkart.constant.*;
-import java.util.Map;
-import java.util.TreeMap;
+
 
 public class Course {
 	// Course code

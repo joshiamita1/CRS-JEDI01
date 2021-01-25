@@ -18,7 +18,10 @@ import com.flipkart.dao.UserDaoImpl;
 
 public class ProfessorBusiness {
 	
+	// Singleton Field
 	private static ProfessorBusiness instance = null;
+	
+	// Dao Objects
 	UserDaoImpl userDaoObject = UserDaoImpl.getInstance();
 	StudentDaoImpl studentDaoObject = StudentDaoImpl.getInstance();
 	AdminDaoImpl adminDaoObject = AdminDaoImpl.getInstance();
@@ -27,10 +30,12 @@ public class ProfessorBusiness {
 	NotificationSystemDaoImpl notificationSystemDaoObject = NotificationSystemDaoImpl.getInstance();
 	private static Logger logger = Logger.getLogger(ProfessorBusiness.class);
 	
+	// Private Constructor
 	private ProfessorBusiness() {
 		
 	}
 	
+	// Get Instance of the class
 	public static ProfessorBusiness getInstance() {
 		if(instance==null) {
 			instance = new ProfessorBusiness();
@@ -39,7 +44,7 @@ public class ProfessorBusiness {
 	}
 	
 	
-	// Grading student 
+	// Grade student enrolled in the course
 	public void gradeStudent(int courseId, int studentId, Grade grade) {
 		studentDaoObject.addGrade(studentId, courseId, grade);
 		logger.info("Added Grade " + grade);
@@ -47,9 +52,12 @@ public class ProfessorBusiness {
 		logger.info("Course Id : " + courseId);
 	}
 	
+	// Checks if given professor teaches the given course
 	public boolean validCourseForProfessor(int professorId, int courseId) {
 		return courseCatalogDaoObject.validCourseForProfessor(professorId, courseId);
 	}
+	
+	// Prints all the courses taught by the given professor
 	public void viewAssignedCourses(int professorId) {
 		ArrayList<Integer> coursesList = courseCatalogDaoObject.getCoursesForProfessor(professorId);
 		logger.info("Course Id\tCourse Name");
@@ -59,9 +67,10 @@ public class ProfessorBusiness {
 		}
 		
 	}
+	
+	// View Registered Students in the course
 	public void viewRegisteredStudents(int courseId) {
      //  View all the RegisteredStudent in course
-		Course course = courseCatalogDaoObject.getCourse(courseId);
 		Map<Integer, Grade> mp = courseCatalogDaoObject.viewGrades(courseId);
 		logger.info("Registered Students under " + professorDaoObject.getProfessor(courseCatalogDaoObject.getCourse(courseId).getProfessorId()).getName() + " for course " +  courseCatalogDaoObject.getCourse(courseId).getCourseName() + " are :");
 		for(Integer s : mp.keySet()) {

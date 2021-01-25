@@ -12,12 +12,18 @@ import com.flipkart.constant.Grade;
 
 public class ProfessorClient {
 	
+	// Logger
 	private static Logger logger = Logger.getLogger(ProfessorClient.class);
+	
+	// Scanner
 	Scanner sc = new Scanner(System.in);
+	
+	// Business Objects
 	CourseCatalogBusiness courseCatalogBusinessObject = CourseCatalogBusiness.getInstance();
 	ProfessorBusiness professorBusinessObject = ProfessorBusiness.getInstance();
 	StudentBusiness studentBusinessObject = StudentBusiness.getInstance();
-	// Display menu for professor
+	
+	// Functionalities of the Professor
 	public void displayMenu(int professorId) {
 		int choice;
 		do {
@@ -47,6 +53,7 @@ public class ProfessorClient {
 		sc.close();	
 	}
 	
+	// View Registered Students in the course
 	public void viewRegisteredStudents(int professorId) {
 		int courseId = sc.nextInt();
 		if(professorBusinessObject.validCourseForProfessor(professorId, courseId)) {
@@ -57,12 +64,15 @@ public class ProfessorClient {
 
 	}
 	
+	// Grade Student
 	public void gradeStudent(int professorId) {
 		int courseId = sc.nextInt();
+		// Check if course is taught by professor
 		if(professorBusinessObject.validCourseForProfessor(professorId, courseId)) {
 			professorBusinessObject.viewRegisteredStudents(courseId);
 			logger.info("Please Select the Id of the student you want to Grade!");
 			int studentId = sc.nextInt();
+			// Chceck if student is enrolled in the course
 			if(studentBusinessObject.checkValidCourseForStudent(studentId, courseId)) {
 				logger.info("Enter grade: (A,B,C,D,E)");
 				Grade grade = Grade.valueOf(sc.nextLine());
@@ -76,6 +86,7 @@ public class ProfessorClient {
 		}
 	}
 	
+	// Display Available Features
 	public void printChoices() {
 		logger.info("Enter your choice:");
 		logger.info("1. To view available courses");

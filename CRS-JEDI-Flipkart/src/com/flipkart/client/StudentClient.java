@@ -11,16 +11,21 @@ import com.flipkart.business.StudentBusiness;
 
 public class StudentClient {
 
-	private static Logger logger = Logger.getLogger(StudentClient.class);
+	// Logger
+	public static Logger logger = Logger.getLogger(StudentClient.class);
+	
+	// Scanner
 	Scanner sc = new Scanner(System.in);
 
+	// Business Objects
 	CourseCatalogBusiness courseCatalogBusinessObject = CourseCatalogBusiness.getInstance();
 	StudentBusiness studentBusinessObject = StudentBusiness.getInstance();
-	// Displays the Student Menu with choices for student
+	
+	// 	Functionalities of the Student
 	public void displayMenu(int studentId) {
-		printChoices();
 		int choice;
 		do {
+			printChoices();
 			choice = sc.nextInt();
 			switch(choice) {
 			case 1:
@@ -51,7 +56,7 @@ public class StudentClient {
 		
 	}
 	
-	// Show choices
+	// Display Available Features
 	void printChoices() {
 		logger.info("Enter your choice:");
 		logger.info("1. To view available courses");
@@ -63,14 +68,18 @@ public class StudentClient {
 		logger.info("0. To logout");
 	}
 	
+	// Register Student for the course
 	public void registerCourse(int studentId) {
+		// Check if maximum limit is reached
 		if(studentBusinessObject.numberOfRegisteredCourses(studentId)==4) {
 			logger.info("You cannot add courses as you have already selected 4 courses");
 		} else{
 			int courseId = sc.nextInt();
+			// Check if student is already registered for the course
 			if(studentBusinessObject.checkValidCourseForStudent(studentId, courseId)) {
 				logger.info("You are already Registered for this course");
 			}
+			// Check if there is availability in the course
 			else if(courseCatalogBusinessObject.numberOfRegisterdStudents(courseId)==10) {
 				logger.info("10 Students already Registerd for the course so you can't register");
 			} else {
@@ -79,6 +88,7 @@ public class StudentClient {
 		}
 	}
 	
+	// Drop from the course 
 	public void dropCourse(int studentId) {
 		logger.info("Enter the course ID");
 		int courseId = sc.nextInt();
@@ -89,10 +99,12 @@ public class StudentClient {
 		}
 	}
 	
+	// Check courses student already registered
 	public void viewRegisteredCourses(int studentId) {
 		studentBusinessObject.viewRegisteredCourses(studentId);
 	}
 	
+	// Pay Remaining Fees
 	public void payFees(int studentId) {
 		double fees = studentBusinessObject.getFees(studentId);
 		if(fees==0) {
@@ -111,6 +123,7 @@ public class StudentClient {
 		
 	}
 	
+	// Print Report Card
 	public void printReportCard(int studentId) {
 		studentBusinessObject.printReportCard(studentId);
 	}

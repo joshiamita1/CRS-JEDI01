@@ -5,24 +5,28 @@ import java.util.Scanner;
 import org.apache.log4j.Logger;
 
 import com.flipkart.bean.Course;
-import com.flipkart.bean.Professor;
-import com.flipkart.bean.Student;
 import com.flipkart.bean.User;
 import com.flipkart.business.AdminBusiness;
 import com.flipkart.business.AuthenticateBusiness;
 import com.flipkart.business.CourseCatalogBusiness;
-import com.flipkart.business.StudentBusiness;
 import com.flipkart.constant.Department;
 import com.flipkart.constant.Gender;
 import com.flipkart.constant.Role;
 
 public class AdminClient {
 
+	// Logger
 	public static Logger logger = Logger.getLogger(AdminClient.class);
+	
+	// Scanner
 	Scanner sc = new Scanner(System.in);
+	
+	// Business Objects
 	AdminBusiness adminBusinessObject = AdminBusiness.getInstance();
 	CourseCatalogBusiness courseCatalogBusinessObject = CourseCatalogBusiness.getInstance();
 	AuthenticateBusiness authenticateBusinessObject = AuthenticateBusiness.getInstance();
+	
+	// Functionalities of the Admin
 	public void displayMenu(int userId) {
 		int choice;
 		do {
@@ -89,7 +93,7 @@ public class AdminClient {
 		adminBusinessObject.assignProfessor(courseCode, professorId);
 	}
 	
-	// Show available choices
+	// Display Available Features
 	void printChoices() {
 		logger.info("Enter your choice:");
 		logger.info("1. To view courses in catalog");
@@ -104,12 +108,14 @@ public class AdminClient {
 		logger.info("0. To logout");
 	}
 	
+	// Approve the student
 	public void approveStudent() {
 		logger.info("Enter Student ID to approve");
 		int studentId = sc.nextInt();
 		adminBusinessObject.approveStudent(studentId);
 	}
 	
+	// Register User (PROFESSOR OR ADMIN)
 	public void registerUser() {
 		User user = new User();
 		String password;
@@ -158,12 +164,14 @@ public class AdminClient {
 		}
 	}
 	
+	// Delete the User
 	public void deleteUser() {
 		logger.info("Enter user ID");
 		int userId = sc.nextInt();
 		adminBusinessObject.deleteUser(userId);
 	}
 	
+	// Add new Course to the Catalog
 	public void addNewCourse() {
 		int courseCode, professorId, catalogId;
 		String courseName;
@@ -180,6 +188,7 @@ public class AdminClient {
 		courseCatalogBusinessObject.addCourse(course);
 	}
 	
+	// Drop Course from the catalog
 	public void dropCourse() {
 		int courseId = sc.nextInt();
 		courseCatalogBusinessObject.dropCourse(courseId);

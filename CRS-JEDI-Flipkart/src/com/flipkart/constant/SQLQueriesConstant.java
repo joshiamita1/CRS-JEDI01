@@ -3,10 +3,6 @@
  */
 package com.flipkart.constant;
 
-/**
- * @author ABHI SHREE JAIN
- *
- */
 
 public class SQLQueriesConstant{
 	

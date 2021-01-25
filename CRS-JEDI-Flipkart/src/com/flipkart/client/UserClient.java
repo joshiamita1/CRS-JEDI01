@@ -42,6 +42,7 @@ public class UserClient {
 		logger.info("Exiting CRS");		
 	}
 	
+	// Display Login Portal
 	public static void showUserMenu() {
 		boolean showMenu=true;
 		int choice;
@@ -68,7 +69,7 @@ public class UserClient {
 		
 	}
 	
-
+	// Taking input for login
 	public void getInputLogin() {
 		logger.info("Enter User Id");
 		int userId = Integer.parseInt(sc.nextLine());
@@ -77,6 +78,7 @@ public class UserClient {
 		login(userId, password);
 	}
 	
+	// Logging in
 	public void login(int userId, String password) {
 		if(authenticateBusinessObject.validLogin(userId, password)) {
 			Role role = authenticateBusinessObject.getRole(userId, password);
@@ -100,6 +102,7 @@ public class UserClient {
 		}
 	}
 
+	// Taking input for registering
 	void getInputRegister() {
 		Student student = new Student();
 		String password;
