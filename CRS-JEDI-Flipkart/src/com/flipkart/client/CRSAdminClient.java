@@ -13,20 +13,40 @@ import com.flipkart.constant.Department;
 import com.flipkart.constant.Gender;
 import com.flipkart.constant.Role;
 
+
+/**
+ * @author JEDI01
+ *
+ */
+
+/**
+ * @author lovis
+ *
+ */
 public class CRSAdminClient {
 
-	// Logger
+	/**
+	 * Logger
+	 */
 	public static Logger logger = Logger.getLogger(CRSAdminClient.class);
 	
-	// Scanner
+	/**
+	 * Scanner
+	 */
 	Scanner sc = new Scanner(System.in);
 	
-	// Business Objects
+	/**
+	 * Business Objects
+	 */
 	AdminBusiness adminBusinessObject = AdminBusiness.getInstance();
 	CourseCatalogBusiness courseCatalogBusinessObject = CourseCatalogBusiness.getInstance();
 	AuthenticateBusiness authenticateBusinessObject = AuthenticateBusiness.getInstance();
 	
-	// Functionalities of the Admin
+
+	/**
+	 * @param userId
+	 * Functionalities of the Admin
+	 */
 	public void displayMenu(int userId) {
 		int choice;
 		do {
@@ -71,14 +91,18 @@ public class CRSAdminClient {
 		
 	}
 	
-	// View Courses in particular Catalog
+	/**
+	 * View Courses in particular Catalog
+	 */
 	public void viewCoursesInCatalog() {
 		logger.info("Enter Catalog ID");
 		int catalogId = sc.nextInt();
 		courseCatalogBusinessObject.viewCoursesInCatalog(catalogId);
 	}
 	
-	// View Users of the specific Role
+	/**
+	 * View Users of the specific Role
+	 */
 	public void viewUsersOfSpecificRole() {
 		logger.info("Enter one of the following Role \n (\"ADMIN\", \"PROFESSOR\", \"STUDENT\"\n");
 		sc.nextLine();
@@ -86,7 +110,10 @@ public class CRSAdminClient {
 		adminBusinessObject.getUsers(Role.valueOf(role));
 	}
 	
-	// Assign Course to Professor
+	
+	/**
+	 * Assign course to professor
+	 */
 	public void assignCourseToProfessor() {
 		logger.info("Enter Course Code");
 		int courseCode = sc.nextInt();
@@ -95,8 +122,10 @@ public class CRSAdminClient {
 		adminBusinessObject.assignProfessor(courseCode, professorId);
 	}
 	
-	// Display Available Features
-	void printChoices() {
+	/**
+	 * Display Available Features
+	 */
+	public void printChoices() {
 		logger.info("===========================ADMIN===========================");
 		logger.info("Enter your choice:");
 		logger.info("1. To view courses in catalog");
@@ -112,14 +141,18 @@ public class CRSAdminClient {
 		logger.info("===========================================================");
 	}
 	
-	// Approve the student
+	/**
+	 * Approve the student
+	 */
 	public void approveStudent() {
 		logger.info("Enter Student ID to approve");
 		int studentId = sc.nextInt();
 		adminBusinessObject.approveStudent(studentId);
 	}
 	
-	// Register User (PROFESSOR OR ADMIN)
+	/**
+	 * Register User (PROFESSOR OR ADMIN)
+	 */
 	public void registerUser() {
 		User user = new User();
 		String password;
@@ -168,17 +201,21 @@ public class CRSAdminClient {
 		}
 	}
 	
-	// Delete the User
+	/**
+	 * Delete the User
+	 */
 	public void deleteUser() {
 		logger.info("Enter user ID");
 		int userId = sc.nextInt();
 		adminBusinessObject.deleteUser(userId);
 	}
 	
-	// Add new Course to the Catalog
+	/**
+	 * Add new Course to the Catalog
+	 */
 	public void addNewCourse() {
-		int courseCode, professorId, catalogId;
-		String courseName;
+		int courseCode, catalogId;
+		String courseName, courseDetail;
 		logger.info("Enter Course ID");
 		courseCode = sc.nextInt();
 		sc.nextLine();
@@ -186,13 +223,17 @@ public class CRSAdminClient {
 		courseName = sc.nextLine();
 		logger.info("Enter catalog ID");
 		catalogId = sc.nextInt();
-		logger.info("Enter professorId or -1 if not assigned");
-		professorId = sc.nextInt();
-		Course course = new Course(courseCode, courseName, catalogId, professorId);
+		logger.info("Enter Course Description");
+		sc.nextLine();
+		courseDetail = sc.nextLine();
+		Course course = new Course(courseCode, courseName, catalogId, -1, courseDetail);
 		courseCatalogBusinessObject.addCourse(course);
+		logger.info("Added Course " + course.getCourseName() + " in Catalog " + course.getCatalogDetail());
 	}
 	
-	// Drop Course from the catalog
+	/**
+	 * Drop Course from the catalog
+	 */
 	public void dropCourse() {
 		logger.info("Enter Course ID");
 		int courseId = sc.nextInt();

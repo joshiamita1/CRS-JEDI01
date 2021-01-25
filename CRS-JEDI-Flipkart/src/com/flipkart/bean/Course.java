@@ -2,26 +2,33 @@ package com.flipkart.bean;
 
 
 
+/**
+ * @author JEDI01
+ *
+ */
 public class Course {
 	// Course code
 	int courseCode;
 	
 	// Course name
 	String courseName;
-	
-	
+		
 	// Catalog Id of the course
 	int catalogId;
 	
 	// Professor of the course
 	int professorId;
+	
+	// Detail of the course
+	String catalogDetail;
 
-	public Course(int courseCode, String courseName, int catalogId, int professorId) {
+	public Course(int courseCode, String courseName, int catalogId, int professorId, String catalogDetail) {
 		super();
 		this.courseCode = courseCode;
 		this.courseName = courseName;
 		this.catalogId = catalogId;
 		this.professorId = professorId;
+		this.catalogDetail = catalogDetail;
 	}
 
 	/**
@@ -79,6 +86,22 @@ public class Course {
 	public void setProfessorId(int professorId) {
 		this.professorId = professorId;
 	}
+
+	/**
+	 * @return the courseDetail
+	 */
+	public String getCatalogDetail() {
+		return catalogDetail;
+	}
+
+	/**
+	 * @param courseDetail the courseDetail to set
+	 */
+	public void setCatalogDetail(String catalogDetail) {
+		this.catalogDetail = catalogDetail;
+	}
+	
+	
 	
 	
 }

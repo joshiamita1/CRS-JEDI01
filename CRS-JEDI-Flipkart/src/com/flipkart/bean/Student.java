@@ -2,6 +2,12 @@ package com.flipkart.bean;
 
 import com.flipkart.constant.Department;
 
+
+
+/**
+ * @author JEDI01
+ *
+ */
 public class Student extends User {
 	// Branch of the student
 	private Department branch;

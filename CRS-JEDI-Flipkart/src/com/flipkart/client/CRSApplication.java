@@ -1,38 +1,57 @@
 package com.flipkart.client;
 
 import org.apache.log4j.Logger;
-
 import com.flipkart.constant.Department;
 import com.flipkart.constant.Gender;
 import com.flipkart.bean.Student;
 import com.flipkart.business.*;
 import com.flipkart.constant.Role;
 import com.flipkart.dao.UserDaoImpl;
-
 import java.util.*;
+
+
+/**
+ * @author JEDI01
+ *
+ */
 public class CRSApplication {
 	
-	// Logger Object
+	/**
+	 * Logger Object
+	 */
 	private static Logger logger = Logger.getLogger(CRSApplication.class);
 	
-	// Scanner Class
+	/**
+	 * Scanner Object
+	 */
 	static Scanner sc = new Scanner(System.in);
 		
-	// Professor Client Menu Object
+	/**
+	 * Professor Client Menu Object
+	 */
 	CRSProfessorClient CRSProfessorClient = new CRSProfessorClient();
 	
-	// Student Client Menu Object
+	/**
+	 * Student Client Menu Object
+	 */
 	CRSStudentClient studentClient = new CRSStudentClient();
 	
-	// Admin Client Menu Object
+	/**
+	 * Admin Client Menu Object
+	 */
 	CRSAdminClient CRSAdminClient = new CRSAdminClient();
 	
 	
-	// Authenticate Business Object
+	/**
+	 * Authenticate Business Object
+	 */
 	AuthenticateBusiness authenticateBusinessObject = AuthenticateBusiness.getInstance();
 	
 	
-	// Enter Point of the Application
+	/**
+	 * @param args
+	 * Main Enter Point of the Application
+	 */
 	public static void main(String[]args) {
 		logger.info("================COURSE REGISTRATION SYSTEM================");
 		logger.info("Welcome to the Course Registration System");
@@ -43,7 +62,9 @@ public class CRSApplication {
 		logger.info("========================EXITING CRS=======================");		
 	}
 	
-	// Display Login Portal
+	/**
+	 * Display Login Portal
+	 */
 	public static void showUserMenu() {
 		boolean showMenu=true;
 		int choice;
@@ -70,7 +91,9 @@ public class CRSApplication {
 		
 	}
 	
-	// Taking input for login
+	/**
+	 * Taking input for login
+	 */
 	public void getInputLogin() {
 		logger.info("Enter User Id");
 		int userId = Integer.parseInt(sc.nextLine());
@@ -79,7 +102,11 @@ public class CRSApplication {
 		login(userId, password);
 	}
 	
-	// Logging in
+	/**
+	 * @param userId
+	 * @param password
+	 * Logging in
+	 */
 	public void login(int userId, String password) {
 		if(authenticateBusinessObject.validLogin(userId, password)) {
 			Role role = authenticateBusinessObject.getRole(userId, password);
@@ -103,7 +130,9 @@ public class CRSApplication {
 		}
 	}
 
-	// Taking input for registering
+	/**
+	 * Taking input for registering
+	 */
 	void getInputRegister() {
 		Student student = new Student();
 		String password;
@@ -135,6 +164,8 @@ public class CRSApplication {
 		logger.info("Enter Country");
 		student.setCountry(sc.nextLine());
 		student.setAmountPayable(0);
+		
+		
 		
 		if(authenticateBusinessObject.registerStudent(student, password)) {
 			UserDaoImpl temp =  UserDaoImpl.getInstance();

@@ -1,5 +1,7 @@
 package com.flipkart.dao;
 
+import com.flipkart.constant.PaymentMode;
+
 public interface FeePaymentDao {
 
 	
@@ -8,15 +10,9 @@ public interface FeePaymentDao {
 	 * @param studentId
 	 * @returnType double
 	 */
-	public double calculateFees(int studentId);
+	public double amountPayable(int studentId);
 	
-	/**
-	 * Count courses for a student
-	 * @param studentid
-	 * @returnType int
-	 */
-	public int countCourses(int studentid);
-	
+
 	/**
 	 * Update fee for a student 
 	 * @param StudentId
@@ -26,9 +22,9 @@ public interface FeePaymentDao {
 	public void updateFees(int StudentId, double fees);
 	
 	/**
-	 * Return payable fee 
-	 * @param StudentId
-	 * @returnType double
+	 * Pay Student Fees
+	 * @param StudentId, amount , mode
+	 *
 	 */
-	public double getFeesToPay(int StudentId);
+	public void PayFees(int StudentId, double amount, PaymentMode mode);
 }

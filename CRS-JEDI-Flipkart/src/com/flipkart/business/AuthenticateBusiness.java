@@ -13,12 +13,23 @@ import com.flipkart.dao.ProfessorDaoImpl;
 import com.flipkart.dao.StudentDaoImpl;
 import com.flipkart.dao.UserDaoImpl;
 
+/**
+ * @author JEDI01
+ *
+ */
 public class AuthenticateBusiness {
-	public static Logger logger = Logger.getLogger(AuthenticateBusiness.class);
-	// Singleton Field
-	private static AuthenticateBusiness instance = null;
 	
-	// Dao Objects
+	
+	public static Logger logger = Logger.getLogger(AuthenticateBusiness.class);
+	
+	/**
+	 * Singleton Field
+	 */
+	private static AuthenticateBusiness instance = null;
+
+	/**
+	 * Dao Objects
+	 */
 	UserDaoImpl userDaoObject = UserDaoImpl.getInstance();
 	StudentDaoImpl studentDaoObject = StudentDaoImpl.getInstance();
 	AdminDaoImpl adminDaoObject = AdminDaoImpl.getInstance();
@@ -26,12 +37,16 @@ public class AuthenticateBusiness {
 	NotificationSystemDaoImpl notificationSystemDaoObject = NotificationSystemDaoImpl.getInstance();
 
 	
-	// Private Constructor
+	
+	/**
+	 * Private Constructor
+	 */
 	private AuthenticateBusiness() {
-		//logger.info("Constructor of Authenticate Business");
 	}
 	
-	// Get Instance of the class
+	/**
+	 * @return Instance of the class
+	 */
 	public static AuthenticateBusiness getInstance() {
 		if(instance==null) {
 			instance = new AuthenticateBusiness();
@@ -39,7 +54,11 @@ public class AuthenticateBusiness {
 		return instance;
 	}
 	
-	// Check if credentials match with any user
+	/**
+	 * @param inputId
+	 * @param inputPassword
+	 * @return authentication status
+	 */
 	public boolean validLogin(int inputId, String inputPassword) {
 		try {
 			String userPassword = userDaoObject.getPassword(inputId);
@@ -52,30 +71,39 @@ public class AuthenticateBusiness {
 		return false;
 	}
 	
-	// Returns role of the user, once credentials are passed	
+	
+	/**
+	 * @param inputId
+	 * @param inputPassword
+	 * @return Role of the user
+	 */
 	public Role getRole(int inputId, String inputPassword) {
-		return userDaoObject.getUser(inputId).getRole();
-		
+		return userDaoObject.getUser(inputId).getRole();	
 	}
 	
-	public void testing() {
-		//logger.info("SSSS");
-		//logger.debug("DEbugging");
-		//System.out.print("Checking");
-	}
 	
-	// Register Student in Database
+	/**
+	 * @param student
+	 * @param password
+	 * @return Registration Status
+	 */
 	public boolean registerStudent(Student student, String password) {
 		
 		studentDaoObject.addStudent(student, password);
 		logger.info("=======================REGISTERED=======================");
 		logger.info("Added user into Student Table\n");
+		int userid=userDaoObject.lastEntry();
+		student.setUserId(userid);
 		logger.info(student.getUserId());
 		notificationSystemDaoObject.notifyUser(student.getUserId(), "Successfully Registerd!");
 		return true;
 	}
 
-	// Register Admin in Database
+	/**
+	 * @param admin
+	 * @param password
+	 * @return Registration Status
+	 */
 	public boolean registerAdmin(User admin, String password) {
 		adminDaoObject.addAdmin(admin, password);
 		logger.info("=======================REGISTERED=======================");
@@ -83,7 +111,12 @@ public class AuthenticateBusiness {
 		return true;
 	}
 
-	// Register Professor in Database
+	/**
+	 * @param user
+	 * @param password
+	 * @param department
+	 * @return Registration Status
+	 */
 	public boolean registerProfessor(User user, String password, Department department) {
 		professorDaoObject.addProfessor(user, password, department);
 		logger.info("=======================REGISTERED=======================");

@@ -10,20 +10,33 @@ import com.flipkart.business.StudentBusiness;
 import com.flipkart.constant.Grade;
 
 
+/**
+ * @author JEDI01
+ *
+ */
 public class CRSProfessorClient {
 	
-	// Logger
+	/**
+	 * Logger
+	 */
 	private static Logger logger = Logger.getLogger(CRSProfessorClient.class);
 	
-	// Scanner
+	/**
+	 * Scanner
+	 */
 	Scanner sc = new Scanner(System.in);
 	
-	// Business Objects
+	/**
+	 * Business Objects
+	 */
 	CourseCatalogBusiness courseCatalogBusinessObject = CourseCatalogBusiness.getInstance();
 	ProfessorBusiness professorBusinessObject = ProfessorBusiness.getInstance();
 	StudentBusiness studentBusinessObject = StudentBusiness.getInstance();
-	
-	// Functionalities of the Professor
+		
+	/**
+	 * @param professorId
+	 * Functionalities of the Professor
+	 */
 	public void displayMenu(int professorId) {
 		int choice;
 		do {
@@ -50,10 +63,12 @@ public class CRSProfessorClient {
 			}
 			
 		}while(choice!=0);
-		sc.close();	
 	}
 	
-	// View Registered Students in the course
+	/**
+	 * @param professorId
+	 * View Registered Students in the course
+	 */
 	public void viewRegisteredStudents(int professorId) {
 		logger.info("Enter Course ID");
 		int courseId = sc.nextInt();
@@ -65,7 +80,11 @@ public class CRSProfessorClient {
 
 	}
 	
-	// Grade Student
+
+	/**
+	 * @param professorId
+	 * Grade Student
+	 */
 	public void gradeStudent(int professorId) {
 		logger.info("Enter Course ID");
 		int courseId = sc.nextInt();
@@ -89,7 +108,9 @@ public class CRSProfessorClient {
 		}
 	}
 	
-	// Display Available Features
+	/**
+	 * Display Available Features
+	 */
 	public void printChoices() {
 		logger.info("Enter your choice:");
 		logger.info("1. To view available courses");

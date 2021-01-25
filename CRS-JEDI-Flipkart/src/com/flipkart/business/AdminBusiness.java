@@ -14,14 +14,21 @@ import com.flipkart.dao.ProfessorDaoImpl;
 import com.flipkart.dao.StudentDaoImpl;
 import com.flipkart.dao.UserDaoImpl;
 
-// Admin Business
-
+/**
+ * @author JEDI01
+ * Admin Business
+ */
 public class AdminBusiness{
 	
-	// Singleton Field
-	private static AdminBusiness instance = null;
 	
-	// Dao Objects
+	/**
+	 * Singleton Field
+	 */
+	private static AdminBusiness instance = null;
+
+	/**
+	 * Dao Objects 
+	 */
 	UserDaoImpl userDaoObject = UserDaoImpl.getInstance();
 	StudentDaoImpl studentDaoObject = StudentDaoImpl.getInstance();
 	AdminDaoImpl adminDaoObject = AdminDaoImpl.getInstance();
@@ -30,12 +37,18 @@ public class AdminBusiness{
 	NotificationSystemDaoImpl notificationSystemDaoObject = NotificationSystemDaoImpl.getInstance();
 	private static Logger logger = Logger.getLogger(AdminBusiness.class);
 	
-	// Private Constructor
+	
+	
+	/**
+	 * Private Constructor
+	 */
 	private AdminBusiness() {
 		
 	}
 	
-	// Get Instance of the class
+	/**
+	 * @return instance
+	 */
 	public static AdminBusiness getInstance() {
 		if(instance==null) {
 			instance = new AdminBusiness();
@@ -43,7 +56,9 @@ public class AdminBusiness{
 		return instance;
 	}
 	
-	// Approve the Student
+	/**
+	 * @param studentId
+	 */
 	public void approveStudent(int studentId) {
 		if(studentDaoObject.getStudent(studentId)==null) {
 			logger.info("Invalid Student ID");
@@ -56,20 +71,24 @@ public class AdminBusiness{
 	
 
 	
-	//Getting all the users of particular role
+	/**
+	 * @param role
+	 * Get Users with the particular role
+	 */
 	public void getUsers(Role role){
 		ArrayList<Integer> users= userDaoObject.getUsers(role);
-		logger.info(users.size());
-		logger.info("Users of the role :" + role + "are :");
+		logger.info("Users of the role : " + role + " are :");
 		for(Integer user : users) {
 			User u = userDaoObject.getUser(user);
 			logger.info("Name : " + u.getName());
-			logger.info("Email : " + u.getEmailId());
-			logger.info("User Id : " + u.getUserId());
+			logger.info("User Id : " + user);
 		}
 	}
 	
-	// Delete user when ID is provided
+	/**
+	 * @param userId
+	 * Delete user
+	 */
 	public void deleteUser(int userId) {
 		Role role = userDaoObject.getUser(userId).getRole();
 		userDaoObject.deleteUser(userId);
@@ -83,7 +102,11 @@ public class AdminBusiness{
 		}
 	}
 	
-	// Assign Professor to the course
+	/**
+	 * @param courseId
+	 * @param professorId
+	 * Assign Professor to the course
+	 */
 	public void assignProfessor(int courseId, int professorId) {
 		// Check if course is invalid
 		if(courseCatalogDaoObject.getCourse(courseId)==null) {

@@ -7,21 +7,33 @@ import org.apache.log4j.Logger;
 import com.flipkart.business.CourseCatalogBusiness;
 import com.flipkart.business.StudentBusiness;
 
-//This is student client class that gives different options to student
+/**
+ * @author JEDI01
+ *
+ */
 
 public class CRSStudentClient {
 
-	// Logger
+	/**
+	 * Logger
+	 */
 	public static Logger logger = Logger.getLogger(CRSStudentClient.class);
 	
-	// Scanner
+	/**
+	 * Scanner
+	 */
 	Scanner sc = new Scanner(System.in);
 
-	// Business Objects
+	/**
+	 * Business Objects
+	 */
 	CourseCatalogBusiness courseCatalogBusinessObject = CourseCatalogBusiness.getInstance();
 	StudentBusiness studentBusinessObject = StudentBusiness.getInstance();
-	
-	// 	Functionalities of the Student
+	 	
+	/**
+	 * @param studentId
+	 * Functionalities of the Student
+	 */
 	public void displayMenu(int studentId) {
 		int choice;
 		do {
@@ -56,7 +68,9 @@ public class CRSStudentClient {
 		
 	}
 	
-	// Display Available Features
+	/**
+	 * Display Available Features
+	 */
 	void printChoices() {
 		logger.info("Enter your choice:");
 		logger.info("1. To view available courses");
@@ -68,7 +82,10 @@ public class CRSStudentClient {
 		logger.info("0. To logout");
 	}
 	
-	// Register Student for the course
+	/**
+	 * @param studentId
+	 * Register Student for the course
+	 */
 	public void registerCourse(int studentId) {
 		// Check if maximum limit is reached
 		if(studentBusinessObject.numberOfRegisteredCourses(studentId)==4) {
@@ -89,7 +106,10 @@ public class CRSStudentClient {
 		}
 	}
 	
-	// Drop from the course 
+	/**
+	 * @param studentId
+	 * Drop from the course 
+	 */
 	public void dropCourse(int studentId) {
 		logger.info("Enter the course ID");
 		int courseId = sc.nextInt();
@@ -100,12 +120,18 @@ public class CRSStudentClient {
 		}
 	}
 	
-	// Check courses student already registered
+	/**
+	 * @param studentId
+	 * Check courses student already registered
+	 */
 	public void viewRegisteredCourses(int studentId) {
 		studentBusinessObject.viewRegisteredCourses(studentId);
 	}
 	
-	// Pay Remaining Fees
+	/**
+	 * @param studentId
+	 * Pay Remaining Fees
+	 */
 	public void payFees(int studentId) {
 		double fees = studentBusinessObject.getFees(studentId);
 		if(fees==0) {
@@ -124,7 +150,10 @@ public class CRSStudentClient {
 		
 	}
 	
-	// Print Report Card
+	/**
+	 * @param studentId
+	 * Print Report Card
+	 */
 	public void printReportCard(int studentId) {
 		studentBusinessObject.printReportCard(studentId);
 	}

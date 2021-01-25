@@ -17,12 +17,37 @@ import com.flipkart.dao.ProfessorDaoImpl;
 import com.flipkart.dao.StudentDaoImpl;
 import com.flipkart.dao.UserDaoImpl;
 
+
+/**
+ * @author JEDI01
+ *
+ */
+/**
+ * @author lovis
+ *
+ */
+/**
+ * @author lovis
+ *
+ */
+/**
+ * @author lovis
+ *
+ */
+/**
+ * @author lovis
+ *
+ */
 public class StudentBusiness{
 	
-	// Singleton Field
+	/**
+	 * Singleton Field
+	 */
 	private static StudentBusiness instance = null;
 	
-	// Dao Objects
+	/**
+	 * Dao Objects
+	 */
 	UserDaoImpl userDaoObject = UserDaoImpl.getInstance();
 	StudentDaoImpl studentDaoObject = StudentDaoImpl.getInstance();
 	AdminDaoImpl adminDaoObject = AdminDaoImpl.getInstance();
@@ -32,12 +57,17 @@ public class StudentBusiness{
 	FeePaymentDaoImpl feePaymentDaoObject = FeePaymentDaoImpl.getInstance();
 	private static Logger logger = Logger.getLogger(StudentBusiness.class);
 	
-	// Private Constructor
+	
+	/**
+	 * Private Constructor
+	 */
 	private StudentBusiness() {
 		
 	}
 	
-	// Get Instance of the class
+	/**
+	 * @return Instance of the class
+	 */
 	public static StudentBusiness getInstance() {
 		if(instance==null) {
 			instance = new StudentBusiness();
@@ -45,8 +75,10 @@ public class StudentBusiness{
 		return instance;
 	}
 	
-	// View Courses Registered by the given student
-	public int viewRegisteredCourses(int studentId) {
+	/**
+	 * @param studentId
+	 */
+	public void viewRegisteredCourses(int studentId) {
 		ArrayList<Integer> courseList = studentDaoObject.viewRegisteredCourses(studentId);
 		if(courseList.size() == 0) {
 			logger.info("No registered courses");
@@ -58,10 +90,12 @@ public class StudentBusiness{
 				logger.info(c.getCourseCode() +  "\t " + c.getCourseName());
 			}
 		}
-		return courseList.size();
 	}
 	
-	// Register Course
+	/**
+	 * @param studentId
+	 * @param courseId
+	 */
 	public void registerCourse(int studentId, int courseId) {
 		studentDaoObject.registerCourse(studentId, courseId);
 		logger.info("Added Course " + courseCatalogDaoObject.getCourse(courseId).getCourseName() + " in " + studentDaoObject.getStudent(studentId).getName() + "'s Syllabus");
@@ -70,17 +104,22 @@ public class StudentBusiness{
 			addFees /= 10;
 			addFees *=7;
 		}
-		feePaymentDaoObject.updateFees(studentId, feePaymentDaoObject.calculateFees(studentId) + addFees);
-		
+		feePaymentDaoObject.updateFees(studentId, feePaymentDaoObject.amountPayable(studentId) + addFees);
 	}
 	
-	// Drop Course
+	
+	/**
+	 * @param studentId
+	 * @param courseId
+	 */
 	public void dropCourse(int studentId, int courseId) {
 		studentDaoObject.dropCourse(studentId, courseId);
 		logger.info("Removed Course " + courseCatalogDaoObject.getCourse(courseId).getCourseName() + " from " + studentDaoObject.getStudent(studentId).getName() + "'s Syllabus");
 	}
 	
-	// Print Report Card
+	/**
+	 * @param studentId
+	 */
 	public void printReportCard(int studentId) {
 		Student s = studentDaoObject.getStudent(studentId);
 		logger.info("Student Id : " + s.getName() + "\nBranch : " + s.getBranch() + "\nEmail : " + s.getEmailId() + "\nGender : " + s.getGender() + "\nMobile :" + s.getMobile() + "\n");
@@ -92,22 +131,37 @@ public class StudentBusiness{
 		logger.info("\n\nReport Card Sent to :" + s.getEmailId());
 	}
 	
-	// Check if student is enrolled in the given course
+	/**
+	 * @param studentId
+	 * @param courseId
+	 * @return if student is enrolled in the given course
+	 */
 	public boolean checkValidCourseForStudent(int studentId, int courseId) {
 		return courseCatalogDaoObject.validCourseForStudent(studentId, courseId);
 	}
 	
-	// Returns the number of Enrolled Courses
+	/**
+	 * @param studentId
+	 * @return the number of Enrolled Courses
+	 */
 	public int numberOfRegisteredCourses(int studentId) {
 		return courseCatalogDaoObject.numberOfRegisteredCourses(studentId);
 	}
 	
-	// Get Due Fees for given student
+	/**
+	 * @param studentId
+	 * @return Due Fees for given student
+	 */
 	public double getFees(int studentId) {
-		return feePaymentDaoObject.calculateFees(studentId);
+		return feePaymentDaoObject.amountPayable(studentId);
 	}
 	
-	// Make Payment and set due fees to zero
+	/**
+	 * @param studentId
+	 * @param fees
+	 * @param choice
+	 * Make Payment and update payment
+	 */
 	public void makePayment(int studentId, double fees, int choice) {
 		
 		//TodO
