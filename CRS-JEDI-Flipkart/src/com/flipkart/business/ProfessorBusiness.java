@@ -85,10 +85,10 @@ public class ProfessorBusiness {
 	 */
 	public void viewAssignedCourses(int professorId) {
 		ArrayList<Integer> coursesList = courseCatalogDaoObject.getCoursesForProfessor(professorId);
-		logger.info("Course Id\t Course Name");
+		logger.info(String.format("%20s %20s","Course Id","Course Name"));
 		for(Integer courseCode : coursesList) {
 			Course course = courseCatalogDaoObject.getCourse(courseCode);
-			logger.info(course.getCourseCode() +  "\t " + course.getCourseName());
+			logger.info(String.format("%20s %20s",course.getCourseCode() , course.getCourseName()));
 		}
 		
 	}
@@ -100,9 +100,12 @@ public class ProfessorBusiness {
 	public void viewRegisteredStudents(int courseId) {
      //  View all the RegisteredStudent in course
 		Map<Integer, Grade> mp = courseCatalogDaoObject.viewGrades(courseId);
+		//logger.info(String.format("%20s %20s","Registered Students under \" + professorDaoObject.getProfessor(courseCatalogDaoObject.getCourse(courseId).getProfessorId()).getName()",));
 		logger.info("Registered Students under " + professorDaoObject.getProfessor(courseCatalogDaoObject.getCourse(courseId).getProfessorId()).getName() + " for course " +  courseCatalogDaoObject.getCourse(courseId).getCourseName() + " are :");
+		logger.info(String.format("%20s %20s","Student ID :","Student Name"));
+		//can remove call to dao by using s directly
 		for(Integer s : mp.keySet()) {
-			logger.info("Student ID : " + studentDaoObject.getStudent(s).getUserId() +"\n"+"Student Name" + studentDaoObject.getStudent(s).getName() + "\n");
+			logger.info(String.format("%20s %20s", studentDaoObject.getStudent(s).getUserId(),studentDaoObject.getStudent(s).getName() ));
 		}
 	}  
 }

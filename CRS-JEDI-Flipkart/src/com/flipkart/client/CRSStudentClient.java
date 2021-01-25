@@ -44,9 +44,13 @@ public class CRSStudentClient {
 				courseCatalogBusinessObject.viewAllCourses();
 				break;
 			case 2:
+				logger.info("Select from available pool of courses");
+				courseCatalogBusinessObject.viewAllCourses();
 				registerCourse(studentId);
 				break;
 			case 3:
+				logger.info("Select from registered courses");
+				viewRegisteredCourses(studentId);
 				dropCourse(studentId);
 				break;
 			case 4:

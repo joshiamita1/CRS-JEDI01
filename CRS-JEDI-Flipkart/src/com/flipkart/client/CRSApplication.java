@@ -1,5 +1,7 @@
 package com.flipkart.client;
 
+import com.flipkart.exception.InvalidLoginException;
+import com.flipkart.exception.UserNotFoundException;
 import org.apache.log4j.Logger;
 import com.flipkart.constant.Department;
 import com.flipkart.constant.Gender;
@@ -52,7 +54,7 @@ public class CRSApplication {
 	 * @param args
 	 * Main Enter Point of the Application
 	 */
-	public static void main(String[]args) {
+	public static void main(String[]args) throws UserNotFoundException, InvalidLoginException {
 		logger.info("================COURSE REGISTRATION SYSTEM================");
 		logger.info("Welcome to the Course Registration System");
 		
@@ -65,7 +67,7 @@ public class CRSApplication {
 	/**
 	 * Display Login Portal
 	 */
-	public static void showUserMenu() {
+	public static void showUserMenu() throws UserNotFoundException, InvalidLoginException {
 		boolean showMenu=true;
 		int choice;
 		do {
@@ -74,8 +76,12 @@ public class CRSApplication {
 			logger.info("Enter 2  to Register (if you are student)");
 			logger.info("Enter any other number to exit CRS");
 			logger.info("==========================================================");
-			choice = Integer.parseInt(sc.nextLine());
-			switch(choice) {
+			//char c =sc.next()
+
+				choice = Integer.parseInt(sc.nextLine());
+
+
+				switch(choice) {
 				case 1:
 					new CRSApplication().getInputLogin();
 					break;
@@ -94,7 +100,7 @@ public class CRSApplication {
 	/**
 	 * Taking input for login
 	 */
-	public void getInputLogin() {
+	public void getInputLogin() throws UserNotFoundException, InvalidLoginException {
 		logger.info("Enter User Id");
 		int userId = Integer.parseInt(sc.nextLine());
 		logger.info("Enter User Password");
@@ -107,7 +113,7 @@ public class CRSApplication {
 	 * @param password
 	 * Logging in
 	 */
-	public void login(int userId, String password) {
+	public void login(int userId, String password) throws UserNotFoundException, InvalidLoginException {
 		if(authenticateBusinessObject.validLogin(userId, password)) {
 			Role role = authenticateBusinessObject.getRole(userId, password);
 			logger.info("Welcome User ID : " + userId);
@@ -125,7 +131,8 @@ public class CRSApplication {
 				studentClient.displayMenu(userId);
 				break;
 			}
-		} else {
+		}
+		else {
 			logger.info("Invalid Credentials");
 		}
 	}
@@ -133,7 +140,7 @@ public class CRSApplication {
 	/**
 	 * Taking input for registering
 	 */
-	void getInputRegister() {
+	void getInputRegister() throws UserNotFoundException, InvalidLoginException {
 		Student student = new Student();
 		String password;
 		student.setRole(Role.STUDENT);

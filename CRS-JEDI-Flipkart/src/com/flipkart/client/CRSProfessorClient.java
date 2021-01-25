@@ -70,8 +70,10 @@ public class CRSProfessorClient {
 	 * View Registered Students in the course
 	 */
 	public void viewRegisteredStudents(int professorId) {
+
 		logger.info("Enter Course ID");
 		int courseId = sc.nextInt();
+		//Validate if professor teaches this course
 		if(professorBusinessObject.validCourseForProfessor(professorId, courseId)) {
 			professorBusinessObject.viewRegisteredStudents(courseId);
 		} else {

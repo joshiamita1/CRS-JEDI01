@@ -132,7 +132,7 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.VIEW_COURSE_QUERY);
 			statement.setInt(1,courseCode);
-			logger.info("get data for "+ courseCode);
+			//logger.info("get data for "+ courseCode);
 			resultSet = statement.executeQuery();
 			int courseId=0,professorId = 0, catalogId = 0;
 			String  courseName = null, catalogDetail = null;
@@ -144,7 +144,7 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 				catalogDetail = resultSet.getString("CatalogDetail");
 			}
 			course = new Course (courseCode, courseName, catalogId, professorId, catalogDetail);
-			logger.info("here"+ courseName);
+			//logger.info("here"+ courseName);
 			return course;
 		}catch(Exception e) {
 			logger.error(e.getMessage());
@@ -166,18 +166,21 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			statement = connection.prepareStatement(SQLQueriesConstant.VIEW_COURSEGRADES_QUERY);
 			statement.setInt(1, courseCode);
 			resultSet = statement.executeQuery();
-			logger.info("aasdsadsa");
+
 			while(resultSet.next()) {
 				int studentId = resultSet.getInt("StudentId");
-				
-				Grade grade = Grade.valueOf(resultSet.getString("Grade"));
-				logger.info("21321");
+				Grade grade = null;
+				if(resultSet.getString("Grade")!=null) {
+					 grade = Grade.valueOf(resultSet.getString("Grade"));
+				}
+				//logger.info("21321");
 				courseGrades.put(studentId, grade);
 			}
 			return courseGrades;
 		}catch(Exception e) {
 			logger.info("adsdsads");
 			logger.error(e.getMessage());
+			logger.info("inside catch of view grade");
 		}
 		
 		return courseGrades;
@@ -196,7 +199,7 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			statement.setInt(1,professorId);
 			statement.setInt(2, courseId);
 			int rows = statement.executeUpdate();
-			logger.info(rows + " course(s) deleted");
+			//logger.info(rows + " course(s) deleted");
 		}catch(SQLException se) {
 			logger.error(se.getMessage());
 		}catch(Exception e) {

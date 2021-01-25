@@ -68,6 +68,7 @@ public class FeePaymentDaoImpl implements FeePaymentDao  {
 	@Override
 	public void PayFees(int StudentId, double amount, PaymentMode mode) {
 		PreparedStatement statement = null;
+
 		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.MAKE_PAYMENT_QUERY );
 			statement.setInt(1,StudentId);

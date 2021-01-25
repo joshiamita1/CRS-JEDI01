@@ -7,6 +7,7 @@ import java.util.List;
 
 import com.flipkart.bean.User;
 import com.flipkart.constant.Role;
+import com.flipkart.exception.UserNotFoundException;
 
 public interface UserDao {
 	
@@ -54,6 +55,6 @@ public interface UserDao {
 	
 	
 	
-	public String getPassword(int userId);
+	public String getPassword(int userId) throws UserNotFoundException;
 
 }

@@ -147,6 +147,8 @@ public class CRSAdminClient {
 	 * Approve the student
 	 */
 	public void approveStudent() {
+		logger.info("list of unapproved Students");
+		adminBusinessObject.viewUnapprovedStudent();
 		logger.info("Enter Student ID to approve");
 		int studentId = sc.nextInt();
 		adminBusinessObject.approveStudent(studentId);

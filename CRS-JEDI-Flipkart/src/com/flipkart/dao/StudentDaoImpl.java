@@ -108,7 +108,7 @@ public class StudentDaoImpl implements StudentDao {
 				student.setHasScholarship(hasScholarship);
 				student.setApproved(isApproved);
 
-				logger.info(" Student Details Retrieved sucessfully");
+				//logger.info(" Student Details Retrieved sucessfully");
 				return student;
 			}
 			return null;

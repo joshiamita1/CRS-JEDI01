@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.flipkart.exception.UserNotFoundException;
 import org.apache.log4j.Logger;
 
 import com.flipkart.bean.Professor;
@@ -169,10 +170,10 @@ public class UserDaoImpl implements UserDao {
 	
 	
 	@Override
-	public String getPassword(int userId) {
+	public String getPassword(int userId) throws UserNotFoundException {
 		// TODO Auto-generated method stub
 		PreparedStatement statement = null;
-		logger.info(userId);
+		//logger.info(userId);
 		try {
 			statement = connection.prepareStatement(SQLQueriesConstant.GET_USER_DETAIL_ID);
 			statement.setInt(1,userId);
@@ -180,13 +181,13 @@ public class UserDaoImpl implements UserDao {
 			if(resultSet.next()){
 				
 				String password = resultSet.getString("password");
-				logger.info(password);
+				//logger.info(password);
 				return password;
 			}
 			else{
-				logger.info("User does not exist");
+				throw new UserNotFoundException();
 			}
-			return null;
+
 		}catch(Exception e) {
 			logger.error(e.getMessage());
 		}
