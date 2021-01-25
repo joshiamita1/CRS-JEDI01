@@ -80,7 +80,7 @@ public class AdminClient {
 	
 	// View Users of the specific Role
 	public void viewUsersOfSpecificRole() {
-		logger.info("Enter one of the following Role (\"ADMIN\", \"PROFESSOR\", \"STUDENT\"\n");
+		logger.info("Enter one of the following Role \n (\"ADMIN\", \"PROFESSOR\", \"STUDENT\"\n");
 		sc.nextLine();
 		String role = sc.nextLine();
 		adminBusinessObject.getUsers(Role.valueOf(role));
@@ -97,6 +97,7 @@ public class AdminClient {
 	
 	// Display Available Features
 	void printChoices() {
+		logger.info("===========================ADMIN===========================");
 		logger.info("Enter your choice:");
 		logger.info("1. To view courses in catalog");
 		logger.info("2. View All Courses");
@@ -108,6 +109,7 @@ public class AdminClient {
 		logger.info("8. Drop a course from catalog");
 		logger.info("9. Approve student");
 		logger.info("0. To logout");
+		logger.info("===========================================================");
 	}
 	
 	// Approve the student
@@ -121,7 +123,7 @@ public class AdminClient {
 	public void registerUser() {
 		User user = new User();
 		String password;
-		logger.info("Select Role of the User (PROFESSOR, ADMIN)");
+		logger.info("Select Role of the User \n(PROFESSOR, ADMIN)");
 		sc.nextLine();
 		user.setRole(Role.valueOf(sc.nextLine()));
 		logger.info("Enter Name");
@@ -132,7 +134,7 @@ public class AdminClient {
 		user.setEmailId(sc.nextLine());
 		logger.info("Enter Mobile No.");
 		user.setMobile(sc.nextLong());
-		logger.info("Select Gender: 'M' for male and 'F' for female");
+		logger.info("Select Gender: \n'M' for male and 'F' for female");
 		sc.nextLine();
 		user.setGender(Gender.valueOf(sc.nextLine()));
 		logger.info("Enter Address");
