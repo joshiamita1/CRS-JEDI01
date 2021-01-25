@@ -69,6 +69,8 @@ public class AuthenticateBusiness {
 		studentDaoObject.addStudent(student, password);
 		logger.info("=======================REGISTERED=======================");
 		logger.info("Added user into Student Table\n");
+		int userid=userDaoObject.lastEntry();
+		student.setUserId(userid);
 		logger.info(student.getUserId());
 		notificationSystemDaoObject.notifyUser(student.getUserId(), "Successfully Registerd!");
 		return true;
