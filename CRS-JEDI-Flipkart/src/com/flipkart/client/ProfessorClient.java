@@ -76,7 +76,7 @@ public class ProfessorClient {
 			int studentId = sc.nextInt();
 			// Chceck if student is enrolled in the course
 			if(studentBusinessObject.checkValidCourseForStudent(studentId, courseId)) {
-				logger.info("Enter grade: (A,B,C,D,E)");
+				logger.info("Enter grade: \n (A,B,C,D,E)\n");
 				sc.nextLine();
 				Grade grade = Grade.valueOf(sc.nextLine());
 				professorBusinessObject.gradeStudent(courseId, studentId, grade);
@@ -91,12 +91,14 @@ public class ProfessorClient {
 	
 	// Display Available Features
 	public void printChoices() {
+		logger.info("=========================PROFESSOR=========================");
 		logger.info("Enter your choice:");
 		logger.info("1. To view available courses");
 		logger.info("2. To view courses assigned");
 		logger.info("3. To view students in a course");
 		logger.info("4. Grade a student");
 		logger.info("0. To logout");
+		logger.info("===========================================================");
 	}
 
 }
