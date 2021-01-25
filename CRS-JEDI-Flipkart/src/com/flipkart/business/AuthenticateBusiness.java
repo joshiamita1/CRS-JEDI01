@@ -27,7 +27,7 @@ public class AuthenticateBusiness {
 	
 	// Private Constructor
 	private AuthenticateBusiness() {
-		logger.info("Constructor of Authenticate Business");
+		//logger.info("Constructor of Authenticate Business");
 	}
 	
 	// Get Instance of the class
@@ -58,15 +58,16 @@ public class AuthenticateBusiness {
 	}
 	
 	public void testing() {
-		logger.info("SSSS");
-		logger.debug("DEbugging");
-		System.out.print("Checking");
+		//logger.info("SSSS");
+		//logger.debug("DEbugging");
+		//System.out.print("Checking");
 	}
 	
 	// Register Student in Database
 	public boolean registerStudent(Student student, String password) {
 		
 		studentDaoObject.addStudent(student, password);
+		logger.info("=======================REGISTERED=======================");
 		logger.info("Added user into Student Table\n");
 		logger.info(student.getUserId());
 		notificationSystemDaoObject.notifyUser(student.getUserId(), "Successfully Registerd!");
@@ -76,6 +77,7 @@ public class AuthenticateBusiness {
 	// Register Admin in Database
 	public boolean registerAdmin(User admin, String password) {
 		adminDaoObject.addAdmin(admin, password);
+		logger.info("=======================REGISTERED=======================");
 		logger.info("Added user into Admin Table\n");
 		return true;
 	}
@@ -83,6 +85,7 @@ public class AuthenticateBusiness {
 	// Register Professor in Database
 	public boolean registerProfessor(User user, String password, Department department) {
 		professorDaoObject.addProfessor(user, password, department);
+		logger.info("=======================REGISTERED=======================");
 		logger.info("Added user into Professor Table\n");
 		return true;
 	}
