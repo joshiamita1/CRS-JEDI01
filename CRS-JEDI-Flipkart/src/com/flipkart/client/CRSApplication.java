@@ -1,38 +1,57 @@
 package com.flipkart.client;
 
 import org.apache.log4j.Logger;
-
 import com.flipkart.constant.Department;
 import com.flipkart.constant.Gender;
 import com.flipkart.bean.Student;
 import com.flipkart.business.*;
 import com.flipkart.constant.Role;
 import com.flipkart.dao.UserDaoImpl;
-
 import java.util.*;
-public class UserClient {
+
+
+/**
+ * @author JEDI01
+ *
+ */
+public class CRSApplication {
 	
-	// Logger Object
-	private static Logger logger = Logger.getLogger(UserClient.class);
+	/**
+	 * Logger Object
+	 */
+	private static Logger logger = Logger.getLogger(CRSApplication.class);
 	
-	// Scanner Class
+	/**
+	 * Scanner Object
+	 */
 	static Scanner sc = new Scanner(System.in);
 		
-	// Professor Client Menu Object
-	ProfessorClient professorClient = new ProfessorClient();
+	/**
+	 * Professor Client Menu Object
+	 */
+	CRSProfessorClient CRSProfessorClient = new CRSProfessorClient();
 	
-	// Student Client Menu Object
-	StudentClient studentClient = new StudentClient();
+	/**
+	 * Student Client Menu Object
+	 */
+	CRSStudentClient studentClient = new CRSStudentClient();
 	
-	// Admin Client Menu Object
-	AdminClient adminClient = new AdminClient();
+	/**
+	 * Admin Client Menu Object
+	 */
+	CRSAdminClient CRSAdminClient = new CRSAdminClient();
 	
 	
-	// Authenticate Business Object
+	/**
+	 * Authenticate Business Object
+	 */
 	AuthenticateBusiness authenticateBusinessObject = AuthenticateBusiness.getInstance();
 	
 	
-	// Enter Point of the Application
+	/**
+	 * @param args
+	 * Main Enter Point of the Application
+	 */
 	public static void main(String[]args) {
 		logger.info("================COURSE REGISTRATION SYSTEM================");
 		logger.info("Welcome to the Course Registration System");
@@ -43,7 +62,9 @@ public class UserClient {
 		logger.info("========================EXITING CRS=======================");		
 	}
 	
-	// Display Login Portal
+	/**
+	 * Display Login Portal
+	 */
 	public static void showUserMenu() {
 		boolean showMenu=true;
 		int choice;
@@ -56,10 +77,10 @@ public class UserClient {
 			choice = Integer.parseInt(sc.nextLine());
 			switch(choice) {
 				case 1:
-					new UserClient().getInputLogin();
+					new CRSApplication().getInputLogin();
 					break;
 				case 2:
-					new UserClient().getInputRegister();
+					new CRSApplication().getInputRegister();
 					break;
 				default:
 					showMenu = false;
@@ -70,7 +91,9 @@ public class UserClient {
 		
 	}
 	
-	// Taking input for login
+	/**
+	 * Taking input for login
+	 */
 	public void getInputLogin() {
 		logger.info("Enter User Id");
 		int userId = Integer.parseInt(sc.nextLine());
@@ -79,7 +102,11 @@ public class UserClient {
 		login(userId, password);
 	}
 	
-	// Logging in
+	/**
+	 * @param userId
+	 * @param password
+	 * Logging in
+	 */
 	public void login(int userId, String password) {
 		if(authenticateBusinessObject.validLogin(userId, password)) {
 			Role role = authenticateBusinessObject.getRole(userId, password);
@@ -87,11 +114,11 @@ public class UserClient {
 			switch(role) {
 			case ADMIN :
 				logger.info("Successfully Logged in as Admin");
-				adminClient.displayMenu(userId);
+				CRSAdminClient.displayMenu(userId);
 				break;
 			case PROFESSOR:
 				logger.info("Successfully Logged in as Professor");
-				professorClient.displayMenu(userId);
+				CRSProfessorClient.displayMenu(userId);
 				break;
 			case STUDENT:
 				logger.info("Successfully Logged in as Student");
@@ -103,7 +130,9 @@ public class UserClient {
 		}
 	}
 
-	// Taking input for registering
+	/**
+	 * Taking input for registering
+	 */
 	void getInputRegister() {
 		Student student = new Student();
 		String password;
@@ -135,6 +164,8 @@ public class UserClient {
 		logger.info("Enter Country");
 		student.setCountry(sc.nextLine());
 		student.setAmountPayable(0);
+		
+		
 		
 		if(authenticateBusinessObject.registerStudent(student, password)) {
 			UserDaoImpl temp =  UserDaoImpl.getInstance();

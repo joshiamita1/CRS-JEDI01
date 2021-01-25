@@ -4,6 +4,10 @@
 package com.flipkart.constant;
 
 
+/**
+ * @author JEDI01
+ *
+ */
 public class SQLQueriesConstant{
 	
 	//General Queries
@@ -26,7 +30,7 @@ public class SQLQueriesConstant{
 	public static String VIEW_COURSE_PROF_COUNT_QUERY = "select count(*) as pcCount from Coursecatalog where courseId=? AND ProfessorId=?";
 	public static String VIEW_PROFESSOR_DETAIL_QUERY = "select * from Coursecatalog where ProfessorId=?";
 	public static String VIEW_COURSEINCATALOG_QUERY = "select courseId from Coursecatalog where CatalogId=?";
-	public static String ADD_NEW_COURSE_QUERY = "insert into Coursecatalog (CatalogID, courseId, CatalogDetail, ProfessorId, courseName) values (?, ?, ?, ?, ?)";
+	public static String ADD_NEW_COURSE_QUERY = "insert into Coursecatalog (CatalogID, courseId, CatalogDetail, ProfessorId, courseName) values (?, ?, ?, null, ?)";
 	public static String VIEW_COURSEGRADES_QUERY = "select * from RegisteredCourse where CourseId=?";
 	public static String DELETE_COURSE_QUERY = "delete from Coursecatalog where CourseId = ? ";
 	public static String UPDATE_COURSE_QUERY = "update Coursecatalog SET ProfessorId=?, courseName=? WHERE courseId = ?";

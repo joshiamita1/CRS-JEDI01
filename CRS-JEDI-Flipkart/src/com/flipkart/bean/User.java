@@ -3,6 +3,11 @@ package com.flipkart.bean;
 import com.flipkart.constant.Gender;
 import com.flipkart.constant.Role;
 
+
+/**
+ * @author JEDI01
+ *
+ */
 public class User {
 	// Id of the user
 	int userId;

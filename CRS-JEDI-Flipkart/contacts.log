@@ -3551,3 +3551,1088 @@ Student Namedfasf
 10:42:45,559  INFO ProfessorClient,main:97 - 3. To view students in a course
 10:42:45,559  INFO ProfessorClient,main:98 - 4. Grade a student
 10:42:45,559  INFO ProfessorClient,main:99 - 0. To logout
+10:45:12,645  INFO UserClient,main:37 - Welcome to the Course Registration System
+10:45:12,650  INFO UserClient,main:50 - ======User Menu=====
+10:45:12,651  INFO UserClient,main:51 - Enter 1 to Login
+10:45:12,653  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+10:45:12,654  INFO UserClient,main:53 - Enter any other number to exit CRS
+10:45:18,360  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+10:45:18,361  INFO UserClient,main:73 - Enter User Id
+10:45:29,210  INFO UserClient,main:75 - Enter User Password
+10:45:44,616  INFO UserDaoImpl,main:180 - 2
+10:45:44,664  INFO UserDaoImpl,main:188 - dsf
+10:45:44,664  INFO UserClient,main:100 - Invalid Credentials
+10:45:44,665  INFO UserClient,main:50 - ======User Menu=====
+10:45:44,665  INFO UserClient,main:51 - Enter 1 to Login
+10:45:44,665  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+10:45:44,665  INFO UserClient,main:53 - Enter any other number to exit CRS
+10:45:45,951  INFO UserClient,main:73 - Enter User Id
+10:45:46,795  INFO UserClient,main:75 - Enter User Password
+10:45:48,716  INFO UserDaoImpl,main:180 - 2
+10:45:48,719  INFO UserDaoImpl,main:188 - dsf
+10:45:48,723  INFO UserClient,main:84 - Welcome User ID : 2
+10:45:48,724  INFO UserClient,main:95 - Successfully Logged in as Student
+10:45:48,724  INFO StudentClient,main:61 - Enter your choice:
+10:45:48,725  INFO StudentClient,main:62 - 1. To view available courses
+10:45:48,726  INFO StudentClient,main:63 - 2. To register a course
+10:45:48,726  INFO StudentClient,main:64 - 3. To drop a course
+10:45:48,726  INFO StudentClient,main:65 - 4. View registered courses
+10:45:48,727  INFO StudentClient,main:66 - 5. Pay fees
+10:45:48,727  INFO StudentClient,main:67 - 6. Print Report Card
+10:45:48,728  INFO StudentClient,main:68 - 0. To logout
+10:45:51,597  INFO CourseCatalogBusiness,main:34 - Course Id	Course Name
+10:45:51,598  INFO CourseCatalogDaoImpl,main:136 - get data for 2
+10:45:51,601  INFO CourseCatalogDaoImpl,main:147 - heredIGITAL DESIGN
+10:45:51,602  INFO CourseCatalogBusiness,main:37 - 2		 dIGITAL DESIGN
+10:45:51,603  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:45:51,605  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:45:51,605  INFO CourseCatalogBusiness,main:37 - 12		 LL
+10:45:51,606  INFO StudentClient,main:61 - Enter your choice:
+10:45:51,606  INFO StudentClient,main:62 - 1. To view available courses
+10:45:51,606  INFO StudentClient,main:63 - 2. To register a course
+10:45:51,606  INFO StudentClient,main:64 - 3. To drop a course
+10:45:51,607  INFO StudentClient,main:65 - 4. View registered courses
+10:45:51,607  INFO StudentClient,main:66 - 5. Pay fees
+10:45:51,607  INFO StudentClient,main:67 - 6. Print Report Card
+10:45:51,607  INFO StudentClient,main:68 - 0. To logout
+10:46:25,814  INFO UserClient,main:37 - Welcome to the Course Registration System
+10:46:25,816  INFO UserClient,main:50 - ======User Menu=====
+10:46:25,816  INFO UserClient,main:51 - Enter 1 to Login
+10:46:25,817  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+10:46:25,818  INFO UserClient,main:53 - Enter any other number to exit CRS
+10:46:28,143  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+10:46:28,144  INFO UserClient,main:73 - Enter User Id
+10:46:30,636  INFO UserClient,main:75 - Enter User Password
+10:46:33,504  INFO UserDaoImpl,main:180 - 2
+10:46:33,554  INFO UserDaoImpl,main:188 - dsf
+10:46:33,557  INFO UserClient,main:84 - Welcome User ID : 2
+10:46:33,557  INFO UserClient,main:95 - Successfully Logged in as Student
+10:46:33,558  INFO StudentClient,main:61 - Enter your choice:
+10:46:33,558  INFO StudentClient,main:62 - 1. To view available courses
+10:46:33,558  INFO StudentClient,main:63 - 2. To register a course
+10:46:33,558  INFO StudentClient,main:64 - 3. To drop a course
+10:46:33,559  INFO StudentClient,main:65 - 4. View registered courses
+10:46:33,559  INFO StudentClient,main:66 - 5. Pay fees
+10:46:33,559  INFO StudentClient,main:67 - 6. Print Report Card
+10:46:33,560  INFO StudentClient,main:68 - 0. To logout
+10:46:35,823  INFO StudentClient,main:77 - Enter course id
+10:46:48,065  INFO StudentClient,main:81 - You are already Registered for this course
+10:46:48,065  INFO StudentClient,main:61 - Enter your choice:
+10:46:48,065  INFO StudentClient,main:62 - 1. To view available courses
+10:46:48,065  INFO StudentClient,main:63 - 2. To register a course
+10:46:48,065  INFO StudentClient,main:64 - 3. To drop a course
+10:46:48,066  INFO StudentClient,main:65 - 4. View registered courses
+10:46:48,066  INFO StudentClient,main:66 - 5. Pay fees
+10:46:48,066  INFO StudentClient,main:67 - 6. Print Report Card
+10:46:48,066  INFO StudentClient,main:68 - 0. To logout
+10:46:55,370  INFO StudentClient,main:94 - Enter the course ID
+10:46:57,798  INFO StudentDaoImpl,main:247 - Dropped Course sucessfully
+10:46:57,799  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:46:57,801  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:46:57,860  INFO StudentDaoImpl,main:114 -  Student Details Retrieved sucessfully
+10:46:57,861  INFO StudentBusiness,main:80 - Removed Course LL from dfasf's Syllabus
+10:46:57,861  INFO StudentClient,main:61 - Enter your choice:
+10:46:57,861  INFO StudentClient,main:62 - 1. To view available courses
+10:46:57,861  INFO StudentClient,main:63 - 2. To register a course
+10:46:57,861  INFO StudentClient,main:64 - 3. To drop a course
+10:46:57,861  INFO StudentClient,main:65 - 4. View registered courses
+10:46:57,862  INFO StudentClient,main:66 - 5. Pay fees
+10:46:57,862  INFO StudentClient,main:67 - 6. Print Report Card
+10:46:57,862  INFO StudentClient,main:68 - 0. To logout
+10:47:00,221  INFO StudentClient,main:77 - Enter course id
+10:47:01,457  INFO CourseCatalogBusiness,main:67 - Number of the students registered in course : 12 are 0.
+10:47:02,351  INFO StudentDaoImpl,main:221 - Added to Registered Course sucessfully
+10:47:02,352  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:47:02,353  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:47:02,356  INFO StudentDaoImpl,main:114 -  Student Details Retrieved sucessfully
+10:47:02,356  INFO StudentBusiness,main:67 - Added Course LL in dfasf's Syllabus
+10:47:02,479  INFO FeePaymentDaoImpl,main:59 - Fees Calculated sucessfully
+10:47:02,802  INFO FeePaymentDaoImpl,main:116 - Fee payment successfull
+10:47:02,992  INFO FeePaymentDaoImpl,main:138 -  Post Payment FeesUpdated sucessfully
+10:47:02,993  INFO StudentClient,main:61 - Enter your choice:
+10:47:02,993  INFO StudentClient,main:62 - 1. To view available courses
+10:47:02,993  INFO StudentClient,main:63 - 2. To register a course
+10:47:02,993  INFO StudentClient,main:64 - 3. To drop a course
+10:47:02,993  INFO StudentClient,main:65 - 4. View registered courses
+10:47:02,993  INFO StudentClient,main:66 - 5. Pay fees
+10:47:02,993  INFO StudentClient,main:67 - 6. Print Report Card
+10:47:02,993  INFO StudentClient,main:68 - 0. To logout
+10:47:23,241  INFO StudentClient,main:94 - Enter the course ID
+10:47:24,831  INFO StudentDaoImpl,main:247 - Dropped Course sucessfully
+10:47:24,831  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:47:24,834  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:47:24,836  INFO StudentDaoImpl,main:114 -  Student Details Retrieved sucessfully
+10:47:24,836  INFO StudentBusiness,main:80 - Removed Course LL from dfasf's Syllabus
+10:47:24,836  INFO StudentClient,main:61 - Enter your choice:
+10:47:24,836  INFO StudentClient,main:62 - 1. To view available courses
+10:47:24,836  INFO StudentClient,main:63 - 2. To register a course
+10:47:24,836  INFO StudentClient,main:64 - 3. To drop a course
+10:47:24,836  INFO StudentClient,main:65 - 4. View registered courses
+10:47:24,836  INFO StudentClient,main:66 - 5. Pay fees
+10:47:24,837  INFO StudentClient,main:67 - 6. Print Report Card
+10:47:24,837  INFO StudentClient,main:68 - 0. To logout
+10:48:17,757  INFO StudentClient,main:77 - Enter course id
+10:48:19,387  INFO CourseCatalogBusiness,main:67 - Number of the students registered in course : 12 are 0.
+10:48:19,865  INFO StudentDaoImpl,main:221 - Added to Registered Course sucessfully
+10:48:19,866  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:48:19,867  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:48:19,868  INFO StudentDaoImpl,main:114 -  Student Details Retrieved sucessfully
+10:48:19,869  INFO StudentBusiness,main:67 - Added Course LL in dfasf's Syllabus
+10:48:20,195  INFO FeePaymentDaoImpl,main:59 - Fees Calculated sucessfully
+10:48:20,323  INFO FeePaymentDaoImpl,main:116 - Fee payment successfull
+10:48:20,523  INFO FeePaymentDaoImpl,main:138 -  Post Payment FeesUpdated sucessfully
+10:48:20,523  INFO StudentClient,main:61 - Enter your choice:
+10:48:20,523  INFO StudentClient,main:62 - 1. To view available courses
+10:48:20,523  INFO StudentClient,main:63 - 2. To register a course
+10:48:20,523  INFO StudentClient,main:64 - 3. To drop a course
+10:48:20,524  INFO StudentClient,main:65 - 4. View registered courses
+10:48:20,524  INFO StudentClient,main:66 - 5. Pay fees
+10:48:20,524  INFO StudentClient,main:67 - 6. Print Report Card
+10:48:20,524  INFO StudentClient,main:68 - 0. To logout
+10:48:35,563  INFO StudentBusiness,main:55 - Course Id	Course Name
+10:48:35,565  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:48:35,568  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:48:35,569  INFO StudentBusiness,main:58 - 12	 LL
+10:48:35,569  INFO StudentClient,main:61 - Enter your choice:
+10:48:35,569  INFO StudentClient,main:62 - 1. To view available courses
+10:48:35,569  INFO StudentClient,main:63 - 2. To register a course
+10:48:35,570  INFO StudentClient,main:64 - 3. To drop a course
+10:48:35,570  INFO StudentClient,main:65 - 4. View registered courses
+10:48:35,570  INFO StudentClient,main:66 - 5. Pay fees
+10:48:35,570  INFO StudentClient,main:67 - 6. Print Report Card
+10:48:35,571  INFO StudentClient,main:68 - 0. To logout
+10:52:31,250  INFO FeePaymentDaoImpl,main:59 - Fees Calculated sucessfully
+10:52:31,250  INFO StudentClient,main:115 - Pending Fees = 50000.0INR-/ only!
+10:52:31,251  INFO StudentClient,main:116 - Please Choose Mode of the Payment
+1. To pay with Credit Card
+2. To pay using cash 
+3. To pay using Net Banking
+10:53:27,973  INFO FeePaymentDaoImpl,main:116 - Fee payment successfull
+10:53:27,978  INFO FeePaymentDaoImpl,main:138 -  Post Payment FeesUpdated sucessfully
+10:53:27,981  INFO NotificationSystemDaoImpl,main:40 - statement is com.mysql.cj.jdbc.ClientPreparedStatement: insert into notificationsystem (UserID , Message, TimeNotified) values (2, 'Fees of 50000.0 Paid Successfully!','2021-01-25 10:53:27.979')
+10:53:28,132  INFO NotificationSystemDaoImpl,main:43 - Notification sent sucessfully
+10:53:28,133  INFO StudentClient,main:61 - Enter your choice:
+10:53:28,133  INFO StudentClient,main:62 - 1. To view available courses
+10:53:28,133  INFO StudentClient,main:63 - 2. To register a course
+10:53:28,133  INFO StudentClient,main:64 - 3. To drop a course
+10:53:28,134  INFO StudentClient,main:65 - 4. View registered courses
+10:53:28,134  INFO StudentClient,main:66 - 5. Pay fees
+10:53:28,134  INFO StudentClient,main:67 - 6. Print Report Card
+10:53:28,134  INFO StudentClient,main:68 - 0. To logout
+10:53:48,240  INFO FeePaymentDaoImpl,main:59 - Fees Calculated sucessfully
+10:53:48,240  INFO StudentClient,main:115 - Pending Fees = 50000.0INR-/ only!
+10:53:48,241  INFO StudentClient,main:116 - Please Choose Mode of the Payment
+1. To pay with Credit Card
+2. To pay using cash 
+3. To pay using Net Banking
+10:53:52,791  INFO FeePaymentDaoImpl,main:116 - Fee payment successfull
+10:53:52,794  INFO FeePaymentDaoImpl,main:138 -  Post Payment FeesUpdated sucessfully
+10:53:52,795  INFO NotificationSystemDaoImpl,main:40 - statement is com.mysql.cj.jdbc.ClientPreparedStatement: insert into notificationsystem (UserID , Message, TimeNotified) values (2, 'Fees of 50000.0 Paid Successfully!','2021-01-25 10:53:52.795')
+10:53:52,895  INFO NotificationSystemDaoImpl,main:43 - Notification sent sucessfully
+10:53:52,896  INFO StudentClient,main:61 - Enter your choice:
+10:53:52,897  INFO StudentClient,main:62 - 1. To view available courses
+10:53:52,897  INFO StudentClient,main:63 - 2. To register a course
+10:53:52,897  INFO StudentClient,main:64 - 3. To drop a course
+10:53:52,898  INFO StudentClient,main:65 - 4. View registered courses
+10:53:52,898  INFO StudentClient,main:66 - 5. Pay fees
+10:53:52,898  INFO StudentClient,main:67 - 6. Print Report Card
+10:53:52,898  INFO StudentClient,main:68 - 0. To logout
+10:54:48,993  INFO FeePaymentDaoImpl,main:59 - Fees Calculated sucessfully
+10:54:48,994  INFO StudentClient,main:115 - Pending Fees = 50000.0INR-/ only!
+10:54:48,994  INFO StudentClient,main:116 - Please Choose Mode of the Payment
+1. To pay with Credit Card
+2. To pay using cash 
+3. To pay using Net Banking
+10:54:51,497  INFO FeePaymentDaoImpl,main:116 - Fee payment successfull
+10:54:51,499  INFO FeePaymentDaoImpl,main:138 -  Post Payment FeesUpdated sucessfully
+10:54:51,500  INFO NotificationSystemDaoImpl,main:40 - statement is com.mysql.cj.jdbc.ClientPreparedStatement: insert into notificationsystem (UserID , Message, TimeNotified) values (2, 'Fees of 50000.0 Paid Successfully!','2021-01-25 10:54:51.5')
+10:54:51,706  INFO NotificationSystemDaoImpl,main:43 - Notification sent sucessfully
+10:54:51,707  INFO StudentClient,main:61 - Enter your choice:
+10:54:51,707  INFO StudentClient,main:62 - 1. To view available courses
+10:54:51,707  INFO StudentClient,main:63 - 2. To register a course
+10:54:51,707  INFO StudentClient,main:64 - 3. To drop a course
+10:54:51,707  INFO StudentClient,main:65 - 4. View registered courses
+10:54:51,707  INFO StudentClient,main:66 - 5. Pay fees
+10:54:51,708  INFO StudentClient,main:67 - 6. Print Report Card
+10:54:51,708  INFO StudentClient,main:68 - 0. To logout
+10:55:13,134  INFO StudentClient,main:94 - Enter the course ID
+10:55:14,319  INFO StudentDaoImpl,main:247 - Dropped Course sucessfully
+10:55:14,320  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:55:14,407  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:55:14,409  INFO StudentDaoImpl,main:114 -  Student Details Retrieved sucessfully
+10:55:14,409  INFO StudentBusiness,main:80 - Removed Course LL from dfasf's Syllabus
+10:55:14,409  INFO StudentClient,main:61 - Enter your choice:
+10:55:14,409  INFO StudentClient,main:62 - 1. To view available courses
+10:55:14,409  INFO StudentClient,main:63 - 2. To register a course
+10:55:14,409  INFO StudentClient,main:64 - 3. To drop a course
+10:55:14,409  INFO StudentClient,main:65 - 4. View registered courses
+10:55:14,409  INFO StudentClient,main:66 - 5. Pay fees
+10:55:14,409  INFO StudentClient,main:67 - 6. Print Report Card
+10:55:14,410  INFO StudentClient,main:68 - 0. To logout
+10:55:16,510  INFO StudentClient,main:77 - Enter course id
+10:55:17,480  INFO CourseCatalogBusiness,main:67 - Number of the students registered in course : 12 are 0.
+10:55:17,663  INFO StudentDaoImpl,main:221 - Added to Registered Course sucessfully
+10:55:17,663  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:55:17,664  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:55:17,666  INFO StudentDaoImpl,main:114 -  Student Details Retrieved sucessfully
+10:55:17,666  INFO StudentBusiness,main:67 - Added Course LL in dfasf's Syllabus
+10:55:17,671  INFO FeePaymentDaoImpl,main:59 - Fees Calculated sucessfully
+10:55:17,794  INFO FeePaymentDaoImpl,main:116 - Fee payment successfull
+10:55:17,921  INFO FeePaymentDaoImpl,main:138 -  Post Payment FeesUpdated sucessfully
+10:55:17,922  INFO StudentClient,main:61 - Enter your choice:
+10:55:17,922  INFO StudentClient,main:62 - 1. To view available courses
+10:55:17,922  INFO StudentClient,main:63 - 2. To register a course
+10:55:17,922  INFO StudentClient,main:64 - 3. To drop a course
+10:55:17,922  INFO StudentClient,main:65 - 4. View registered courses
+10:55:17,922  INFO StudentClient,main:66 - 5. Pay fees
+10:55:17,923  INFO StudentClient,main:67 - 6. Print Report Card
+10:55:17,923  INFO StudentClient,main:68 - 0. To logout
+10:55:19,979  INFO FeePaymentDaoImpl,main:59 - Fees Calculated sucessfully
+10:55:19,980  INFO StudentClient,main:115 - Pending Fees = 50000.0INR-/ only!
+10:55:19,980  INFO StudentClient,main:116 - Please Choose Mode of the Payment
+1. To pay with Credit Card
+2. To pay using cash 
+3. To pay using Net Banking
+10:55:21,251  INFO FeePaymentDaoImpl,main:116 - Fee payment successfull
+10:55:21,253  INFO FeePaymentDaoImpl,main:138 -  Post Payment FeesUpdated sucessfully
+10:55:21,254  INFO NotificationSystemDaoImpl,main:40 - statement is com.mysql.cj.jdbc.ClientPreparedStatement: insert into notificationsystem (UserID , Message, TimeNotified) values (2, 'Fees of 50000.0 Paid Successfully!','2021-01-25 10:55:21.254')
+10:55:21,401  INFO NotificationSystemDaoImpl,main:43 - Notification sent sucessfully
+10:55:21,402  INFO StudentClient,main:61 - Enter your choice:
+10:55:21,402  INFO StudentClient,main:62 - 1. To view available courses
+10:55:21,402  INFO StudentClient,main:63 - 2. To register a course
+10:55:21,402  INFO StudentClient,main:64 - 3. To drop a course
+10:55:21,402  INFO StudentClient,main:65 - 4. View registered courses
+10:55:21,402  INFO StudentClient,main:66 - 5. Pay fees
+10:55:21,403  INFO StudentClient,main:67 - 6. Print Report Card
+10:55:21,403  INFO StudentClient,main:68 - 0. To logout
+10:58:17,978  INFO StudentClient,main:94 - Enter the course ID
+10:58:19,454  INFO StudentDaoImpl,main:247 - Dropped Course sucessfully
+10:58:19,455  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:58:19,524  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:58:19,643  INFO StudentDaoImpl,main:114 -  Student Details Retrieved sucessfully
+10:58:19,643  INFO StudentBusiness,main:80 - Removed Course LL from dfasf's Syllabus
+10:58:19,644  INFO StudentClient,main:61 - Enter your choice:
+10:58:19,644  INFO StudentClient,main:62 - 1. To view available courses
+10:58:19,644  INFO StudentClient,main:63 - 2. To register a course
+10:58:19,644  INFO StudentClient,main:64 - 3. To drop a course
+10:58:19,645  INFO StudentClient,main:65 - 4. View registered courses
+10:58:19,645  INFO StudentClient,main:66 - 5. Pay fees
+10:58:19,645  INFO StudentClient,main:67 - 6. Print Report Card
+10:58:19,645  INFO StudentClient,main:68 - 0. To logout
+10:58:22,197  INFO StudentClient,main:77 - Enter course id
+10:58:23,749  INFO CourseCatalogBusiness,main:67 - Number of the students registered in course : 12 are 0.
+10:58:23,843  INFO StudentDaoImpl,main:221 - Added to Registered Course sucessfully
+10:58:23,843  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:58:23,845  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:58:23,846  INFO StudentDaoImpl,main:114 -  Student Details Retrieved sucessfully
+10:58:23,847  INFO StudentBusiness,main:67 - Added Course LL in dfasf's Syllabus
+10:58:23,855  INFO FeePaymentDaoImpl,main:59 - Fees Calculated sucessfully
+10:58:24,159  INFO FeePaymentDaoImpl,main:116 - Fee payment successfull
+10:58:24,296  INFO FeePaymentDaoImpl,main:138 -  Post Payment FeesUpdated sucessfully
+10:58:24,296  INFO StudentClient,main:61 - Enter your choice:
+10:58:24,296  INFO StudentClient,main:62 - 1. To view available courses
+10:58:24,296  INFO StudentClient,main:63 - 2. To register a course
+10:58:24,296  INFO StudentClient,main:64 - 3. To drop a course
+10:58:24,297  INFO StudentClient,main:65 - 4. View registered courses
+10:58:24,297  INFO StudentClient,main:66 - 5. Pay fees
+10:58:24,297  INFO StudentClient,main:67 - 6. Print Report Card
+10:58:24,297  INFO StudentClient,main:68 - 0. To logout
+11:03:06,870  INFO UserClient,main:37 - Welcome to the Course Registration System
+11:03:06,874  INFO UserClient,main:50 - ======User Menu=====
+11:03:06,874  INFO UserClient,main:51 - Enter 1 to Login
+11:03:06,874  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+11:03:06,875  INFO UserClient,main:53 - Enter any other number to exit CRS
+11:03:11,295  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+11:03:11,295  INFO UserClient,main:73 - Enter User Id
+11:03:13,201  INFO UserClient,main:75 - Enter User Password
+11:03:14,281  INFO UserDaoImpl,main:180 - 1
+11:03:14,353  INFO UserDaoImpl,main:188 - admin1
+11:03:14,356  INFO UserClient,main:84 - Welcome User ID : 1
+11:03:14,356  INFO UserClient,main:87 - Successfully Logged in as Admin
+11:03:14,356  INFO AdminClient,main:100 - Enter your choice:
+11:03:14,357  INFO AdminClient,main:101 - 1. To view courses in catalog
+11:03:14,357  INFO AdminClient,main:102 - 2. View All Courses
+11:03:14,357  INFO AdminClient,main:103 - 3. To view users of Specific Role
+11:03:14,357  INFO AdminClient,main:104 - 4. Assign course to a professor
+11:03:14,357  INFO AdminClient,main:105 - 5. Register a new user
+11:03:14,357  INFO AdminClient,main:106 - 6. Delete a user
+11:03:14,358  INFO AdminClient,main:107 - 7. Add a new course to catalog
+11:03:14,358  INFO AdminClient,main:108 - 8. Drop a course from catalog
+11:03:14,358  INFO AdminClient,main:109 - 9. Approve student
+11:03:14,359  INFO AdminClient,main:110 - 0. To logout
+11:03:18,836  INFO AdminClient,main:180 - Enter Course ID
+11:03:22,702  INFO AdminClient,main:183 - Enter Course Name
+11:03:25,517  INFO AdminClient,main:185 - Enter catalog ID
+11:03:27,930  INFO AdminClient,main:187 - Enter professorId or -1 if not assigned
+11:03:32,334  INFO CourseCatalogDaoImpl,main:51 - 1 course added
+11:03:32,334  INFO CourseCatalogBusiness,main:55 - Added Course in the table.
+11:03:32,334  INFO AdminClient,main:100 - Enter your choice:
+11:03:32,334  INFO AdminClient,main:101 - 1. To view courses in catalog
+11:03:32,335  INFO AdminClient,main:102 - 2. View All Courses
+11:03:32,335  INFO AdminClient,main:103 - 3. To view users of Specific Role
+11:03:32,335  INFO AdminClient,main:104 - 4. Assign course to a professor
+11:03:32,335  INFO AdminClient,main:105 - 5. Register a new user
+11:03:32,335  INFO AdminClient,main:106 - 6. Delete a user
+11:03:32,335  INFO AdminClient,main:107 - 7. Add a new course to catalog
+11:03:32,335  INFO AdminClient,main:108 - 8. Drop a course from catalog
+11:03:32,335  INFO AdminClient,main:109 - 9. Approve student
+11:03:32,335  INFO AdminClient,main:110 - 0. To logout
+11:04:04,730  INFO AdminClient,main:195 - Enter Course ID
+11:04:17,413  INFO CourseCatalogDaoImpl,main:71 - 1 course(s) deleted
+11:04:17,413  INFO CourseCatalogBusiness,main:61 - Delete course from the table.
+11:04:17,413  INFO AdminClient,main:100 - Enter your choice:
+11:04:17,414  INFO AdminClient,main:101 - 1. To view courses in catalog
+11:04:17,414  INFO AdminClient,main:102 - 2. View All Courses
+11:04:17,414  INFO AdminClient,main:103 - 3. To view users of Specific Role
+11:04:17,414  INFO AdminClient,main:104 - 4. Assign course to a professor
+11:04:17,414  INFO AdminClient,main:105 - 5. Register a new user
+11:04:17,415  INFO AdminClient,main:106 - 6. Delete a user
+11:04:17,415  INFO AdminClient,main:107 - 7. Add a new course to catalog
+11:04:17,415  INFO AdminClient,main:108 - 8. Drop a course from catalog
+11:04:17,415  INFO AdminClient,main:109 - 9. Approve student
+11:04:17,415  INFO AdminClient,main:110 - 0. To logout
+11:05:18,485  INFO AdminClient,main:180 - Enter Course ID
+11:05:20,244  INFO AdminClient,main:183 - Enter Course Name
+11:05:22,038  INFO AdminClient,main:185 - Enter catalog ID
+11:05:23,964  INFO AdminClient,main:187 - Enter professorId or -1 if not assigned
+11:05:25,385 ERROR CourseCatalogDaoImpl,main:53 - Cannot add or update a child row: a foreign key constraint fails (`temp`.`coursecatalog`, CONSTRAINT `coursecatalog_ibfk_1` FOREIGN KEY (`ProfessorID`) REFERENCES `professor` (`ProfessorID`) ON DELETE SET NULL ON UPDATE CASCADE)
+11:05:25,386  INFO CourseCatalogBusiness,main:55 - Added Course in the table.
+11:05:25,386  INFO AdminClient,main:100 - Enter your choice:
+11:05:25,386  INFO AdminClient,main:101 - 1. To view courses in catalog
+11:05:25,386  INFO AdminClient,main:102 - 2. View All Courses
+11:05:25,386  INFO AdminClient,main:103 - 3. To view users of Specific Role
+11:05:25,386  INFO AdminClient,main:104 - 4. Assign course to a professor
+11:05:25,387  INFO AdminClient,main:105 - 5. Register a new user
+11:05:25,387  INFO AdminClient,main:106 - 6. Delete a user
+11:05:25,387  INFO AdminClient,main:107 - 7. Add a new course to catalog
+11:05:25,387  INFO AdminClient,main:108 - 8. Drop a course from catalog
+11:05:25,387  INFO AdminClient,main:109 - 9. Approve student
+11:05:25,388  INFO AdminClient,main:110 - 0. To logout
+11:05:28,321  INFO AdminClient,main:180 - Enter Course ID
+11:05:30,653  INFO AdminClient,main:183 - Enter Course Name
+11:05:32,878  INFO AdminClient,main:185 - Enter catalog ID
+11:05:36,251  INFO AdminClient,main:187 - Enter professorId or -1 if not assigned
+11:05:38,070 ERROR CourseCatalogDaoImpl,main:53 - Cannot add or update a child row: a foreign key constraint fails (`temp`.`coursecatalog`, CONSTRAINT `coursecatalog_ibfk_1` FOREIGN KEY (`ProfessorID`) REFERENCES `professor` (`ProfessorID`) ON DELETE SET NULL ON UPDATE CASCADE)
+11:05:38,070  INFO CourseCatalogBusiness,main:55 - Added Course in the table.
+11:05:38,070  INFO AdminClient,main:100 - Enter your choice:
+11:05:38,070  INFO AdminClient,main:101 - 1. To view courses in catalog
+11:05:38,070  INFO AdminClient,main:102 - 2. View All Courses
+11:05:38,070  INFO AdminClient,main:103 - 3. To view users of Specific Role
+11:05:38,071  INFO AdminClient,main:104 - 4. Assign course to a professor
+11:05:38,071  INFO AdminClient,main:105 - 5. Register a new user
+11:05:38,071  INFO AdminClient,main:106 - 6. Delete a user
+11:05:38,071  INFO AdminClient,main:107 - 7. Add a new course to catalog
+11:05:38,071  INFO AdminClient,main:108 - 8. Drop a course from catalog
+11:05:38,071  INFO AdminClient,main:109 - 9. Approve student
+11:05:38,071  INFO AdminClient,main:110 - 0. To logout
+11:17:00,830  INFO UserClient,main:37 - Welcome to the Course Registration System
+11:17:00,832  INFO UserClient,main:50 - ======User Menu=====
+11:17:00,833  INFO UserClient,main:51 - Enter 1 to Login
+11:17:00,833  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+11:17:00,834  INFO UserClient,main:53 - Enter any other number to exit CRS
+11:17:04,294  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+11:17:04,295  INFO UserClient,main:73 - Enter User Id
+11:17:09,348  INFO UserClient,main:75 - Enter User Password
+11:17:10,044  INFO AdminClient,main:100 - Enter your choice:
+11:17:10,045  INFO AdminClient,main:101 - 1. To view courses in catalog
+11:17:10,045  INFO AdminClient,main:102 - 2. View All Courses
+11:17:10,046  INFO AdminClient,main:103 - 3. To view users of Specific Role
+11:17:10,046  INFO AdminClient,main:104 - 4. Assign course to a professor
+11:17:10,047  INFO AdminClient,main:105 - 5. Register a new user
+11:17:10,047  INFO AdminClient,main:106 - 6. Delete a user
+11:17:10,047  INFO AdminClient,main:107 - 7. Add a new course to catalog
+11:17:10,048  INFO AdminClient,main:108 - 8. Drop a course from catalog
+11:17:10,048  INFO AdminClient,main:109 - 9. Approve student
+11:17:10,048  INFO AdminClient,main:110 - 0. To logout
+11:17:13,153  INFO AdminClient,main:124 - Select Role of the User (PROFESSOR, ADMIN)
+11:17:16,616  INFO AdminClient,main:127 - Enter Name
+11:17:19,883  INFO AdminClient,main:129 - Enter Password
+11:17:21,278  INFO AdminClient,main:131 - Enter Email
+11:17:25,466  INFO AdminClient,main:133 - Enter Mobile No.
+11:17:28,774  INFO AdminClient,main:135 - Select Gender: 'M' for male and 'F' for female
+11:17:30,437  INFO AdminClient,main:138 - Enter Address
+11:17:41,456  INFO AdminClient,main:140 - Enter City
+11:17:46,536  INFO AdminClient,main:142 - Enter State
+11:17:49,697  INFO AdminClient,main:144 - Enter Country
+11:17:52,919  INFO UserDaoImpl,main:48 - 1 user added
+11:17:53,101  INFO AdminDaoImpl,main:56 - 1 admin added
+11:17:53,101  INFO AuthenticateBusiness,main:79 - Added user into Admin Table
+
+11:17:53,102  INFO AdminClient,main:149 - Registration Success
+11:17:53,102  INFO AdminClient,main:100 - Enter your choice:
+11:17:53,102  INFO AdminClient,main:101 - 1. To view courses in catalog
+11:17:53,102  INFO AdminClient,main:102 - 2. View All Courses
+11:17:53,102  INFO AdminClient,main:103 - 3. To view users of Specific Role
+11:17:53,103  INFO AdminClient,main:104 - 4. Assign course to a professor
+11:17:53,103  INFO AdminClient,main:105 - 5. Register a new user
+11:17:53,103  INFO AdminClient,main:106 - 6. Delete a user
+11:17:53,103  INFO AdminClient,main:107 - 7. Add a new course to catalog
+11:17:53,103  INFO AdminClient,main:108 - 8. Drop a course from catalog
+11:17:53,104  INFO AdminClient,main:109 - 9. Approve student
+11:17:53,104  INFO AdminClient,main:110 - 0. To logout
+11:18:26,516  INFO UserClient,main:50 - ======User Menu=====
+11:18:26,517  INFO UserClient,main:51 - Enter 1 to Login
+11:18:26,517  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+11:18:26,517  INFO UserClient,main:53 - Enter any other number to exit CRS
+11:31:44,922  INFO UserClient,main:111 - Enter Name
+11:31:51,667  INFO UserClient,main:113 - Enter Password
+11:31:54,157  INFO UserClient,main:115 - Enter Email
+11:32:05,484  INFO UserClient,main:117 - Enter Mobile No.
+11:32:07,052  INFO UserClient,main:120 - Enter Branch (Civil, Chem, CS, EEE, Mech, ECE):
+11:32:08,772  INFO UserClient,main:122 - Select Gender: 'M' for male and 'F' for female
+11:32:10,098  INFO UserClient,main:124 - If you have scholarship enter 1, else enter 0
+11:32:11,892  INFO UserClient,main:128 - Enter Address
+11:32:18,534  INFO UserClient,main:130 - Enter City
+11:32:22,550  INFO UserClient,main:132 - Enter State
+11:32:26,974  INFO UserClient,main:134 - Enter Country
+11:32:32,031  INFO UserDaoImpl,main:48 - 1 user added
+11:32:32,034  INFO StudentDaoImpl,main:138 - extracted 2
+11:32:32,034  INFO StudentDaoImpl,main:154 - M
+11:32:32,417  INFO StudentDaoImpl,main:164 - Added Student sucessfully
+11:32:32,418  INFO AuthenticateBusiness,main:70 - Added user into Student Table
+
+11:32:32,419  INFO AuthenticateBusiness,main:71 - 101
+11:32:32,750  INFO NotificationSystemDaoImpl,main:40 - statement is com.mysql.cj.jdbc.ClientPreparedStatement: insert into notificationsystem (UserID , Message, TimeNotified) values (101, 'Successfully Registerd!','2021-01-25 11:32:32.42')
+11:32:32,917 ERROR NotificationSystemDaoImpl,main:50 - Cannot add or update a child row: a foreign key constraint fails (`temp`.`notificationsystem`, CONSTRAINT `UserIDFK` FOREIGN KEY (`UserID`) REFERENCES `authorcredentialdb` (`ID`) ON UPDATE CASCADE)
+11:32:32,919  INFO UserClient,main:142 - Successfully Registered! Your user id is 2.
+Logging You In
+11:32:32,920  INFO AdminClient,main:100 - Enter your choice:
+11:32:32,920  INFO AdminClient,main:101 - 1. To view courses in catalog
+11:32:32,920  INFO AdminClient,main:102 - 2. View All Courses
+11:32:32,920  INFO AdminClient,main:103 - 3. To view users of Specific Role
+11:32:32,920  INFO AdminClient,main:104 - 4. Assign course to a professor
+11:32:32,920  INFO AdminClient,main:105 - 5. Register a new user
+11:32:32,921  INFO AdminClient,main:106 - 6. Delete a user
+11:32:32,921  INFO AdminClient,main:107 - 7. Add a new course to catalog
+11:32:32,921  INFO AdminClient,main:108 - 8. Drop a course from catalog
+11:32:32,921  INFO AdminClient,main:109 - 9. Approve student
+11:32:32,922  INFO AdminClient,main:110 - 0. To logout
+11:34:26,359  INFO UserClient,main:50 - ======User Menu=====
+11:34:26,360  INFO UserClient,main:51 - Enter 1 to Login
+11:34:26,360  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+11:34:26,360  INFO UserClient,main:53 - Enter any other number to exit CRS
+11:34:28,503  INFO UserClient,main:111 - Enter Name
+11:34:31,505  INFO UserClient,main:113 - Enter Password
+11:34:33,228  INFO UserClient,main:115 - Enter Email
+11:34:43,444  INFO UserClient,main:117 - Enter Mobile No.
+11:34:45,532  INFO UserClient,main:120 - Enter Branch (Civil, Chem, CS, EEE, Mech, ECE):
+11:34:47,362  INFO UserClient,main:122 - Select Gender: 'M' for male and 'F' for female
+11:34:50,585  INFO UserClient,main:124 - If you have scholarship enter 1, else enter 0
+11:34:52,380  INFO UserClient,main:128 - Enter Address
+11:34:58,432  INFO UserClient,main:130 - Enter City
+11:35:01,680  INFO UserClient,main:132 - Enter State
+11:35:08,164  INFO UserClient,main:134 - Enter Country
+11:35:12,596  INFO UserDaoImpl,main:48 - 1 user added
+11:35:12,600  INFO StudentDaoImpl,main:138 - extracted 3
+11:35:12,601  INFO StudentDaoImpl,main:154 - F
+11:35:12,911  INFO StudentDaoImpl,main:164 - Added Student sucessfully
+11:35:12,912  INFO AuthenticateBusiness,main:70 - Added user into Student Table
+
+11:35:12,912  INFO AuthenticateBusiness,main:71 - 101
+11:35:12,913  INFO NotificationSystemDaoImpl,main:40 - statement is com.mysql.cj.jdbc.ClientPreparedStatement: insert into notificationsystem (UserID , Message, TimeNotified) values (101, 'Successfully Registerd!','2021-01-25 11:35:12.912')
+11:35:13,000 ERROR NotificationSystemDaoImpl,main:50 - Cannot add or update a child row: a foreign key constraint fails (`temp`.`notificationsystem`, CONSTRAINT `UserIDFK` FOREIGN KEY (`UserID`) REFERENCES `authorcredentialdb` (`ID`) ON UPDATE CASCADE)
+11:35:13,009  INFO UserClient,main:142 - Successfully Registered! Your user id is 3.
+Logging You In
+11:35:13,009  INFO AdminClient,main:100 - Enter your choice:
+11:35:13,010  INFO AdminClient,main:101 - 1. To view courses in catalog
+11:35:13,010  INFO AdminClient,main:102 - 2. View All Courses
+11:35:13,010  INFO AdminClient,main:103 - 3. To view users of Specific Role
+11:35:13,010  INFO AdminClient,main:104 - 4. Assign course to a professor
+11:35:13,011  INFO AdminClient,main:105 - 5. Register a new user
+11:35:13,011  INFO AdminClient,main:106 - 6. Delete a user
+11:35:13,011  INFO AdminClient,main:107 - 7. Add a new course to catalog
+11:35:13,012  INFO AdminClient,main:108 - 8. Drop a course from catalog
+11:35:13,012  INFO AdminClient,main:109 - 9. Approve student
+11:35:13,013  INFO AdminClient,main:110 - 0. To logout
+15:41:41,859  INFO CRSApplication,main:56 - ================COURSE REGISTRATION SYSTEM================
+15:41:41,864  INFO CRSApplication,main:57 - Welcome to the Course Registration System
+15:41:41,865  INFO CRSApplication,main:72 - ===========================USER===========================
+15:41:41,866  INFO CRSApplication,main:73 - Enter 1 to Login
+15:41:41,867  INFO CRSApplication,main:74 - Enter 2  to Register (if you are student)
+15:41:41,867  INFO CRSApplication,main:75 - Enter any other number to exit CRS
+15:41:41,868  INFO CRSApplication,main:76 - ==========================================================
+15:41:51,279  INFO CRSApplication,main:98 - Enter User Id
+15:43:28,413  INFO CRSApplication,main:100 - Enter User Password
+15:43:30,981  INFO UserDaoImpl,main:180 - 2
+15:43:31,116  INFO UserDaoImpl,main:188 - student1
+15:43:31,119  INFO CRSApplication,main:113 - Welcome User ID : 2
+15:43:31,120  INFO CRSApplication,main:124 - Successfully Logged in as Student
+15:43:31,120  INFO CRSStudentClient,main:75 - Enter your choice:
+15:43:31,120  INFO CRSStudentClient,main:76 - 1. To view available courses
+15:43:31,120  INFO CRSStudentClient,main:77 - 2. To register a course
+15:43:31,121  INFO CRSStudentClient,main:78 - 3. To drop a course
+15:43:31,121  INFO CRSStudentClient,main:79 - 4. View registered courses
+15:43:31,121  INFO CRSStudentClient,main:80 - 5. Pay fees
+15:43:31,121  INFO CRSStudentClient,main:81 - 6. Print Report Card
+15:43:31,122  INFO CRSStudentClient,main:82 - 0. To logout
+15:43:43,959  INFO CRSStudentClient,main:94 - Enter course id
+15:45:11,249  INFO CourseCatalogBusiness,main:98 - Number of the students registered in course : 2 are 0.
+15:45:11,350  INFO StudentDaoImpl,main:221 - Added to Registered Course sucessfully
+15:45:11,351  INFO CourseCatalogDaoImpl,main:136 - get data for 2
+15:45:11,355  INFO CourseCatalogDaoImpl,main:147 - heredIGITAL DESIGN
+15:45:11,388  INFO StudentDaoImpl,main:114 -  Student Details Retrieved sucessfully
+15:45:11,389  INFO StudentBusiness,main:101 - Added Course dIGITAL DESIGN in student1's Syllabus
+15:45:11,535  INFO FeePaymentDaoImpl,main:59 - Fees Calculated sucessfully
+15:45:11,899  INFO FeePaymentDaoImpl,main:116 - Fee payment successfull
+15:45:11,955  INFO FeePaymentDaoImpl,main:138 -  Post Payment FeesUpdated sucessfully
+15:45:11,955  INFO CRSStudentClient,main:75 - Enter your choice:
+15:45:11,955  INFO CRSStudentClient,main:76 - 1. To view available courses
+15:45:11,955  INFO CRSStudentClient,main:77 - 2. To register a course
+15:45:11,956  INFO CRSStudentClient,main:78 - 3. To drop a course
+15:45:11,956  INFO CRSStudentClient,main:79 - 4. View registered courses
+15:45:11,956  INFO CRSStudentClient,main:80 - 5. Pay fees
+15:45:11,956  INFO CRSStudentClient,main:81 - 6. Print Report Card
+15:45:11,956  INFO CRSStudentClient,main:82 - 0. To logout
+15:49:29,467  INFO CRSApplication,main:56 - ================COURSE REGISTRATION SYSTEM================
+15:49:29,470  INFO CRSApplication,main:57 - Welcome to the Course Registration System
+15:49:29,470  INFO CRSApplication,main:72 - ===========================USER===========================
+15:49:29,470  INFO CRSApplication,main:73 - Enter 1 to Login
+15:49:29,471  INFO CRSApplication,main:74 - Enter 2  to Register (if you are student)
+15:49:29,471  INFO CRSApplication,main:75 - Enter any other number to exit CRS
+15:49:29,471  INFO CRSApplication,main:76 - ==========================================================
+15:49:31,773  INFO CRSApplication,main:98 - Enter User Id
+15:49:52,714  INFO CRSApplication,main:100 - Enter User Password
+15:49:54,251  INFO UserDaoImpl,main:180 - 2
+15:49:54,291  INFO UserDaoImpl,main:188 - student1
+15:49:54,293  INFO CRSApplication,main:113 - Welcome User ID : 2
+15:49:54,294  INFO CRSApplication,main:124 - Successfully Logged in as Student
+15:49:54,294  INFO CRSStudentClient,main:75 - Enter your choice:
+15:49:54,294  INFO CRSStudentClient,main:76 - 1. To view available courses
+15:49:54,294  INFO CRSStudentClient,main:77 - 2. To register a course
+15:49:54,294  INFO CRSStudentClient,main:78 - 3. To drop a course
+15:49:54,294  INFO CRSStudentClient,main:79 - 4. View registered courses
+15:49:54,295  INFO CRSStudentClient,main:80 - 5. Pay fees
+15:49:54,295  INFO CRSStudentClient,main:81 - 6. Print Report Card
+15:49:54,295  INFO CRSStudentClient,main:82 - 0. To logout
+15:49:57,152  INFO CRSStudentClient,main:94 - Enter course id
+15:49:59,131  INFO CRSStudentClient,main:98 - You are already Registered for this course
+15:49:59,132  INFO CRSStudentClient,main:75 - Enter your choice:
+15:49:59,133  INFO CRSStudentClient,main:76 - 1. To view available courses
+15:49:59,135  INFO CRSStudentClient,main:77 - 2. To register a course
+15:49:59,136  INFO CRSStudentClient,main:78 - 3. To drop a course
+15:49:59,137  INFO CRSStudentClient,main:79 - 4. View registered courses
+15:49:59,138  INFO CRSStudentClient,main:80 - 5. Pay fees
+15:49:59,141  INFO CRSStudentClient,main:81 - 6. Print Report Card
+15:49:59,142  INFO CRSStudentClient,main:82 - 0. To logout
+15:50:02,572  INFO CRSApplication,main:72 - ===========================USER===========================
+15:50:02,572  INFO CRSApplication,main:73 - Enter 1 to Login
+15:50:02,573  INFO CRSApplication,main:74 - Enter 2  to Register (if you are student)
+15:50:02,573  INFO CRSApplication,main:75 - Enter any other number to exit CRS
+15:50:02,573  INFO CRSApplication,main:76 - ==========================================================
+15:50:03,398  INFO CRSApplication,main:98 - Enter User Id
+15:50:14,035  INFO CRSApplication,main:56 - ================COURSE REGISTRATION SYSTEM================
+15:50:14,042  INFO CRSApplication,main:57 - Welcome to the Course Registration System
+15:50:14,043  INFO CRSApplication,main:72 - ===========================USER===========================
+15:50:14,044  INFO CRSApplication,main:73 - Enter 1 to Login
+15:50:14,044  INFO CRSApplication,main:74 - Enter 2  to Register (if you are student)
+15:50:14,044  INFO CRSApplication,main:75 - Enter any other number to exit CRS
+15:50:14,045  INFO CRSApplication,main:76 - ==========================================================
+15:50:15,967  INFO CRSApplication,main:98 - Enter User Id
+15:50:22,982  INFO CRSApplication,main:100 - Enter User Password
+15:50:24,948  INFO UserDaoImpl,main:180 - 1
+15:50:25,092  INFO UserDaoImpl,main:188 - admin1
+15:50:25,094  INFO CRSApplication,main:113 - Welcome User ID : 1
+15:50:25,094  INFO CRSApplication,main:116 - Successfully Logged in as Admin
+15:50:25,094  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+15:50:25,094  INFO CRSAdminClient,main:130 - Enter your choice:
+15:50:25,095  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+15:50:25,095  INFO CRSAdminClient,main:132 - 2. View All Courses
+15:50:25,096  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+15:50:25,096  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+15:50:25,096  INFO CRSAdminClient,main:135 - 5. Register a new user
+15:50:25,097  INFO CRSAdminClient,main:136 - 6. Delete a user
+15:50:25,097  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+15:50:25,097  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+15:50:25,097  INFO CRSAdminClient,main:139 - 9. Approve student
+15:50:25,097  INFO CRSAdminClient,main:140 - 0. To logout
+15:50:25,098  INFO CRSAdminClient,main:141 - ===========================================================
+15:50:29,159  INFO CRSAdminClient,main:219 - Enter Course ID
+15:50:31,274  INFO CRSAdminClient,main:222 - Enter Course Name
+15:50:33,357  INFO CRSAdminClient,main:224 - Enter catalog ID
+15:50:35,102  INFO CRSAdminClient,main:226 - Enter professorId or -1 if not assigned
+15:53:08,002  INFO CRSApplication,main:56 - ================COURSE REGISTRATION SYSTEM================
+15:53:08,004  INFO CRSApplication,main:57 - Welcome to the Course Registration System
+15:53:08,005  INFO CRSApplication,main:72 - ===========================USER===========================
+15:53:08,005  INFO CRSApplication,main:73 - Enter 1 to Login
+15:53:08,006  INFO CRSApplication,main:74 - Enter 2  to Register (if you are student)
+15:53:08,006  INFO CRSApplication,main:75 - Enter any other number to exit CRS
+15:53:08,006  INFO CRSApplication,main:76 - ==========================================================
+15:53:16,281  INFO CRSApplication,main:98 - Enter User Id
+15:53:18,704  INFO CRSApplication,main:100 - Enter User Password
+15:53:19,642  INFO UserDaoImpl,main:180 - 1
+15:53:19,739  INFO UserDaoImpl,main:188 - admin1
+15:53:19,741  INFO CRSApplication,main:113 - Welcome User ID : 1
+15:53:19,741  INFO CRSApplication,main:116 - Successfully Logged in as Admin
+15:53:19,741  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+15:53:19,741  INFO CRSAdminClient,main:130 - Enter your choice:
+15:53:19,742  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+15:53:19,742  INFO CRSAdminClient,main:132 - 2. View All Courses
+15:53:19,742  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+15:53:19,742  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+15:53:19,742  INFO CRSAdminClient,main:135 - 5. Register a new user
+15:53:19,742  INFO CRSAdminClient,main:136 - 6. Delete a user
+15:53:19,743  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+15:53:19,743  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+15:53:19,743  INFO CRSAdminClient,main:139 - 9. Approve student
+15:53:19,743  INFO CRSAdminClient,main:140 - 0. To logout
+15:53:19,743  INFO CRSAdminClient,main:141 - ===========================================================
+15:53:23,857  INFO CRSAdminClient,main:219 - Enter Course ID
+15:53:25,720  INFO CRSAdminClient,main:222 - Enter Course Name
+15:53:26,409  INFO CRSAdminClient,main:224 - Enter catalog ID
+15:53:27,982  INFO CRSAdminClient,main:226 - Enter professorId or -1 if not assigned
+15:53:30,102 ERROR CourseCatalogDaoImpl,main:58 - Cannot invoke "java.lang.Integer.intValue()" because "null" is null
+15:53:30,102  INFO CourseCatalogBusiness,main:79 - Added Course in the table.
+15:53:30,102  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+15:53:30,102  INFO CRSAdminClient,main:130 - Enter your choice:
+15:53:30,103  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+15:53:30,103  INFO CRSAdminClient,main:132 - 2. View All Courses
+15:53:30,103  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+15:53:30,103  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+15:53:30,104  INFO CRSAdminClient,main:135 - 5. Register a new user
+15:53:30,104  INFO CRSAdminClient,main:136 - 6. Delete a user
+15:53:30,104  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+15:53:30,104  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+15:53:30,104  INFO CRSAdminClient,main:139 - 9. Approve student
+15:53:30,105  INFO CRSAdminClient,main:140 - 0. To logout
+15:53:30,105  INFO CRSAdminClient,main:141 - ===========================================================
+16:04:32,098  INFO CRSApplication,main:56 - ================COURSE REGISTRATION SYSTEM================
+16:04:32,100  INFO CRSApplication,main:57 - Welcome to the Course Registration System
+16:04:32,101  INFO CRSApplication,main:72 - ===========================USER===========================
+16:04:32,101  INFO CRSApplication,main:73 - Enter 1 to Login
+16:04:32,101  INFO CRSApplication,main:74 - Enter 2  to Register (if you are student)
+16:04:32,101  INFO CRSApplication,main:75 - Enter any other number to exit CRS
+16:04:32,102  INFO CRSApplication,main:76 - ==========================================================
+16:04:35,353  INFO CRSApplication,main:98 - Enter User Id
+16:04:35,611  INFO CRSApplication,main:100 - Enter User Password
+16:04:36,490  INFO UserDaoImpl,main:180 - 1
+16:04:36,542  INFO UserDaoImpl,main:188 - admin1
+16:04:36,545  INFO CRSApplication,main:113 - Welcome User ID : 1
+16:04:36,546  INFO CRSApplication,main:116 - Successfully Logged in as Admin
+16:04:36,546  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+16:04:36,546  INFO CRSAdminClient,main:130 - Enter your choice:
+16:04:36,546  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+16:04:36,547  INFO CRSAdminClient,main:132 - 2. View All Courses
+16:04:36,547  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+16:04:36,548  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+16:04:36,548  INFO CRSAdminClient,main:135 - 5. Register a new user
+16:04:36,548  INFO CRSAdminClient,main:136 - 6. Delete a user
+16:04:36,549  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+16:04:36,549  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+16:04:36,549  INFO CRSAdminClient,main:139 - 9. Approve student
+16:04:36,549  INFO CRSAdminClient,main:140 - 0. To logout
+16:04:36,550  INFO CRSAdminClient,main:141 - ===========================================================
+16:04:39,385  INFO CRSAdminClient,main:219 - Enter Course ID
+16:04:40,765  INFO CRSAdminClient,main:222 - Enter Course Name
+16:04:42,969  INFO CRSAdminClient,main:224 - Enter catalog ID
+16:04:44,338  INFO CRSAdminClient,main:226 - Enter Course Description
+16:04:44,530  INFO CourseCatalogDaoImpl,main:50 - 1 course added
+16:04:44,531  INFO CourseCatalogBusiness,main:79 - Added Course in the table.
+16:04:44,531  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+16:04:44,531  INFO CRSAdminClient,main:130 - Enter your choice:
+16:04:44,531  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+16:04:44,531  INFO CRSAdminClient,main:132 - 2. View All Courses
+16:04:44,532  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+16:04:44,532  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+16:04:44,532  INFO CRSAdminClient,main:135 - 5. Register a new user
+16:04:44,532  INFO CRSAdminClient,main:136 - 6. Delete a user
+16:04:44,532  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+16:04:44,532  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+16:04:44,533  INFO CRSAdminClient,main:139 - 9. Approve student
+16:04:44,533  INFO CRSAdminClient,main:140 - 0. To logout
+16:04:44,533  INFO CRSAdminClient,main:141 - ===========================================================
+16:05:55,859  INFO CRSApplication,main:56 - ================COURSE REGISTRATION SYSTEM================
+16:05:55,861  INFO CRSApplication,main:57 - Welcome to the Course Registration System
+16:05:55,861  INFO CRSApplication,main:72 - ===========================USER===========================
+16:05:55,861  INFO CRSApplication,main:73 - Enter 1 to Login
+16:05:55,861  INFO CRSApplication,main:74 - Enter 2  to Register (if you are student)
+16:05:55,862  INFO CRSApplication,main:75 - Enter any other number to exit CRS
+16:05:55,862  INFO CRSApplication,main:76 - ==========================================================
+16:05:58,443  INFO CRSApplication,main:98 - Enter User Id
+16:05:58,747  INFO CRSApplication,main:100 - Enter User Password
+16:06:00,833  INFO UserDaoImpl,main:180 - 1
+16:06:00,914  INFO UserDaoImpl,main:188 - admin1
+16:06:00,916  INFO CRSApplication,main:113 - Welcome User ID : 1
+16:06:00,916  INFO CRSApplication,main:116 - Successfully Logged in as Admin
+16:06:00,916  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+16:06:00,916  INFO CRSAdminClient,main:130 - Enter your choice:
+16:06:00,917  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+16:06:00,917  INFO CRSAdminClient,main:132 - 2. View All Courses
+16:06:00,917  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+16:06:00,917  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+16:06:00,917  INFO CRSAdminClient,main:135 - 5. Register a new user
+16:06:00,917  INFO CRSAdminClient,main:136 - 6. Delete a user
+16:06:00,917  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+16:06:00,918  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+16:06:00,918  INFO CRSAdminClient,main:139 - 9. Approve student
+16:06:00,918  INFO CRSAdminClient,main:140 - 0. To logout
+16:06:00,918  INFO CRSAdminClient,main:141 - ===========================================================
+16:06:03,096  INFO CRSAdminClient,main:219 - Enter Course ID
+16:06:06,628  INFO CRSAdminClient,main:222 - Enter Course Name
+16:06:07,483  INFO CRSAdminClient,main:224 - Enter catalog ID
+16:06:08,926  INFO CRSAdminClient,main:226 - Enter Course Description
+16:06:13,909 ERROR CourseCatalogDaoImpl,main:52 - Duplicate entry '12' for key 'coursecatalog.PRIMARY'
+16:06:13,909  INFO CourseCatalogBusiness,main:79 - Added Course in the table.
+16:06:13,910  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+16:06:13,910  INFO CRSAdminClient,main:130 - Enter your choice:
+16:06:13,910  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+16:06:13,910  INFO CRSAdminClient,main:132 - 2. View All Courses
+16:06:13,910  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+16:06:13,911  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+16:06:13,911  INFO CRSAdminClient,main:135 - 5. Register a new user
+16:06:13,911  INFO CRSAdminClient,main:136 - 6. Delete a user
+16:06:13,911  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+16:06:13,911  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+16:06:13,911  INFO CRSAdminClient,main:139 - 9. Approve student
+16:06:13,912  INFO CRSAdminClient,main:140 - 0. To logout
+16:06:13,912  INFO CRSAdminClient,main:141 - ===========================================================
+16:06:19,819  INFO CRSApplication,main:56 - ================COURSE REGISTRATION SYSTEM================
+16:06:19,821  INFO CRSApplication,main:57 - Welcome to the Course Registration System
+16:06:19,821  INFO CRSApplication,main:72 - ===========================USER===========================
+16:06:19,822  INFO CRSApplication,main:73 - Enter 1 to Login
+16:06:19,822  INFO CRSApplication,main:74 - Enter 2  to Register (if you are student)
+16:06:19,822  INFO CRSApplication,main:75 - Enter any other number to exit CRS
+16:06:19,822  INFO CRSApplication,main:76 - ==========================================================
+16:06:28,235  INFO CRSApplication,main:98 - Enter User Id
+16:06:28,235  INFO CRSApplication,main:100 - Enter User Password
+16:06:29,700  INFO UserDaoImpl,main:180 - 1
+16:06:29,745  INFO UserDaoImpl,main:188 - admin1
+16:06:29,747  INFO CRSApplication,main:113 - Welcome User ID : 1
+16:06:29,748  INFO CRSApplication,main:116 - Successfully Logged in as Admin
+16:06:29,748  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+16:06:29,748  INFO CRSAdminClient,main:130 - Enter your choice:
+16:06:29,748  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+16:06:29,748  INFO CRSAdminClient,main:132 - 2. View All Courses
+16:06:29,749  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+16:06:29,749  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+16:06:29,749  INFO CRSAdminClient,main:135 - 5. Register a new user
+16:06:29,749  INFO CRSAdminClient,main:136 - 6. Delete a user
+16:06:29,749  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+16:06:29,750  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+16:06:29,750  INFO CRSAdminClient,main:139 - 9. Approve student
+16:06:29,750  INFO CRSAdminClient,main:140 - 0. To logout
+16:06:29,750  INFO CRSAdminClient,main:141 - ===========================================================
+16:06:31,598  INFO CRSAdminClient,main:219 - Enter Course ID
+16:06:34,978  INFO CRSAdminClient,main:222 - Enter Course Name
+16:06:36,604  INFO CRSAdminClient,main:224 - Enter catalog ID
+16:06:38,919  INFO CRSAdminClient,main:226 - Enter Course Description
+16:06:42,393  INFO CourseCatalogDaoImpl,main:50 - 1 course added
+16:06:42,393  INFO CourseCatalogBusiness,main:79 - Added Course in the table.
+16:06:42,393  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+16:06:42,393  INFO CRSAdminClient,main:130 - Enter your choice:
+16:06:42,394  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+16:06:42,394  INFO CRSAdminClient,main:132 - 2. View All Courses
+16:06:42,394  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+16:06:42,394  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+16:06:42,394  INFO CRSAdminClient,main:135 - 5. Register a new user
+16:06:42,394  INFO CRSAdminClient,main:136 - 6. Delete a user
+16:06:42,394  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+16:06:42,394  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+16:06:42,395  INFO CRSAdminClient,main:139 - 9. Approve student
+16:06:42,395  INFO CRSAdminClient,main:140 - 0. To logout
+16:06:42,395  INFO CRSAdminClient,main:141 - ===========================================================
+16:09:25,805  INFO CRSAdminClient,main:107 - Enter one of the following Role 
+ ("ADMIN", "PROFESSOR", "STUDENT"
+
+16:09:28,946  INFO UserDaoImpl,main:131 - com.mysql.cj.jdbc.result.ResultSetImpl@101952da
+16:09:28,947  INFO UserDaoImpl,main:134 - a
+16:09:28,947  INFO UserDaoImpl,main:137 - b
+16:09:28,947  INFO AdminBusiness,main:80 - 1
+16:09:28,948  INFO AdminBusiness,main:81 - Users of the role :ADMINare :
+16:09:28,949  INFO AdminBusiness,main:84 - Name : admin1
+16:09:28,949  INFO AdminBusiness,main:85 - Email : null
+16:09:28,949  INFO AdminBusiness,main:86 - User Id : 0
+16:09:28,949  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+16:09:28,949  INFO CRSAdminClient,main:130 - Enter your choice:
+16:09:28,950  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+16:09:28,950  INFO CRSAdminClient,main:132 - 2. View All Courses
+16:09:28,950  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+16:09:28,950  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+16:09:28,950  INFO CRSAdminClient,main:135 - 5. Register a new user
+16:09:28,950  INFO CRSAdminClient,main:136 - 6. Delete a user
+16:09:28,950  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+16:09:28,950  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+16:09:28,950  INFO CRSAdminClient,main:139 - 9. Approve student
+16:09:28,950  INFO CRSAdminClient,main:140 - 0. To logout
+16:09:28,951  INFO CRSAdminClient,main:141 - ===========================================================
+16:09:43,522  INFO CRSAdminClient,main:107 - Enter one of the following Role 
+ ("ADMIN", "PROFESSOR", "STUDENT"
+
+16:09:45,709  INFO UserDaoImpl,main:131 - com.mysql.cj.jdbc.result.ResultSetImpl@3e84448c
+16:09:45,710  INFO UserDaoImpl,main:134 - a
+16:09:45,710  INFO UserDaoImpl,main:134 - a
+16:09:45,710  INFO UserDaoImpl,main:137 - b
+16:09:45,710  INFO AdminBusiness,main:80 - 2
+16:09:45,710  INFO AdminBusiness,main:81 - Users of the role :STUDENTare :
+16:09:45,711  INFO AdminBusiness,main:84 - Name : student1
+16:09:45,712  INFO AdminBusiness,main:85 - Email : null
+16:09:45,712  INFO AdminBusiness,main:86 - User Id : 0
+16:09:45,713  INFO AdminBusiness,main:84 - Name : student2
+16:09:45,713  INFO AdminBusiness,main:85 - Email : null
+16:09:45,713  INFO AdminBusiness,main:86 - User Id : 0
+16:09:45,713  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+16:09:45,713  INFO CRSAdminClient,main:130 - Enter your choice:
+16:09:45,713  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+16:09:45,713  INFO CRSAdminClient,main:132 - 2. View All Courses
+16:09:45,713  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+16:09:45,714  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+16:09:45,714  INFO CRSAdminClient,main:135 - 5. Register a new user
+16:09:45,714  INFO CRSAdminClient,main:136 - 6. Delete a user
+16:09:45,714  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+16:09:45,714  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+16:09:45,714  INFO CRSAdminClient,main:139 - 9. Approve student
+16:09:45,714  INFO CRSAdminClient,main:140 - 0. To logout
+16:09:45,714  INFO CRSAdminClient,main:141 - ===========================================================
+16:10:27,330  INFO CRSApplication,main:56 - ================COURSE REGISTRATION SYSTEM================
+16:10:27,332  INFO CRSApplication,main:57 - Welcome to the Course Registration System
+16:10:27,332  INFO CRSApplication,main:72 - ===========================USER===========================
+16:10:27,333  INFO CRSApplication,main:73 - Enter 1 to Login
+16:10:27,333  INFO CRSApplication,main:74 - Enter 2  to Register (if you are student)
+16:10:27,333  INFO CRSApplication,main:75 - Enter any other number to exit CRS
+16:10:27,333  INFO CRSApplication,main:76 - ==========================================================
+16:10:29,012  INFO CRSApplication,main:98 - Enter User Id
+16:10:30,489  INFO CRSApplication,main:100 - Enter User Password
+16:10:32,966  INFO UserDaoImpl,main:178 - 1
+16:10:33,005  INFO UserDaoImpl,main:186 - admin1
+16:10:33,006  INFO CRSApplication,main:113 - Welcome User ID : 1
+16:10:33,007  INFO CRSApplication,main:116 - Successfully Logged in as Admin
+16:10:33,007  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+16:10:33,008  INFO CRSAdminClient,main:130 - Enter your choice:
+16:10:33,008  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+16:10:33,008  INFO CRSAdminClient,main:132 - 2. View All Courses
+16:10:33,008  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+16:10:33,009  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+16:10:33,009  INFO CRSAdminClient,main:135 - 5. Register a new user
+16:10:33,009  INFO CRSAdminClient,main:136 - 6. Delete a user
+16:10:33,009  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+16:10:33,010  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+16:10:33,010  INFO CRSAdminClient,main:139 - 9. Approve student
+16:10:33,010  INFO CRSAdminClient,main:140 - 0. To logout
+16:10:33,010  INFO CRSAdminClient,main:141 - ===========================================================
+16:10:37,578  INFO CRSAdminClient,main:107 - Enter one of the following Role 
+ ("ADMIN", "PROFESSOR", "STUDENT"
+
+16:10:39,531  INFO UserDaoImpl,main:133 - 2
+16:10:39,531  INFO UserDaoImpl,main:133 - 3
+16:10:39,532  INFO AdminBusiness,main:80 - 2
+16:10:39,532  INFO AdminBusiness,main:81 - Users of the role :STUDENTare :
+16:10:39,535  INFO AdminBusiness,main:84 - Name : student1
+16:10:39,535  INFO AdminBusiness,main:85 - Email : null
+16:10:39,536  INFO AdminBusiness,main:86 - User Id : 0
+16:10:39,538  INFO AdminBusiness,main:84 - Name : student2
+16:10:39,538  INFO AdminBusiness,main:85 - Email : null
+16:10:39,539  INFO AdminBusiness,main:86 - User Id : 0
+16:10:39,539  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+16:10:39,539  INFO CRSAdminClient,main:130 - Enter your choice:
+16:10:39,540  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+16:10:39,540  INFO CRSAdminClient,main:132 - 2. View All Courses
+16:10:39,541  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+16:10:39,541  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+16:10:39,541  INFO CRSAdminClient,main:135 - 5. Register a new user
+16:10:39,541  INFO CRSAdminClient,main:136 - 6. Delete a user
+16:10:39,541  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+16:10:39,542  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+16:10:39,542  INFO CRSAdminClient,main:139 - 9. Approve student
+16:10:39,542  INFO CRSAdminClient,main:140 - 0. To logout
+16:10:39,542  INFO CRSAdminClient,main:141 - ===========================================================
+16:31:06,347  INFO CRSApplication,main:56 - ================COURSE REGISTRATION SYSTEM================
+16:31:06,349  INFO CRSApplication,main:57 - Welcome to the Course Registration System
+16:31:06,349  INFO CRSApplication,main:72 - ===========================USER===========================
+16:31:06,349  INFO CRSApplication,main:73 - Enter 1 to Login
+16:31:06,349  INFO CRSApplication,main:74 - Enter 2  to Register (if you are student)
+16:31:06,350  INFO CRSApplication,main:75 - Enter any other number to exit CRS
+16:31:06,350  INFO CRSApplication,main:76 - ==========================================================
+16:31:10,710  INFO CRSApplication,main:98 - Enter User Id
+16:31:17,091  INFO CRSApplication,main:100 - Enter User Password
+16:31:18,274  INFO UserDaoImpl,main:175 - 1
+16:31:18,353  INFO UserDaoImpl,main:183 - admin1
+16:31:18,354  INFO CRSApplication,main:129 - Invalid Credentials
+16:31:18,354  INFO CRSApplication,main:72 - ===========================USER===========================
+16:31:18,355  INFO CRSApplication,main:73 - Enter 1 to Login
+16:31:18,355  INFO CRSApplication,main:74 - Enter 2  to Register (if you are student)
+16:31:18,355  INFO CRSApplication,main:75 - Enter any other number to exit CRS
+16:31:18,356  INFO CRSApplication,main:76 - ==========================================================
+16:31:22,063  INFO CRSApplication,main:98 - Enter User Id
+16:31:22,624  INFO CRSApplication,main:100 - Enter User Password
+16:31:23,607  INFO UserDaoImpl,main:175 - 1
+16:31:23,609  INFO UserDaoImpl,main:183 - admin1
+16:31:23,614  INFO CRSApplication,main:113 - Welcome User ID : 1
+16:31:23,615  INFO CRSApplication,main:116 - Successfully Logged in as Admin
+16:31:23,615  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+16:31:23,616  INFO CRSAdminClient,main:130 - Enter your choice:
+16:31:23,617  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+16:31:23,617  INFO CRSAdminClient,main:132 - 2. View All Courses
+16:31:23,618  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+16:31:23,620  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+16:31:23,620  INFO CRSAdminClient,main:135 - 5. Register a new user
+16:31:23,621  INFO CRSAdminClient,main:136 - 6. Delete a user
+16:31:23,621  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+16:31:23,622  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+16:31:23,622  INFO CRSAdminClient,main:139 - 9. Approve student
+16:31:23,622  INFO CRSAdminClient,main:140 - 0. To logout
+16:31:23,622  INFO CRSAdminClient,main:141 - ===========================================================
+16:31:29,784  INFO CRSAdminClient,main:107 - Enter one of the following Role 
+ ("ADMIN", "PROFESSOR", "STUDENT"
+
+16:31:33,210  INFO AdminBusiness,main:80 - Users of the role : STUDENT are :
+16:31:33,214  INFO AdminBusiness,main:83 - Name : student1
+16:31:33,215  INFO AdminBusiness,main:84 - User Id : 2
+16:31:33,219  INFO AdminBusiness,main:83 - Name : student2
+16:31:33,219  INFO AdminBusiness,main:84 - User Id : 3
+16:31:33,220  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+16:31:33,220  INFO CRSAdminClient,main:130 - Enter your choice:
+16:31:33,220  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+16:31:33,220  INFO CRSAdminClient,main:132 - 2. View All Courses
+16:31:33,220  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+16:31:33,221  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+16:31:33,221  INFO CRSAdminClient,main:135 - 5. Register a new user
+16:31:33,221  INFO CRSAdminClient,main:136 - 6. Delete a user
+16:31:33,221  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+16:31:33,221  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+16:31:33,222  INFO CRSAdminClient,main:139 - 9. Approve student
+16:31:33,222  INFO CRSAdminClient,main:140 - 0. To logout
+16:31:33,222  INFO CRSAdminClient,main:141 - ===========================================================
+16:31:47,218  INFO CRSApplication,main:56 - ================COURSE REGISTRATION SYSTEM================
+16:31:47,231  INFO CRSApplication,main:57 - Welcome to the Course Registration System
+16:31:47,233  INFO CRSApplication,main:72 - ===========================USER===========================
+16:31:47,233  INFO CRSApplication,main:73 - Enter 1 to Login
+16:31:47,233  INFO CRSApplication,main:74 - Enter 2  to Register (if you are student)
+16:31:47,234  INFO CRSApplication,main:75 - Enter any other number to exit CRS
+16:31:47,235  INFO CRSApplication,main:76 - ==========================================================
+16:31:47,236  INFO CRSApplication,main:56 - ================COURSE REGISTRATION SYSTEM================
+16:31:47,244  INFO CRSApplication,main:57 - Welcome to the Course Registration System
+16:31:47,246  INFO CRSApplication,main:72 - ===========================USER===========================
+16:31:47,246  INFO CRSApplication,main:73 - Enter 1 to Login
+16:31:47,246  INFO CRSApplication,main:74 - Enter 2  to Register (if you are student)
+16:31:47,246  INFO CRSApplication,main:75 - Enter any other number to exit CRS
+16:31:47,247  INFO CRSApplication,main:76 - ==========================================================
+16:31:51,123  INFO CRSApplication,main:56 - ================COURSE REGISTRATION SYSTEM================
+16:31:51,125  INFO CRSApplication,main:57 - Welcome to the Course Registration System
+16:31:51,125  INFO CRSApplication,main:72 - ===========================USER===========================
+16:31:51,125  INFO CRSApplication,main:73 - Enter 1 to Login
+16:31:51,125  INFO CRSApplication,main:74 - Enter 2  to Register (if you are student)
+16:31:51,126  INFO CRSApplication,main:75 - Enter any other number to exit CRS
+16:31:51,126  INFO CRSApplication,main:76 - ==========================================================
+16:31:53,610  INFO CRSApplication,main:98 - Enter User Id
+16:31:55,460  INFO CRSApplication,main:100 - Enter User Password
+16:31:56,671  INFO UserDaoImpl,main:175 - 1
+16:31:56,729  INFO UserDaoImpl,main:183 - admin1
+16:31:56,732  INFO CRSApplication,main:113 - Welcome User ID : 1
+16:31:56,732  INFO CRSApplication,main:116 - Successfully Logged in as Admin
+16:31:56,732  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+16:31:56,732  INFO CRSAdminClient,main:130 - Enter your choice:
+16:31:56,732  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+16:31:56,733  INFO CRSAdminClient,main:132 - 2. View All Courses
+16:31:56,733  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+16:31:56,733  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+16:31:56,733  INFO CRSAdminClient,main:135 - 5. Register a new user
+16:31:56,733  INFO CRSAdminClient,main:136 - 6. Delete a user
+16:31:56,734  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+16:31:56,734  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+16:31:56,734  INFO CRSAdminClient,main:139 - 9. Approve student
+16:31:56,734  INFO CRSAdminClient,main:140 - 0. To logout
+16:31:56,734  INFO CRSAdminClient,main:141 - ===========================================================
+16:32:11,823  INFO CRSAdminClient,main:107 - Enter one of the following Role 
+ ("ADMIN", "PROFESSOR", "STUDENT"
+
+16:32:13,037  INFO AdminBusiness,main:80 - Users of the role : ADMIN are :
+16:32:13,041  INFO AdminBusiness,main:83 - Name : admin1
+16:32:13,041  INFO AdminBusiness,main:84 - User Id : 1
+16:32:13,042  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+16:32:13,042  INFO CRSAdminClient,main:130 - Enter your choice:
+16:32:13,043  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+16:32:13,043  INFO CRSAdminClient,main:132 - 2. View All Courses
+16:32:13,044  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+16:32:13,045  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+16:32:13,047  INFO CRSAdminClient,main:135 - 5. Register a new user
+16:32:13,048  INFO CRSAdminClient,main:136 - 6. Delete a user
+16:32:13,048  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+16:32:13,049  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+16:32:13,050  INFO CRSAdminClient,main:139 - 9. Approve student
+16:32:13,050  INFO CRSAdminClient,main:140 - 0. To logout
+16:32:13,050  INFO CRSAdminClient,main:141 - ===========================================================
+16:32:18,169  INFO CRSAdminClient,main:107 - Enter one of the following Role 
+ ("ADMIN", "PROFESSOR", "STUDENT"
+
+16:32:21,042  INFO AdminBusiness,main:80 - Users of the role : PROFESSOR are :
+16:32:21,042  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+16:32:21,043  INFO CRSAdminClient,main:130 - Enter your choice:
+16:32:21,043  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+16:32:21,043  INFO CRSAdminClient,main:132 - 2. View All Courses
+16:32:21,043  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+16:32:21,043  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+16:32:21,043  INFO CRSAdminClient,main:135 - 5. Register a new user
+16:32:21,043  INFO CRSAdminClient,main:136 - 6. Delete a user
+16:32:21,043  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+16:32:21,043  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+16:32:21,043  INFO CRSAdminClient,main:139 - 9. Approve student
+16:32:21,043  INFO CRSAdminClient,main:140 - 0. To logout
+16:32:21,044  INFO CRSAdminClient,main:141 - ===========================================================
+16:32:39,089  INFO CRSAdminClient,main:159 - Select Role of the User 
+(PROFESSOR, ADMIN)
+16:32:41,313  INFO CRSAdminClient,main:162 - Enter Name
+16:32:44,903  INFO CRSAdminClient,main:164 - Enter Password
+16:32:47,382  INFO CRSAdminClient,main:166 - Enter Email
+16:32:54,060  INFO CRSAdminClient,main:168 - Enter Mobile No.
+16:32:55,830  INFO CRSAdminClient,main:170 - Select Gender: 
+'M' for male and 'F' for female
+16:32:57,000  INFO CRSAdminClient,main:173 - Enter Address
+16:33:00,187  INFO CRSAdminClient,main:175 - Enter City
+16:33:02,375  INFO CRSAdminClient,main:177 - Enter State
+16:33:05,120  INFO CRSAdminClient,main:179 - Enter Country
+16:33:07,510  INFO CRSAdminClient,main:190 - Enter Department
+16:33:11,481  INFO UserDaoImpl,main:48 - 1 user added
+16:33:11,630  INFO ProfessorDaoImpl,main:105 - Added Professor sucessfully
+16:33:11,630  INFO ProfessorDaoImpl,main:110 - 1 professor added
+16:33:11,630  INFO AuthenticateBusiness,main:122 - =======================REGISTERED=======================
+16:33:11,630  INFO AuthenticateBusiness,main:123 - Added user into Professor Table
+
+16:33:11,631  INFO CRSAdminClient,main:194 - Registration Success.
+16:33:11,631  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+16:33:11,631  INFO CRSAdminClient,main:130 - Enter your choice:
+16:33:11,631  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+16:33:11,631  INFO CRSAdminClient,main:132 - 2. View All Courses
+16:33:11,631  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+16:33:11,631  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+16:33:11,631  INFO CRSAdminClient,main:135 - 5. Register a new user
+16:33:11,632  INFO CRSAdminClient,main:136 - 6. Delete a user
+16:33:11,632  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+16:33:11,632  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+16:33:11,632  INFO CRSAdminClient,main:139 - 9. Approve student
+16:33:11,632  INFO CRSAdminClient,main:140 - 0. To logout
+16:33:11,632  INFO CRSAdminClient,main:141 - ===========================================================
+16:33:27,558  INFO CRSAdminClient,main:107 - Enter one of the following Role 
+ ("ADMIN", "PROFESSOR", "STUDENT"
+
+16:33:30,290  INFO AdminBusiness,main:80 - Users of the role : PROFESSOR are :
+16:33:30,291  INFO AdminBusiness,main:83 - Name : riya
+16:33:30,291  INFO AdminBusiness,main:84 - User Id : 4
+16:33:30,291  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+16:33:30,291  INFO CRSAdminClient,main:130 - Enter your choice:
+16:33:30,292  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+16:33:30,292  INFO CRSAdminClient,main:132 - 2. View All Courses
+16:33:30,292  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+16:33:30,293  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+16:33:30,293  INFO CRSAdminClient,main:135 - 5. Register a new user
+16:33:30,293  INFO CRSAdminClient,main:136 - 6. Delete a user
+16:33:30,293  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+16:33:30,294  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+16:33:30,294  INFO CRSAdminClient,main:139 - 9. Approve student
+16:33:30,294  INFO CRSAdminClient,main:140 - 0. To logout
+16:33:30,294  INFO CRSAdminClient,main:141 - ===========================================================
+16:33:40,242  INFO CRSAdminClient,main:148 - Enter Student ID to approve
+16:33:56,436  INFO StudentDaoImpl,main:114 -  Student Details Retrieved sucessfully
+16:33:56,519  INFO StudentDaoImpl,main:356 - updated approval status sucessfully
+16:33:56,520  INFO AdminBusiness,main:67 - Student Approved
+16:33:56,520  INFO CRSAdminClient,main:129 - ===========================ADMIN===========================
+16:33:56,520  INFO CRSAdminClient,main:130 - Enter your choice:
+16:33:56,521  INFO CRSAdminClient,main:131 - 1. To view courses in catalog
+16:33:56,521  INFO CRSAdminClient,main:132 - 2. View All Courses
+16:33:56,521  INFO CRSAdminClient,main:133 - 3. To view users of Specific Role
+16:33:56,521  INFO CRSAdminClient,main:134 - 4. Assign course to a professor
+16:33:56,521  INFO CRSAdminClient,main:135 - 5. Register a new user
+16:33:56,522  INFO CRSAdminClient,main:136 - 6. Delete a user
+16:33:56,522  INFO CRSAdminClient,main:137 - 7. Add a new course to catalog
+16:33:56,522  INFO CRSAdminClient,main:138 - 8. Drop a course from catalog
+16:33:56,523  INFO CRSAdminClient,main:139 - 9. Approve student
+16:33:56,523  INFO CRSAdminClient,main:140 - 0. To logout
+16:33:56,524  INFO CRSAdminClient,main:141 - ===========================================================

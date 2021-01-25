@@ -2,7 +2,13 @@ package com.flipkart.bean;
 
 import com.flipkart.constant.Department;
 
+
+/**
+ * @author JEDI01
+ *
+ */
 public class Professor extends User {
+	
 	// Department of the professor
 	private Department department;
 	

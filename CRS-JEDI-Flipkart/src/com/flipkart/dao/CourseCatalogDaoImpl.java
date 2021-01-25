@@ -44,9 +44,8 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			stmt = connection.prepareStatement(SQLQueriesConstant.ADD_NEW_COURSE_QUERY);
 			stmt.setInt(1, course.getCatalogId());
 			stmt.setInt(2,course.getCourseCode());
-			stmt.setObject(3,"ASDS");
-			stmt.setInt(4,course.getProfessorId());
-			stmt.setString(5,course.getCourseName());
+			stmt.setString(3,course.getCatalogDetail());
+			stmt.setString(4,course.getCourseName());
 			int rows = stmt.executeUpdate();
 			logger.info(rows + " course added");
 		}catch(SQLException se) {
@@ -136,14 +135,15 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			logger.info("get data for "+ courseCode);
 			resultSet = statement.executeQuery();
 			int courseId=0,professorId = 0, catalogId = 0;
-			String  courseName = null;
+			String  courseName = null, catalogDetail = null;
 			while(resultSet.next()) {
 				courseId = resultSet.getInt("CourseId");
 				courseName = resultSet.getString("courseName");
 				professorId = resultSet.getInt("ProfessorId");
 				catalogId = resultSet.getInt("CatalogId");	
+				catalogDetail = resultSet.getString("CatalogDetail");
 			}
-			course = new Course (courseCode, courseName, catalogId, professorId);
+			course = new Course (courseCode, courseName, catalogId, professorId, catalogDetail);
 			logger.info("here"+ courseName);
 			return course;
 		}catch(Exception e) {

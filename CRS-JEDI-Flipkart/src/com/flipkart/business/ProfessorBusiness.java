@@ -14,14 +14,23 @@ import com.flipkart.dao.StudentDaoImpl;
 import com.flipkart.dao.UserDaoImpl;
 
 
-//ProfessorBusiness
+
+/**
+ * @author JEDI01
+ *
+ */
 
 public class ProfessorBusiness {
 	
-	// Singleton Field
+	/**
+	 * Singleton Field
+	 */
 	private static ProfessorBusiness instance = null;
 	
-	// Dao Objects
+	
+	/**
+	 * Dao Objects
+	 */
 	UserDaoImpl userDaoObject = UserDaoImpl.getInstance();
 	StudentDaoImpl studentDaoObject = StudentDaoImpl.getInstance();
 	AdminDaoImpl adminDaoObject = AdminDaoImpl.getInstance();
@@ -35,7 +44,9 @@ public class ProfessorBusiness {
 		
 	}
 	
-	// Get Instance of the class
+	/**
+	 * @return Instance of the class
+	 */
 	public static ProfessorBusiness getInstance() {
 		if(instance==null) {
 			instance = new ProfessorBusiness();
@@ -44,7 +55,11 @@ public class ProfessorBusiness {
 	}
 	
 	
-	// Grade student enrolled in the course
+	/**
+	 * @param courseId
+	 * @param studentId
+	 * @param grade
+	 */
 	public void gradeStudent(int courseId, int studentId, Grade grade) {
 		studentDaoObject.addGrade(studentId, courseId, grade);
 		logger.info("Added Grade " + grade);
@@ -53,12 +68,21 @@ public class ProfessorBusiness {
 		logger.info("======================STUDENT GRADED======================");
 	}
 	
-	// Checks if given professor teaches the given course
+	
+	/**
+	 * @param professorId
+	 * @param courseId
+	 * @return if given professor teaches the given course
+	 */
 	public boolean validCourseForProfessor(int professorId, int courseId) {
+		
 		return courseCatalogDaoObject.validCourseForProfessor(professorId, courseId);
 	}
 	
-	// Prints all the courses taught by the given professor
+	
+	/**
+	 * @param professorId
+	 */
 	public void viewAssignedCourses(int professorId) {
 		ArrayList<Integer> coursesList = courseCatalogDaoObject.getCoursesForProfessor(professorId);
 		logger.info("Course Id\t Course Name");
@@ -69,7 +93,10 @@ public class ProfessorBusiness {
 		
 	}
 	
-	// View Registered Students in the course
+	
+	/**
+	 * @param courseId
+	 */
 	public void viewRegisteredStudents(int courseId) {
      //  View all the RegisteredStudent in course
 		Map<Integer, Grade> mp = courseCatalogDaoObject.viewGrades(courseId);
