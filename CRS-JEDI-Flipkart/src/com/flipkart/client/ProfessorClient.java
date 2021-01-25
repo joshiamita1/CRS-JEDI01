@@ -77,6 +77,7 @@ public class ProfessorClient {
 			// Chceck if student is enrolled in the course
 			if(studentBusinessObject.checkValidCourseForStudent(studentId, courseId)) {
 				logger.info("Enter grade: (A,B,C,D,E)");
+				sc.nextLine();
 				Grade grade = Grade.valueOf(sc.nextLine());
 				professorBusinessObject.gradeStudent(courseId, studentId, grade);
 			}

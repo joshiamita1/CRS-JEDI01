@@ -43,14 +43,14 @@ public class ProfessorDaoImpl implements ProfessorDao {
 			ResultSet resultSet = statement.executeQuery();
 			if(resultSet.next()){
 				
-				int userId = resultSet.getInt("userId");
-				String emailId = resultSet.getString("emailId");
+				int userId = resultSet.getInt("professorId");
+				String emailId = resultSet.getString("email");
 		
 				String name = resultSet.getString("name");
 				long mobile = resultSet.getLong("mobile");
 				
 				Gender gender = Gender.valueOf(resultSet.getString("gender"));
-				Department dept = Department.valueOf(resultSet.getString("dept"));
+				Department dept = Department.valueOf(resultSet.getString("department"));
 
 				Professor professor = new Professor();
 				

@@ -3121,3 +3121,433 @@ Logging You In
 09:57:10,327  INFO UserClient,main:74 - TESTING
 09:57:10,327 ERROR UserClient,main:66 - =====Exiting=====
 09:57:10,327  INFO UserClient,main:42 - Exiting CRS
+09:59:06,170  INFO UserClient,main:37 - Welcome to the Course Registration System
+09:59:06,174  INFO UserClient,main:50 - ======User Menu=====
+09:59:06,175  INFO UserClient,main:51 - Enter 1 to Login
+09:59:06,175  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+09:59:06,176  INFO UserClient,main:53 - Enter any other number to exit CRS
+09:59:09,515  INFO UserClient,main:80 - Enter User Id
+09:59:11,325  INFO UserClient,main:82 - Enter User Password
+09:59:13,978  INFO UserDaoImpl,main:180 - 8
+09:59:14,020  INFO UserDaoImpl,main:188 - riyapass
+09:59:14,022  INFO UserClient,main:91 - Welcome User ID : 8
+09:59:14,022  INFO UserClient,main:98 - Successfully Logged in as Professor
+09:59:14,023  INFO ProfessorClient,main:93 - Enter your choice:
+09:59:14,023  INFO ProfessorClient,main:94 - 1. To view available courses
+09:59:14,023  INFO ProfessorClient,main:95 - 2. To view courses assigned
+09:59:14,023  INFO ProfessorClient,main:96 - 3. To view students in a course
+09:59:14,023  INFO ProfessorClient,main:97 - 4. Grade a student
+09:59:14,023  INFO ProfessorClient,main:98 - 0. To logout
+09:59:47,995  INFO UserClient,main:37 - Welcome to the Course Registration System
+09:59:47,998  INFO UserClient,main:50 - ======User Menu=====
+09:59:47,998  INFO UserClient,main:51 - Enter 1 to Login
+09:59:47,999  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+09:59:47,999  INFO UserClient,main:53 - Enter any other number to exit CRS
+09:59:51,246  INFO UserClient,main:80 - Enter User Id
+09:59:54,531  INFO UserClient,main:82 - Enter User Password
+09:59:59,416  INFO UserDaoImpl,main:180 - 8
+09:59:59,483  INFO UserDaoImpl,main:188 - riyapass
+09:59:59,487  INFO UserClient,main:91 - Welcome User ID : 8
+09:59:59,487  INFO UserClient,main:98 - Successfully Logged in as Professor
+09:59:59,488  INFO ProfessorClient,main:93 - Enter your choice:
+09:59:59,488  INFO ProfessorClient,main:94 - 1. To view available courses
+09:59:59,488  INFO ProfessorClient,main:95 - 2. To view courses assigned
+09:59:59,488  INFO ProfessorClient,main:96 - 3. To view students in a course
+09:59:59,488  INFO ProfessorClient,main:97 - 4. Grade a student
+09:59:59,488  INFO ProfessorClient,main:98 - 0. To logout
+10:03:37,335  INFO UserClient,main:37 - Welcome to the Course Registration System
+10:03:37,337  INFO UserClient,main:50 - ======User Menu=====
+10:03:37,337  INFO UserClient,main:51 - Enter 1 to Login
+10:03:37,338  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+10:03:37,338  INFO UserClient,main:53 - Enter any other number to exit CRS
+10:03:40,781  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+10:03:40,782  INFO UserClient,main:74 - TESTING
+10:03:40,782  INFO AuthenticateBusiness,main:61 - SSSS
+10:03:40,782 DEBUG AuthenticateBusiness,main:62 - DEbugging
+10:03:40,783 ERROR UserClient,main:66 - =====Exiting=====
+10:03:40,783  INFO UserClient,main:42 - Exiting CRS
+10:06:18,130  INFO UserClient,main:37 - Welcome to the Course Registration System
+10:06:18,135  INFO UserClient,main:50 - ======User Menu=====
+10:06:18,135  INFO UserClient,main:51 - Enter 1 to Login
+10:06:18,135  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+10:06:18,136  INFO UserClient,main:53 - Enter any other number to exit CRS
+10:06:20,198  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+10:06:20,198  INFO UserClient,main:73 - Enter User Id
+10:13:44,309  INFO UserClient,main:37 - Welcome to the Course Registration System
+10:13:44,312  INFO UserClient,main:50 - ======User Menu=====
+10:13:44,312  INFO UserClient,main:51 - Enter 1 to Login
+10:13:44,312  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+10:13:44,312  INFO UserClient,main:53 - Enter any other number to exit CRS
+10:13:51,831  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+10:13:51,831  INFO UserClient,main:73 - Enter User Id
+10:13:53,047  INFO UserClient,main:75 - Enter User Password
+10:13:55,406  INFO UserDaoImpl,main:180 - 8
+10:13:55,450  INFO UserDaoImpl,main:188 - riyapass
+10:13:55,452  INFO UserClient,main:84 - Welcome User ID : 8
+10:13:55,452  INFO UserClient,main:91 - Successfully Logged in as Professor
+10:13:55,452  INFO ProfessorClient,main:93 - Enter your choice:
+10:13:55,452  INFO ProfessorClient,main:94 - 1. To view available courses
+10:13:55,453  INFO ProfessorClient,main:95 - 2. To view courses assigned
+10:13:55,453  INFO ProfessorClient,main:96 - 3. To view students in a course
+10:13:55,453  INFO ProfessorClient,main:97 - 4. Grade a student
+10:13:55,454  INFO ProfessorClient,main:98 - 0. To logout
+10:13:58,338  INFO CourseCatalogBusiness,main:34 - Course Id	Course Name
+10:13:58,339  INFO CourseCatalogDaoImpl,main:136 - get data for 2
+10:13:58,342  INFO CourseCatalogDaoImpl,main:147 - heredIGITAL DESIGN
+10:13:58,342  INFO CourseCatalogBusiness,main:37 - 2		 dIGITAL DESIGN
+10:13:58,342  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:13:58,344  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:13:58,345  INFO CourseCatalogBusiness,main:37 - 12		 LL
+10:13:58,345  INFO ProfessorClient,main:93 - Enter your choice:
+10:13:58,345  INFO ProfessorClient,main:94 - 1. To view available courses
+10:13:58,345  INFO ProfessorClient,main:95 - 2. To view courses assigned
+10:13:58,346  INFO ProfessorClient,main:96 - 3. To view students in a course
+10:13:58,346  INFO ProfessorClient,main:97 - 4. Grade a student
+10:13:58,346  INFO ProfessorClient,main:98 - 0. To logout
+10:14:21,255  INFO ProfessorBusiness,main:63 - Course Id	Course Name
+10:14:21,255  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:14:21,265  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:14:21,265  INFO ProfessorBusiness,main:66 - 12	 LL
+10:14:21,265  INFO ProfessorClient,main:93 - Enter your choice:
+10:14:21,265  INFO ProfessorClient,main:94 - 1. To view available courses
+10:14:21,266  INFO ProfessorClient,main:95 - 2. To view courses assigned
+10:14:21,266  INFO ProfessorClient,main:96 - 3. To view students in a course
+10:14:21,266  INFO ProfessorClient,main:97 - 4. Grade a student
+10:14:21,266  INFO ProfessorClient,main:98 - 0. To logout
+10:14:46,427  INFO ProfessorClient,main:58 - Enter Course ID
+10:14:51,366 ERROR CourseCatalogDaoImpl,main:176 - Name is null
+10:14:51,367  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:14:51,369  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:14:52,028 ERROR ProfessorDaoImpl,main:70 - Unknown column 'p.professorId' in 'field list'
+10:16:39,817  INFO UserClient,main:37 - Welcome to the Course Registration System
+10:16:39,821  INFO UserClient,main:50 - ======User Menu=====
+10:16:39,821  INFO UserClient,main:51 - Enter 1 to Login
+10:16:39,821  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+10:16:39,822  INFO UserClient,main:53 - Enter any other number to exit CRS
+10:16:42,479  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+10:16:42,480  INFO UserClient,main:73 - Enter User Id
+10:16:42,974  INFO UserClient,main:75 - Enter User Password
+10:16:46,121  INFO UserDaoImpl,main:180 - 8
+10:16:46,160  INFO UserDaoImpl,main:188 - riyapass
+10:16:46,164  INFO UserClient,main:84 - Welcome User ID : 8
+10:16:46,164  INFO UserClient,main:91 - Successfully Logged in as Professor
+10:16:46,164  INFO ProfessorClient,main:93 - Enter your choice:
+10:16:46,164  INFO ProfessorClient,main:94 - 1. To view available courses
+10:16:46,164  INFO ProfessorClient,main:95 - 2. To view courses assigned
+10:16:46,165  INFO ProfessorClient,main:96 - 3. To view students in a course
+10:16:46,165  INFO ProfessorClient,main:97 - 4. Grade a student
+10:16:46,165  INFO ProfessorClient,main:98 - 0. To logout
+10:16:48,494  INFO ProfessorClient,main:70 - Enter Course ID
+10:17:01,033 ERROR CourseCatalogDaoImpl,main:176 - Name is null
+10:17:01,034  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:17:01,036  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:17:01,048 ERROR ProfessorDaoImpl,main:70 - Unknown column 'p.professorId' in 'field list'
+10:19:02,827  INFO UserClient,main:37 - Welcome to the Course Registration System
+10:19:02,833  INFO UserClient,main:50 - ======User Menu=====
+10:19:02,834  INFO UserClient,main:51 - Enter 1 to Login
+10:19:02,835  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+10:19:02,835  INFO UserClient,main:53 - Enter any other number to exit CRS
+10:19:07,573  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+10:19:07,574  INFO UserClient,main:73 - Enter User Id
+10:19:13,370  INFO UserClient,main:75 - Enter User Password
+10:19:16,801  INFO UserDaoImpl,main:180 - 8
+10:19:16,867  INFO UserDaoImpl,main:188 - riyapass
+10:19:16,869  INFO UserClient,main:84 - Welcome User ID : 8
+10:19:16,870  INFO UserClient,main:91 - Successfully Logged in as Professor
+10:19:16,870  INFO ProfessorClient,main:93 - Enter your choice:
+10:19:16,870  INFO ProfessorClient,main:94 - 1. To view available courses
+10:19:16,870  INFO ProfessorClient,main:95 - 2. To view courses assigned
+10:19:16,871  INFO ProfessorClient,main:96 - 3. To view students in a course
+10:19:16,871  INFO ProfessorClient,main:97 - 4. Grade a student
+10:19:16,871  INFO ProfessorClient,main:98 - 0. To logout
+10:19:20,185  INFO ProfessorClient,main:58 - Enter Course ID
+10:19:21,823 ERROR CourseCatalogDaoImpl,main:176 - Name is null
+10:19:21,823  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:19:21,825  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:19:21,838 ERROR ProfessorDaoImpl,main:70 - Unknown column 'p.professorId' in 'field list'
+10:25:17,772  INFO UserClient,main:37 - Welcome to the Course Registration System
+10:25:17,776  INFO UserClient,main:50 - ======User Menu=====
+10:25:17,776  INFO UserClient,main:51 - Enter 1 to Login
+10:25:17,776  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+10:25:17,776  INFO UserClient,main:53 - Enter any other number to exit CRS
+10:25:23,742  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+10:25:23,742  INFO UserClient,main:73 - Enter User Id
+10:25:26,450  INFO UserClient,main:75 - Enter User Password
+10:25:28,780  INFO UserDaoImpl,main:180 - 8
+10:25:28,874  INFO UserDaoImpl,main:188 - riyapass
+10:25:28,876  INFO UserClient,main:84 - Welcome User ID : 8
+10:25:28,876  INFO UserClient,main:91 - Successfully Logged in as Professor
+10:25:28,877  INFO ProfessorClient,main:93 - Enter your choice:
+10:25:28,877  INFO ProfessorClient,main:94 - 1. To view available courses
+10:25:28,877  INFO ProfessorClient,main:95 - 2. To view courses assigned
+10:25:28,877  INFO ProfessorClient,main:96 - 3. To view students in a course
+10:25:28,877  INFO ProfessorClient,main:97 - 4. Grade a student
+10:25:28,877  INFO ProfessorClient,main:98 - 0. To logout
+10:25:33,709  INFO ProfessorClient,main:58 - Enter Course ID
+10:26:03,471 ERROR CourseCatalogDaoImpl,main:176 - Name is null
+10:26:51,545 ERROR CourseCatalogDaoImpl,main:176 - Name is null
+10:27:09,453  INFO UserClient,main:37 - Welcome to the Course Registration System
+10:27:09,455  INFO UserClient,main:50 - ======User Menu=====
+10:27:09,455  INFO UserClient,main:51 - Enter 1 to Login
+10:27:09,456  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+10:27:09,456  INFO UserClient,main:53 - Enter any other number to exit CRS
+10:27:11,467  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+10:27:11,467  INFO UserClient,main:73 - Enter User Id
+10:27:13,131  INFO UserClient,main:75 - Enter User Password
+10:27:15,376  INFO UserDaoImpl,main:180 - 8
+10:27:15,423  INFO UserDaoImpl,main:188 - riyapass
+10:27:15,426  INFO UserClient,main:84 - Welcome User ID : 8
+10:27:15,426  INFO UserClient,main:91 - Successfully Logged in as Professor
+10:27:15,426  INFO ProfessorClient,main:93 - Enter your choice:
+10:27:15,426  INFO ProfessorClient,main:94 - 1. To view available courses
+10:27:15,427  INFO ProfessorClient,main:95 - 2. To view courses assigned
+10:27:15,427  INFO ProfessorClient,main:96 - 3. To view students in a course
+10:27:15,427  INFO ProfessorClient,main:97 - 4. Grade a student
+10:27:15,427  INFO ProfessorClient,main:98 - 0. To logout
+10:27:19,479  INFO ProfessorClient,main:58 - Enter Course ID
+10:27:21,257 ERROR CourseCatalogDaoImpl,main:176 - Name is null
+10:27:21,258  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:27:21,264  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:27:21,280 ERROR ProfessorDaoImpl,main:70 - Unknown column 'p.professorId' in 'field list'
+10:27:37,897  INFO UserClient,main:37 - Welcome to the Course Registration System
+10:27:37,899  INFO UserClient,main:50 - ======User Menu=====
+10:27:37,899  INFO UserClient,main:51 - Enter 1 to Login
+10:27:37,900  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+10:27:37,900  INFO UserClient,main:53 - Enter any other number to exit CRS
+10:27:39,793  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+10:27:39,794  INFO UserClient,main:73 - Enter User Id
+10:27:40,479  INFO UserClient,main:75 - Enter User Password
+10:27:43,195  INFO UserDaoImpl,main:180 - 8
+10:27:43,250  INFO UserDaoImpl,main:188 - riyapass
+10:27:43,253  INFO UserClient,main:84 - Welcome User ID : 8
+10:27:43,253  INFO UserClient,main:91 - Successfully Logged in as Professor
+10:27:43,253  INFO ProfessorClient,main:93 - Enter your choice:
+10:27:43,253  INFO ProfessorClient,main:94 - 1. To view available courses
+10:27:43,253  INFO ProfessorClient,main:95 - 2. To view courses assigned
+10:27:43,253  INFO ProfessorClient,main:96 - 3. To view students in a course
+10:27:43,254  INFO ProfessorClient,main:97 - 4. Grade a student
+10:27:43,254  INFO ProfessorClient,main:98 - 0. To logout
+10:27:45,851  INFO ProfessorClient,main:58 - Enter Course ID
+10:27:47,466  INFO CourseCatalogDaoImpl,main:176 - adsdsads
+10:27:47,466 ERROR CourseCatalogDaoImpl,main:177 - Name is null
+10:27:47,467  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:27:47,471  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:27:47,489 ERROR ProfessorDaoImpl,main:70 - Unknown column 'p.professorId' in 'field list'
+10:29:17,927  INFO UserClient,main:37 - Welcome to the Course Registration System
+10:29:17,930  INFO UserClient,main:50 - ======User Menu=====
+10:29:17,930  INFO UserClient,main:51 - Enter 1 to Login
+10:29:17,930  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+10:29:17,931  INFO UserClient,main:53 - Enter any other number to exit CRS
+10:29:19,597  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+10:29:19,598  INFO UserClient,main:73 - Enter User Id
+10:29:19,746  INFO UserClient,main:75 - Enter User Password
+10:29:22,006  INFO UserDaoImpl,main:180 - 8
+10:29:22,046  INFO UserDaoImpl,main:188 - riyapass
+10:29:22,048  INFO UserClient,main:84 - Welcome User ID : 8
+10:29:22,048  INFO UserClient,main:91 - Successfully Logged in as Professor
+10:29:22,048  INFO ProfessorClient,main:93 - Enter your choice:
+10:29:22,048  INFO ProfessorClient,main:94 - 1. To view available courses
+10:29:22,048  INFO ProfessorClient,main:95 - 2. To view courses assigned
+10:29:22,049  INFO ProfessorClient,main:96 - 3. To view students in a course
+10:29:22,049  INFO ProfessorClient,main:97 - 4. Grade a student
+10:29:22,049  INFO ProfessorClient,main:98 - 0. To logout
+10:29:24,520  INFO ProfessorClient,main:58 - Enter Course ID
+10:29:26,135  INFO CourseCatalogDaoImpl,main:169 - aasdsadsa
+10:29:26,135  INFO CourseCatalogDaoImpl,main:172 - 21321
+10:29:26,136  INFO CourseCatalogDaoImpl,main:178 - adsdsads
+10:29:26,136 ERROR CourseCatalogDaoImpl,main:179 - Name is null
+10:29:26,137  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:29:26,139  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:29:26,150 ERROR ProfessorDaoImpl,main:70 - Unknown column 'p.professorId' in 'field list'
+10:29:41,331  INFO UserClient,main:37 - Welcome to the Course Registration System
+10:29:41,332  INFO UserClient,main:50 - ======User Menu=====
+10:29:41,333  INFO UserClient,main:51 - Enter 1 to Login
+10:29:41,333  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+10:29:41,334  INFO UserClient,main:53 - Enter any other number to exit CRS
+10:29:43,418  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+10:29:43,419  INFO UserClient,main:73 - Enter User Id
+10:29:43,458  INFO UserClient,main:75 - Enter User Password
+10:29:44,937  INFO UserDaoImpl,main:180 - 8
+10:29:44,982  INFO UserDaoImpl,main:188 - riyapass
+10:29:44,986  INFO UserClient,main:84 - Welcome User ID : 8
+10:29:44,986  INFO UserClient,main:91 - Successfully Logged in as Professor
+10:29:44,986  INFO ProfessorClient,main:93 - Enter your choice:
+10:29:44,987  INFO ProfessorClient,main:94 - 1. To view available courses
+10:29:44,987  INFO ProfessorClient,main:95 - 2. To view courses assigned
+10:29:44,987  INFO ProfessorClient,main:96 - 3. To view students in a course
+10:29:44,987  INFO ProfessorClient,main:97 - 4. Grade a student
+10:29:44,987  INFO ProfessorClient,main:98 - 0. To logout
+10:29:45,942  INFO ProfessorClient,main:58 - Enter Course ID
+10:29:46,596  INFO CourseCatalogDaoImpl,main:169 - aasdsadsa
+10:29:46,598  INFO CourseCatalogDaoImpl,main:179 - adsdsads
+10:29:46,598 ERROR CourseCatalogDaoImpl,main:180 - Name is null
+10:29:46,598  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:29:46,601  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:29:46,623 ERROR ProfessorDaoImpl,main:70 - Unknown column 'p.professorId' in 'field list'
+10:32:53,943  INFO UserClient,main:37 - Welcome to the Course Registration System
+10:32:53,945  INFO UserClient,main:50 - ======User Menu=====
+10:32:53,945  INFO UserClient,main:51 - Enter 1 to Login
+10:32:53,946  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+10:32:53,946  INFO UserClient,main:53 - Enter any other number to exit CRS
+10:32:55,766  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+10:32:55,767  INFO UserClient,main:73 - Enter User Id
+10:32:58,836  INFO UserClient,main:75 - Enter User Password
+10:33:00,448  INFO UserDaoImpl,main:180 - 8
+10:33:00,499  INFO UserDaoImpl,main:188 - riyapass
+10:33:00,505  INFO UserClient,main:84 - Welcome User ID : 8
+10:33:00,505  INFO UserClient,main:91 - Successfully Logged in as Professor
+10:33:00,506  INFO ProfessorClient,main:93 - Enter your choice:
+10:33:00,506  INFO ProfessorClient,main:94 - 1. To view available courses
+10:33:00,506  INFO ProfessorClient,main:95 - 2. To view courses assigned
+10:33:00,507  INFO ProfessorClient,main:96 - 3. To view students in a course
+10:33:00,507  INFO ProfessorClient,main:97 - 4. Grade a student
+10:33:00,507  INFO ProfessorClient,main:98 - 0. To logout
+10:33:01,950  INFO ProfessorClient,main:58 - Enter Course ID
+10:33:03,535  INFO CourseCatalogDaoImpl,main:169 - aasdsadsa
+10:33:03,536  INFO CourseCatalogDaoImpl,main:174 - 21321
+10:33:03,536  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:33:03,539  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:33:03,568 ERROR ProfessorDaoImpl,main:70 - Unknown column 'p.professorId' in 'field list'
+10:39:13,595  INFO UserClient,main:37 - Welcome to the Course Registration System
+10:39:13,599  INFO UserClient,main:50 - ======User Menu=====
+10:39:13,600  INFO UserClient,main:51 - Enter 1 to Login
+10:39:13,600  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+10:39:13,600  INFO UserClient,main:53 - Enter any other number to exit CRS
+10:39:16,341  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+10:39:16,342  INFO UserClient,main:73 - Enter User Id
+10:39:16,679  INFO UserClient,main:75 - Enter User Password
+10:39:19,002  INFO UserDaoImpl,main:180 - 8
+10:39:19,163  INFO UserDaoImpl,main:188 - riyapass
+10:39:19,167  INFO UserClient,main:84 - Welcome User ID : 8
+10:39:19,168  INFO UserClient,main:91 - Successfully Logged in as Professor
+10:39:19,168  INFO ProfessorClient,main:93 - Enter your choice:
+10:39:19,168  INFO ProfessorClient,main:94 - 1. To view available courses
+10:39:19,169  INFO ProfessorClient,main:95 - 2. To view courses assigned
+10:39:19,169  INFO ProfessorClient,main:96 - 3. To view students in a course
+10:39:19,169  INFO ProfessorClient,main:97 - 4. Grade a student
+10:39:19,169  INFO ProfessorClient,main:98 - 0. To logout
+10:39:22,272  INFO ProfessorClient,main:58 - Enter Course ID
+10:39:24,288  INFO CourseCatalogDaoImpl,main:169 - aasdsadsa
+10:39:24,289  INFO CourseCatalogDaoImpl,main:174 - 21321
+10:39:24,290  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:39:24,292  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:39:24,297 ERROR ProfessorDaoImpl,main:70 - Column 'userId' not found.
+10:40:12,771  INFO UserClient,main:37 - Welcome to the Course Registration System
+10:40:12,775  INFO UserClient,main:50 - ======User Menu=====
+10:40:12,776  INFO UserClient,main:51 - Enter 1 to Login
+10:40:12,776  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+10:40:12,777  INFO UserClient,main:53 - Enter any other number to exit CRS
+10:40:14,903  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+10:40:14,903  INFO UserClient,main:73 - Enter User Id
+10:40:17,535  INFO UserClient,main:75 - Enter User Password
+10:40:19,351  INFO UserDaoImpl,main:180 - 8
+10:40:19,433  INFO UserDaoImpl,main:188 - riyapass
+10:40:19,437  INFO UserClient,main:84 - Welcome User ID : 8
+10:40:19,437  INFO UserClient,main:91 - Successfully Logged in as Professor
+10:40:19,438  INFO ProfessorClient,main:93 - Enter your choice:
+10:40:19,438  INFO ProfessorClient,main:94 - 1. To view available courses
+10:40:19,438  INFO ProfessorClient,main:95 - 2. To view courses assigned
+10:40:19,438  INFO ProfessorClient,main:96 - 3. To view students in a course
+10:40:19,439  INFO ProfessorClient,main:97 - 4. Grade a student
+10:40:19,439  INFO ProfessorClient,main:98 - 0. To logout
+10:40:20,733  INFO ProfessorClient,main:58 - Enter Course ID
+10:40:22,967  INFO CourseCatalogDaoImpl,main:169 - aasdsadsa
+10:40:22,969  INFO CourseCatalogDaoImpl,main:174 - 21321
+10:40:22,970  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:40:22,973  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:40:22,981 ERROR ProfessorDaoImpl,main:70 - Column 'emailId' not found.
+10:40:42,498  INFO UserClient,main:37 - Welcome to the Course Registration System
+10:40:42,500  INFO UserClient,main:50 - ======User Menu=====
+10:40:42,500  INFO UserClient,main:51 - Enter 1 to Login
+10:40:42,501  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+10:40:42,501  INFO UserClient,main:53 - Enter any other number to exit CRS
+10:40:44,500  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+10:40:44,500  INFO UserClient,main:73 - Enter User Id
+10:40:46,381  INFO UserClient,main:75 - Enter User Password
+10:40:48,427  INFO UserDaoImpl,main:180 - 8
+10:40:48,477  INFO UserDaoImpl,main:188 - riyapass
+10:40:48,479  INFO UserClient,main:84 - Welcome User ID : 8
+10:40:48,480  INFO UserClient,main:91 - Successfully Logged in as Professor
+10:40:48,480  INFO ProfessorClient,main:93 - Enter your choice:
+10:40:48,480  INFO ProfessorClient,main:94 - 1. To view available courses
+10:40:48,480  INFO ProfessorClient,main:95 - 2. To view courses assigned
+10:40:48,480  INFO ProfessorClient,main:96 - 3. To view students in a course
+10:40:48,481  INFO ProfessorClient,main:97 - 4. Grade a student
+10:40:48,481  INFO ProfessorClient,main:98 - 0. To logout
+10:40:49,713  INFO ProfessorClient,main:58 - Enter Course ID
+10:40:50,613  INFO CourseCatalogDaoImpl,main:169 - aasdsadsa
+10:40:50,614  INFO CourseCatalogDaoImpl,main:174 - 21321
+10:40:50,614  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:40:50,617  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:40:50,621  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:40:50,623  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:40:50,623  INFO ProfessorBusiness,main:75 - Registered Students under riya for course LL are :
+10:40:50,665  INFO StudentDaoImpl,main:114 -  Student Details Retrieved sucessfully
+10:40:50,676  INFO StudentDaoImpl,main:114 -  Student Details Retrieved sucessfully
+10:40:50,676  INFO ProfessorBusiness,main:77 - Student ID : 2
+Student Namedfasf
+
+10:40:50,677  INFO ProfessorClient,main:93 - Enter your choice:
+10:40:50,677  INFO ProfessorClient,main:94 - 1. To view available courses
+10:40:50,677  INFO ProfessorClient,main:95 - 2. To view courses assigned
+10:40:50,677  INFO ProfessorClient,main:96 - 3. To view students in a course
+10:40:50,677  INFO ProfessorClient,main:97 - 4. Grade a student
+10:40:50,678  INFO ProfessorClient,main:98 - 0. To logout
+10:41:14,882  INFO ProfessorClient,main:70 - Enter Course ID
+10:41:16,632  INFO CourseCatalogDaoImpl,main:169 - aasdsadsa
+10:41:16,633  INFO CourseCatalogDaoImpl,main:174 - 21321
+10:41:16,633  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:41:16,635  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:41:16,636  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:41:16,638  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:41:16,638  INFO ProfessorBusiness,main:75 - Registered Students under riya for course LL are :
+10:41:16,639  INFO StudentDaoImpl,main:114 -  Student Details Retrieved sucessfully
+10:41:16,643  INFO StudentDaoImpl,main:114 -  Student Details Retrieved sucessfully
+10:41:16,643  INFO ProfessorBusiness,main:77 - Student ID : 2
+Student Namedfasf
+
+10:41:16,643  INFO ProfessorClient,main:75 - Please Select the Id of the student you want to Grade!
+10:42:12,125  INFO ProfessorClient,main:79 - Enter grade: (A,B,C,D,E)
+10:42:26,523  INFO UserClient,main:37 - Welcome to the Course Registration System
+10:42:26,525  INFO UserClient,main:50 - ======User Menu=====
+10:42:26,525  INFO UserClient,main:51 - Enter 1 to Login
+10:42:26,525  INFO UserClient,main:52 - Enter 2  to Register (if you are student)
+10:42:26,526  INFO UserClient,main:53 - Enter any other number to exit CRS
+10:42:29,157  INFO AuthenticateBusiness,main:30 - Constructor of Authenticate Business
+10:42:29,158  INFO UserClient,main:73 - Enter User Id
+10:42:31,251  INFO UserClient,main:75 - Enter User Password
+10:42:34,439  INFO UserDaoImpl,main:180 - 8
+10:42:34,486  INFO UserDaoImpl,main:188 - riyapass
+10:42:34,488  INFO UserClient,main:84 - Welcome User ID : 8
+10:42:34,489  INFO UserClient,main:91 - Successfully Logged in as Professor
+10:42:34,489  INFO ProfessorClient,main:94 - Enter your choice:
+10:42:34,489  INFO ProfessorClient,main:95 - 1. To view available courses
+10:42:34,489  INFO ProfessorClient,main:96 - 2. To view courses assigned
+10:42:34,489  INFO ProfessorClient,main:97 - 3. To view students in a course
+10:42:34,490  INFO ProfessorClient,main:98 - 4. Grade a student
+10:42:34,490  INFO ProfessorClient,main:99 - 0. To logout
+10:42:35,794  INFO ProfessorClient,main:70 - Enter Course ID
+10:42:39,804  INFO CourseCatalogDaoImpl,main:169 - aasdsadsa
+10:42:39,804  INFO CourseCatalogDaoImpl,main:174 - 21321
+10:42:39,805  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:42:39,808  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:42:39,813  INFO CourseCatalogDaoImpl,main:136 - get data for 12
+10:42:39,816  INFO CourseCatalogDaoImpl,main:147 - hereLL
+10:42:39,816  INFO ProfessorBusiness,main:75 - Registered Students under riya for course LL are :
+10:42:39,819  INFO StudentDaoImpl,main:114 -  Student Details Retrieved sucessfully
+10:42:39,822  INFO StudentDaoImpl,main:114 -  Student Details Retrieved sucessfully
+10:42:39,822  INFO ProfessorBusiness,main:77 - Student ID : 2
+Student Namedfasf
+
+10:42:39,822  INFO ProfessorClient,main:75 - Please Select the Id of the student you want to Grade!
+10:42:44,030  INFO ProfessorClient,main:79 - Enter grade: (A,B,C,D,E)
+10:42:45,558  INFO StudentDaoImpl,main:193 - Added to Grade for Student sucessfully
+10:42:45,558  INFO ProfessorBusiness,main:50 - Added Grade C
+10:42:45,558  INFO ProfessorBusiness,main:51 - Student :2
+10:42:45,558  INFO ProfessorBusiness,main:52 - Course Id : 12
+10:42:45,558  INFO ProfessorClient,main:94 - Enter your choice:
+10:42:45,559  INFO ProfessorClient,main:95 - 1. To view available courses
+10:42:45,559  INFO ProfessorClient,main:96 - 2. To view courses assigned
+10:42:45,559  INFO ProfessorClient,main:97 - 3. To view students in a course
+10:42:45,559  INFO ProfessorClient,main:98 - 4. Grade a student
+10:42:45,559  INFO ProfessorClient,main:99 - 0. To logout

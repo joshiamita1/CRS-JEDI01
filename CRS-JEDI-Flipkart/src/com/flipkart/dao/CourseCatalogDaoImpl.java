@@ -166,17 +166,21 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			statement = connection.prepareStatement(SQLQueriesConstant.VIEW_COURSEGRADES_QUERY);
 			statement.setInt(1, courseCode);
 			resultSet = statement.executeQuery();
+			logger.info("aasdsadsa");
 			while(resultSet.next()) {
 				int studentId = resultSet.getInt("StudentId");
+				
 				Grade grade = Grade.valueOf(resultSet.getString("Grade"));
+				logger.info("21321");
 				courseGrades.put(studentId, grade);
 			}
 			return courseGrades;
 		}catch(Exception e) {
+			logger.info("adsdsads");
 			logger.error(e.getMessage());
 		}
 		
-		return null;
+		return courseGrades;
 	}
 
 	
@@ -262,7 +266,7 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 			statement.setInt(2, professorId);
 			resultSet = statement.executeQuery();
 			int count = 0;
-			while(resultSet.next()) {
+			if(resultSet.next()) {
 				count = resultSet.getInt("pcCount");
 			}
 			return (count>0);

@@ -13,7 +13,7 @@ import com.flipkart.dao.StudentDaoImpl;
 import com.flipkart.dao.UserDaoImpl;
 
 public class AuthenticateBusiness {
-	public static Logger logger1 = Logger.getLogger(AuthenticateBusiness.class);
+	public static Logger logger = Logger.getLogger(AuthenticateBusiness.class);
 	// Singleton Field
 	private static AuthenticateBusiness instance = null;
 	
@@ -27,7 +27,7 @@ public class AuthenticateBusiness {
 	
 	// Private Constructor
 	private AuthenticateBusiness() {
-		logger1.info("Constructor of Authenticate Business");
+		logger.info("Constructor of Authenticate Business");
 	}
 	
 	// Get Instance of the class
@@ -58,8 +58,8 @@ public class AuthenticateBusiness {
 	}
 	
 	public void testing() {
-		logger1.info("SSSS");
-		logger1.debug("DEbugging");
+		logger.info("SSSS");
+		logger.debug("DEbugging");
 		System.out.print("Checking");
 	}
 	
@@ -67,8 +67,8 @@ public class AuthenticateBusiness {
 	public boolean registerStudent(Student student, String password) {
 		
 		studentDaoObject.addStudent(student, password);
-		logger1.info("Added user into Student Table\n");
-		logger1.info(student.getUserId());
+		logger.info("Added user into Student Table\n");
+		logger.info(student.getUserId());
 		notificationSystemDaoObject.notifyUser(student.getUserId(), "Successfully Registerd!");
 		return true;
 	}
@@ -76,14 +76,14 @@ public class AuthenticateBusiness {
 	// Register Admin in Database
 	public boolean registerAdmin(User admin, String password) {
 		adminDaoObject.addAdmin(admin, password);
-		logger1.info("Added user into Admin Table\n");
+		logger.info("Added user into Admin Table\n");
 		return true;
 	}
 
 	// Register Professor in Database
 	public boolean registerProfessor(User user, String password, Department department) {
 		professorDaoObject.addProfessor(user, password, department);
-		logger1.info("Added user into Professor Table\n");
+		logger.info("Added user into Professor Table\n");
 		return true;
 	}
 }
