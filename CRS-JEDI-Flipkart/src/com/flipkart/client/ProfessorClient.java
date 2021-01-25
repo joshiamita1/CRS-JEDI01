@@ -55,6 +55,7 @@ public class ProfessorClient {
 	
 	// View Registered Students in the course
 	public void viewRegisteredStudents(int professorId) {
+		logger.info("Enter Course ID");
 		int courseId = sc.nextInt();
 		if(professorBusinessObject.validCourseForProfessor(professorId, courseId)) {
 			professorBusinessObject.viewRegisteredStudents(courseId);
@@ -66,6 +67,7 @@ public class ProfessorClient {
 	
 	// Grade Student
 	public void gradeStudent(int professorId) {
+		logger.info("Enter Course ID");
 		int courseId = sc.nextInt();
 		// Check if course is taught by professor
 		if(professorBusinessObject.validCourseForProfessor(professorId, courseId)) {

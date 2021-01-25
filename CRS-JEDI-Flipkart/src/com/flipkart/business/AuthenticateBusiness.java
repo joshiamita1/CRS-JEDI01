@@ -23,7 +23,7 @@ public class AuthenticateBusiness {
 	AdminDaoImpl adminDaoObject = AdminDaoImpl.getInstance();
 	ProfessorDaoImpl professorDaoObject = ProfessorDaoImpl.getInstance();
 	NotificationSystemDaoImpl notificationSystemDaoObject = NotificationSystemDaoImpl.getInstance();
-	private static Logger logger = Logger.getLogger(AuthenticateBusiness.class);
+	public static Logger logger = Logger.getLogger(AuthenticateBusiness.class);
 	
 	// Private Constructor
 	private AuthenticateBusiness() {
@@ -63,7 +63,8 @@ public class AuthenticateBusiness {
 		
 		studentDaoObject.addStudent(student, password);
 		logger.info("Added user into Student Table\n");
-		//notificationSystemDaoObject.notifyUser(student.getUserId(), "Successfully Registerd!");
+		logger.info(student.getUserId());
+		notificationSystemDaoObject.notifyUser(student.getUserId(), "Successfully Registerd!");
 		return true;
 	}
 

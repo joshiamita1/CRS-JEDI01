@@ -7,11 +7,8 @@ import java.util.*;
 
 import org.apache.log4j.Logger;
 
-import com.flipkart.bean.Course;
 import com.flipkart.bean.Professor;
-
 import com.flipkart.bean.User;
-
 import com.flipkart.constant.Department;
 import com.flipkart.constant.Gender;
 import com.flipkart.constant.Role;

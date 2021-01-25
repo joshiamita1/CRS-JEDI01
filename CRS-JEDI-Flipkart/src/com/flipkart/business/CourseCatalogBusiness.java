@@ -30,12 +30,12 @@ public class CourseCatalogBusiness{
 	
 	// View all the Courses
 	public void viewAllCourses() {   
-		//ArrayList<Integer> coursesList = courseCatalogDaoObject.getCourses();
+		ArrayList<Integer> coursesList = courseCatalogDaoObject.getCourses();
 		logger.info("Course Id\tCourse Name");
-//		for(Integer courseCode : coursesList) {
-//			Course course = courseCatalogDaoObject.getCourse(courseCode);
-//			logger.info(course.getCourseCode() +  "\t\t " + course.getCourseName());
-//		}
+		for(Integer courseCode : coursesList) {
+			Course course = courseCatalogDaoObject.getCourse(courseCode);
+			logger.info(course.getCourseCode() +  "\t\t " + course.getCourseName());
+		}
 
 	}
 	

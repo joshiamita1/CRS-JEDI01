@@ -56,8 +56,10 @@ public class AdminClient {
 				break;
 			case 8:
 				dropCourse();
+				break;
 			case 9:
 				approveStudent();
+				break;
 			case 0:
 				break;
 			default:
@@ -190,6 +192,7 @@ public class AdminClient {
 	
 	// Drop Course from the catalog
 	public void dropCourse() {
+		logger.info("Enter Course ID");
 		int courseId = sc.nextInt();
 		courseCatalogBusinessObject.dropCourse(courseId);
 	}

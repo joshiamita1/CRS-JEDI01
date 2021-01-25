@@ -1,8 +1,6 @@
   
 package com.flipkart.dao;
 
-import java.util.List;
-
 import com.flipkart.bean.User;
 
 public interface AdminDao {

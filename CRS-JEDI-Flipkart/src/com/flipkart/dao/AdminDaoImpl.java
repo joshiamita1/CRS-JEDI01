@@ -5,7 +5,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.List;
 
 import org.apache.log4j.Logger;
 
@@ -32,8 +31,6 @@ public class AdminDaoImpl implements AdminDao{
 	
 	@Override
 	public void addAdmin(User admin, String password) {
-		// TODO Auto-generated method stub
-		
 		PreparedStatement stmt = null;
 		try {
 			
@@ -66,8 +63,6 @@ public class AdminDaoImpl implements AdminDao{
 
 	@Override
 	public void deleteAdmin(int userId) {
-		// TODO Auto-generated method stub
-		
 		PreparedStatement stmt = null;
 		try {
 			stmt = connection.prepareStatement(SQLQueriesConstant.DELETE_ADMIN_QUERY);

@@ -46,7 +46,7 @@ public class SQLQueriesConstant{
 	public static String VIEW_GRADES_QUERY = "select * from RegisteredCourse where studentId = ?";
 	public static String COUNT_COURSE= "select count(CourseId) as coursecount from RegisteredCourse where studentId = ?";
 	public static String UPDATE_FEE="update Student set AmountPayable = ? where studentId=?";
-	public static String MAKE_PAYMENT_QUERY = "insert into Payment(studentId, AmountPaid,DateofPayment) values(?, ?, ?)";
+	public static String MAKE_PAYMENT_QUERY = "insert into feepayment(studentId, AmountPaid,DateofPayment) values(?, ?, ?)";
 	public static String GET_FEE_QUERY="select amountPayable from student where StudentId= ?";
 	public static String GET_HAS_SCHOLARSHIP =" select HasScholarship from student where StudentID= ?";
 	public static String APPROVE_STUDENT_QUERY="update Student set isApproved =? where studentID= ?";
