@@ -58,6 +58,7 @@ public class StudentClient {
 	
 	// Display Available Features
 	void printChoices() {
+		logger.info("==========================STUDENT==========================");
 		logger.info("Enter your choice:");
 		logger.info("1. To view available courses");
 		logger.info("2. To register a course");
@@ -66,21 +67,25 @@ public class StudentClient {
 		logger.info("5. Pay fees");
 		logger.info("6. Print Report Card");
 		logger.info("0. To logout");
+		logger.info("===========================================================");
 	}
 	
 	// Register Student for the course
 	public void registerCourse(int studentId) {
 		// Check if maximum limit is reached
 		if(studentBusinessObject.numberOfRegisteredCourses(studentId)==4) {
+			logger.info("=========MAXIMUM COURSE REGISTRATION LIMIT REACHED=========");
 			logger.info("You cannot add courses as you have already selected 4 courses");
 		} else{
 			int courseId = sc.nextInt();
 			// Check if student is already registered for the course
 			if(studentBusinessObject.checkValidCourseForStudent(studentId, courseId)) {
+				logger.info("====================ALREADY REGISTERED====================");
 				logger.info("You are already Registered for this course");
 			}
 			// Check if there is availability in the course
 			else if(courseCatalogBusinessObject.numberOfRegisterdStudents(courseId)==10) {
+				logger.info("==============MAXIMUM STUDENT LIMIT REACHED==============");
 				logger.info("10 Students already Registerd for the course so you can't register");
 			} else {
 				studentBusinessObject.registerCourse(studentId, courseId);
@@ -95,6 +100,7 @@ public class StudentClient {
 		if(studentBusinessObject.checkValidCourseForStudent(studentId, courseId)) {
 			studentBusinessObject.dropCourse(studentId, courseId);
 		} else {
+			logger.info("======================NOT REGISTERED======================");
 			logger.info("You were not registered for this course");
 		}
 	}
@@ -125,6 +131,7 @@ public class StudentClient {
 	
 	// Print Report Card
 	public void printReportCard(int studentId) {
+		logger.info("=======================REPORT CARD=======================");
 		studentBusinessObject.printReportCard(studentId);
 	}
 }
