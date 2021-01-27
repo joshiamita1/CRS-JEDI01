@@ -23,6 +23,7 @@ public class SQLQueriesConstant{
 	
 	//NotificationSystem
 	public static String NOTIFICATION_QUERY="insert into notificationsystem (UserID , Message, TimeNotified) values (?, ?,?)";
+	public static String NOTIFICATION_QUERY_for_LOGIN="insert into notificationsystem (UserID , Message, TimeNotified) values (?, ?,?)";
 	
 	// View Courses
 	public static String VIEW_COURSE_QUERY = "select * from Coursecatalog where courseId =?";

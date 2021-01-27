@@ -29,6 +29,7 @@ public class CRSStudentClient {
 	 */
 	CourseCatalogBusiness courseCatalogBusinessObject = CourseCatalogBusiness.getInstance();
 	StudentBusiness studentBusinessObject = StudentBusiness.getInstance();
+
 	 	
 	/**
 	 * @param studentId
@@ -36,6 +37,7 @@ public class CRSStudentClient {
 	 */
 	public void displayMenu(int studentId) {
 		int choice;
+		studentBusinessObject.logintime(studentId);
 		do {
 			printChoices();
 			choice = sc.nextInt();

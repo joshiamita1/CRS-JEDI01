@@ -1,5 +1,6 @@
 package com.flipkart.business;
-
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Map;
 
@@ -23,18 +24,7 @@ import com.flipkart.dao.UserDaoImpl;
  * @author JEDI01
  *
  */
-/**
- * @author lovis
- *
- */
-/**
- * @author lovis
- *
- */
-/**
- * @author lovis
- *
- */
+
 /**
  * @author lovis
  *
@@ -79,6 +69,27 @@ public class StudentBusiness{
 	/**
 	 * @param studentId
 	 */
+	public void logintime(int studentId)
+	{
+//		new Date();
+//		LocalDate.now();
+//		LocalTime.now();
+//		LocalDateTime localDateTime = LocalDateTime.now();
+
+//		System.out.println("Current Date and Time - Before Java 8 : " + currentDate);
+//		System.out.println("Current Date - From Java 8 : " + localDate);
+//		System.out.println("Current Time - From Java 8 : " + localTime);
+		//System.out.println("Current Date and Time From Java 8 : " + localDateTime);
+		
+		logger.info(String.format("%20s%30s","currentDate","LocalTime"));
+		//Date currentDate = new Date();
+		LocalDate localDate = LocalDate.now();
+		LocalTime localTime = LocalTime.now();
+		logger.info(String.format("%20s%40s",localDate, localTime));
+		//logger.info("Time of Login" + localDateTime);
+		notificationSystemDaoObject.notifyUserforlogin(studentId, "Time of Login" +  localTime);
+		
+	}
 	public void viewRegisteredCourses(int studentId) {
 		ArrayList<Integer> courseList = studentDaoObject.viewRegisteredCourses(studentId);
 		if(courseList.size() == 0) {

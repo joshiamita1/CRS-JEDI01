@@ -6,7 +6,11 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="E:/log4j-1.2.11.jar/log4j-1.2.11.jar"/>
-	<classpathentry kind="lib" path="E:/mysql-connector-java-8.0.23/mysql-connector-java-8.0.23/mysql-connector-java-8.0.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Joshi_Amita/Downloads/mysql-connector-java-5.1.45/mysql-connector-java-5.1.45-bin.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Joshi_Amita/Downloads/log4j-1.2.11.jar/log4j-1.2.11.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

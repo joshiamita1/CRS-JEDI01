@@ -4636,3 +4636,653 @@ Logging You In
 16:33:56,523  INFO CRSAdminClient,main:139 - 9. Approve student
 16:33:56,523  INFO CRSAdminClient,main:140 - 0. To logout
 16:33:56,524  INFO CRSAdminClient,main:141 - ===========================================================
+00:42:05,879  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+00:42:05,882  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+00:42:05,883  INFO CRSApplication,main:74 - ===========================USER===========================
+00:42:05,884  INFO CRSApplication,main:75 - Enter 1 to Login
+00:42:05,884  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+00:42:05,885  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+00:42:05,885  INFO CRSApplication,main:78 - ==========================================================
+20:37:46,402  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+20:37:46,406  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+20:37:46,406  INFO CRSApplication,main:74 - ===========================USER===========================
+20:37:46,406  INFO CRSApplication,main:75 - Enter 1 to Login
+20:37:46,407  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+20:37:46,407  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+20:37:46,408  INFO CRSApplication,main:78 - ==========================================================
+20:37:52,755 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:37:52,758 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:37:52,763 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:37:52,765 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:37:52,768 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:37:52,770 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:37:52,774 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:37:52,780  INFO CRSApplication,main:104 - Enter User Id
+20:38:50,842  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+20:38:50,846  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+20:38:50,847  INFO CRSApplication,main:74 - ===========================USER===========================
+20:38:50,848  INFO CRSApplication,main:75 - Enter 1 to Login
+20:38:50,848  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+20:38:50,849  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+20:38:50,849  INFO CRSApplication,main:78 - ==========================================================
+20:38:53,255 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:38:53,260 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:38:53,266 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:38:53,269 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:38:53,272 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:38:53,276 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:38:53,282 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:38:53,288  INFO CRSApplication,main:104 - Enter User Id
+20:39:14,755  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+20:39:14,759  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+20:39:14,760  INFO CRSApplication,main:74 - ===========================USER===========================
+20:39:14,760  INFO CRSApplication,main:75 - Enter 1 to Login
+20:39:14,760  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+20:39:14,761  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+20:39:14,761  INFO CRSApplication,main:78 - ==========================================================
+20:39:18,767 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:39:18,771 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:39:18,775 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:39:18,778 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:39:18,780 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:39:18,782 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:39:18,785 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:39:18,789  INFO CRSApplication,main:104 - Enter User Id
+20:40:09,896  INFO CRSApplication,main:106 - Enter User Password
+20:40:34,395 ERROR UserDaoImpl,main:192 - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+20:40:34,396  INFO AuthenticateBusiness,main:75 - Cannot invoke "String.equals(Object)" because "userPassword" is null
+20:40:34,397  INFO CRSApplication,main:136 - Invalid Credentials
+20:40:34,397  INFO CRSApplication,main:74 - ===========================USER===========================
+20:40:34,398  INFO CRSApplication,main:75 - Enter 1 to Login
+20:40:34,398  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+20:40:34,399  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+20:40:34,400  INFO CRSApplication,main:78 - ==========================================================
+20:40:37,262  INFO CRSApplication,main:104 - Enter User Id
+20:40:39,453  INFO CRSApplication,main:106 - Enter User Password
+20:40:43,357 ERROR UserDaoImpl,main:192 - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+20:40:43,358  INFO AuthenticateBusiness,main:75 - Cannot invoke "String.equals(Object)" because "userPassword" is null
+20:40:43,358  INFO CRSApplication,main:136 - Invalid Credentials
+20:40:43,359  INFO CRSApplication,main:74 - ===========================USER===========================
+20:40:43,359  INFO CRSApplication,main:75 - Enter 1 to Login
+20:40:43,360  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+20:40:43,365  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+20:40:43,365  INFO CRSApplication,main:78 - ==========================================================
+20:42:50,526  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+20:42:50,528  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+20:42:50,529  INFO CRSApplication,main:74 - ===========================USER===========================
+20:42:50,529  INFO CRSApplication,main:75 - Enter 1 to Login
+20:42:50,529  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+20:42:50,530  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+20:42:50,530  INFO CRSApplication,main:78 - ==========================================================
+20:42:53,434 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:42:53,439 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:42:53,443 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:42:53,446 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:42:53,448 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:42:53,451 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:42:53,455 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:42:53,461  INFO CRSApplication,main:104 - Enter User Id
+20:43:02,267  INFO CRSApplication,main:106 - Enter User Password
+20:43:04,668 ERROR UserDaoImpl,main:192 - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+20:43:04,668  INFO AuthenticateBusiness,main:75 - Cannot invoke "String.equals(Object)" because "userPassword" is null
+20:43:04,668  INFO CRSApplication,main:136 - Invalid Credentials
+20:43:04,668  INFO CRSApplication,main:74 - ===========================USER===========================
+20:43:04,669  INFO CRSApplication,main:75 - Enter 1 to Login
+20:43:04,669  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+20:43:04,669  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+20:43:04,669  INFO CRSApplication,main:78 - ==========================================================
+20:43:26,575  INFO CRSApplication,main:104 - Enter User Id
+20:43:28,500  INFO CRSApplication,main:106 - Enter User Password
+20:43:30,033 ERROR UserDaoImpl,main:192 - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+20:43:30,034  INFO AuthenticateBusiness,main:75 - Cannot invoke "String.equals(Object)" because "userPassword" is null
+20:43:30,034  INFO CRSApplication,main:136 - Invalid Credentials
+20:43:30,035  INFO CRSApplication,main:74 - ===========================USER===========================
+20:43:30,035  INFO CRSApplication,main:75 - Enter 1 to Login
+20:43:30,036  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+20:43:30,036  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+20:43:30,036  INFO CRSApplication,main:78 - ==========================================================
+20:49:03,549  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+20:49:03,553  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+20:49:03,553  INFO CRSApplication,main:74 - ===========================USER===========================
+20:49:03,554  INFO CRSApplication,main:75 - Enter 1 to Login
+20:49:03,554  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+20:49:03,554  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+20:49:03,555  INFO CRSApplication,main:78 - ==========================================================
+20:49:07,788 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:49:07,792 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:49:07,795 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:49:07,798 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:49:07,800 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:49:07,802 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:49:07,806 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:49:07,811  INFO CRSApplication,main:104 - Enter User Id
+20:49:12,831  INFO CRSApplication,main:106 - Enter User Password
+20:49:21,049 ERROR UserDaoImpl,main:192 - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+20:49:21,049  INFO AuthenticateBusiness,main:75 - Cannot invoke "String.equals(Object)" because "userPassword" is null
+20:49:21,049  INFO CRSApplication,main:136 - Invalid Credentials
+20:49:21,050  INFO CRSApplication,main:74 - ===========================USER===========================
+20:49:21,050  INFO CRSApplication,main:75 - Enter 1 to Login
+20:49:21,050  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+20:49:21,050  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+20:49:21,050  INFO CRSApplication,main:78 - ==========================================================
+20:53:43,270  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+20:53:43,273  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+20:53:43,273  INFO CRSApplication,main:74 - ===========================USER===========================
+20:53:43,274  INFO CRSApplication,main:75 - Enter 1 to Login
+20:53:43,274  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+20:53:43,274  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+20:53:43,274  INFO CRSApplication,main:78 - ==========================================================
+20:53:45,525 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:53:45,529 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:53:45,535 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:53:45,538 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:53:45,542 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:53:45,545 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:53:45,549 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+20:53:45,554  INFO CRSApplication,main:104 - Enter User Id
+20:57:29,611  INFO CRSApplication,main:106 - Enter User Password
+20:57:34,239 ERROR UserDaoImpl,main:192 - Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+20:57:34,240  INFO AuthenticateBusiness,main:75 - Cannot invoke "String.equals(Object)" because "userPassword" is null
+20:57:34,240  INFO CRSApplication,main:136 - Invalid Credentials
+20:57:34,240  INFO CRSApplication,main:74 - ===========================USER===========================
+20:57:34,240  INFO CRSApplication,main:75 - Enter 1 to Login
+20:57:34,241  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+20:57:34,241  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+20:57:34,241  INFO CRSApplication,main:78 - ==========================================================
+20:59:06,603  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+20:59:06,606  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+20:59:06,606  INFO CRSApplication,main:74 - ===========================USER===========================
+20:59:06,607  INFO CRSApplication,main:75 - Enter 1 to Login
+20:59:06,607  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+20:59:06,607  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+20:59:06,608  INFO CRSApplication,main:78 - ==========================================================
+20:59:26,130  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+20:59:26,134  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+20:59:26,134  INFO CRSApplication,main:74 - ===========================USER===========================
+20:59:26,135  INFO CRSApplication,main:75 - Enter 1 to Login
+20:59:26,135  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+20:59:26,136  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+20:59:26,136  INFO CRSApplication,main:78 - ==========================================================
+20:59:28,126  INFO CRSApplication,main:104 - Enter User Id
+21:00:07,668  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+21:00:07,673  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+21:00:07,673  INFO CRSApplication,main:74 - ===========================USER===========================
+21:00:07,674  INFO CRSApplication,main:75 - Enter 1 to Login
+21:00:07,674  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+21:00:07,674  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+21:00:07,675  INFO CRSApplication,main:78 - ==========================================================
+21:00:16,054 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+21:00:16,058 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+21:00:16,062 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+21:00:16,066 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+21:00:16,068 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+21:00:16,071 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+21:00:16,074 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+21:00:16,079  INFO CRSApplication,main:148 - Enter Name
+21:02:26,746  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+21:02:26,749  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+21:02:26,749  INFO CRSApplication,main:74 - ===========================USER===========================
+21:02:26,749  INFO CRSApplication,main:75 - Enter 1 to Login
+21:02:26,750  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+21:02:26,750  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+21:02:26,751  INFO CRSApplication,main:78 - ==========================================================
+21:02:28,629 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+21:02:28,634 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+21:02:28,639 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+21:02:28,642 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+21:02:28,645 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+21:02:28,646 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+21:02:28,650 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+21:02:28,655  INFO CRSApplication,main:104 - Enter User Id
+21:04:09,224  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+21:04:09,227  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+21:04:09,227  INFO CRSApplication,main:74 - ===========================USER===========================
+21:04:09,227  INFO CRSApplication,main:75 - Enter 1 to Login
+21:04:09,228  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+21:04:09,228  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+21:04:09,228  INFO CRSApplication,main:78 - ==========================================================
+21:04:12,497  INFO CRSApplication,main:104 - Enter User Id
+21:04:16,635  INFO CRSApplication,main:106 - Enter User Password
+21:04:19,372  INFO CRSApplication,main:119 - Welcome User ID : 19
+21:04:19,373  INFO CRSApplication,main:126 - Successfully Logged in as Professor
+21:04:19,373  INFO CRSProfessorClient,main:117 - =========================PROFESSOR=========================
+21:04:19,374  INFO CRSProfessorClient,main:118 - Enter your choice:
+21:04:19,375  INFO CRSProfessorClient,main:119 - 1. To view available courses
+21:04:19,376  INFO CRSProfessorClient,main:120 - 2. To view courses assigned
+21:04:19,377  INFO CRSProfessorClient,main:121 - 3. To view students in a course
+21:04:19,378  INFO CRSProfessorClient,main:122 - 4. Grade a student
+21:04:19,379  INFO CRSProfessorClient,main:123 - 0. To logout
+21:04:19,379  INFO CRSProfessorClient,main:124 - ===========================================================
+21:04:24,073  INFO CourseCatalogBusiness,main:49 -            Course Id          Course Name
+21:04:24,076  INFO CourseCatalogBusiness,main:52 -                    4                  EMT
+21:04:24,078  INFO CourseCatalogBusiness,main:52 -                    5                  OOP
+21:04:24,080  INFO CourseCatalogBusiness,main:52 -                  100                  AnE
+21:04:24,081  INFO CourseCatalogBusiness,main:52 -                    3                  DSA
+21:04:24,082  INFO CRSProfessorClient,main:117 - =========================PROFESSOR=========================
+21:04:24,082  INFO CRSProfessorClient,main:118 - Enter your choice:
+21:04:24,082  INFO CRSProfessorClient,main:119 - 1. To view available courses
+21:04:24,083  INFO CRSProfessorClient,main:120 - 2. To view courses assigned
+21:04:24,083  INFO CRSProfessorClient,main:121 - 3. To view students in a course
+21:04:24,083  INFO CRSProfessorClient,main:122 - 4. Grade a student
+21:04:24,083  INFO CRSProfessorClient,main:123 - 0. To logout
+21:04:24,084  INFO CRSProfessorClient,main:124 - ===========================================================
+21:04:29,367  INFO ProfessorBusiness,main:88 -            Course Id          Course Name
+21:04:29,367  INFO CRSProfessorClient,main:117 - =========================PROFESSOR=========================
+21:04:29,367  INFO CRSProfessorClient,main:118 - Enter your choice:
+21:04:29,368  INFO CRSProfessorClient,main:119 - 1. To view available courses
+21:04:29,368  INFO CRSProfessorClient,main:120 - 2. To view courses assigned
+21:04:29,368  INFO CRSProfessorClient,main:121 - 3. To view students in a course
+21:04:29,368  INFO CRSProfessorClient,main:122 - 4. Grade a student
+21:04:29,369  INFO CRSProfessorClient,main:123 - 0. To logout
+21:04:29,369  INFO CRSProfessorClient,main:124 - ===========================================================
+21:04:38,709  INFO CRSProfessorClient,main:74 - Enter Course ID
+22:05:58,505  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+22:05:58,508  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+22:05:58,508  INFO CRSApplication,main:74 - ===========================USER===========================
+22:05:58,508  INFO CRSApplication,main:75 - Enter 1 to Login
+22:05:58,509  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+22:05:58,509  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+22:05:58,509  INFO CRSApplication,main:78 - ==========================================================
+22:06:02,021  INFO CRSApplication,main:104 - Enter User Id
+22:06:08,341  INFO CRSApplication,main:106 - Enter User Password
+22:06:24,794 ERROR UserDaoImpl,main:192 - No such user exists ! Verify UserID again 
+22:06:24,794  INFO AuthenticateBusiness,main:75 - Cannot invoke "String.equals(Object)" because "userPassword" is null
+22:06:24,794  INFO CRSApplication,main:136 - Invalid Credentials
+22:06:24,795  INFO CRSApplication,main:74 - ===========================USER===========================
+22:06:24,795  INFO CRSApplication,main:75 - Enter 1 to Login
+22:06:24,795  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+22:06:24,796  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+22:06:24,796  INFO CRSApplication,main:78 - ==========================================================
+22:06:28,888 ERROR CRSApplication,main:93 - ========================EXITING CRS=======================
+22:06:28,889  INFO CRSApplication,main:64 - ========================EXITING CRS=======================
+22:06:41,974  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+22:06:41,976  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+22:06:41,977  INFO CRSApplication,main:74 - ===========================USER===========================
+22:06:41,977  INFO CRSApplication,main:75 - Enter 1 to Login
+22:06:41,977  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+22:06:41,977  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+22:06:41,978  INFO CRSApplication,main:78 - ==========================================================
+22:06:43,931  INFO CRSApplication,main:104 - Enter User Id
+22:06:46,808  INFO CRSApplication,main:106 - Enter User Password
+22:06:49,386  INFO AuthenticateBusiness,main:75 - Username/ password incorrect! Try again 
+22:06:49,386  INFO CRSApplication,main:136 - Invalid Credentials
+22:06:49,386  INFO CRSApplication,main:74 - ===========================USER===========================
+22:06:49,386  INFO CRSApplication,main:75 - Enter 1 to Login
+22:06:49,387  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+22:06:49,387  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+22:06:49,387  INFO CRSApplication,main:78 - ==========================================================
+22:06:52,397  INFO CRSApplication,main:104 - Enter User Id
+22:06:54,092  INFO CRSApplication,main:106 - Enter User Password
+22:06:56,245  INFO CRSApplication,main:119 - Welcome User ID : 19
+22:06:56,245  INFO CRSApplication,main:126 - Successfully Logged in as Professor
+22:06:56,246  INFO CRSProfessorClient,main:117 - =========================PROFESSOR=========================
+22:06:56,246  INFO CRSProfessorClient,main:118 - Enter your choice:
+22:06:56,246  INFO CRSProfessorClient,main:119 - 1. To view available courses
+22:06:56,246  INFO CRSProfessorClient,main:120 - 2. To view courses assigned
+22:06:56,247  INFO CRSProfessorClient,main:121 - 3. To view students in a course
+22:06:56,247  INFO CRSProfessorClient,main:122 - 4. Grade a student
+22:06:56,247  INFO CRSProfessorClient,main:123 - 0. To logout
+22:06:56,248  INFO CRSProfessorClient,main:124 - ===========================================================
+22:07:19,526  INFO CRSProfessorClient,main:61 - Invalid Choice.
+Try Again
+
+22:07:19,526  INFO CRSProfessorClient,main:117 - =========================PROFESSOR=========================
+22:07:19,527  INFO CRSProfessorClient,main:118 - Enter your choice:
+22:07:19,528  INFO CRSProfessorClient,main:119 - 1. To view available courses
+22:07:19,528  INFO CRSProfessorClient,main:120 - 2. To view courses assigned
+22:07:19,528  INFO CRSProfessorClient,main:121 - 3. To view students in a course
+22:07:19,529  INFO CRSProfessorClient,main:122 - 4. Grade a student
+22:07:19,529  INFO CRSProfessorClient,main:123 - 0. To logout
+22:07:19,529  INFO CRSProfessorClient,main:124 - ===========================================================
+22:07:24,395  INFO CRSApplication,main:74 - ===========================USER===========================
+22:07:24,396  INFO CRSApplication,main:75 - Enter 1 to Login
+22:07:24,396  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+22:07:24,396  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+22:07:24,396  INFO CRSApplication,main:78 - ==========================================================
+22:07:27,278  INFO CRSApplication,main:104 - Enter User Id
+22:07:29,153  INFO CRSApplication,main:106 - Enter User Password
+22:07:32,730  INFO CRSApplication,main:119 - Welcome User ID : 14
+22:07:32,730  INFO CRSApplication,main:130 - Successfully Logged in as Student
+22:07:32,797  INFO NotificationSystemDaoImpl,main:67 - Notification sent sucessfully
+22:07:32,797  INFO CRSStudentClient,main:81 - ==========================STUDENT==========================
+22:07:32,798  INFO CRSStudentClient,main:82 - Enter your choice:
+22:07:32,798  INFO CRSStudentClient,main:83 - 1. To view available courses
+22:07:32,799  INFO CRSStudentClient,main:84 - 2. To register a course
+22:07:32,799  INFO CRSStudentClient,main:85 - 3. To drop a course
+22:07:32,799  INFO CRSStudentClient,main:86 - 4. View registered courses
+22:07:32,799  INFO CRSStudentClient,main:87 - 5. Pay fees
+22:07:32,800  INFO CRSStudentClient,main:88 - 6. Print Report Card
+22:07:32,800  INFO CRSStudentClient,main:89 - 0. To logout
+22:07:32,800  INFO CRSStudentClient,main:90 - ===========================================================
+22:09:51,674  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+22:09:51,678  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+22:09:51,678  INFO CRSApplication,main:74 - ===========================USER===========================
+22:09:51,678  INFO CRSApplication,main:75 - Enter 1 to Login
+22:09:51,679  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+22:09:51,679  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+22:09:51,680  INFO CRSApplication,main:78 - ==========================================================
+22:09:54,829  INFO CRSApplication,main:104 - Enter User Id
+22:09:56,453  INFO CRSApplication,main:106 - Enter User Password
+22:10:00,197  INFO CRSApplication,main:119 - Welcome User ID : 14
+22:10:00,197  INFO CRSApplication,main:130 - Successfully Logged in as Student
+22:10:00,211  INFO StudentBusiness,main:96 - Time of Login2021-01-27T22:10:00.211743800
+22:10:00,327  INFO NotificationSystemDaoImpl,main:67 - Notification sent sucessfully
+22:10:00,329  INFO CRSStudentClient,main:81 - ==========================STUDENT==========================
+22:10:00,330  INFO CRSStudentClient,main:82 - Enter your choice:
+22:10:00,331  INFO CRSStudentClient,main:83 - 1. To view available courses
+22:10:00,331  INFO CRSStudentClient,main:84 - 2. To register a course
+22:10:00,332  INFO CRSStudentClient,main:85 - 3. To drop a course
+22:10:00,333  INFO CRSStudentClient,main:86 - 4. View registered courses
+22:10:00,333  INFO CRSStudentClient,main:87 - 5. Pay fees
+22:10:00,334  INFO CRSStudentClient,main:88 - 6. Print Report Card
+22:10:00,335  INFO CRSStudentClient,main:89 - 0. To logout
+22:10:00,335  INFO CRSStudentClient,main:90 - ===========================================================
+22:12:02,901  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+22:12:02,905  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+22:12:02,906  INFO CRSApplication,main:74 - ===========================USER===========================
+22:12:02,906  INFO CRSApplication,main:75 - Enter 1 to Login
+22:12:02,907  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+22:12:02,908  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+22:12:02,909  INFO CRSApplication,main:78 - ==========================================================
+22:12:03,327  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+22:12:03,332  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+22:12:03,333  INFO CRSApplication,main:74 - ===========================USER===========================
+22:12:03,333  INFO CRSApplication,main:75 - Enter 1 to Login
+22:12:03,334  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+22:12:03,334  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+22:12:03,335  INFO CRSApplication,main:78 - ==========================================================
+22:12:05,583  INFO CRSApplication,main:104 - Enter User Id
+22:12:06,517  INFO CRSApplication,main:106 - Enter User Password
+22:12:08,887  INFO CRSApplication,main:119 - Welcome User ID : 14
+22:12:08,888  INFO CRSApplication,main:130 - Successfully Logged in as Student
+22:12:08,902  INFO StudentBusiness,main:96 - Time of Login%20s2021-01-27T22:12:08.902266400
+22:12:08,982  INFO NotificationSystemDaoImpl,main:67 - Notification sent sucessfully
+22:12:08,982  INFO CRSStudentClient,main:81 - ==========================STUDENT==========================
+22:12:08,983  INFO CRSStudentClient,main:82 - Enter your choice:
+22:12:08,983  INFO CRSStudentClient,main:83 - 1. To view available courses
+22:12:08,983  INFO CRSStudentClient,main:84 - 2. To register a course
+22:12:08,984  INFO CRSStudentClient,main:85 - 3. To drop a course
+22:12:08,984  INFO CRSStudentClient,main:86 - 4. View registered courses
+22:12:08,985  INFO CRSStudentClient,main:87 - 5. Pay fees
+22:12:08,985  INFO CRSStudentClient,main:88 - 6. Print Report Card
+22:12:08,985  INFO CRSStudentClient,main:89 - 0. To logout
+22:12:08,986  INFO CRSStudentClient,main:90 - ===========================================================
+22:14:45,986  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+22:14:45,989  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+22:14:45,989  INFO CRSApplication,main:74 - ===========================USER===========================
+22:14:45,989  INFO CRSApplication,main:75 - Enter 1 to Login
+22:14:45,990  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+22:14:45,990  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+22:14:45,991  INFO CRSApplication,main:78 - ==========================================================
+22:14:48,268  INFO CRSApplication,main:104 - Enter User Id
+22:14:50,084  INFO CRSApplication,main:106 - Enter User Password
+22:14:52,975  INFO CRSApplication,main:119 - Welcome User ID : 14
+22:14:52,975  INFO CRSApplication,main:130 - Successfully Logged in as Student
+22:14:52,988  INFO StudentBusiness,main:96 - Time of Login2021-01-27T22:14:52.988277900
+22:14:53,050  INFO NotificationSystemDaoImpl,main:67 - login sucessfully
+22:14:53,050  INFO CRSStudentClient,main:81 - ==========================STUDENT==========================
+22:14:53,051  INFO CRSStudentClient,main:82 - Enter your choice:
+22:14:53,051  INFO CRSStudentClient,main:83 - 1. To view available courses
+22:14:53,051  INFO CRSStudentClient,main:84 - 2. To register a course
+22:14:53,052  INFO CRSStudentClient,main:85 - 3. To drop a course
+22:14:53,052  INFO CRSStudentClient,main:86 - 4. View registered courses
+22:14:53,052  INFO CRSStudentClient,main:87 - 5. Pay fees
+22:14:53,053  INFO CRSStudentClient,main:88 - 6. Print Report Card
+22:14:53,053  INFO CRSStudentClient,main:89 - 0. To logout
+22:14:53,053  INFO CRSStudentClient,main:90 - ===========================================================
+22:16:34,169  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+22:16:34,172  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+22:16:34,172  INFO CRSApplication,main:74 - ===========================USER===========================
+22:16:34,173  INFO CRSApplication,main:75 - Enter 1 to Login
+22:16:34,173  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+22:16:34,173  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+22:16:34,174  INFO CRSApplication,main:78 - ==========================================================
+22:16:36,290  INFO CRSApplication,main:104 - Enter User Id
+22:16:37,197  INFO CRSApplication,main:106 - Enter User Password
+22:16:38,861  INFO CRSApplication,main:119 - Welcome User ID : 14
+22:16:38,861  INFO CRSApplication,main:130 - Successfully Logged in as Student
+22:16:38,875  INFO StudentBusiness,main:96 - Time of Login2021-01-27T22:16:38.875394700
+22:16:38,923  INFO NotificationSystemDaoImpl,main:67 - login sucessfully
+22:16:38,924  INFO CRSStudentClient,main:81 - ==========================STUDENT==========================
+22:16:38,924  INFO CRSStudentClient,main:82 - Enter your choice:
+22:16:38,924  INFO CRSStudentClient,main:83 - 1. To view available courses
+22:16:38,925  INFO CRSStudentClient,main:84 - 2. To register a course
+22:16:38,925  INFO CRSStudentClient,main:85 - 3. To drop a course
+22:16:38,925  INFO CRSStudentClient,main:86 - 4. View registered courses
+22:16:38,925  INFO CRSStudentClient,main:87 - 5. Pay fees
+22:16:38,926  INFO CRSStudentClient,main:88 - 6. Print Report Card
+22:16:38,926  INFO CRSStudentClient,main:89 - 0. To logout
+22:16:38,926  INFO CRSStudentClient,main:90 - ===========================================================
+22:20:20,728  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+22:20:20,731  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+22:20:20,732  INFO CRSApplication,main:74 - ===========================USER===========================
+22:20:20,732  INFO CRSApplication,main:75 - Enter 1 to Login
+22:20:20,734  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+22:20:20,735  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+22:20:20,735  INFO CRSApplication,main:78 - ==========================================================
+22:20:25,042  INFO CRSApplication,main:104 - Enter User Id
+22:20:25,398  INFO CRSApplication,main:106 - Enter User Password
+22:20:27,306  INFO CRSApplication,main:119 - Welcome User ID : 14
+22:20:27,306  INFO CRSApplication,main:130 - Successfully Logged in as Student
+22:20:27,319  INFO StudentBusiness,main:96 - Time of Login2021-01-27T22:20:27.319367200
+22:20:27,396  INFO NotificationSystemDaoImpl,main:67 - login sucessfully
+22:20:27,397  INFO CRSStudentClient,main:81 - ==========================STUDENT==========================
+22:20:27,397  INFO CRSStudentClient,main:82 - Enter your choice:
+22:20:27,398  INFO CRSStudentClient,main:83 - 1. To view available courses
+22:20:27,399  INFO CRSStudentClient,main:84 - 2. To register a course
+22:20:27,400  INFO CRSStudentClient,main:85 - 3. To drop a course
+22:20:27,400  INFO CRSStudentClient,main:86 - 4. View registered courses
+22:20:27,401  INFO CRSStudentClient,main:87 - 5. Pay fees
+22:20:27,401  INFO CRSStudentClient,main:88 - 6. Print Report Card
+22:20:27,402  INFO CRSStudentClient,main:89 - 0. To logout
+22:20:27,403  INFO CRSStudentClient,main:90 - ===========================================================
+22:20:40,125  INFO CourseCatalogBusiness,main:49 -            Course Id          Course Name
+22:20:40,129  INFO CourseCatalogBusiness,main:52 -                    4                  EMT
+22:20:40,130  INFO CourseCatalogBusiness,main:52 -                    5                  OOP
+22:20:40,132  INFO CourseCatalogBusiness,main:52 -                  100                  AnE
+22:20:40,133  INFO CourseCatalogBusiness,main:52 -                    3                  DSA
+22:20:40,133  INFO CRSStudentClient,main:81 - ==========================STUDENT==========================
+22:20:40,134  INFO CRSStudentClient,main:82 - Enter your choice:
+22:20:40,134  INFO CRSStudentClient,main:83 - 1. To view available courses
+22:20:40,134  INFO CRSStudentClient,main:84 - 2. To register a course
+22:20:40,134  INFO CRSStudentClient,main:85 - 3. To drop a course
+22:20:40,135  INFO CRSStudentClient,main:86 - 4. View registered courses
+22:20:40,135  INFO CRSStudentClient,main:87 - 5. Pay fees
+22:20:40,135  INFO CRSStudentClient,main:88 - 6. Print Report Card
+22:20:40,136  INFO CRSStudentClient,main:89 - 0. To logout
+22:20:40,136  INFO CRSStudentClient,main:90 - ===========================================================
+22:20:41,615  INFO CRSStudentClient,main:70 - Invalid Choice./nTry Again
+
+22:20:41,616  INFO CRSStudentClient,main:81 - ==========================STUDENT==========================
+22:20:41,616  INFO CRSStudentClient,main:82 - Enter your choice:
+22:20:41,616  INFO CRSStudentClient,main:83 - 1. To view available courses
+22:20:41,616  INFO CRSStudentClient,main:84 - 2. To register a course
+22:20:41,616  INFO CRSStudentClient,main:85 - 3. To drop a course
+22:20:41,616  INFO CRSStudentClient,main:86 - 4. View registered courses
+22:20:41,617  INFO CRSStudentClient,main:87 - 5. Pay fees
+22:20:41,617  INFO CRSStudentClient,main:88 - 6. Print Report Card
+22:20:41,617  INFO CRSStudentClient,main:89 - 0. To logout
+22:20:41,618  INFO CRSStudentClient,main:90 - ===========================================================
+22:20:56,750  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+22:20:56,753  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+22:20:56,754  INFO CRSApplication,main:74 - ===========================USER===========================
+22:20:56,754  INFO CRSApplication,main:75 - Enter 1 to Login
+22:20:56,754  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+22:20:56,755  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+22:20:56,755  INFO CRSApplication,main:78 - ==========================================================
+22:20:58,352  INFO CRSApplication,main:104 - Enter User Id
+22:20:59,308  INFO CRSApplication,main:106 - Enter User Password
+22:21:01,225  INFO CRSApplication,main:119 - Welcome User ID : 14
+22:21:01,226  INFO CRSApplication,main:130 - Successfully Logged in as Student
+22:21:01,238  INFO StudentBusiness,main:96 - Time of Login2021-01-27T22:21:01.238196300
+22:21:01,391  INFO NotificationSystemDaoImpl,main:67 - login sucessfully
+22:21:01,392  INFO CRSStudentClient,main:81 - ==========================STUDENT==========================
+22:21:01,393  INFO CRSStudentClient,main:82 - Enter your choice:
+22:21:01,394  INFO CRSStudentClient,main:83 - 1. To view available courses
+22:21:01,395  INFO CRSStudentClient,main:84 - 2. To register a course
+22:21:01,396  INFO CRSStudentClient,main:85 - 3. To drop a course
+22:21:01,396  INFO CRSStudentClient,main:86 - 4. View registered courses
+22:21:01,397  INFO CRSStudentClient,main:87 - 5. Pay fees
+22:21:01,398  INFO CRSStudentClient,main:88 - 6. Print Report Card
+22:21:01,398  INFO CRSStudentClient,main:89 - 0. To logout
+22:21:01,399  INFO CRSStudentClient,main:90 - ===========================================================
+22:53:21,325  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+22:53:21,342  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+22:53:21,342  INFO CRSApplication,main:74 - ===========================USER===========================
+22:53:21,342  INFO CRSApplication,main:75 - Enter 1 to Login
+22:53:21,343  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+22:53:21,343  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+22:53:21,343  INFO CRSApplication,main:78 - ==========================================================
+22:53:25,619  INFO CRSApplication,main:104 - Enter User Id
+22:53:25,620  INFO CRSApplication,main:106 - Enter User Password
+22:53:27,779  INFO CRSApplication,main:119 - Welcome User ID : 14
+22:53:27,779  INFO CRSApplication,main:130 - Successfully Logged in as Student
+22:53:27,781  INFO StudentBusiness,main:97 -          currentDate            localDate
+22:54:21,121  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+22:54:21,123  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+22:54:21,123  INFO CRSApplication,main:74 - ===========================USER===========================
+22:54:21,124  INFO CRSApplication,main:75 - Enter 1 to Login
+22:54:21,125  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+22:54:21,126  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+22:54:21,127  INFO CRSApplication,main:78 - ==========================================================
+22:54:23,683  INFO CRSApplication,main:104 - Enter User Id
+22:54:25,542  INFO CRSApplication,main:106 - Enter User Password
+22:54:28,378  INFO CRSApplication,main:119 - Welcome User ID : 14
+22:54:28,378  INFO CRSApplication,main:130 - Successfully Logged in as Student
+22:54:28,380  INFO StudentBusiness,main:97 -          currentDate            localDate
+22:54:28,412  INFO StudentBusiness,main:101 - Wed Jan 27 22:54:28 IST 2021           2021-01-27
+22:54:28,412  INFO CRSStudentClient,main:81 - ==========================STUDENT==========================
+22:54:28,412  INFO CRSStudentClient,main:82 - Enter your choice:
+22:54:28,413  INFO CRSStudentClient,main:83 - 1. To view available courses
+22:54:28,413  INFO CRSStudentClient,main:84 - 2. To register a course
+22:54:28,413  INFO CRSStudentClient,main:85 - 3. To drop a course
+22:54:28,413  INFO CRSStudentClient,main:86 - 4. View registered courses
+22:54:28,414  INFO CRSStudentClient,main:87 - 5. Pay fees
+22:54:28,414  INFO CRSStudentClient,main:88 - 6. Print Report Card
+22:54:28,415  INFO CRSStudentClient,main:89 - 0. To logout
+22:54:28,415  INFO CRSStudentClient,main:90 - ===========================================================
+22:57:50,372  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+22:57:50,375  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+22:57:50,375  INFO CRSApplication,main:74 - ===========================USER===========================
+22:57:50,376  INFO CRSApplication,main:75 - Enter 1 to Login
+22:57:50,376  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+22:57:50,376  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+22:57:50,377  INFO CRSApplication,main:78 - ==========================================================
+22:57:52,602  INFO CRSApplication,main:104 - Enter User Id
+22:57:53,129  INFO CRSApplication,main:106 - Enter User Password
+22:57:55,006  INFO CRSApplication,main:119 - Welcome User ID : 14
+22:57:55,007  INFO CRSApplication,main:130 - Successfully Logged in as Student
+22:57:55,009  INFO StudentBusiness,main:97 -          currentDate            localDate
+22:57:55,039  INFO StudentBusiness,main:101 - Wed Jan 27 22:57:55 IST 2021   22:57:55.021733600
+22:57:55,040  INFO CRSStudentClient,main:81 - ==========================STUDENT==========================
+22:57:55,040  INFO CRSStudentClient,main:82 - Enter your choice:
+22:57:55,041  INFO CRSStudentClient,main:83 - 1. To view available courses
+22:57:55,041  INFO CRSStudentClient,main:84 - 2. To register a course
+22:57:55,041  INFO CRSStudentClient,main:85 - 3. To drop a course
+22:57:55,042  INFO CRSStudentClient,main:86 - 4. View registered courses
+22:57:55,042  INFO CRSStudentClient,main:87 - 5. Pay fees
+22:57:55,042  INFO CRSStudentClient,main:88 - 6. Print Report Card
+22:57:55,043  INFO CRSStudentClient,main:89 - 0. To logout
+22:57:55,044  INFO CRSStudentClient,main:90 - ===========================================================
+22:59:49,301  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+22:59:49,306  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+22:59:49,307  INFO CRSApplication,main:74 - ===========================USER===========================
+22:59:49,308  INFO CRSApplication,main:75 - Enter 1 to Login
+22:59:49,308  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+22:59:49,309  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+22:59:49,309  INFO CRSApplication,main:78 - ==========================================================
+22:59:51,289  INFO CRSApplication,main:104 - Enter User Id
+22:59:51,933  INFO CRSApplication,main:106 - Enter User Password
+22:59:53,748  INFO CRSApplication,main:119 - Welcome User ID : 14
+22:59:53,749  INFO CRSApplication,main:130 - Successfully Logged in as Student
+22:59:53,750  INFO StudentBusiness,main:97 -          currentDate
+23:00:41,901  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+23:00:41,909  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+23:00:41,910  INFO CRSApplication,main:74 - ===========================USER===========================
+23:00:41,911  INFO CRSApplication,main:75 - Enter 1 to Login
+23:00:41,912  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+23:00:41,913  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+23:00:41,913  INFO CRSApplication,main:78 - ==========================================================
+23:00:44,062  INFO CRSApplication,main:104 - Enter User Id
+23:00:44,955  INFO CRSApplication,main:106 - Enter User Password
+23:00:47,651  INFO CRSApplication,main:119 - Welcome User ID : 14
+23:00:47,652  INFO CRSApplication,main:130 - Successfully Logged in as Student
+23:00:47,654  INFO StudentBusiness,main:97 -          currentDate
+23:00:58,364  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+23:00:58,370  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+23:00:58,371  INFO CRSApplication,main:74 - ===========================USER===========================
+23:00:58,372  INFO CRSApplication,main:75 - Enter 1 to Login
+23:00:58,373  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+23:00:58,374  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+23:00:58,374  INFO CRSApplication,main:78 - ==========================================================
+23:01:00,257  INFO CRSApplication,main:104 - Enter User Id
+23:01:00,836  INFO CRSApplication,main:106 - Enter User Password
+23:01:02,480  INFO CRSApplication,main:119 - Welcome User ID : 14
+23:01:02,481  INFO CRSApplication,main:130 - Successfully Logged in as Student
+23:01:02,483  INFO StudentBusiness,main:97 -          currentDate
+23:01:02,500  INFO StudentBusiness,main:101 -           2021-01-27
+23:01:02,501  INFO CRSStudentClient,main:81 - ==========================STUDENT==========================
+23:01:02,502  INFO CRSStudentClient,main:82 - Enter your choice:
+23:01:02,503  INFO CRSStudentClient,main:83 - 1. To view available courses
+23:01:02,504  INFO CRSStudentClient,main:84 - 2. To register a course
+23:01:02,505  INFO CRSStudentClient,main:85 - 3. To drop a course
+23:01:02,505  INFO CRSStudentClient,main:86 - 4. View registered courses
+23:01:02,506  INFO CRSStudentClient,main:87 - 5. Pay fees
+23:01:02,506  INFO CRSStudentClient,main:88 - 6. Print Report Card
+23:01:02,507  INFO CRSStudentClient,main:89 - 0. To logout
+23:01:02,507  INFO CRSStudentClient,main:90 - ===========================================================
+23:02:52,763  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+23:02:52,766  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+23:02:52,766  INFO CRSApplication,main:74 - ===========================USER===========================
+23:02:52,766  INFO CRSApplication,main:75 - Enter 1 to Login
+23:02:52,767  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+23:02:52,767  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+23:02:52,768  INFO CRSApplication,main:78 - ==========================================================
+23:02:54,808  INFO CRSApplication,main:104 - Enter User Id
+23:02:56,029  INFO CRSApplication,main:106 - Enter User Password
+23:02:58,409  INFO CRSApplication,main:119 - Welcome User ID : 14
+23:02:58,409  INFO CRSApplication,main:130 - Successfully Logged in as Student
+23:02:58,411  INFO StudentBusiness,main:97 -          currentDate                               LocalTime
+23:02:58,426  INFO StudentBusiness,main:101 -           2021-01-27                      23:02:58.426976400
+23:02:58,427  INFO CRSStudentClient,main:81 - ==========================STUDENT==========================
+23:02:58,428  INFO CRSStudentClient,main:82 - Enter your choice:
+23:02:58,429  INFO CRSStudentClient,main:83 - 1. To view available courses
+23:02:58,430  INFO CRSStudentClient,main:84 - 2. To register a course
+23:02:58,431  INFO CRSStudentClient,main:85 - 3. To drop a course
+23:02:58,431  INFO CRSStudentClient,main:86 - 4. View registered courses
+23:02:58,432  INFO CRSStudentClient,main:87 - 5. Pay fees
+23:02:58,432  INFO CRSStudentClient,main:88 - 6. Print Report Card
+23:02:58,433  INFO CRSStudentClient,main:89 - 0. To logout
+23:02:58,433  INFO CRSStudentClient,main:90 - ===========================================================
+23:03:26,893  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+23:03:26,897  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+23:03:26,898  INFO CRSApplication,main:74 - ===========================USER===========================
+23:03:26,898  INFO CRSApplication,main:75 - Enter 1 to Login
+23:03:26,899  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+23:03:26,900  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+23:03:26,901  INFO CRSApplication,main:78 - ==========================================================
+23:03:28,876  INFO CRSApplication,main:104 - Enter User Id
+23:03:29,251  INFO CRSApplication,main:106 - Enter User Password
+23:03:31,026  INFO AuthenticateBusiness,main:75 - Username/ password incorrect! Try again 
+23:03:31,027  INFO CRSApplication,main:136 - Invalid Credentials
+23:03:31,027  INFO CRSApplication,main:74 - ===========================USER===========================
+23:03:31,027  INFO CRSApplication,main:75 - Enter 1 to Login
+23:03:31,027  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+23:03:31,028  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+23:03:31,028  INFO CRSApplication,main:78 - ==========================================================
+23:03:34,030  INFO CRSApplication,main:104 - Enter User Id
+23:03:35,267  INFO CRSApplication,main:106 - Enter User Password
+23:03:37,140  INFO CRSApplication,main:119 - Welcome User ID : 14
+23:03:37,141  INFO CRSApplication,main:130 - Successfully Logged in as Student
+23:03:37,145  INFO StudentBusiness,main:97 -          currentDate                     LocalTime
+23:03:37,158  INFO StudentBusiness,main:101 -           2021-01-27                      23:03:37.158877600
+23:03:37,159  INFO CRSStudentClient,main:81 - ==========================STUDENT==========================
+23:03:37,160  INFO CRSStudentClient,main:82 - Enter your choice:
+23:03:37,160  INFO CRSStudentClient,main:83 - 1. To view available courses
+23:03:37,160  INFO CRSStudentClient,main:84 - 2. To register a course
+23:03:37,161  INFO CRSStudentClient,main:85 - 3. To drop a course
+23:03:37,161  INFO CRSStudentClient,main:86 - 4. View registered courses
+23:03:37,162  INFO CRSStudentClient,main:87 - 5. Pay fees
+23:03:37,162  INFO CRSStudentClient,main:88 - 6. Print Report Card
+23:03:37,163  INFO CRSStudentClient,main:89 - 0. To logout
+23:03:37,164  INFO CRSStudentClient,main:90 - ===========================================================
