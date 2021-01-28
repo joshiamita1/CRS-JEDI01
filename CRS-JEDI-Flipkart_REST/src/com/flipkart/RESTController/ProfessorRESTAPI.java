@@ -22,7 +22,7 @@ import com.flipkart.client.CRSProfessorClient;
 public class ProfessorRESTAPI {
 	
 	
-	private static Logger logger = Logger.getLogger(CRSProfessorClient.class);
+	
 	CourseCatalogBusiness courseCatalogBusinessObject = CourseCatalogBusiness.getInstance();
 	ProfessorBusiness professorBusinessObject = ProfessorBusiness.getInstance();
 	StudentBusiness studentBusinessObject = StudentBusiness.getInstance();

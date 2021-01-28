@@ -24,7 +24,7 @@ import com.flipkart.constant.Role;
 @Path("/admin")
 public class AdminRESTAPI {
 	
-	private static Logger logger = Logger.getLogger(CRSProfessorClient.class);
+	private static Logger logger = Logger.getLogger(AdminRESTAPI.class);
 	CourseCatalogBusiness courseCatalogBusinessObject = CourseCatalogBusiness.getInstance();
 	ProfessorBusiness professorBusinessObject = ProfessorBusiness.getInstance();
 	StudentBusiness studentBusinessObject = StudentBusiness.getInstance();

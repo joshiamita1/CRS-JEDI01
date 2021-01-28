@@ -24,6 +24,10 @@ public class UserDaoImpl implements UserDao {
 	private static Logger logger = Logger.getLogger(UserDaoImpl.class);
 	Connection connection = DBUtil.getConnection();
 	
+	StudentDaoImpl studentDaoObject = StudentDaoImpl.getInstance();
+	AdminDaoImpl adminDaoObject = AdminDaoImpl.getInstance();
+	ProfessorDaoImpl professorDaoObject = ProfessorDaoImpl.getInstance();
+	
 	private UserDaoImpl() {
 		
 	}
@@ -151,11 +155,30 @@ public class UserDaoImpl implements UserDao {
 			statement.setInt(1,userId);
 			ResultSet resultSet = statement.executeQuery();
 			if(resultSet.next()){
+				User user = new User();
 				String name = resultSet.getString("username");
 				Role role = Role.valueOf(resultSet.getString("role")); 
-				User user = new User();
+				
 				user.setName(name);
 				user.setRole(role);
+				logger.info(role);
+				if(role.equals(Role.STUDENT)) {
+					logger.info("#######################"+userId);
+					Student s= studentDaoObject.getStudent(userId);
+					if(s!=null)
+						return s;
+				}
+				else if(role.equals(Role.PROFESSOR)) {
+					Professor p= professorDaoObject.getProfessor(userId);
+					if(p!=null)
+						return p;
+				}
+				else if(role.equals(Role.ADMIN)) {
+					User a= adminDaoObject.getAdmin(userId);
+					if(a!=null)
+						return a;
+					
+				}
 				return user;
 			}
 			else{

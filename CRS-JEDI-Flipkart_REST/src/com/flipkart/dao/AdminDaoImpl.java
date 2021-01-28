@@ -12,6 +12,7 @@ import com.flipkart.bean.Student;
 import com.flipkart.bean.User;
 import com.flipkart.constant.Department;
 import com.flipkart.constant.Gender;
+import com.flipkart.constant.Role;
 import com.flipkart.constant.SQLQueriesConstant;
 import com.flipkart.util.DBUtil;
 
@@ -92,7 +93,7 @@ public class AdminDaoImpl implements AdminDao{
 			if (resultSet.next()) {
 				int userId = resultSet.getInt("AdminID");
 				String name = resultSet.getString("Name");
-				String emailId = resultSet.getString("EmailId");
+				String emailId = resultSet.getString("Email");
 				long mobile = resultSet.getLong("mobile");
 				Gender gender = Gender.valueOf(resultSet.getString("Gender"));
 				
@@ -102,7 +103,7 @@ public class AdminDaoImpl implements AdminDao{
 				user.setEmailId(emailId);
 				user.setMobile(mobile);
 				user.setGender(gender);
-			
+				user.setRole(Role.ADMIN);
 
 				//logger.info(" Student Details Retrieved sucessfully");
 				return user;
