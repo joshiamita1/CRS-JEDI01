@@ -1,0 +1,30 @@
+22:17:57,393  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+22:17:57,396  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+22:17:57,397  INFO CRSApplication,main:74 - ===========================USER===========================
+22:17:57,397  INFO CRSApplication,main:75 - Enter 1 to Login
+22:17:57,398  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+22:17:57,398  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+22:17:57,398  INFO CRSApplication,main:78 - ==========================================================
+22:18:02,244 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+22:18:02,246 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+22:18:02,249 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+22:18:02,250 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+22:18:02,252 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+22:18:02,253 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+22:18:02,255 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+22:18:02,257  INFO CRSApplication,main:104 - Enter User Id
+22:19:32,928  INFO CRSApplication,main:58 - ================COURSE REGISTRATION SYSTEM================
+22:19:32,931  INFO CRSApplication,main:59 - Welcome to the Course Registration System
+22:19:32,931  INFO CRSApplication,main:74 - ===========================USER===========================
+22:19:32,931  INFO CRSApplication,main:75 - Enter 1 to Login
+22:19:32,931  INFO CRSApplication,main:76 - Enter 2  to Register (if you are student)
+22:19:32,932  INFO CRSApplication,main:77 - Enter any other number to exit CRS
+22:19:32,932  INFO CRSApplication,main:78 - ==========================================================
+22:19:35,662 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+22:19:35,664 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+22:19:35,666 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+22:19:35,667 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+22:19:35,668 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+22:19:35,669 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+22:19:35,671 ERROR DBUtil,main:49 - com.mysql.cj.jdbc.Driver
+22:19:35,672  INFO CRSApplication,main:104 - Enter User Id
