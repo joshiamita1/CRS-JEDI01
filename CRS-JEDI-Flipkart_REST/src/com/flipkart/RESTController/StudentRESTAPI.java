@@ -9,9 +9,12 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import org.apache.log4j.Logger;
+
 import com.flipkart.bean.Course;
 import com.flipkart.business.CourseCatalogBusiness;
 import com.flipkart.business.StudentBusiness;
+import com.flipkart.constant.Grade;
 
 @Path("/student")
 public class StudentRESTAPI {
@@ -21,7 +24,7 @@ public class StudentRESTAPI {
 	 */
 	CourseCatalogBusiness courseCatalogBusinessObject = CourseCatalogBusiness.getInstance();
 	StudentBusiness studentBusinessObject = StudentBusiness.getInstance();
-	
+	private static Logger logger = Logger.getLogger(StudentBusiness.class);
 	/**
 	 * @param studentId
 	 * Check courses student already registered
@@ -45,9 +48,10 @@ public class StudentRESTAPI {
 	}
 	
 	@GET
-	@Path("viewGrade/{id}")
+	@Path("viewGrade/{studentId}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Map<String, String> viewGrades(@PathParam("studentId") int studentId) {
-		return null;
+	public Map<String, Grade> viewGrades(@PathParam("studentId") int studentId) {
+		logger.info("asdfasfgasfga"+studentId);
+		return studentBusinessObject.printReportCard(studentId);
 	}
 }

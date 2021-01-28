@@ -116,7 +116,7 @@ public class CRSApplication {
 	public void login(int userId, String password) throws UserNotFoundException, InvalidLoginException {
 		if(authenticateBusinessObject.validLogin(userId, password)) {
 			Role role = authenticateBusinessObject.getRole(userId, password);
-			logger.info("Welcome User ID : " + userId);
+			logger.info("Welcome User ID : " + userId );
 			switch(role) {
 			case ADMIN :
 				logger.info("Successfully Logged in as Admin");

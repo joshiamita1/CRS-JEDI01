@@ -163,21 +163,28 @@ public class UserDaoImpl implements UserDao {
 				user.setRole(role);
 				logger.info(role);
 				if(role.equals(Role.STUDENT)) {
-					logger.info("#######################"+userId);
+					//logger.info("#######################"+userId);
 					Student s= studentDaoObject.getStudent(userId);
-					if(s!=null)
+					
+					if(s!=null) {
+						s.setRole(Role.STUDENT);
 						return s;
+					}
 				}
 				else if(role.equals(Role.PROFESSOR)) {
 					Professor p= professorDaoObject.getProfessor(userId);
-					if(p!=null)
+					
+					if(p!=null) {
+						p.setRole(role);
 						return p;
+					}
 				}
 				else if(role.equals(Role.ADMIN)) {
 					User a= adminDaoObject.getAdmin(userId);
-					if(a!=null)
+					if(a!=null) {
+						a.setRole(role);
 						return a;
-					
+					}
 				}
 				return user;
 			}

@@ -1,6 +1,7 @@
 package com.flipkart.business;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 import com.flipkart.constant.PaymentMode;
@@ -138,15 +139,19 @@ public class StudentBusiness{
 	/**
 	 * @param studentId
 	 */
-	public void printReportCard(int studentId) {
+	public Map<String,Grade> printReportCard(int studentId) {
 		Student s = studentDaoObject.getStudent(studentId);
+		Map<String,Grade> gradeslist= new HashMap<String, Grade>();
 		logger.info("Student Id : " + s.getName() + "\nBranch : " + s.getBranch() + "\nEmail : " + s.getEmailId() + "\nGender : " + s.getGender() + "\nMobile :" + s.getMobile() + "\n");
 		Map<Integer, Grade> grades = studentDaoObject.viewGrades(studentId);
-		logger.info("Grades of " + studentDaoObject.getStudent(studentId).getName() + ":");
+		logger.info("Grades of " + s.getName() + ":");
 		for(Map.Entry<Integer, Grade> entry : grades.entrySet()) {
-			logger.info(courseCatalogDaoObject.getCourse(entry.getKey()).getCourseName() + " : " + entry.getValue());
+			Course c =courseCatalogDaoObject.getCourse(entry.getKey());
+			logger.info(c.getCourseName() + " : " + entry.getValue());
+			gradeslist.put(c.getCourseName(), entry.getValue());
 		}
 		logger.info("\n\nReport Card Sent to :" + s.getEmailId());
+		return gradeslist;
 	}
 	
 	/**
