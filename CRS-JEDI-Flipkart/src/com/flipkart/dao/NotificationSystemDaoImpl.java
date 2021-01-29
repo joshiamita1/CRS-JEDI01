@@ -37,7 +37,7 @@ public class NotificationSystemDaoImpl implements NotificationSystemDao{
 			Calendar cal = Calendar.getInstance(); 
 			Timestamp timestamp = new Timestamp(cal.getTimeInMillis());
 			statement.setTimestamp(3, timestamp);		
-			logger.info("statement is "+statement);
+			//logger.info("statement is "+statement);
 			int rows = statement.executeUpdate();
 			if(rows > 0) {
 				logger.info("Notification sent sucessfully");

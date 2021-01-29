@@ -1,11 +1,4 @@
-/**
- * 
- */
-package com.flipkart.dao;
-import java.util.*;
-
-import com.flipkart.bean.Course;
-
+  
 package com.flipkart.dao;
 
 import com.flipkart.bean.User;
@@ -24,4 +17,3 @@ public interface AdminDao {
 	 */
 	public void deleteAdmin(int userId);
 }
-

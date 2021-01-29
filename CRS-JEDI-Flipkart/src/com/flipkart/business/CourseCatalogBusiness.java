@@ -46,10 +46,10 @@ public class CourseCatalogBusiness{
 	 */
 	public void viewAllCourses() {   
 		ArrayList<Integer> coursesList = courseCatalogDaoObject.getCourses();
-		logger.info("Course Id\tCourse Name");
+		logger.info(String.format("%20s %20s", "Course Id","Course Name"));
 		for(Integer courseCode : coursesList) {
 			Course course = courseCatalogDaoObject.getCourse(courseCode);
-			logger.info(course.getCourseCode() +  "\t\t " + course.getCourseName());
+			logger.info(String.format("%20s %20s", course.getCourseCode() ,course.getCourseName()));
 		}
 	}
 	
@@ -60,12 +60,12 @@ public class CourseCatalogBusiness{
 	public void viewCoursesInCatalog(int catalogId) {
 		
 		ArrayList<Integer> coursesList = courseCatalogDaoObject.getCoursesInCatalog(catalogId);
-		
-		logger.info("Course Id\tCourse Name");
+
+		logger.info(String.format("%20s %20s", "Course Id","Course Name"));
 		
 		for(Integer courseCode : coursesList) {
 			Course course = courseCatalogDaoObject.getCourse(courseCode);
-			logger.info(course.getCourseCode() +  "\t\t " + course.getCourseName());
+			logger.info(String.format("%20s %20s", course.getCourseCode() ,course.getCourseName()));
 		}
 		
 	}

@@ -1,6 +1,7 @@
-  
 package com.flipkart.business;
 
+import com.flipkart.exception.InvalidLoginException;
+import com.flipkart.exception.UserNotFoundException;
 import org.apache.log4j.Logger;
 
 import com.flipkart.bean.Student;
@@ -42,6 +43,7 @@ public class AuthenticateBusiness {
 	 * Private Constructor
 	 */
 	private AuthenticateBusiness() {
+
 	}
 	
 	/**
@@ -59,16 +61,20 @@ public class AuthenticateBusiness {
 	 * @param inputPassword
 	 * @return authentication status
 	 */
-	public boolean validLogin(int inputId, String inputPassword) {
+	public boolean validLogin(int inputId, String inputPassword) throws UserNotFoundException, InvalidLoginException {
 		try {
 			String userPassword = userDaoObject.getPassword(inputId);
 			if(userPassword.equals(inputPassword)) {
 				return true;
 			}
+			else {
+				throw new InvalidLoginException();
+			}
 		} catch (Exception e) {
+			logger.info(e.getMessage());
 			return false;
 		}
-		return false;
+
 	}
 	
 	
@@ -81,6 +87,7 @@ public class AuthenticateBusiness {
 		return userDaoObject.getUser(inputId).getRole();	
 	}
 	
+
 	
 	/**
 	 * @param student

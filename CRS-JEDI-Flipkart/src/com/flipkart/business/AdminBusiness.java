@@ -78,10 +78,11 @@ public class AdminBusiness{
 	public void getUsers(Role role){
 		ArrayList<Integer> users= userDaoObject.getUsers(role);
 		logger.info("Users of the role : " + role + " are :");
+
+		logger.info(String.format("%20s %20s","Name","User ID"));
 		for(Integer user : users) {
 			User u = userDaoObject.getUser(user);
-			logger.info("Name : " + u.getName());
-			logger.info("User Id : " + user);
+			logger.info(String.format("%20s %20s",u.getName(),user));
 		}
 	}
 	
@@ -121,5 +122,13 @@ public class AdminBusiness{
 			logger.info("Assigned Successfully");
 		}
 
+	}
+
+	public void viewUnapprovedStudent(){
+		ArrayList<Integer> studentlist=studentDaoObject.viewUnapprovedStudents();
+		logger.info(String.format("%20s %20s","Student ID :","Student Name"));
+		for(Integer s : studentlist) {
+			logger.info(String.format("%20s %20s", s,studentDaoObject.getStudent(s).getName() ));
+		}
 	}
 }

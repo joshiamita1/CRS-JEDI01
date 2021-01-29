@@ -49,12 +49,14 @@ public class SQLQueriesConstant{
 	public static String GET_REGISTERED_COURSES_QUERY = "select rc.studentId, rc.courseId,cc.CourseName from RegisteredCourse as rc inner join coursecatalog as cc on rc.courseID =cc.CourseId where rc.studentId = ?";
 	public static String VIEW_GRADES_QUERY = "select * from RegisteredCourse where studentId = ?";
 	public static String COUNT_COURSE= "select count(CourseId) as coursecount from RegisteredCourse where studentId = ?";
-	public static String UPDATE_FEE="update Student set AmountPayable = ? where studentId=?";
-	public static String MAKE_PAYMENT_QUERY = "insert into feepayment(studentId, AmountPaid,DateofPayment) values(?, ?, ?)";
+	public static String UPDATE_FEE="update student set AmountPayable = ? where studentId=?";
+	public static String MAKE_PAYMENT_QUERY = "insert into feepayment(studentId, AmountPaid, DateofPayment, Mode ) values(?, ?, ?, ?)";
 	public static String GET_FEE_QUERY="select amountPayable from student where StudentId= ?";
 	public static String GET_HAS_SCHOLARSHIP =" select HasScholarship from student where StudentID= ?";
 	public static String APPROVE_STUDENT_QUERY="update Student set isApproved =? where studentID= ?";
 	public static String DELETE_STUDENT_QUERY = "delete from student where studentId = ? ";
+	public static String GET_UNAPPROVED_STUDENTS = "select studentId from student where isApproved=0";
+
 	// Professor Queries
 	public static String VIEW_PROFESSORID_QUERY = "select ProfessorId from Professor";
 	public static String DELETE_PROF_QUERY = "delete from professor where professorId = ? ";
