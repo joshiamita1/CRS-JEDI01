@@ -90,7 +90,7 @@ public class StudentDaoImpl implements StudentDao {
 			ResultSet resultSet = statement.executeQuery();
 
 			if (resultSet.next()) {
-				logger.info("Adsasd");
+				//logger.info("Adsasd");
 				int userId = resultSet.getInt("StudentID");
 				String name = resultSet.getString("Name");
 				String emailId = resultSet.getString("EmailId");

@@ -99,7 +99,7 @@ public class AdminRESTAPI {
 	}
 	
 	@DELETE
-	@Path("/course/drop/{courseId}")
+	@Path("/course/delete/{courseId}")
 	public Response dropcourse(@PathParam("courseId") int courseId) {
 		courseCatalogBusinessObject.dropCourse(courseId);
 		return Response.status(200).entity("successfully deleted").build();
