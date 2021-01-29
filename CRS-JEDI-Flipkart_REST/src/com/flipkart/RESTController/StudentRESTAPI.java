@@ -59,14 +59,14 @@ public class StudentRESTAPI {
 		
 		return studentBusinessObject.printReportCard(studentId);
 	}
-	/*
+	
 	@POST
 	@Path("/courses/register/{studentId}")
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response registerCourse(@PathParam("studentId") int studentId, int courseId) {
-		studentBusinessObject.registerCourse(studentId, courseId);
-		return Response.status(201).entity("ADDED Course").build();
+	public Response registerCourse( Course course, @PathParam("studentId") int studentId) {
+		studentBusinessObject.registerCourse(studentId, course.getCourseCode());
+		return Response.status(201).entity("Registered to courseId: "+course.getCourseCode()+ " Successfully").build();
 	}
 	
 	@DELETE
@@ -76,15 +76,16 @@ public class StudentRESTAPI {
 		return Response.status(200).entity("successfully deleted").build();
 		
 	}
-
+	
 	@PUT
-	@Path("/payFees")
+	@Path("/payFees/{studentId}/{choice}")
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Student payFees(int studentId){
-		studentBusinessObject.makePayment(studentId, studentBusinessObject.getFees(studentId), 1);
+	public Student payFees(@PathParam("studentId")int student,@PathParam("choice")int choice){
+		//logger.info(student.getUserId()+ choice);
+		//studentBusinessObject.makePayment(studentId, studentBusinessObject.getFees(studentId), 1);
 		//return studentBusinessObject.getS
 		return null;
 	}
-	*/
+	
 }

@@ -21,7 +21,11 @@ public class Course {
 	
 	// Detail of the course
 	String catalogDetail;
-
+	
+	public Course()
+	{
+		
+	}
 	public Course(int courseCode, String courseName, int catalogId, int professorId, String catalogDetail) {
 		super();
 		this.courseCode = courseCode;
