@@ -142,7 +142,7 @@ public class StudentBusiness{
 	public Map<String,Grade> printReportCard(int studentId) {
 		Student s = studentDaoObject.getStudent(studentId);
 		Map<String,Grade> gradeslist= new HashMap<String, Grade>();
-		logger.info("Student Id : " + s.getName() + "\nBranch : " + s.getBranch() + "\nEmail : " + s.getEmailId() + "\nGender : " + s.getGender() + "\nMobile :" + s.getMobile() + "\n");
+		logger.info("Student ID : "+ s.getUserId()+"Student Name : " + s.getName() + "\nBranch : " + s.getBranch() + "\nEmail : " + s.getEmailId() + "\nGender : " + s.getGender() + "\nMobile :" + s.getMobile() + "\n");
 		Map<Integer, Grade> grades = studentDaoObject.viewGrades(studentId);
 		logger.info("Grades of " + s.getName() + ":");
 		for(Map.Entry<Integer, Grade> entry : grades.entrySet()) {
