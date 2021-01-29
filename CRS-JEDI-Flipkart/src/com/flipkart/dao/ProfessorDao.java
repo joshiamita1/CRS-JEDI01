@@ -1,20 +1,46 @@
+  
 package com.flipkart.dao;
 
 import com.flipkart.bean.Professor;
+import com.flipkart.bean.User;
+import com.flipkart.constant.Department;
 
 import java.util.List;
 
 public interface ProfessorDao {
+
 	
-	// Add Professor
-	public void addProfessor(Professor professor);
+
+	/**
+	 * Add a professor to the list of existing professors
+	 * @param professor
+	 * @returnType void
+	 */
+	public void addProfessor(User user, String password, Department department);
 	
-	// Delete Professor
-	public void deleteProfessor(String professorId);
+	/**
+	 * Delete a professor
+	 * @param professorId
+	 * @returnType void
+	 */
+	public void deleteProfessor(int professorId);
 	
-	// Get All Professors
-	public List<String> getProfessors();
+	/**
+	 * Get list of all professors
+	 * @return
+	 * @returnType List<String>
+	 */
+	public List<Integer> getProfessors();
 	
-	// Get Professor's info
-	public Professor getProfessor(String professorId);
+	/**
+	 * get details of a particular professor from the id
+	 * @param professorId
+	 * @return
+	 * @returnType Professor
+	 */
+	public Professor getProfessor(int professorId);
+
+
+	
+
 }

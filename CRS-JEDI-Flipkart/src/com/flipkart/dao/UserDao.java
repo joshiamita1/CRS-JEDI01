@@ -1,25 +1,59 @@
 package com.flipkart.dao;
 
+
+import java.util.ArrayList;
+
+import java.util.List;
+
 import com.flipkart.bean.User;
 import com.flipkart.constant.Role;
 
 public interface UserDao {
 	
-	// Add User
-	public void addUser(User user);
+
+	/**
+	 * Add User
+	 * @param user
+	 * @returnType void
+	 */
+	public void addUser(User user, String password);
 	
-	// Delete User
-	public void deleteUser(String userId);
+	/**
+	 * Delete user from list of existing users
+	 * @param userId
+	 * @returnType void
+	 */
+	public void deleteUser(int userId);
 	
-	// Modify User
-	public void modifyUser(String userId);
+	/**
+	 * Modify details of a user
+	 * @param userId
+	 * @returnType void
+	 */
+	public void modifyUser(int userId, User user);
 	
-	// Get all users
-	public void getUsers();
+	/**
+	 * Get a list of ids of all users in the database
+	 * @returnType List<String>
+	 */
+	public List<Integer> getUsers();
 	
-	// Get all users with particular role
-	public void getUsers(Role role);
+	/**
+	 * Get users with a particular role(Student, professor or admin)
+	 * @param role
+	 * @returnType List<String>
+	 */
+	public List<Integer> getUsers(Role role);
 	
-	// Get User
-	public User getUser(String userId);
+	/**
+	 * Get all details of a particular user
+	 * @param userId
+	 * @returnType User
+	 */
+	public User getUser(int userId);
+	
+	
+	
+	public String getPassword(int userId);
+
 }

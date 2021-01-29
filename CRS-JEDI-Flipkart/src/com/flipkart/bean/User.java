@@ -3,9 +3,14 @@ package com.flipkart.bean;
 import com.flipkart.constant.Gender;
 import com.flipkart.constant.Role;
 
+
+/**
+ * @author JEDI01
+ *
+ */
 public class User {
 	// Id of the user
-	String userId;
+	int userId;
 	
 	// Email Id of the user
 	String emailId;
@@ -24,7 +29,7 @@ public class User {
 	
 	// Address of the user
 	String address;
-	
+
 	// City of the user
 	String city;
 	
@@ -33,30 +38,22 @@ public class User {
 	
 	// State of the user
 	String state;
-	
-	// Parameterized Constructor
-	public User(String userId, String emailId, String password, String name, long mobile, Role role, Gender gender) {
-		this.userId = userId;
-		this.emailId = emailId;
-		this.name = name;
-		this.mobile = mobile;
-		this.role = role;
-		this.gender = gender;
-	}
 
 	/**
 	 * @return the userId
 	 */
-	public String getUserId() {
+	public int getUserId() {
 		return userId;
 	}
+
 
 	/**
 	 * @param userId the userId to set
 	 */
-	public void setUserId(String userId) {
+	public void setUserId(int userId) {
 		this.userId = userId;
 	}
+
 
 	/**
 	 * @return the emailId
@@ -65,12 +62,14 @@ public class User {
 		return emailId;
 	}
 
+
 	/**
 	 * @param emailId the emailId to set
 	 */
 	public void setEmailId(String emailId) {
 		this.emailId = emailId;
 	}
+
 
 	/**
 	 * @return the name
@@ -79,12 +78,14 @@ public class User {
 		return name;
 	}
 
+
 	/**
 	 * @param name the name to set
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
+
 
 	/**
 	 * @return the mobile
@@ -93,12 +94,14 @@ public class User {
 		return mobile;
 	}
 
+
 	/**
 	 * @param mobile the mobile to set
 	 */
 	public void setMobile(long mobile) {
 		this.mobile = mobile;
 	}
+
 
 	/**
 	 * @return the role
@@ -107,12 +110,14 @@ public class User {
 		return role;
 	}
 
+
 	/**
 	 * @param role the role to set
 	 */
 	public void setRole(Role role) {
 		this.role = role;
 	}
+
 
 	/**
 	 * @return the gender
@@ -121,6 +126,7 @@ public class User {
 		return gender;
 	}
 
+
 	/**
 	 * @param gender the gender to set
 	 */
@@ -128,5 +134,70 @@ public class User {
 		this.gender = gender;
 	}
 
+
+	/**
+	 * @return the address
+	 */
+	public String getAddress() {
+		return address;
+	}
+
+
+	/**
+	 * @param address the address to set
+	 */
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+
+	/**
+	 * @return the city
+	 */
+	public String getCity() {
+		return city;
+	}
+
+
+	/**
+	 * @param city the city to set
+	 */
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+
+	/**
+	 * @return the country
+	 */
+	public String getCountry() {
+		return country;
+	}
+
+
+	/**
+	 * @param country the country to set
+	 */
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+
+	/**
+	 * @return the state
+	 */
+	public String getState() {
+		return state;
+	}
+
+
+	/**
+	 * @param state the state to set
+	 */
+	public void setState(String state) {
+		this.state = state;
+	}
+	
+	
 	
 }

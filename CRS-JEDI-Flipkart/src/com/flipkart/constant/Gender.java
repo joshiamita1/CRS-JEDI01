@@ -4,10 +4,9 @@
 package com.flipkart.constant;
 
 /**
- * @author lovish
+ * @author JEDI01
  *
  */
 public enum Gender {
-	MALE,
-	FEMALE
+	M, F
 }
