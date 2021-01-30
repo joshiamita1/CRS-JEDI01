@@ -8,7 +8,7 @@ import com.flipkart.business.CourseCatalogBusiness;
 import com.flipkart.business.ProfessorBusiness;
 import com.flipkart.business.StudentBusiness;
 import com.flipkart.constant.Grade;
-
+import com.flipkart.validation.Validate;
 
 /**
  * @author JEDI01
@@ -74,12 +74,9 @@ public class CRSProfessorClient {
 		logger.info("Enter Course ID");
 		int courseId = sc.nextInt();
 		//Validate if professor teaches this course
-		if(professorBusinessObject.validCourseForProfessor(professorId, courseId)) {
-			professorBusinessObject.viewRegisteredStudents(courseId);
-		} else {
-			logger.info("This Course is not taught by you!");
-		}
-
+		Validate validate = new Validate();
+		validate.validateProfCourse(professorId,courseId);
+		
 	}
 	
 
