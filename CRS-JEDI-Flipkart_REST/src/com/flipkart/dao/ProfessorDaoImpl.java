@@ -92,7 +92,10 @@ public class ProfessorDaoImpl implements ProfessorDao {
 			stmt = connection.prepareStatement(SQLQueriesConstant.ADD_NEW_PROF_QUERY);
 			stmt.setInt(1,userId);			
 			stmt.setString(2,String.valueOf(department));
-			stmt.setString(3,String.valueOf(professor.getGender()));
+			if(professor.getGender()!=null)
+				stmt.setString(3,String.valueOf(professor.getGender()));
+			else
+				stmt.setString(3,null);
 			stmt.setString(4,professor.getCity());
 			stmt.setString(5,professor.getAddress());
 			stmt.setString(6,professor.getCountry());

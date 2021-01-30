@@ -1,6 +1,7 @@
 package com.flipkart.RESTController;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 import javax.ws.rs.Consumes;
@@ -10,13 +11,17 @@ import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
-
+import org.json.simple.JSONObject;
+import org.json.simple.JSONArray; 
+ 
+import org.json.simple.parser.*;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.apache.log4j.Logger;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.flipkart.bean.Course;
 import com.flipkart.bean.Student;
 import com.flipkart.bean.User;
@@ -26,6 +31,7 @@ import com.flipkart.business.CourseCatalogBusiness;
 import com.flipkart.business.ProfessorBusiness;
 import com.flipkart.business.StudentBusiness;
 import com.flipkart.client.CRSProfessorClient;
+import com.flipkart.constant.Department;
 import com.flipkart.constant.Role;
 @Path("/admin")
 public class AdminRESTAPI {
@@ -59,12 +65,15 @@ public class AdminRESTAPI {
 		List<User> userList = adminBusinessObject.getUsers(Role.valueOf(role));
 		return userList;
 	}
-	/*
+	
 	@PUT
 	@Path("/courses/assign")
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
-	public String assignProfessor(int courseId, int professorId){
+	public String assignProfessor(JSONObject obj) {
+		int courseId; int professorId;
+		professorId=(int) obj.get("professorId");
+		courseId = (int) obj.get("courseId");
 		adminBusinessObject.assignProfessor(courseId, professorId);
 		return "SUCCESS";
 	}
@@ -73,10 +82,22 @@ public class AdminRESTAPI {
 	@Path("/user/register")
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response registerStudent(User user) {
-		authenticateBusinessObject.registerStudent(null, null);
-		return Response.status(201).entity(user.toString()).build();
+	public Response registerStudent(JSONObject obj) {
+		String password = (String) obj.get("password");
+		ObjectMapper objectMapper = new ObjectMapper();
 		
+		User user=objectMapper.convertValue(obj.get("user"),User.class);
+		if (user.getRole()==Role.PROFESSOR){
+			String department = (String) obj.get("department");
+			authenticateBusinessObject.registerProfessor(user, password, Department.valueOf(department));
+			return Response.status(201).entity(user.toString()).build();
+		}
+		else if(user.getRole()==Role.ADMIN){
+			authenticateBusinessObject.registerAdmin(user, password);
+			return Response.status(201).entity(user.toString()).build();
+		}
+		else 
+			return Response.status(201).entity("registraition failed").build(); 
 	}
 	
 	@DELETE
@@ -97,7 +118,7 @@ public class AdminRESTAPI {
 		return Response.status(201).entity(course.toString()).build();
 		
 	}
-	
+
 	@DELETE
 	@Path("/course/delete/{courseId}")
 	public Response dropcourse(@PathParam("courseId") int courseId) {
@@ -107,12 +128,12 @@ public class AdminRESTAPI {
 	}
 	
 	@PUT
-	@Path("/user/student/approve")
+	@Path("/user/student/approve/")
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
-	public String assignProfessor(int studentId){
-		adminBusinessObject.approveStudent(studentId);
+	public String approveStudent(JSONObject obj){
+		adminBusinessObject.approveStudent((int)obj.get("studentId"));
 		return "SUCCESS";
 	}
-	*/
+	
 }

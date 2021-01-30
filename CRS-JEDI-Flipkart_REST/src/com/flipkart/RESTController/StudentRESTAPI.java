@@ -1,5 +1,6 @@
 package com.flipkart.RESTController;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Map;
 
@@ -16,12 +17,21 @@ import javax.ws.rs.core.Response;
 
 import org.apache.log4j.Logger;
 
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import com.flipkart.bean.Course;
 import com.flipkart.bean.Student;
+import com.flipkart.business.AdminBusiness;
 import com.flipkart.business.CourseCatalogBusiness;
 import com.flipkart.business.StudentBusiness;
 import com.flipkart.constant.Grade;
+import com.flipkart.dao.UserDaoImpl;
 
+import org.json.simple.JSONArray; 
+import org.json.simple.JSONObject; 
+import org.json.simple.parser.*; 
 @Path("/student")
 public class StudentRESTAPI {
 
@@ -30,7 +40,7 @@ public class StudentRESTAPI {
 	 */
 	CourseCatalogBusiness courseCatalogBusinessObject = CourseCatalogBusiness.getInstance();
 	StudentBusiness studentBusinessObject = StudentBusiness.getInstance();
-	private static Logger logger = Logger.getLogger(StudentBusiness.class);
+	private static Logger logger = Logger.getLogger(StudentRESTAPI.class);
 	/**
 	 * @param studentId
 	 * Check courses student already registered
@@ -81,11 +91,31 @@ public class StudentRESTAPI {
 	@Path("/payFees/{studentId}/{choice}")
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Student payFees(@PathParam("studentId")int student,@PathParam("choice")int choice){
+	public String payFees(@PathParam("studentId")int studentId,@PathParam("choice")int choice){
 		//logger.info(student.getUserId()+ choice);
-		//studentBusinessObject.makePayment(studentId, studentBusinessObject.getFees(studentId), 1);
-		//return studentBusinessObject.getS
-		return null;
+		studentBusinessObject.makePayment(studentId, studentBusinessObject.getFees(studentId), choice);
+		
+		return "Fee Payment for student ID:"+ studentId + "Successful";
 	}
-	
+	/*
+	@PUT
+	@Path("/testing")
+	@Consumes("application/json")
+	@Produces(MediaType.APPLICATION_JSON)
+	public String payFeestemp(JSONObject obj) throws JsonParseException, JsonMappingException, IOException{
+		JSONObject jo =  obj;
+		Student student;
+		int choice;
+		choice = (int) jo.get("choice");
+		
+		ObjectMapper objectMapper = new ObjectMapper();
+		
+		student=objectMapper.convertValue(jo.get("student"),Student.class);
+		
+		
+		//studentBusinessObject.makePayment(studentId, studentBusinessObject.getFees(studentId), choice);
+		
+		return "Fee Payment for student ID:"+ student.getUserId() + "Successful"+ choice;
+	}
+	*/
 }
