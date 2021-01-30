@@ -13,7 +13,10 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 import org.apache.log4j.Logger;
-
+import org.json.simple.JSONObject;
+import org.json.simple.JSONArray; 
+ 
+import org.json.simple.parser.*;
 import com.flipkart.bean.Course;
 import com.flipkart.bean.Student;
 import com.flipkart.business.CourseCatalogBusiness;
@@ -25,7 +28,7 @@ import com.flipkart.constant.Grade;
 public class ProfessorRESTAPI {
 	
 	
-	
+	private static Logger logger = Logger.getLogger(ProfessorBusiness.class);
 	CourseCatalogBusiness courseCatalogBusinessObject = CourseCatalogBusiness.getInstance();
 	ProfessorBusiness professorBusinessObject = ProfessorBusiness.getInstance();
 	StudentBusiness studentBusinessObject = StudentBusiness.getInstance();
@@ -55,16 +58,33 @@ public class ProfessorRESTAPI {
 				return null;
 			}
 		}
-		/*
+		
+		
+		//multiple validations
+		/**
+		 * @body 
+		 * {
+		    "studentId": ,
+		    "courseId": ,
+		    "grade": 
+			}
+		 * @param obj
+		 * @return
+		 */
 		@PUT
 		@Path("/gradeStudent")
 		@Consumes("application/json")
 		@Produces(MediaType.APPLICATION_JSON)
-		public String gradeStudent(int studentId, int courseId, Grade grade){
+		public String gradeStudent(JSONObject obj) {
+			int studentId; int courseId; Grade grade;
+			studentId=(int) obj.get("studentId");
+			courseId = (int) obj.get("courseId");	
+			//logger.info("++++++++++++++++++++"+studentId+courseId+ obj.get("grade"));
+			grade = Grade.valueOf((String)obj.get("grade"));
 			professorBusinessObject.gradeStudent(courseId, studentId, grade);
 			return "SUCCESS";
 		}
-		*/
+		
 }
 
 
