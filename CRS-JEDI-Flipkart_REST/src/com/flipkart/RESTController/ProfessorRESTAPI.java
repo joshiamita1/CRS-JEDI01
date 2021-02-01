@@ -33,7 +33,10 @@ public class ProfessorRESTAPI {
 	CourseCatalogBusiness courseCatalogBusinessObject = CourseCatalogBusiness.getInstance();
 	ProfessorBusiness professorBusinessObject = ProfessorBusiness.getInstance();
 	StudentBusiness studentBusinessObject = StudentBusiness.getInstance();
-		//think this might be same as student
+		/**
+		 * get all list of all courses
+		 * @return
+		 */
 		@GET
 		@Path("/courses/all")
 		@Produces(MediaType.APPLICATION_JSON)
@@ -41,13 +44,23 @@ public class ProfessorRESTAPI {
 			return courseCatalogBusinessObject.viewAllCourses();
 		}
 		
+		/**
+		 * get list of courses assigned to a particular prof, pass professorId as path param
+		 * @param professorId
+		 * @return
+		 */
 		@GET
 		@Path("/courses/assigned/{professorId}")
 		@Produces(MediaType.APPLICATION_JSON)
 		public ArrayList<Course> getAssignedCourses(@PathParam("professorId") int professorId) {
 			return professorBusinessObject.viewAssignedCourses( professorId);
 		}
-
+		/**
+		 * view students registered in a particular course, pass professorId and courseId as path param
+		 * @param professorId
+		 * @param courseId
+		 * @return
+		 */
 		@GET
 		@Path("/viewStudents/{professorId}/{courseId}")
 		@Produces(MediaType.APPLICATION_JSON)
@@ -63,6 +76,7 @@ public class ProfessorRESTAPI {
 		
 		//multiple validations
 		/**
+		 * assign grade to a student, pass StudentId, CourseId and grade  in request body 
 		 * @body 
 		 * {
 		    "studentId": ,
@@ -92,4 +106,5 @@ public class ProfessorRESTAPI {
 		}
 		
 }
+
 

@@ -43,13 +43,21 @@ public class AdminRESTAPI {
 	AdminBusiness adminBusinessObject = AdminBusiness.getInstance();
 	AuthenticateBusiness authenticateBusinessObject = AuthenticateBusiness.getInstance();
 	
+	/**
+	 * Get all courses in a particular catalog, pass catalog id as path param
+	 * @param catalogId
+	 * @return
+	 */
 	@GET
 	@Path("/courses/catalog/{catalogId}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public ArrayList<Course> getCoursesInCatalog(@PathParam("catalogId") int catalogId) {
 		return courseCatalogBusinessObject.viewCoursesInCatalog(catalogId);
 	}
-	
+	/**
+	 * Get all courses 
+	 * @return
+	 */
 	@GET
 	@Path("/courses/all")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -57,6 +65,11 @@ public class AdminRESTAPI {
 		return courseCatalogBusinessObject.viewAllCourses();
 	}
 	
+	/**
+	 * get list of users of a particular role, pass role as path param
+	 * @param role
+	 * @return
+	 */
 	@GET
 	@Path("/viewUsers/{Role}")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -67,6 +80,7 @@ public class AdminRESTAPI {
 	}
 	
 	/**
+	 * assign a course to a prof, pass profId and courseId as request body
 	 * @body {
 	 * 			professorId:
 	 * 			,courseId:
@@ -90,6 +104,8 @@ public class AdminRESTAPI {
 		return Response.status(201).entity("SUCCESS").build();
 	}
 	/**
+	 * 
+	 * Register a user, pass user type object, password and role specific info in request body 
 	 * @body {
 	 * 		"user":{
 	 * 					//user bean class attributes
@@ -129,7 +145,7 @@ public class AdminRESTAPI {
 			authenticateBusinessObject.registerAdmin(user, password);
 			return Response.status(201).entity(user.toString()).build();
 		}
-		else if(user.getRole()==Role.STUDENT) {
+		else if(user.getRole()==Role.STUDENT){
 			Student student = new Student();
 			try{
 							
@@ -158,6 +174,11 @@ public class AdminRESTAPI {
 			return Response.status(201).entity("registraition failed").build(); 
 	}
 	
+	/**
+	 * delete a user, pass userId as path param
+	 * @param userId
+	 * @return
+	 */
 	@DELETE
 	@Path("/user/delete/{userId}")
 	public Response deleteuser(@PathParam("userId") int userId) {
@@ -172,6 +193,7 @@ public class AdminRESTAPI {
 	}
 	
 	/**
+	 * add a course to catalog, pass course type object in request body
 	 * @body {
 	 * 			"courseCode":
 	 * 			,"catalogId":
@@ -194,7 +216,11 @@ public class AdminRESTAPI {
 		return Response.status(201).entity(course.toString()).build();
 		
 	}
-
+	/**
+	 * delete a course from catalog, pass coursecode as path param
+	 * @param courseId
+	 * @return
+	 */
 	@DELETE
 	@Path("/course/delete/{courseId}")
 	public Response dropcourse(@PathParam("courseId") int courseId) {
@@ -208,6 +234,7 @@ public class AdminRESTAPI {
 		
 	}
 	/**
+	 * approve a student, pass studentId as request body
 	 * @body {
 	 * 			"studentId":
 	 * 			}

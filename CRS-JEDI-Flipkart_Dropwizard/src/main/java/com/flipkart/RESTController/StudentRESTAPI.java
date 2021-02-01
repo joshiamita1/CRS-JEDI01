@@ -42,6 +42,7 @@ public class StudentRESTAPI {
 	StudentBusiness studentBusinessObject = StudentBusiness.getInstance();
 	private static Logger logger = Logger.getLogger(StudentRESTAPI.class);
 	/**
+	 * get list of registered courses, pass student id as path param
 	 * @param studentId
 	 * Check courses student already registered
 	 * @return 
@@ -55,6 +56,10 @@ public class StudentRESTAPI {
 			
 	}
 	
+	/**
+	 * get list of all courses 
+	 * @return
+	 */
 	@GET
 	@Path("/courses/all")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -62,6 +67,11 @@ public class StudentRESTAPI {
 		return courseCatalogBusinessObject.viewAllCourses();
 	}
 	
+	/**
+	 * view student report card, pass studentId as path param
+	 * @param studentId
+	 * @return
+	 */
 	@GET
 	@Path("viewGrade/{studentId}")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -70,6 +80,12 @@ public class StudentRESTAPI {
 		return studentBusinessObject.printReportCard(studentId);
 	}
 	
+	/**
+	 * register for a course, pass student id as path param and course details as request body
+	 * @param course
+	 * @param studentId
+	 * @return
+	 */
 	@POST
 	@Path("/courses/register/{studentId}")
 	@Consumes("application/json")
@@ -84,6 +100,12 @@ public class StudentRESTAPI {
 		return Response.status(201).entity("Registered to courseId: "+course.getCourseCode()+ " Successfully").build();
 	}
 	
+	/**
+	 * drop a course, pass studentId and courseId as path param
+	 * @param studentId
+	 * @param courseId
+	 * @return
+	 */
 	@DELETE
 	@Path("/courses/drop/{studentId}/{courseId}")
 	public Response deleteCustomer(@PathParam("studentId") int studentId, @PathParam("courseId") int courseId) {
@@ -96,6 +118,12 @@ public class StudentRESTAPI {
 		
 	}
 	
+	/**
+	 * Fee payment, pass studentId and mode of payment as path param
+	 * @param studentId
+	 * @param choice
+	 * @return
+	 */
 	@PUT
 	@Path("/payFees/{studentId}/{choice}")
 	@Consumes("application/json")
@@ -109,25 +137,6 @@ public class StudentRESTAPI {
 		}
 		return Response.status(400).entity("Fee Payment for student ID:"+ studentId + "Successful").build();
 	}
-	/*
-	@PUT
-	@Path("/testing")
-	@Consumes("application/json")
-	@Produces(MediaType.APPLICATION_JSON)
-	public String payFeestemp(JSONObject obj) throws JsonParseException, JsonMappingException, IOException{
-		JSONObject jo =  obj;
-		Student student;
-		int choice;
-		choice = (int) jo.get("choice");
-		
-		ObjectMapper objectMapper = new ObjectMapper();
-		
-		student=objectMapper.convertValue(jo.get("student"),Student.class);
-		
-		
-		//studentBusinessObject.makePayment(studentId, studentBusinessObject.getFees(studentId), choice);
-		
-		return "Fee Payment for student ID:"+ student.getUserId() + "Successful"+ choice;
-	}
-	*/
+	
+	
 }
