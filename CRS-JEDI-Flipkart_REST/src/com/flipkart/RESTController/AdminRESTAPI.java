@@ -80,8 +80,12 @@ public class AdminRESTAPI {
 	@Produces(MediaType.APPLICATION_JSON)
 	public String assignProfessor(JSONObject obj) {
 		int courseId; int professorId;
-		professorId=(int) obj.get("professorId");
-		courseId = (int) obj.get("courseId");
+		try{
+			professorId=(int) obj.get("professorId");
+			courseId = (int) obj.get("courseId");
+		}catch(Exception e) {
+			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+		}
 		adminBusinessObject.assignProfessor(courseId, professorId);
 		return "SUCCESS";
 	}
@@ -102,13 +106,21 @@ public class AdminRESTAPI {
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response registerStudent(JSONObject obj) {
-		String password = (String) obj.get("password");
+		try{
+			String password = (String) obj.get("password");
+		}catch(Exception e) {
+			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+		}
 		ObjectMapper objectMapper = new ObjectMapper();
 		
 		User user=objectMapper.convertValue(obj.get("user"),User.class);
 		if (user.getRole()==Role.PROFESSOR){
-			String department = (String) obj.get("department");
-			authenticateBusinessObject.registerProfessor(user, password, Department.valueOf(department));
+			try{
+				String department = (String) obj.get("department");
+				authenticateBusinessObject.registerProfessor(user, password, Department.valueOf(department));
+			}catch(Exception e) {
+			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+			}
 			return Response.status(201).entity(user.toString()).build();
 		}
 		else if(user.getRole()==Role.ADMIN){
@@ -122,7 +134,11 @@ public class AdminRESTAPI {
 	@DELETE
 	@Path("/user/delete/{userId}")
 	public Response deleteuser(@PathParam("userId") int userId) {
-		adminBusinessObject.deleteUser(userId);
+		try{
+			adminBusinessObject.deleteUser(userId);
+		}catch(Exception e) {
+			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+		}
 		return Response.status(200).entity("successfully deleted").build();
 		
 	}
@@ -141,7 +157,11 @@ public class AdminRESTAPI {
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response addcourse(Course course) {
-		courseCatalogBusinessObject.addCourse(course);
+		try{
+			courseCatalogBusinessObject.addCourse(course);
+		}catch(Exception e) {
+			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+		}
 		return Response.status(201).entity(course.toString()).build();
 		
 	}
@@ -149,7 +169,11 @@ public class AdminRESTAPI {
 	@DELETE
 	@Path("/course/delete/{courseId}")
 	public Response dropcourse(@PathParam("courseId") int courseId) {
-		courseCatalogBusinessObject.dropCourse(courseId);
+		try{
+			courseCatalogBusinessObject.dropCourse(courseId);
+		}catch(Exception e) {
+			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+		}
 		return Response.status(200).entity("successfully deleted").build();
 		
 	}
@@ -165,7 +189,11 @@ public class AdminRESTAPI {
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
 	public String approveStudent(JSONObject obj){
-		adminBusinessObject.approveStudent((int)obj.get("studentId"));
+		try{
+			adminBusinessObject.approveStudent((int)obj.get("studentId"));
+		}catch(Exception e) {
+			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+		}
 		return "SUCCESS";
 	}
 	
