@@ -75,14 +75,22 @@ public class StudentRESTAPI {
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response registerCourse( Course course, @PathParam("studentId") int studentId) {
-		studentBusinessObject.registerCourse(studentId, course.getCourseCode());
+		try{
+			studentBusinessObject.registerCourse(studentId, course.getCourseCode());
+		}catch(Exception e) {
+			System.debug('400 Bad Request, Invalid input, message:'+e.getMessage());
+		}
 		return Response.status(201).entity("Registered to courseId: "+course.getCourseCode()+ " Successfully").build();
 	}
 	
 	@DELETE
 	@Path("/courses/drop/{studentId}/{courseId}")
 	public Response deleteCustomer(@PathParam("studentId") int studentId, @PathParam("courseId") int courseId) {
-		studentBusinessObject.dropCourse(studentId, courseId);
+		try{
+			studentBusinessObject.dropCourse(studentId, courseId);
+		}catch(Exception e) {
+			System.debug('400 Bad Request, Invalid input, message:'+e.getMessage());
+		}
 		return Response.status(200).entity("successfully deleted").build();
 		
 	}
@@ -93,8 +101,11 @@ public class StudentRESTAPI {
 	@Produces(MediaType.APPLICATION_JSON)
 	public String payFees(@PathParam("studentId")int studentId,@PathParam("choice")int choice){
 		//logger.info(student.getUserId()+ choice);
-		studentBusinessObject.makePayment(studentId, studentBusinessObject.getFees(studentId), choice);
-		
+		try{
+			studentBusinessObject.makePayment(studentId, studentBusinessObject.getFees(studentId), choice);
+		}catch(Exception e) {
+			System.debug('400 Bad Request, Invalid input, message:'+e.getMessage());
+		}
 		return "Fee Payment for student ID:"+ studentId + "Successful";
 	}
 	/*
