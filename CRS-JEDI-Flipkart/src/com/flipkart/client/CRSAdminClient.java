@@ -12,7 +12,7 @@ import com.flipkart.business.CourseCatalogBusiness;
 import com.flipkart.constant.Department;
 import com.flipkart.constant.Gender;
 import com.flipkart.constant.Role;
-
+import com.flipkart.validation.Validate;
 
 /**
  * @author JEDI01
@@ -182,23 +182,16 @@ public class CRSAdminClient {
 		user.setState(sc.nextLine());
 		logger.info("Enter Country");
 		user.setCountry(sc.nextLine());
+		Validate validate = new Validate();
 		switch(user.getRole()) {
 		case ADMIN:
-			if(authenticateBusinessObject.registerAdmin(user, password)) {
-				logger.info("Registration Success");
-			} else {
-				logger.info("Please Register Again!\nRegistration Failed\n");
-			}
+			validate.validateAdmin(user, password);
 			break;
 		case PROFESSOR:
 			logger.info("Enter Department");
 			//sc.nextLine();
 			Department department = Department.valueOf(sc.nextLine());
-			if(authenticateBusinessObject.registerProfessor(user, password, department)) {
-				logger.info("Registration Success.");
-			} else {
-				logger.info("Please Register Again!\nRegistration Failed\n");
-			}
+			validate.vaidateProfessor(user, password, department);
 			break;
 		default:
 			break;

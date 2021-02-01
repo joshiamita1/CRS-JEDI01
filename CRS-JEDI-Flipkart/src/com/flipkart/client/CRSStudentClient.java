@@ -6,7 +6,7 @@ import org.apache.log4j.Logger;
 
 import com.flipkart.business.CourseCatalogBusiness;
 import com.flipkart.business.StudentBusiness;
-
+import com.flipkart.validation.Validate;
 /**
  * @author JEDI01
  *
@@ -94,25 +94,8 @@ public class CRSStudentClient {
 	 */
 	public void registerCourse(int studentId) {
 		// Check if maximum limit is reached
-		if(studentBusinessObject.numberOfRegisteredCourses(studentId)==4) {
-			logger.info("=========MAXIMUM COURSE REGISTRATION LIMIT REACHED=========");
-			logger.info("You cannot add courses as you have already selected 4 courses");
-		} else{
-			logger.info("Enter course id");
-			int courseId = sc.nextInt();
-			// Check if student is already registered for the course
-			if(studentBusinessObject.checkValidCourseForStudent(studentId, courseId)) {
-				logger.info("====================ALREADY REGISTERED====================");
-				logger.info("You are already Registered for this course");
-			}
-			// Check if there is availability in the course
-			else if(courseCatalogBusinessObject.numberOfRegisterdStudents(courseId)==10) {
-				logger.info("==============MAXIMUM STUDENT LIMIT REACHED==============");
-				logger.info("10 Students already Registerd for the course so you can't register");
-			} else {
-				studentBusinessObject.registerCourse(studentId, courseId);
-			}
-		}
+		Validate validate = new Validate();
+		validate.validateRegisterCourse(studentId);
 	}
 	
 	/**
@@ -122,12 +105,8 @@ public class CRSStudentClient {
 	public void dropCourse(int studentId) {
 		logger.info("Enter the course ID");
 		int courseId = sc.nextInt();
-		if(studentBusinessObject.checkValidCourseForStudent(studentId, courseId)) {
-			studentBusinessObject.dropCourse(studentId, courseId);
-		} else {
-			logger.info("======================NOT REGISTERED======================");
-			logger.info("You were not registered for this course");
-		}
+		Validate validate = new Validate();
+		validate.validateDropCourse(studentId, courseId);
 	}
 	
 	/**
@@ -144,19 +123,8 @@ public class CRSStudentClient {
 	 */
 	public void payFees(int studentId) {
 		double fees = studentBusinessObject.getFees(studentId);
-		if(fees==0) {
-			logger.info("No dues pending!");
-		}
-		else{
-			logger.info("Pending Fees = " + fees + "INR-/ only!");
-			logger.info("Please Choose Mode of the Payment\n1. To pay with Credit Card\n2. To pay using cash \n3. To pay using Net Banking");
-			int choice = sc.nextInt();
-			if(choice>=1 && choice <= 3) {
-				studentBusinessObject.makePayment(studentId, fees, choice);
-			} else {
-				logger.info("Invalid Mode.\nTranscation Terminated.");
-			}
-		}
+		Validate validate = new Validate();
+		validate.validateFee(studentId, fees);
 		
 	}
 	
