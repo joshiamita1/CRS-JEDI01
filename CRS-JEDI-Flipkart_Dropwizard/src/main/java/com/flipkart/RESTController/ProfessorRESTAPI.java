@@ -77,11 +77,15 @@ public class ProfessorRESTAPI {
 		@Produces(MediaType.APPLICATION_JSON)
 		public String gradeStudent(JSONObject obj) {
 			int studentId; int courseId; Grade grade;
-			studentId=(int) obj.get("studentId");
-			courseId = (int) obj.get("courseId");	
-			//logger.info("++++++++++++++++++++"+studentId+courseId+ obj.get("grade"));
-			grade = Grade.valueOf((String)obj.get("grade"));
-			professorBusinessObject.gradeStudent(courseId, studentId, grade);
+			try{
+				studentId=(int) obj.get("studentId");
+				courseId = (int) obj.get("courseId");	
+				//logger.info("++++++++++++++++++++"+studentId+courseId+ obj.get("grade"));
+				grade = Grade.valueOf((String)obj.get("grade"));
+				professorBusinessObject.gradeStudent(courseId, studentId, grade);
+			}catch(Exception e) {
+			System.debug('400 Bad Request, Invalid input, message:'+e.getMessage());
+			}
 			return "SUCCESS";
 		}
 		
