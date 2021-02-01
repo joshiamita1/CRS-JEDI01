@@ -289,8 +289,10 @@ public class StudentDaoImpl implements StudentDao {
 			ResultSet resultSet = statement.executeQuery();
 
 			while (resultSet.next()) {
-
-				grades.put(resultSet.getInt("CourseId"), Grade.valueOf(resultSet.getString("Grade")));
+				if(resultSet.getString("Grade")!=null)
+					grades.put(resultSet.getInt("CourseId"), Grade.valueOf(resultSet.getString("Grade")));
+				else
+					grades.put(resultSet.getInt("CourseId"),null);
 			}
 
 			return grades;

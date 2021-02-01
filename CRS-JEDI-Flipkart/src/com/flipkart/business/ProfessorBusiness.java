@@ -62,7 +62,7 @@ public class ProfessorBusiness {
 	public void gradeStudent(int courseId, int studentId, Grade grade) {
 		studentDaoObject.addGrade(studentId, courseId, grade);
 		logger.info("Added Grade " + grade);
-		logger.info("Student :" + studentId);
+		logger.info("Student: " + studentId);
 		logger.info("Course Id : " + courseId);
 		logger.info("======================STUDENT GRADED======================");
 	}
@@ -100,9 +100,8 @@ public class ProfessorBusiness {
 	public void viewRegisteredStudents(int courseId) {
      //  View all the RegisteredStudent in course
 		Map<Integer, Grade> mp = courseCatalogDaoObject.viewGrades(courseId);
-		//logger.info(String.format("%20s %20s","Registered Students under \" + professorDaoObject.getProfessor(courseCatalogDaoObject.getCourse(courseId).getProfessorId()).getName()",));
 		logger.info("Registered Students under " + professorDaoObject.getProfessor(courseCatalogDaoObject.getCourse(courseId).getProfessorId()).getName() + " for course " +  courseCatalogDaoObject.getCourse(courseId).getCourseName() + " are :");
-		logger.info(String.format("%20s %20s","Student ID :","Student Name"));
+		logger.info(String.format("%20s %20s","Student ID :","Student Name "));
 		//can remove call to dao by using s directly
 		for(Integer s : mp.keySet()) {
 			logger.info(String.format("%20s %20s", studentDaoObject.getStudent(s).getUserId(),studentDaoObject.getStudent(s).getName() ));

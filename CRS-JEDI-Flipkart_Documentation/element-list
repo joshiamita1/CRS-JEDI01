@@ -7,5 +7,4 @@ com.flipkart.dao
 com.flipkart.exception
 com.flipkart.RESTController
 com.flipkart.util
-com.flipkart.utils
 com.flipkart.validation
