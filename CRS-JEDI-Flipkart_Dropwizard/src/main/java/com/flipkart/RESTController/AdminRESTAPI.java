@@ -23,15 +23,16 @@ import org.apache.log4j.Logger;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.flipkart.bean.Course;
+import com.flipkart.bean.Student;
 import com.flipkart.bean.User;
 import com.flipkart.business.AdminBusiness;
 import com.flipkart.business.AuthenticateBusiness;
 import com.flipkart.business.CourseCatalogBusiness;
 import com.flipkart.business.ProfessorBusiness;
 import com.flipkart.business.StudentBusiness;
+import com.flipkart.client.CRSProfessorClient;
 import com.flipkart.constant.Department;
 import com.flipkart.constant.Role;
-
 @Path("/admin")
 public class AdminRESTAPI {
 	
@@ -79,12 +80,15 @@ public class AdminRESTAPI {
 	@Produces(MediaType.APPLICATION_JSON)
 	public String assignProfessor(JSONObject obj) {
 		int courseId; int professorId;
-		professorId=(int) obj.get("professorId");
-		courseId = (int) obj.get("courseId");
+		try{
+			professorId=(int) obj.get("professorId");
+			courseId = (int) obj.get("courseId");
+		}catch(Exception e) {
+			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+		}
 		adminBusinessObject.assignProfessor(courseId, professorId);
 		return "SUCCESS";
 	}
-	
 	/**
 	 * @body {
 	 * 		"user":{
@@ -96,18 +100,27 @@ public class AdminRESTAPI {
 	 * @param obj
 	 * @return
 	 */
+	 
 	@POST
 	@Path("/user/register")
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response registerUser(JSONObject obj) {
-		String password = (String) obj.get("password");
+	public Response registerStudent(JSONObject obj) {
+		try{
+			String password = (String) obj.get("password");
+		}catch(Exception e) {
+			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+		}
 		ObjectMapper objectMapper = new ObjectMapper();
 		
 		User user=objectMapper.convertValue(obj.get("user"),User.class);
 		if (user.getRole()==Role.PROFESSOR){
-			String department = (String) obj.get("department");
-			authenticateBusinessObject.registerProfessor(user, password, Department.valueOf(department));
+			try{
+				String department = (String) obj.get("department");
+				authenticateBusinessObject.registerProfessor(user, password, Department.valueOf(department));
+			}catch(Exception e) {
+			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+			}
 			return Response.status(201).entity(user.toString()).build();
 		}
 		else if(user.getRole()==Role.ADMIN){
@@ -121,7 +134,11 @@ public class AdminRESTAPI {
 	@DELETE
 	@Path("/user/delete/{userId}")
 	public Response deleteuser(@PathParam("userId") int userId) {
-		adminBusinessObject.deleteUser(userId);
+		try{
+			adminBusinessObject.deleteUser(userId);
+		}catch(Exception e) {
+			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+		}
 		return Response.status(200).entity("successfully deleted").build();
 		
 	}
@@ -140,7 +157,11 @@ public class AdminRESTAPI {
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response addcourse(Course course) {
-		courseCatalogBusinessObject.addCourse(course);
+		try{
+			courseCatalogBusinessObject.addCourse(course);
+		}catch(Exception e) {
+			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+		}
 		return Response.status(201).entity(course.toString()).build();
 		
 	}
@@ -148,11 +169,14 @@ public class AdminRESTAPI {
 	@DELETE
 	@Path("/course/delete/{courseId}")
 	public Response dropcourse(@PathParam("courseId") int courseId) {
-		courseCatalogBusinessObject.dropCourse(courseId);
+		try{
+			courseCatalogBusinessObject.dropCourse(courseId);
+		}catch(Exception e) {
+			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+		}
 		return Response.status(200).entity("successfully deleted").build();
 		
 	}
-	
 	/**
 	 * @body {
 	 * 			"studentId":
@@ -165,8 +189,13 @@ public class AdminRESTAPI {
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
 	public String approveStudent(JSONObject obj){
-		adminBusinessObject.approveStudent((int)obj.get("studentId"));
+		try{
+			adminBusinessObject.approveStudent((int)obj.get("studentId"));
+		}catch(Exception e) {
+			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+		}
 		return "SUCCESS";
 	}
 	
 }
+
