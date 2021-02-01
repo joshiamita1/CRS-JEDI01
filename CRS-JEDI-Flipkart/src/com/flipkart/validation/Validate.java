@@ -4,14 +4,12 @@ import java.util.Scanner;
 
 import com.flipkart.exception.InvalidLoginException;
 import com.flipkart.exception.UserNotFoundException;
-
-import client.StudentBusiness;
-
 import org.apache.log4j.Logger;
 
 import com.flipkart.bean.Student;
 import com.flipkart.bean.User;
 import com.flipkart.business.AuthenticateBusiness;
+import com.flipkart.business.CourseCatalogBusiness;
 import com.flipkart.business.ProfessorBusiness;
 import com.flipkart.business.StudentBusiness;
 import com.flipkart.constant.Department;
@@ -24,7 +22,8 @@ public class Validate {
 	AuthenticateBusiness authenticateBusinessObject = AuthenticateBusiness.getInstance();
 	ProfessorBusiness professorBusinessObject = ProfessorBusiness.getInstance();
 	StudentBusiness studentBusinessObject = StudentBusiness.getInstance();
-	
+	CourseCatalogBusiness courseCatalogBusinessObject = CourseCatalogBusiness.getInstance();
+	private static Logger logger = Logger.getLogger(Validate.class);
 	/**
 	 * Validate Admin
 	 * @param user

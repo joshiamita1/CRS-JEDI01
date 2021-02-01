@@ -191,7 +191,7 @@ public class CRSAdminClient {
 			logger.info("Enter Department");
 			//sc.nextLine();
 			Department department = Department.valueOf(sc.nextLine());
-			validate.vaidateProfessor(user, password, department);
+			validate.validateProfessor(user, password, department);
 			break;
 		default:
 			break;

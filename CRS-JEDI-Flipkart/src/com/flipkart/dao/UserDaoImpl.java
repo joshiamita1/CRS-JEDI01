@@ -6,11 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
-<<<<<<< HEAD
-=======
 import com.flipkart.exception.UserNotFoundException;
->>>>>>> 96aee729936038a29fd9b5db28a03c067677f8c9
+
 import org.apache.log4j.Logger;
 
 import com.flipkart.bean.Professor;
@@ -197,35 +194,7 @@ public class UserDaoImpl implements UserDao {
 		return null;
 	
 	}
-	
-	
-	@Override
-	public String getPassword(int userId) {
-		// TODO Auto-generated method stub
-		PreparedStatement statement = null;
-		logger.info(userId);
-		try {
-			statement = connection.prepareStatement(SQLQueriesConstant.GET_USER_DETAIL_ID);
-			statement.setInt(1,userId);
-			ResultSet resultSet = statement.executeQuery();
-			if(resultSet.next()){
-				
-				String password = resultSet.getString("password");
-				logger.info(password);
-				return password;
-			}
-			else{
-				logger.info("User does not exist");
-			}
-			return null;
-		}catch(Exception e) {
-			logger.error(e.getMessage());
-		}
-		return null;
-	
-	}
-
-	
+		
 	public int lastEntry() {
 		PreparedStatement statement = null;
 		int userId=0;
