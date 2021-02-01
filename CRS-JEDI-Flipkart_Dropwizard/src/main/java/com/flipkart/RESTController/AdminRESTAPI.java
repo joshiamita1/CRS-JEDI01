@@ -23,16 +23,15 @@ import org.apache.log4j.Logger;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.flipkart.bean.Course;
-import com.flipkart.bean.Student;
 import com.flipkart.bean.User;
 import com.flipkart.business.AdminBusiness;
 import com.flipkart.business.AuthenticateBusiness;
 import com.flipkart.business.CourseCatalogBusiness;
 import com.flipkart.business.ProfessorBusiness;
 import com.flipkart.business.StudentBusiness;
-import com.flipkart.client.CRSProfessorClient;
 import com.flipkart.constant.Department;
 import com.flipkart.constant.Role;
+
 @Path("/admin")
 public class AdminRESTAPI {
 	
@@ -66,6 +65,14 @@ public class AdminRESTAPI {
 		return userList;
 	}
 	
+	/**
+	 * @body {
+	 * 			professorId:
+	 * 			,courseId:
+	 * 		}
+	 * @param obj
+	 * @return
+	 */
 	@PUT
 	@Path("/courses/assign")
 	@Consumes("application/json")
@@ -78,11 +85,22 @@ public class AdminRESTAPI {
 		return "SUCCESS";
 	}
 	
+	/**
+	 * @body {
+	 * 		"user":{
+	 * 					//user bean class attributes
+	 * 				}
+	 * 		,"password":
+	 * 		,//other user specific attributes 
+	 * 	}
+	 * @param obj
+	 * @return
+	 */
 	@POST
 	@Path("/user/register")
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response registerStudent(JSONObject obj) {
+	public Response registerUser(JSONObject obj) {
 		String password = (String) obj.get("password");
 		ObjectMapper objectMapper = new ObjectMapper();
 		
@@ -108,7 +126,15 @@ public class AdminRESTAPI {
 		
 	}
 	
-	
+	/**
+	 * @body {
+	 * 			"courseCode":
+	 * 			,"catalogId":
+	 * 			//and other course related fields
+	 * 			}
+	 * @param course
+	 * @return
+	 */
 	@POST
 	@Path("/courses/add")
 	@Consumes("application/json")
@@ -127,6 +153,13 @@ public class AdminRESTAPI {
 		
 	}
 	
+	/**
+	 * @body {
+	 * 			"studentId":
+	 * 			}
+	 * @param obj
+	 * @return
+	 */
 	@PUT
 	@Path("/user/student/approve/")
 	@Consumes("application/json")

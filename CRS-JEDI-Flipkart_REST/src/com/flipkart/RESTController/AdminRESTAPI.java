@@ -66,6 +66,14 @@ public class AdminRESTAPI {
 		return userList;
 	}
 	
+	/**
+	 * @body {
+	 * 			professorId:
+	 * 			,courseId:
+	 * 		}
+	 * @param obj
+	 * @return
+	 */
 	@PUT
 	@Path("/courses/assign")
 	@Consumes("application/json")
@@ -77,15 +85,17 @@ public class AdminRESTAPI {
 		adminBusinessObject.assignProfessor(courseId, professorId);
 		return "SUCCESS";
 	}
-	/*
-	 * {
-	 * "user"{"name":,
-	 * 			"gender",
-	 * 		}
-	 * "password":
-	 * "branch/departmnet":
-	 * }
-	 * */
+	/**
+	 * @body {
+	 * 		"user":{
+	 * 					//user bean class attributes
+	 * 				}
+	 * 		,"password":
+	 * 		,//other user specific attributes 
+	 * 	}
+	 * @param obj
+	 * @return
+	 */
 	 
 	@POST
 	@Path("/user/register")
@@ -117,7 +127,15 @@ public class AdminRESTAPI {
 		
 	}
 	
-	
+	/**
+	 * @body {
+	 * 			"courseCode":
+	 * 			,"catalogId":
+	 * 			//and other course related fields
+	 * 			}
+	 * @param course
+	 * @return
+	 */
 	@POST
 	@Path("/courses/add")
 	@Consumes("application/json")
@@ -135,7 +153,13 @@ public class AdminRESTAPI {
 		return Response.status(200).entity("successfully deleted").build();
 		
 	}
-	
+	/**
+	 * @body {
+	 * 			"studentId":
+	 * 			}
+	 * @param obj
+	 * @return
+	 */
 	@PUT
 	@Path("/user/student/approve/")
 	@Consumes("application/json")
