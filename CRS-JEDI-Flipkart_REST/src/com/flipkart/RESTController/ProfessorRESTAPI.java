@@ -11,6 +11,7 @@ import javax.ws.rs.PathParam;
 
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
@@ -22,7 +23,7 @@ import com.flipkart.bean.Student;
 import com.flipkart.business.CourseCatalogBusiness;
 import com.flipkart.business.ProfessorBusiness;
 import com.flipkart.business.StudentBusiness;
-import com.flipkart.client.CRSProfessorClient;
+//import com.flipkart.client.CRSProfessorClient;
 import com.flipkart.constant.Grade;
 @Path("/professor")
 public class ProfessorRESTAPI {
@@ -75,7 +76,7 @@ public class ProfessorRESTAPI {
 		@Path("/gradeStudent")
 		@Consumes("application/json")
 		@Produces(MediaType.APPLICATION_JSON)
-		public String gradeStudent(JSONObject obj) {
+		public Response gradeStudent(JSONObject obj) {
 			int studentId; int courseId; Grade grade;
 			try{
 				studentId=(int) obj.get("studentId");
@@ -84,11 +85,11 @@ public class ProfessorRESTAPI {
 				grade = Grade.valueOf((String)obj.get("grade"));
 				professorBusinessObject.gradeStudent(courseId, studentId, grade);
 			}catch(Exception e) {
-			System.debug('400 Bad Request, Invalid input, message:'+e.getMessage());
+			//System.debug('400 Bad Request, Invalid input, message:'+e.getMessage());
+			return Response.status(400).entity("Invalid input, message:"+e.getMessage()).build();
 			}
-			return "SUCCESS";
+			return Response.status(201).entity("SUCCESS").build();
 		}
 		
 }
-
 

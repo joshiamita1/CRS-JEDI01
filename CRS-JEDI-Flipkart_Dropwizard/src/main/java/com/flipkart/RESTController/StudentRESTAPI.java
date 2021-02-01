@@ -78,7 +78,8 @@ public class StudentRESTAPI {
 		try{
 			studentBusinessObject.registerCourse(studentId, course.getCourseCode());
 		}catch(Exception e) {
-			System.debug('400 Bad Request, Invalid input, message:'+e.getMessage());
+			//System.debug('400 Bad Request, Invalid input, message:'+e.getMessage());
+			return Response.status(400).entity("Invalid input, message:"+e.getMessage()).build();
 		}
 		return Response.status(201).entity("Registered to courseId: "+course.getCourseCode()+ " Successfully").build();
 	}
@@ -89,7 +90,7 @@ public class StudentRESTAPI {
 		try{
 			studentBusinessObject.dropCourse(studentId, courseId);
 		}catch(Exception e) {
-			System.debug('400 Bad Request, Invalid input, message:'+e.getMessage());
+			return Response.status(400).entity("Invalid input, message:"+e.getMessage()).build();
 		}
 		return Response.status(200).entity("successfully deleted").build();
 		
@@ -99,14 +100,14 @@ public class StudentRESTAPI {
 	@Path("/payFees/{studentId}/{choice}")
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
-	public String payFees(@PathParam("studentId")int studentId,@PathParam("choice")int choice){
+	public Response payFees(@PathParam("studentId")int studentId,@PathParam("choice")int choice){
 		//logger.info(student.getUserId()+ choice);
 		try{
 			studentBusinessObject.makePayment(studentId, studentBusinessObject.getFees(studentId), choice);
 		}catch(Exception e) {
-			System.debug('400 Bad Request, Invalid input, message:'+e.getMessage());
+			return Response.status(400).entity("Invalid input, message:"+e.getMessage()).build();
 		}
-		return "Fee Payment for student ID:"+ studentId + "Successful";
+		return Response.status(400).entity("Fee Payment for student ID:"+ studentId + "Successful").build();
 	}
 	/*
 	@PUT

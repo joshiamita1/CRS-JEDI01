@@ -30,7 +30,7 @@ import com.flipkart.business.AuthenticateBusiness;
 import com.flipkart.business.CourseCatalogBusiness;
 import com.flipkart.business.ProfessorBusiness;
 import com.flipkart.business.StudentBusiness;
-import com.flipkart.client.CRSProfessorClient;
+//import com.flipkart.client.CRSProfessorClient;
 import com.flipkart.constant.Department;
 import com.flipkart.constant.Role;
 @Path("/admin")
@@ -78,16 +78,16 @@ public class AdminRESTAPI {
 	@Path("/courses/assign")
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
-	public String assignProfessor(JSONObject obj) {
+	public Response assignProfessor(JSONObject obj) {
 		int courseId; int professorId;
 		try{
 			professorId=(int) obj.get("professorId");
 			courseId = (int) obj.get("courseId");
 		}catch(Exception e) {
-			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+			return Response.status(400).entity("Insertion not allowed, message:"+e.getMessage()).build();
 		}
 		adminBusinessObject.assignProfessor(courseId, professorId);
-		return "SUCCESS";
+		return Response.status(201).entity("SUCCESS").build();
 	}
 	/**
 	 * @body {
@@ -106,10 +106,11 @@ public class AdminRESTAPI {
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response registerStudent(JSONObject obj) {
+		String password;
 		try{
-			String password = (String) obj.get("password");
+			password = (String) obj.get("password");
 		}catch(Exception e) {
-			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+			return Response.status(400).entity(" Insertion not allowed, message:"+e.getMessage()).build();
 		}
 		ObjectMapper objectMapper = new ObjectMapper();
 		
@@ -119,7 +120,8 @@ public class AdminRESTAPI {
 				String department = (String) obj.get("department");
 				authenticateBusinessObject.registerProfessor(user, password, Department.valueOf(department));
 			}catch(Exception e) {
-			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+			//System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+			return Response.status(400).entity(" Insertion not allowed, message:"+e.getMessage()).build();
 			}
 			return Response.status(201).entity(user.toString()).build();
 		}
@@ -137,7 +139,8 @@ public class AdminRESTAPI {
 		try{
 			adminBusinessObject.deleteUser(userId);
 		}catch(Exception e) {
-			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+			//System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+			return Response.status(400).entity("Insertion not allowed, message:"+e.getMessage()).build();
 		}
 		return Response.status(200).entity("successfully deleted").build();
 		
@@ -160,7 +163,8 @@ public class AdminRESTAPI {
 		try{
 			courseCatalogBusinessObject.addCourse(course);
 		}catch(Exception e) {
-			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+			//System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+			return Response.status(400).entity("Insertion not allowed, message:"+e.getMessage()).build();
 		}
 		return Response.status(201).entity(course.toString()).build();
 		
@@ -172,7 +176,8 @@ public class AdminRESTAPI {
 		try{
 			courseCatalogBusinessObject.dropCourse(courseId);
 		}catch(Exception e) {
-			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+			//System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+			return Response.status(400).entity("Deletion not allowed, message:"+e.getMessage()).build();
 		}
 		return Response.status(200).entity("successfully deleted").build();
 		
@@ -188,14 +193,14 @@ public class AdminRESTAPI {
 	@Path("/user/student/approve/")
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
-	public String approveStudent(JSONObject obj){
+	public Response approveStudent(JSONObject obj){
 		try{
 			adminBusinessObject.approveStudent((int)obj.get("studentId"));
 		}catch(Exception e) {
-			System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+			//System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+			return Response.status(400).entity("Insertion not allowed, message:"+e.getMessage()).build();
 		}
-		return "SUCCESS";
+		return Response.status(200).entity("success").build();
 	}
 	
 }
-
