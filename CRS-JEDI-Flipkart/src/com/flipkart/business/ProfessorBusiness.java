@@ -95,6 +95,7 @@ public class ProfessorBusiness {
 	
 	/**
 	 * @param courseId
+	 * View all the students registered to a course
 	 */
 	public void viewRegisteredStudents(int courseId) {
      //  View all the RegisteredStudent in course

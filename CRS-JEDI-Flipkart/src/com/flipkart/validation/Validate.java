@@ -12,6 +12,7 @@ import com.flipkart.business.AuthenticateBusiness;
 import com.flipkart.business.CourseCatalogBusiness;
 import com.flipkart.business.ProfessorBusiness;
 import com.flipkart.business.StudentBusiness;
+import com.flipkart.client.CRSAdminClient;
 import com.flipkart.constant.Department;
 import com.flipkart.constant.Role;
 
@@ -22,8 +23,10 @@ public class Validate {
 	AuthenticateBusiness authenticateBusinessObject = AuthenticateBusiness.getInstance();
 	ProfessorBusiness professorBusinessObject = ProfessorBusiness.getInstance();
 	StudentBusiness studentBusinessObject = StudentBusiness.getInstance();
-	CourseCatalogBusiness courseCatalogBusinessObject = CourseCatalogBusiness.getInstance();
-	private static Logger logger = Logger.getLogger(Validate.class);
+
+	 CourseCatalogBusiness courseCatalogBusinessObject= CourseCatalogBusiness.getInstance();
+			 
+	public static Logger logger = Logger.getLogger(CRSAdminClient.class);
 	/**
 	 * Validate Admin
 	 * @param user

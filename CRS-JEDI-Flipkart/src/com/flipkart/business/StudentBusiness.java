@@ -23,22 +23,6 @@ import com.flipkart.dao.UserDaoImpl;
  * @author JEDI01
  *
  */
-/**
- * @author lovis
- *
- */
-/**
- * @author lovis
- *
- */
-/**
- * @author lovis
- *
- */
-/**
- * @author lovis
- *
- */
 public class StudentBusiness{
 	
 	/**
@@ -178,7 +162,6 @@ public class StudentBusiness{
 	 */
 	public void makePayment(int studentId, double fees, int choice) {
 		
-		//TodO
 		feePaymentDaoObject.PayFees(studentId, fees, PaymentMode.values()[choice-1]);
 		feePaymentDaoObject.updateFees(studentId, 0);
 		notificationSystemDaoObject.notifyUser(studentId, "Fees of " + fees + " Paid Successfully!");

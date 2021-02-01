@@ -58,6 +58,7 @@ public class AdminBusiness{
 	
 	/**
 	 * @param studentId
+	 * Approve student
 	 */
 	public void approveStudent(int studentId) {
 		if(studentDaoObject.getStudent(studentId)==null) {
@@ -123,7 +124,9 @@ public class AdminBusiness{
 		}
 
 	}
-
+	/**
+	 * View unapproved students list
+	 */
 	public void viewUnapprovedStudent(){
 		ArrayList<Integer> studentlist=studentDaoObject.viewUnapprovedStudents();
 		logger.info(String.format("%20s %20s","Student ID :","Student Name"));
@@ -131,4 +134,5 @@ public class AdminBusiness{
 			logger.info(String.format("%20s %20s", s,studentDaoObject.getStudent(s).getName() ));
 		}
 	}
+
 }

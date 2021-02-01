@@ -1,0 +1,11 @@
+com.dropwizard
+com.flipkart.bean
+com.flipkart.business
+com.flipkart.client
+com.flipkart.constant
+com.flipkart.dao
+com.flipkart.exception
+com.flipkart.RESTController
+com.flipkart.util
+com.flipkart.utils
+com.flipkart.validation
