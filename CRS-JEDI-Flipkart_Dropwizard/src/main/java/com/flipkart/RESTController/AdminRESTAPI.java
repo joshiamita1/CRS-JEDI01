@@ -129,6 +129,31 @@ public class AdminRESTAPI {
 			authenticateBusinessObject.registerAdmin(user, password);
 			return Response.status(201).entity(user.toString()).build();
 		}
+		else if(user.getRole()==Role.STUDENT) {
+			Student student = new Student();
+			try{
+							
+			student.setUserId(user.getUserId());
+			student.setEmailId(user.getEmailId());
+			student.setName(user.getName());
+			student.setMobile(user.getMobile());
+			student.setGender(user.getGender());
+			student.setRole(Role.STUDENT);
+			student.setAddress(user.getAddress());
+			student.setCity(user.getCity());
+			student.setCountry(user.getCountry());
+			student.setState(user.getState());
+			student.setAmountPayable(0);
+			student.setHasScholarship((boolean)obj.get("isHasScholarship"));
+			student.setBranch(Department.valueOf((String) obj.get("branch")));
+			student.setApproved(false);}
+			catch(Exception e) {
+				//System.debug('400 Bad Request, Insertion not allowed, message:'+e.getMessage());
+				return Response.status(400).entity(" Insertion not allowed, message:"+e.getMessage()).build();
+				}
+			authenticateBusinessObject.registerStudent(student, password);
+			return Response.status(201).entity(user.toString()).build();
+		}
 		else 
 			return Response.status(201).entity("registraition failed").build(); 
 	}
