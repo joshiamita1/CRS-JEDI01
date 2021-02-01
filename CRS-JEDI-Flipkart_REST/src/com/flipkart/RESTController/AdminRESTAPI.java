@@ -77,7 +77,16 @@ public class AdminRESTAPI {
 		adminBusinessObject.assignProfessor(courseId, professorId);
 		return "SUCCESS";
 	}
-	
+	/*
+	 * {
+	 * "user"{"name":,
+	 * 			"gender",
+	 * 		}
+	 * "password":
+	 * "branch/departmnet":
+	 * }
+	 * */
+	 
 	@POST
 	@Path("/user/register")
 	@Consumes("application/json")
