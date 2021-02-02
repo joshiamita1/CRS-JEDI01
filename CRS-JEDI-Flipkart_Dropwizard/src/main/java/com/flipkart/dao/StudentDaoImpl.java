@@ -99,6 +99,11 @@ public class StudentDaoImpl implements StudentDao {
 				Department branch = Department.valueOf(resultSet.getString("branch"));
 				boolean hasScholarship = resultSet.getBoolean("HasScholarship");
 				boolean isApproved = resultSet.getBoolean("IsApproved");
+				String address=resultSet.getString("address");
+				String city=resultSet.getString("city");
+				String country=resultSet.getString("country");
+				String state=resultSet.getString("state");
+				
 				Student student = new Student();
 				student.setUserId(userId);
 				student.setName(name);
@@ -108,7 +113,11 @@ public class StudentDaoImpl implements StudentDao {
 				student.setBranch(branch);
 				student.setHasScholarship(hasScholarship);
 				student.setApproved(isApproved);
-
+				student.setAddress(address);
+				student.setCity(city);
+				student.setCountry(country);
+				student.setState(state);
+				logger.info(state+country);
 				//logger.info(" Student Details Retrieved sucessfully");
 				return student;
 			}

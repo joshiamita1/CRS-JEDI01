@@ -48,7 +48,10 @@ public class ProfessorDaoImpl implements ProfessorDao {
 		
 				String name = resultSet.getString("name");
 				long mobile = resultSet.getLong("mobile");
-				
+				String address=resultSet.getString("address");
+				String city=resultSet.getString("city");
+				String country=resultSet.getString("country");
+				String state=resultSet.getString("state");
 				Gender gender = Gender.valueOf(resultSet.getString("gender"));
 				Department dept = Department.valueOf(resultSet.getString("department"));
 
@@ -61,7 +64,10 @@ public class ProfessorDaoImpl implements ProfessorDao {
 				professor.setMobile(mobile);
 				professor.setRole(Role.PROFESSOR);
 				professor.setGender(gender);
-				
+				professor.setAddress(address);
+				professor.setCity(city);
+				professor.setCountry(country);
+				professor.setState(state);
 				
 				return professor;
 			}

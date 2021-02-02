@@ -99,6 +99,10 @@ public class AdminDaoImpl implements AdminDao{
 				String emailId = resultSet.getString("Email");
 				long mobile = resultSet.getLong("mobile");
 				Gender gender = Gender.valueOf(resultSet.getString("Gender"));
+				String address=resultSet.getString("address");
+				String city=resultSet.getString("city");
+				String country=resultSet.getString("country");
+				String state=resultSet.getString("state");
 				
 				User user = new User();
 				user.setUserId(userId);
@@ -107,9 +111,14 @@ public class AdminDaoImpl implements AdminDao{
 				user.setMobile(mobile);
 				user.setGender(gender);
 				user.setRole(Role.ADMIN);
-
+				user.setAddress(address);
+				user.setCity(city);
+				user.setCountry(country);
+				user.setState(state);
 				//logger.info(" Student Details Retrieved sucessfully");
 				return user;
+
+				
 			}
 			return null;
 		} catch (Exception e) {

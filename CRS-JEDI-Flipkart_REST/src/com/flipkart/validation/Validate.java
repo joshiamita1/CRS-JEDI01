@@ -1,9 +1,14 @@
 package com.flipkart.validation;
 
 import java.util.Scanner;
+
 import com.flipkart.exception.InvalidLoginException;
 import com.flipkart.exception.UserNotFoundException;
+
+
+
 import org.apache.log4j.Logger;
+
 import com.flipkart.RESTController.AdminRESTAPI;
 import com.flipkart.bean.Student;
 import com.flipkart.bean.User;
@@ -17,6 +22,7 @@ import com.flipkart.constant.Role;
 public class Validate {
 
 	Scanner sc = new Scanner(System.in);
+	
 	AuthenticateBusiness authenticateBusinessObject = AuthenticateBusiness.getInstance();
 	ProfessorBusiness professorBusinessObject = ProfessorBusiness.getInstance();
 	StudentBusiness studentBusinessObject = StudentBusiness.getInstance();

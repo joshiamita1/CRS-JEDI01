@@ -21,25 +21,14 @@ import com.flipkart.dao.UserDaoImpl;
 
 
 /**
- * @author JEDI01
+ 
  *
  */
 /**
  * @author lovis
  *
  */
-/**
- * @author lovis
- *
- */
-/**
- * @author lovis
- *
- */
-/**
- * @author lovis
- *
- */
+
 public class StudentBusiness{
 	
 	/**

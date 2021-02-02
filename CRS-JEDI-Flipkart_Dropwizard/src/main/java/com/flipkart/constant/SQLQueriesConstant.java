@@ -60,7 +60,7 @@ public class SQLQueriesConstant{
 	// Professor Queries
 	public static String VIEW_PROFESSORID_QUERY = "select ProfessorId from Professor";
 	public static String DELETE_PROF_QUERY = "delete from professor where professorId = ? ";
-	public static String GET_PROF_DETAIL = "select p.professorId, p.department, p.gender, p.email, p.Name, p.mobile from professor as p where p.professorId =? ";
+	public static String GET_PROF_DETAIL = "select * from professor  where professorId =? ";
 	public static String ADD_NEW_PROF_QUERY = "insert into professor(professorId, department, gender, city, address, country, state, mobile, email, name) values(?,?,?,?,?,?,?,?,?,?) ";
 	
 	// Admin Queries

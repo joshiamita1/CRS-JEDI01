@@ -124,7 +124,8 @@ public class StudentBusiness{
 		Map<Integer, Grade> grades = studentDaoObject.viewGrades(studentId);
 		logger.info("Grades of " + studentDaoObject.getStudent(studentId).getName() + ":");
 		for(Map.Entry<Integer, Grade> entry : grades.entrySet()) {
-			logger.info(courseCatalogDaoObject.getCourse(entry.getKey()).getCourseName() + " : " + entry.getValue());
+			//logger.info(courseCatalogDaoObject.getCourse(entry.getKey()).getCourseName() + " : " + entry.getValue());
+			logger.info(String.format("%20s %20s",courseCatalogDaoObject.getCourse(entry.getKey()).getCourseName(),entry.getValue()));
 		}
 		logger.info("\n\nReport Card Sent to :" + s.getEmailId());
 	}

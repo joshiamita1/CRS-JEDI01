@@ -130,6 +130,7 @@ public class CourseCatalogDaoImpl  implements CourseCatalogDao{
 		Course course = null;
 		ResultSet resultSet = null;
 		try {
+			//logger.info("here"+ courseCode);
 			statement = connection.prepareStatement(SQLQueriesConstant.VIEW_COURSE_QUERY);
 			statement.setInt(1,courseCode);
 			//logger.info("get data for "+ courseCode);

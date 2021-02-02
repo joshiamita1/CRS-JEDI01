@@ -60,6 +60,7 @@ public class AdminBusiness{
 	 * @param studentId
 	 */
 	public void approveStudent(int studentId) {
+		logger.info("++++++++++++"+studentId);
 		if(studentDaoObject.getStudent(studentId)==null) {
 			logger.info("Invalid Student ID");
 		} else {
