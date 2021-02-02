@@ -115,10 +115,9 @@ public class AdminDaoImpl implements AdminDao{
 				user.setCity(city);
 				user.setCountry(country);
 				user.setState(state);
+
 				//logger.info(" Student Details Retrieved sucessfully");
 				return user;
-
-				
 			}
 			return null;
 		} catch (Exception e) {

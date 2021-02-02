@@ -43,6 +43,7 @@ public class ProfessorDaoImpl implements ProfessorDao {
 			ResultSet resultSet = statement.executeQuery();
 			if(resultSet.next()){
 				
+
 				int userId = resultSet.getInt("professorId");
 				String emailId = resultSet.getString("email");
 		
@@ -68,6 +69,8 @@ public class ProfessorDaoImpl implements ProfessorDao {
 				professor.setCity(city);
 				professor.setCountry(country);
 				professor.setState(state);
+				
+				return professor;
 				
 				return professor;
 			}

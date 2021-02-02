@@ -171,7 +171,7 @@ public class AdminRESTAPI {
 			return Response.status(201).entity(user.toString()).build();
 		}
 		else 
-			return Response.status(201).entity("registraition failed").build(); 
+			return Response.status(400).entity("registraition failed").build(); 
 	}
 	
 	/**
